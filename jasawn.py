@@ -10,6 +10,4 @@ for file in os.listdir(path):
 		filename = file + ".json"
 		filename = open(filename,'w')
 
-		#print (filename)
-
 		# content is being deleted from the files (why, oh why?)
