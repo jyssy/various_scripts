@@ -1,8 +1,6 @@
 '''attempting to deduplicate two sets of microform records in order to update the difference'''
 
-import csv
-
-import os
+import csv, os
 
 with open('dupe1.csv', 'r') as file1, open('dupe2.csv', 'r') as file2:
 
