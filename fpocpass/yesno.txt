@@ -1,0 +1,5 @@
+#printed to the screen for the FPOC pass script
+
+yes    55
+no     42
+Name: yesno, dtype: int64
