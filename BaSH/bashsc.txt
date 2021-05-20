@@ -1,3 +1,17 @@
 //  Selected BaSH scripts and shortcuts
  
+/Classic and simple bash scripts for day-to-day life
+https://linuxhint.com/30_bash_script_examples/ 
+ 
+printing today's date:
+ date +"%dth %B %Y"
+ 
+ or
+ 
+ date + "%Y-%m-%d"
+ 
+ 
+ 
+ 
+ 
  
