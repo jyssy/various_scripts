@@ -10,6 +10,23 @@ printing today's date:
  
  date + "%Y-%m-%d"
  
+ htop # interactive process viewer
+ 
+ iostat l # display i/o stats
+ 
+ usermod -aG
+ 
+ cp -r source_directory destination
+ ln -s /path/to/file linkname # Create symbolic link to ​linkname
+ 
+ wget http://domain.com/file # Download ​http://domain.com/file
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
