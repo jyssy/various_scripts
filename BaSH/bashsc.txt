@@ -1,34 +1,57 @@
 //  Selected BaSH scripts and shortcuts
- 
+
 /Classic and simple bash scripts for day-to-day life
-https://linuxhint.com/30_bash_script_examples/ 
- 
+https://linuxhint.com/30_bash_script_examples/
+
 printing today's date:
  date +"%dth %B %Y"
- 
+
  or
- 
+
  date + "%Y-%m-%d"
- 
+
  htop # interactive process viewer
- 
+
  iostat l # display i/o stats
- 
+
  usermod -aG
- 
+
  cp -r source_directory destination
- ln -s /path/to/file linkname # Create symbolic link to ​linkname
- 
- wget http://domain.com/file # Download ​http://domain.com/file
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+ # Create symbolic link to ​some place
+ $ ln -s /path/to/file linkname
+
+# Downloading data from the web
+(example) $ wget http://domain.com/file
+
+# To output terminal data to a, say, text file
+$ command > somefile.extension
+or to append data to that somefile:
+$ command >> somefile.extension
+
+# to outout stderr (standard error messages)
+$ command &> somefile.extension
+or to append:
+$ command &>> somefile.extension
+
+# to have that information printed and output to a file (stderr and stdout):
+$ SomeCommand 2>&1 | tee SomeFile.txt
+ - - (If you want the output only, drop the 2 above)
+
+ # shows me the details for the boot_directory
+ $ ls -F /boot
+
+ # shps messages from the linux kernel
+ $ dmesg
+ or 
+ $ dmesg -T | less (for a human readable version)
+
+ #to shutdown the machine
+
+ $ shutdown -r 15:30 "rebooting soon"
+ or
+ $ shutdown -r now
+
+ # to poweroff the machine
+ $ poweroff
+
