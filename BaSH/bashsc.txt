@@ -55,3 +55,11 @@ $ SomeCommand 2>&1 | tee SomeFile.txt
  # to poweroff the machine
  $ poweroff
 
+ #Main config file for syslog is:
+/etc/rsyslog.conf
+
+#But can include other syslog results, such as:
+$ IncludeConfig /etc/rsyslog.d/*.conf
+
+
+
