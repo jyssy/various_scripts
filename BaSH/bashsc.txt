@@ -1,4 +1,4 @@
-//  Selected BaSH scripts and shortcuts
+//  Selected BaSH commands and shortcuts
 
 /Classic and simple bash scripts for day-to-day life
 https://linuxhint.com/30_bash_script_examples/
@@ -60,6 +60,37 @@ $ SomeCommand 2>&1 | tee SomeFile.txt
 
 #But can include other syslog results, such as:
 $ IncludeConfig /etc/rsyslog.d/*.conf
+
+#system log info (say, for mail)
+
+mail.info  -/var/log/mail.info
+mail.warn  -/var/log/mail.warn
+mail.err   /var/log/mail.err (note, no caching for these more severe messages)
+
+# example
+$ logger -p mail.info -t mailtest "test."
+
+# to rotate log messages
+/etc/logrotate.conf: 
+
+include /etc/logrotate.d
+
+# testing the logrotate configuration
+$ logrotate -fv /etc/logrotate.conf
+
+# Disk management
+- to check disk space generally
+$ df -h
+
+/ is always a mount point
+
+mounting, such as something like mkdir to mount new directories at mount points /
+
+fdisk to manage partitians
+
+$ fdisk -l (to display a list of extant partitions)
+
+
 
 
 
