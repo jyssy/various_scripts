@@ -90,6 +90,102 @@ fdisk to manage partitians
 
 $ fdisk -l (to display a list of extant partitions)
 
+02 June 2021
+
+# linux file management commands
+ext2, ext3, ext4, etc, and there are others
+
+# examples:
+$ mkfs -t TYPE DEVICE
+$ mkfs -t ext3 /dev/sbd2
+$ mkfs -t ext4 /dev/sdb3
+$ mkfs.ext4 /dev/sdb3
+
+$ ls -l /sbin/mkfs*
+
+# to mount a partition
+$ mount /device/ /directory/where/mounted
+
+# the mount command will show all file systems, including all virtual ones
+# to unmount a device
+$ umount /device that is being unmounted
+
+# to create swap space
+$ mkswap /space/for/swap
+then
+$ swapon /space/for/swap
+
+# /etc/fstab
+each entry is made up of 6 fields
+device
+mount system
+file system type
+mount options
+dump
+fsck order
+
+multiple options can be create by adding commas with no spaces around the commas
+
+# to view labels and UUIDs
+$ lsblk -f
+
+# for only UUIDs
+$ blkid 
+
+# can use e2label plus $PATH to change the label
+
+## USERS
+
+Try to stay at 8 characters of length of username
+Traditionally, lower case, but no special characters
+
+Information about users is stored in /etc/passwd:
+
+$ ps -fu
+
+/etc/shadow (only readable by the su account)
+
+$ newgrp (to change to a new group before creating files)
+
+GECOS field (hold over from old days in UNIX)
+
+4 June 2021
+
+# creating a new user
+
+$ adduser -c ‘Comments’ -m [create the home directory] -s /shell/path
+OR
+$ useradd [options] username
+
+# to assign the user a PW
+
+$ passwd USERNAME
+
+If I wanted to check out that password. Or check the last item in any file, I would run a command
+
+$ tail -1 /etc/passwd
+This gives the last item on the list (or -1 before the next empty line)
+
+Also, we could use -g to specify a GROUP for the account
+
+Or -g GROUP1,GROUP2 to denote adding the user to more than one group
+
+or -G to add another group
+
+-r to specify a system account
+-d to specify the home directory
+
+# to delete a user’s account
+$ userdel [-r] username (to delete the user and the home directory)
+
+# to update user accounts
+$ usermod 
+-c “COMMENT”
+-g GROUP
+-G ADDITIONAL GROUPS
+-s /shell/path
+
+#Group details are stored in /etc/group
 
 
 
