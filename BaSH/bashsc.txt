@@ -200,6 +200,21 @@ $ groupmod (-n specificies or changes the name of the group)
 
 # Account info is stored in /etc/passwd AND /etc/shadow files
 
+::
+
+# working with su and sudo, etc
+- [a hyphen is used to procvide an environment similar to what the user would expect had the user logged in directly]
+
+-c [specify a command to be executed]
+
+$ whoami [wanna know who is working]
+
+# using su to switch to a user, the environment for the user being changed to is adopted
+
+$ sudo COMMAND runs the command as super user
+
+
+
 
 
 
