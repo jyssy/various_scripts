@@ -277,6 +277,13 @@ edit: /etc/network/interfaces
 # ifup and ifdown can also be used to configure these settings
 
 # Network troubleshooting
+ping
+tracert
+tracepath
+netstat
+ctpdump
+telnet
+
 
 
 
