@@ -227,6 +227,60 @@ A 255.0.0.0
 B 255.255.0.0
 C 255.255.255.0
 
+# to show current ip addresse:
+$ ip addr
+OR
+$ ip a
+OR 
+$ ip address show 
+OR 
+$ ip a s
+
+# to display IP configuration
+$ ifconfig (deprecated)
+$ ipconfig
+
+consider human readable bames to IP addresses
+short-host-names, etc
+
+# determining hostnames
+$ hostname
+$ hostname -f (to determined fully qualified name)
+
+# to edit (in ubuntu) hostname configurations, edit this file:
+/etc/sysconfig/network
+
+# Also 'host' and 'dig'
+$ host phantomlandscapes.com provides IP addresses, and google mail server info
+
+# /etc/hosts is local to the system
+
+# can edit the order for resolutions by editing
+/etc/nsswitch.conf FILE
+
+# Networking, DHCP, etc
+Ports 1-1,023 are common, well known, service ports (privileged ports)
+22 - SSH
+25 - SMTP
+80 - HTTP
+143 - IMAP
+389 - LDAP
+443 - HTTPS
+# /etc/services (these service ports mentioned above)
+
+# to configure ubuntu as a DHCP client:
+Edit: /etc/network/interfaces
+
+# to configure ubuntu with a static ip:
+edit: /etc/network/interfaces
+
+# ifup and ifdown can also be used to configure these settings
+
+# Network troubleshooting
+
+
+
+
 
 
 
