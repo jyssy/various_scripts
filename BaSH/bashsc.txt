@@ -278,19 +278,11 @@ edit: /etc/network/interfaces
 
 # Network troubleshooting
 ping
-tracert
+traceroute
 tracepath
 netstat
 ctpdump
 telnet
 
-
-
-
-
-
-
-
-
-
-
+$ ping -c COUNT HOST
+$ traceroute -n
