@@ -218,6 +218,15 @@ $ sudo -u USER -s (starting a shell as a USER)
 # modifying the sudo configuration
 $ visudo Edit the /etc/sudoers FILE
 
+## TCP/IP Networking for Linux Admins
+
+octet.octet.octet.octet
+can be anything from 0-255
+
+A 255.0.0.0
+B 255.255.0.0
+C 255.255.255.0
+
 
 
 
