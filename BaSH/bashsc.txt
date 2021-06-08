@@ -286,3 +286,41 @@ telnet
 
 $ ping -c COUNT HOST
 $ traceroute -n
+$ tracepath -n (-n to use IP addresses instead of DNS names)
+$ netstat (-n, lists numerical addresses and ports, -i, lists interfaces, -r, shows the route table)
+# other netstat flags:
+-p [requires root privileges]
+-l
+-t
+-u
+
+$ tcpdump [packet sniffing tool] [requires root privileges]
+-n (numberal addresses and ports)
+-A (ASCII text)
+-v (verbose mode)
+-vv (more verbose)
+-vvv (even more verbose mode)
+Stopped with Ctr + C
+
+# Listing and Managing Processes
+$ ps [-e, for everything, -f, full format listing, -u USERNAME, for a specific user, -p PID, for information related to PID)
+
+# Other ways to view processes
+$ pstree
+$ top
+$ htop
+
+# Starting and terminating processes
+$ command and arguments, etc to start process (adding '&' after the command for it to run in the background)
+$ Ctrl -c (kill foreground processes)
+$ Ctrl -z (to suspend foreground processes)
+
+
+
+
+
+
+
+
+
+
