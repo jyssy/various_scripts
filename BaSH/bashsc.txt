@@ -315,6 +315,25 @@ $ command and arguments, etc to start process (adding '&' after the command for 
 $ Ctrl -c (kill foreground processes)
 $ Ctrl -z (to suspend foreground processes)
 
+$ ps -e (list everything running)
+$ ps -f (fill format listing)
+$ ps -u (lists ny a specific username)
+$ps -fu
+$ ps pid (runs processes by PID)
+$ ps -ef (displayy all processes, full)
+$ ps -eH (display a process tree)
+$ ps -e --forest (displays a process tree)
+
+$ pstree
+$ top (process viewer)
+$ htop (process viewer)
+
+$ bg OR bg
+$ kill
+$ jobs %% OR %+ OR %-
+
+
+
 
 
 
