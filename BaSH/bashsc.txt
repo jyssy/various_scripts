@@ -341,6 +341,33 @@ $ jobs %% OR %+ OR %-
 @midnight 00***
 $hourly 0****
 
+$ crontab FILE
+$ crontab -l [list all cron jobs]
+$ crontab -e [edit your cron jobs]
+$ crontab -r [remove all your cron jobs]
+
+# Permissions etc
+- [regular file]
+d [directory]
+l [symnolic link]
+
+r [read]
+w [write]
+x [execute]
+
+u [user]
+g [group]
+o [other]
+a [all]
+
+chmod [changing user permissions]
+ugoa [see above]
++-= [add, subtract, or set permissions]
+rwx
+
+
+
+
 
 
 
