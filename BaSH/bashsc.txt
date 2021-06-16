@@ -332,7 +332,14 @@ $ bg OR bg
 $ kill
 $ jobs %% OR %+ OR %-
 
-
+# Cron jobs
+@yearly 0011*
+@annually 0011*&
+@monthly 001**
+@weekly 00**0
+@daily 00***
+@midnight 00***
+$hourly 0****
 
 
 
