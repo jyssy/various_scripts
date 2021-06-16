@@ -5,7 +5,7 @@ https://linuxhint.com/30_bash_script_examples/
 
 printing today's date:
  date +"%dth %B %Y"
-
+ 
  or
 
  date + "%Y-%m-%d"
@@ -365,12 +365,17 @@ ugoa [see above]
 +-= [add, subtract, or set permissions]
 rwx
 
+# changing group permissions
+$ chgrp [changes the group]
 
+# common umask modes
+022
+002
+077
+007
 
-
-
-
-
+# package management
+# dpkg -l [lists all installed packages]
 
 
 
