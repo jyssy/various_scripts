@@ -16,7 +16,7 @@ $ !df
 # to reuse all the arguments from your previous command:
 $ !*
 
-# Striping out comments and blank lines
+# Stripping out comments and blank lines
 $ grep -Ev '^#|^$" FILE
 
 how to use the grep commmand: 
