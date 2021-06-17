@@ -2,3 +2,8 @@
 
 tab completion
 
+$ sudo !! [references the most recent command run that should have been run as root but was not]
+$ !u
+$ sudo !w
+$ 
+
