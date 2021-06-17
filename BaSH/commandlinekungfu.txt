@@ -7,3 +7,29 @@ $ !u
 $ sudo !w
 $ 
 
+# to rerun a command that starts with a given string:
+$ !ps [as much os the given string is required to distinguish it from other commands that being with that same sting]
+$ !d
+$ !du
+$ !df
+
+# to reuse all the arguments from your previous command:
+$ !*
+
+# Striping out comments and blank lines
+$ grep -Ev '^#|^$" FILE
+
+how to use the grep commmand: 
+https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+https://man7.org/linux/man-pages/man1/grep.1.html
+https://www.tecmint.com/12-practical-examples-of-linux-grep-command/
+
+# to use the last item from the previous command line:
+$ !$
+Examples here: https://stackskills.com/courses/48554/lectures/707139
+
+
+
+
+
