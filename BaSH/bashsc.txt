@@ -440,4 +440,10 @@ https://www.gnu.org/software/emacs/documentation.html
 #!/bin/bash [to begin a script]
 shell scripts end in .sh
 
+Positional parameters:
+$0, $1, $2, etc
+$@ for all the positions of a script to be read
+
+Comments start with #
+use 'read' to accept inout
 
