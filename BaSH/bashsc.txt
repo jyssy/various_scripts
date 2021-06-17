@@ -434,5 +434,10 @@ $ vimtutor
 Jason's vim cheat
 
 EMACS [not going to worry about this right now]
+https://www.gnu.org/software/emacs/documentation.html
+
+# Shell Scripting
+#!/bin/bash [to begin a script]
+shell scripts end in .sh
 
 
