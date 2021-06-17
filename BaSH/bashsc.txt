@@ -377,8 +377,62 @@ $ chgrp [changes the group]
 # package management
 # dpkg -l [lists all installed packages]
 
+# file stuff
+$ cat FILE
+$ less FILE
+$ more FILE
+$ head FILE
+$ tail FILE
+$ tail if FILE [to track ammendments and additions to a file)
 
+# NANO editor
+$ CTRL G [for help in NANO\
 
+$ Less
+space bar to page down
+ENTER key tp go one line at a time
 
+# VI or VIM editot
+# VIM cheat sheet: https://vim.rtorr.com/
+
+vim is iv improved
+view FILE [starts vim in read-only mode]
+
+vim command MODE and Navigation
+k up one line
+j down one line
+h left one character
+l right one character
+w right onw word
+b left one word
+^ to the the beginning of the line
+$ go to the end of the line
+i insert at the cursor position
+I insert at the beginning of the line
+a Append after the cursor position
+A insert at the end of the line
+:w writes the file
+:w! forces the file to be saved
+:q quit
+:q! quit without saving
+:wq! write and quit
+:x [same as :wq]
+:n posiytions the cursor at the line #
+:$ positions the cursor on the last line
+:set nu [turn on line numbering]
+:set nonu [turn off line mumbering]
+:help [subcommand] get help
+
+Command Mode: ESC
+Insert Mode: iIaA
+Line Mode: :
+
+So much more here about how to use VIM: https://stackskills.com/courses/48554/lectures/707125
+
+$ vimtutor
+
+Jason's vim cheat
+
+EMACS [not going to worry about this right now]
 
 
