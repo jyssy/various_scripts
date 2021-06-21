@@ -1,0 +1,2 @@
+# HEREIN I Take extensives notes on SQL, SQLite, etc
+
