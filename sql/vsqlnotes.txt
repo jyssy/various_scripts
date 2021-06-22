@@ -19,3 +19,8 @@ create
 alter
 drop
 
+Look up info on PHPAdmin
+https://www.phpmyadmin.net/
+
+
+
