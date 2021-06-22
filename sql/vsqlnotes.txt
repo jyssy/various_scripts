@@ -1,3 +1,21 @@
-# HEREIN I Take extensives notes on SQL, SQLite, etc
+# HEREIN I Take extensive notes on SQL, SQLite, etc
+# Considered best practice to use ALL CAPS for the commands below 
+DML:
 
-editing
+select
+insert
+update
+delete
+
+DDL:
+
+table
+view
+stored procedure
+index
+database
+
+create
+alter
+drop
+
