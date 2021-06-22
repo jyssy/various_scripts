@@ -1,3780 +1,3733 @@
 CREATE TABLE mytable(
    MovieNumber   INTEGER  NOT NULL PRIMARY KEY 
   ,Title         VARCHAR(83) NOT NULL
-  ,MyGenre       VARCHAR(30)
   ,Myrating      INTEGER 
   ,Genre         VARCHAR(11) NOT NULL
   ,MyGenre       VARCHAR(10) NOT NULL
   ,Director_Name VARCHAR(32) NOT NULL
-  ,FIELD8        VARCHAR(30)
-  ,FIELD9        VARCHAR(30)
-  ,FIELD10       VARCHAR(30)
-  ,FIELD11       VARCHAR(30)
-  ,FIELD12       VARCHAR(30)
-  ,FIELD13       VARCHAR(30)
-  ,FIELD14       VARCHAR(30)
-  ,FIELD15       VARCHAR(30)
 );
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1001,'Over the Hill to the Poorhouse',NULL,34,'Crime','hell-rake','Harry F. Millarde',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1002,'Metropolis',NULL,25,'Drama','triphylite','Fritz Lang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1003,'The Broadway Melody',NULL,2,'Musical','distancy','Harry Beaumont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1004,'42nd Street',NULL,74,'Comedy','spinnies','Lloyd Bacon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1005,'Top Hat',NULL,99,'Comedy','resmethrin','Mark Sandrich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1006,'Modern Times',NULL,64,'Comedy','angledozer','Charles Chaplin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1007,'Snow White and the Seven Dwarfs',NULL,3,'Animation','ethoxylate','William Cottrell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1008,'Gone with the Wind',NULL,45,'Drama','ursidae','Victor Fleming',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1009,'The Wizard of Oz',NULL,32,'Adventure','whippowill','Victor Fleming',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1010,'Fantasia',NULL,98,'Animation','silurid','James Algar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1011,'Pinocchio',NULL,18,'Animation','bardiche','Norman Ferguson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1012,'Duel in the Sun',NULL,24,'Drama','logicists','King Vidor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1013,'The Best Years of Our Lives',NULL,11,'Drama','parroter','William Wyler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1014,'The Lady from Shanghai',NULL,32,'Crime','hell-rake','Orson Welles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1015,'The Pirate',NULL,88,'Adventure','triphylite','Vincente Minnelli',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1016,'Annie Get Your Gun',NULL,45,'Biography','distancy','George Sidney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1017,'The Greatest Show on Earth',NULL,30,'Drama','spinnies','Cecil B. DeMille',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1018,'The Beast from 20,000 Fathoms',NULL,3,'Adventure','resmethrin','Eug̬ne Louri̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1019,'The Robe',NULL,2,'Drama','angledozer','Henry Koster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1020,'On the Waterfront',NULL,5,'Crime','ethoxylate','Elia Kazan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1021,'Seven Samurai',NULL,81,'Action','ursidae','Akira Kurosawa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1022,'The Bridge on the River Kwai',NULL,44,'Adventure','whippowill','David Lean',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1023,'Some Like It Hot',NULL,14,'Comedy','silurid','Billy Wilder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1024,'Psycho',NULL,81,'Horror','bardiche','Alfred Hitchcock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1025,'West Side Story',NULL,37,'Crime','logicists','Jerome Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1026,'Dr. No',NULL,77,'Action','parroter','Terence Young',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1027,'Lawrence of Arabia',NULL,84,'Adventure','hell-rake','David Lean',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1028,'Cleopatra',NULL,92,'Biography','triphylite','Joseph L. Mankiewicz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1029,'From Russia with Love',NULL,85,'Action','distancy','Terence Young',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1030,'It''s a Mad, Mad, Mad, Mad World',NULL,11,'Action','spinnies','Stanley Kramer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1031,'A Fistful of Dollars',NULL,88,'Action','resmethrin','Sergio Leone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1032,'A Hard Day''s Night',NULL,89,'Comedy','angledozer','Richard Lester',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1033,'Goldfinger',NULL,56,'Action','ethoxylate','Guy Hamilton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1034,'Mary Poppins',NULL,78,'Comedy','ursidae','Robert Stevenson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1035,'My Fair Lady',NULL,56,'Drama','whippowill','George Cukor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1036,'Nothing But a Man',NULL,67,'Drama','silurid','Michael Roemer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1037,'Doctor Zhivago',NULL,95,'Drama','bardiche','David Lean',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1038,'Major Dundee',NULL,47,'Adventure','logicists','Sam Peckinpah',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1039,'The Greatest Story Ever Told',NULL,4,'Biography','parroter','George Stevens',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1040,'The Sound of Music',NULL,81,'Biography','hell-rake','Robert Wise',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1041,'Thunderball',NULL,93,'Action','triphylite','Terence Young',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1042,'The Good, the Bad and the Ugly',NULL,81,'Western','distancy','Sergio Leone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1043,'You Only Live Twice',NULL,14,'Action','spinnies','Lewis Gilbert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1044,'2001: A Space Odyssey',NULL,93,'Adventure','resmethrin','Stanley Kubrick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1045,'Oliver!',NULL,95,'Drama','angledozer','Carol Reed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1046,'Butch Cassidy and the Sundance Kid',NULL,43,'Biography','ethoxylate','George Roy Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1047,'Mississippi Mermaid',NULL,82,'Crime','ursidae','Fran̤ois Truffaut',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1048,'On Her Majesty''s Secret Service',NULL,1,'Action','whippowill','Peter R. Hunt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1049,'Beyond the Valley of the Dolls',NULL,37,'Comedy','silurid','Russ Meyer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1050,'Darling Lili',NULL,52,'Comedy','bardiche','Blake Edwards',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1051,'Tora! Tora! Tora!',NULL,92,'Action','logicists','Richard Fleischer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1052,'Woodstock',NULL,43,'Documentary','parroter','Michael Wadleigh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1053,'Diamonds Are Forever',NULL,12,'Action','hell-rake','Guy Hamilton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1054,'Fiddler on the Roof',NULL,14,'Drama','triphylite','Norman Jewison',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1055,'Pink Narcissus',NULL,41,'Drama','distancy','James Bidgood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1056,'Sweet Sweetback''s Baadasssss Song',NULL,90,'Crime','spinnies','Melvin Van Peebles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1057,'Pink Flamingos',NULL,56,'Comedy','resmethrin','John Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1058,'The Godfather',NULL,37,'Crime','angledozer','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1059,'American Graffiti',NULL,41,'Comedy','ethoxylate','George Lucas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1060,'Live and Let Die',NULL,63,'Action','ursidae','Guy Hamilton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1061,'Mean Streets',NULL,32,'Crime','whippowill','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1062,'The Exorcist',NULL,7,'Horror','silurid','William Friedkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1063,'The Sting',NULL,46,'Comedy','bardiche','George Roy Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1064,'Benji',NULL,29,'Adventure','logicists','Joe Camp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1065,'Blazing Saddles',NULL,34,'Comedy','parroter','Mel Brooks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1066,'The Godfather: Part II',NULL,39,'Crime','hell-rake','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1067,'The Man with the Golden Gun',NULL,65,'Action','triphylite','Guy Hamilton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1068,'The Texas Chain Saw Massacre',NULL,28,'Horror','distancy','Tobe Hooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1069,'Young Frankenstein',NULL,82,'Comedy','spinnies','Mel Brooks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1070,'Jaws',NULL,39,'Adventure','resmethrin','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1071,'Monty Python and the Holy Grail',NULL,29,'Adventure','angledozer','Terry Gilliam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1072,'One Flew Over the Cuckoo''s Nest',NULL,51,'Drama','ethoxylate','Milos Forman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1073,'Logan''s Run',NULL,74,'Action','ursidae','Michael Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1074,'Rocky',NULL,32,'Drama','whippowill','John G. Avildsen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1075,'A Bridge Too Far',NULL,23,'Drama','silurid','Richard Attenborough',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1076,'Annie Hall',NULL,97,'Comedy','bardiche','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1077,'Close Encounters of the Third Kind',NULL,6,'Drama','logicists','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1078,'Kingdom of the Spiders',NULL,98,'Horror','parroter','John ''Bud'' Cardos',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1079,'March or Die',NULL,64,'Adventure','hell-rake','Dick Richards',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1080,'Star Wars: Episode IV - A New Hope',NULL,43,'Action','triphylite','George Lucas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1081,'The Spy Who Loved Me',NULL,56,'Action','distancy','Lewis Gilbert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1082,'Animal House',NULL,37,'Comedy','spinnies','John Landis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1083,'Caravans',NULL,54,'Action','resmethrin','James Fargo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1084,'Grease',NULL,60,'Musical','angledozer','Randal Kleiser',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1085,'Halloween',NULL,70,'Horror','ethoxylate','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1086,'Jaws 2',NULL,86,'Adventure','ursidae','Jeannot Szwarc',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1087,'Superman',NULL,49,'Action','whippowill','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1088,'The Wiz',NULL,74,'Adventure','silurid','Sidney Lumet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1089,'Alien',NULL,19,'Horror','bardiche','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1090,'Apocalypse Now',NULL,64,'Drama','logicists','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1091,'Escape from Alcatraz',NULL,82,'Biography','parroter','Don Siegel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1092,'Moonraker',NULL,4,'Action','hell-rake','Lewis Gilbert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1093,'Star Trek: The Motion Picture',NULL,33,'Adventure','triphylite','Robert Wise',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1094,'The Rose',NULL,12,'Drama','distancy','Mark Rydell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1095,'Airplane!',NULL,77,'Comedy','spinnies','Jim Abrahams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1096,'Caddyshack',NULL,26,'Comedy','resmethrin','Harold Ramis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1097,'Can''t Stop the Music',NULL,12,'Biography','angledozer','Nancy Walker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1098,'Dressed to Kill',NULL,56,'Mystery','ethoxylate','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1099,'Heaven''s Gate',NULL,74,'Adventure','ursidae','Michael Cimino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1100,'Ordinary People',NULL,12,'Drama','whippowill','Robert Redford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1101,'Private Benjamin',NULL,62,'Comedy','silurid','Howard Zieff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1102,'Raging Bull',NULL,21,'Biography','bardiche','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1103,'Raise the Titanic',NULL,92,'Action','logicists','Jerry Jameson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1104,'Star Wars: Episode V - The Empire Strikes Back',NULL,51,'Action','parroter','Irvin Kershner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1105,'Superman II',NULL,11,'Action','hell-rake','Richard Lester',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1106,'The Blues Brothers',NULL,23,'Action','triphylite','John Landis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1107,'The Fog',NULL,61,'Fantasy','distancy','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1108,'Chariots of Fire',NULL,12,'Biography','spinnies','Hugh Hudson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1109,'Das Boot',NULL,69,'Adventure','resmethrin','Wolfgang Petersen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1110,'Dragonslayer',NULL,98,'Action','angledozer','Matthew Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1111,'Escape from New York',NULL,18,'Action','ethoxylate','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1112,'For Your Eyes Only',NULL,24,'Action','ursidae','John Glen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1113,'Friday the 13th Part 2',NULL,11,'Horror','whippowill','Steve Miner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1114,'Mad Max 2: The Road Warrior',NULL,32,'Action','silurid','George Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1115,'Porky''s',NULL,88,'Comedy','bardiche','Bob Clark',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1116,'Raiders of the Lost Ark',NULL,45,'Action','logicists','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1117,'Roar',NULL,30,'Adventure','parroter','Noel Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1118,'Sphinx',NULL,3,'Adventure','hell-rake','Franklin J. Schaffner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1119,'Stripes',NULL,2,'Action','triphylite','Ivan Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1120,'The Beyond',NULL,5,'Horror','distancy','Lucio Fulci',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1121,'The Howling',NULL,81,'Horror','spinnies','Joe Dante',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1122,'The Legend of the Lone Ranger',NULL,44,'Action','resmethrin','William A. Fraker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1123,'Time Bandits',NULL,14,'Adventure','angledozer','Terry Gilliam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1124,'Under the Rainbow',NULL,81,'Comedy','ethoxylate','Steve Rash',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1125,'Blade Runner',NULL,37,'Sci-Fi','ursidae','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1126,'Conan the Barbarian',NULL,77,'Adventure','whippowill','John Milius',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1127,'Diner',NULL,84,'Comedy','silurid','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1128,'E.T. the Extra-Terrestrial',NULL,92,'Family','bardiche','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1129,'Firefox',NULL,85,'Action','logicists','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1130,'Friday the 13th Part III',NULL,11,'Horror','parroter','Steve Miner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1131,'Halloween III: Season of the Witch',NULL,88,'Horror','hell-rake','Tommy Lee Wallace',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1132,'Megaforce',NULL,89,'Action','triphylite','Hal Needham',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1133,'Poltergeist',NULL,56,'Fantasy','distancy','Tobe Hooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1134,'Star Trek II: The Wrath of Khan',NULL,78,'Action','spinnies','Nicholas Meyer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1135,'The Best Little Whorehouse in Texas',NULL,56,'Comedy','resmethrin','Colin Higgins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1136,'The Thing',NULL,67,'Horror','angledozer','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1137,'The Verdict',NULL,95,'Drama','ethoxylate','Sidney Lumet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1138,'Tootsie',NULL,47,'Comedy','ursidae','Sydney Pollack',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1139,'Flashdance',NULL,4,'Drama','whippowill','Adrian Lyne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1140,'Lone Wolf McQuade',NULL,81,'Action','silurid','Steve Carver',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1141,'National Lampoon''s Vacation',NULL,93,'Adventure','bardiche','Harold Ramis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1142,'Never Say Never Again',NULL,81,'Action','logicists','Irvin Kershner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1143,'Octopussy',NULL,14,'Action','parroter','John Glen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1144,'Scarface',NULL,93,'Crime','hell-rake','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1145,'Star Wars: Episode VI - Return of the Jedi',NULL,95,'Action','triphylite','Richard Marquand',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1146,'Superman III',NULL,43,'Action','distancy','Richard Lester',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1147,'The Outsiders',NULL,82,'Crime','spinnies','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1148,'The Right Stuff',NULL,1,'Adventure','resmethrin','Philip Kaufman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1149,'Twilight Zone: The Movie',NULL,37,'Fantasy','angledozer','Joe Dante',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1150,'WarGames',NULL,52,'Sci-Fi','ethoxylate','John Badham',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1151,'Yentl',NULL,92,'Drama','ursidae','Barbra Streisand',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1152,'A Nightmare on Elm Street',NULL,43,'Horror','whippowill','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1153,'A Passage to India',NULL,12,'Adventure','silurid','David Lean',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1154,'Amadeus',NULL,14,'Biography','bardiche','Milos Forman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1155,'Beverly Hills Cop',NULL,41,'Action','logicists','Martin Brest',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1156,'Conan the Destroyer',NULL,90,'Action','parroter','Richard Fleischer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1157,'Dune',NULL,56,'Action','hell-rake','David Lynch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1158,'Firestarter',NULL,37,'Action','triphylite','Mark L. Lester',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1159,'Footloose',NULL,41,'Drama','distancy','Herbert Ross',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1160,'Friday the 13th: The Final Chapter',NULL,63,'Horror','spinnies','Joseph Zito',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1161,'Gremlins',NULL,32,'Comedy','resmethrin','Joe Dante',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1162,'Indiana Jones and the Temple of Doom',NULL,7,'Action','angledozer','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1163,'Once Upon a Time in America',NULL,46,'Crime','ethoxylate','Sergio Leone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1164,'Police Academy',NULL,29,'Comedy','ursidae','Hugh Wilson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1165,'Splash',NULL,34,'Comedy','whippowill','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1166,'Star Trek III: The Search for Spock',NULL,39,'Action','silurid','Leonard Nimoy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1167,'The Bounty',NULL,65,'Action','bardiche','Roger Donaldson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1168,'The Cotton Club',NULL,28,'Crime','logicists','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1169,'The Hotel New Hampshire',NULL,82,'Comedy','parroter','Tony Richardson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1170,'The Karate Kid',NULL,39,'Action','hell-rake','John G. Avildsen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1171,'The Terminator',NULL,29,'Action','triphylite','James Cameron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1172,'A Nightmare on Elm Street 2: Freddy''s Revenge',NULL,51,'Fantasy','distancy','Jack Sholder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1173,'A Room with a View',NULL,74,'Drama','spinnies','James Ivory',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1174,'A View to a Kill',NULL,32,'Action','resmethrin','John Glen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1175,'Back to the Future',NULL,23,'Adventure','angledozer','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1176,'Brazil',NULL,97,'Drama','ethoxylate','Terry Gilliam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1177,'Friday the 13th: A New Beginning',NULL,6,'Horror','ursidae','Danny Steinmann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1178,'Mad Max Beyond Thunderdome',NULL,98,'Action','whippowill','George Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1179,'Out of Africa',NULL,64,'Biography','silurid','Sydney Pollack',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1180,'Pale Rider',NULL,43,'Western','bardiche','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1181,'Rambo: First Blood Part II',NULL,56,'Action','logicists','George P. Cosmatos',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1182,'Silverado',NULL,37,'Action','parroter','Lawrence Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1183,'The Color Purple',NULL,54,'Drama','hell-rake','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1184,'The Last Dragon',NULL,60,'Action','triphylite','Michael Schultz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1185,'Witness',NULL,70,'Crime','distancy','Peter Weir',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1186,'Young Sherlock Holmes',NULL,86,'Adventure','spinnies','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1187,'9�? Weeks',NULL,49,'Drama','resmethrin','Adrian Lyne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1188,'Aliens',NULL,74,'Action','angledozer','James Cameron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1189,'April Fool''s Day',NULL,19,'Horror','ethoxylate','Fred Walton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1190,'Big Trouble in Little China',NULL,64,'Action','ursidae','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1191,'Crocodile Dundee',NULL,82,'Adventure','whippowill','Peter Faiman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1192,'Highlander',NULL,4,'Action','silurid','Russell Mulcahy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1193,'Howard the Duck',NULL,33,'Action','bardiche','Willard Huyck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1194,'Invaders from Mars',NULL,12,'Horror','logicists','Tobe Hooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1195,'Jason Lives: Friday the 13th Part VI',NULL,77,'Horror','parroter','Tom McLoughlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1196,'Legal Eagles',NULL,26,'Comedy','hell-rake','Ivan Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1197,'Little Shop of Horrors',NULL,12,'Comedy','triphylite','Frank Oz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1198,'Peggy Sue Got Married',NULL,56,'Comedy','distancy','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1199,'Platoon',NULL,74,'Drama','spinnies','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1200,'River''s Edge',NULL,12,'Crime','resmethrin','Tim Hunter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1201,'Shanghai Surprise',NULL,62,'Adventure','angledozer','Jim Goddard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1202,'She''s Gotta Have It',NULL,21,'Comedy','ethoxylate','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1203,'Stand by Me',NULL,92,'Adventure','ursidae','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1204,'Star Trek IV: The Voyage Home',NULL,51,'Adventure','whippowill','Leonard Nimoy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1205,'The Clan of the Cave Bear',NULL,11,'Adventure','silurid','Michael Chapman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1206,'The Color of Money',NULL,23,'Drama','bardiche','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1207,'The Golden Child',NULL,61,'Action','logicists','Michael Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1208,'The Texas Chainsaw Massacre 2',NULL,12,'Comedy','parroter','Tobe Hooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1209,'The Wraith',NULL,69,'Action','hell-rake','Mike Marvin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1210,'Top Gun',NULL,98,'Action','triphylite','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1211,'Witchboard',NULL,18,'Horror','distancy','Kevin Tenney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1212,'3 Men and a Baby',NULL,24,'Comedy','spinnies','Leonard Nimoy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1213,'A Nightmare on Elm Street 3: Dream Warriors',NULL,11,'Action','resmethrin','Chuck Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1214,'American Ninja 2: The Confrontation',NULL,32,'Action','angledozer','Sam Firstenberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1215,'Beverly Hills Cop II',NULL,88,'Action','ethoxylate','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1216,'Creepshow 2',NULL,45,'Comedy','ursidae','Michael Gornick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1217,'Cry Freedom',NULL,30,'Biography','whippowill','Richard Attenborough',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1218,'Evil Dead II',NULL,3,'Comedy','silurid','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1219,'Fatal Attraction',NULL,2,'Drama','bardiche','Adrian Lyne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1220,'From a Whisper to a Scream',NULL,5,'Action','logicists','Jeff Burr',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1221,'Good Morning, Vietnam',NULL,81,'Biography','parroter','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1222,'Hellraiser',NULL,44,'Fantasy','hell-rake','Clive Barker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1223,'Hollywood Shuffle',NULL,14,'Comedy','triphylite','Robert Townsend',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1224,'Ishtar',NULL,81,'Action','distancy','Elaine May',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1225,'Jaws: The Revenge',NULL,37,'Adventure','spinnies','Joseph Sargent',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1226,'La Bamba',NULL,77,'Biography','resmethrin','Luis Valdez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1227,'Malone',NULL,84,'Action','angledozer','Harley Cokeliss',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1228,'Maurice',NULL,92,'Drama','ethoxylate','James Ivory',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1229,'Predator',NULL,85,'Action','ursidae','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1230,'Prison',NULL,11,'Crime','whippowill','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1231,'Radio Days',NULL,88,'Comedy','silurid','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1232,'Spaceballs',NULL,89,'Adventure','bardiche','Mel Brooks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1233,'Superman IV: The Quest for Peace',NULL,56,'Action','logicists','Sidney J. Furie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1234,'Teen Wolf Too',NULL,78,'Comedy','parroter','Christopher Leitch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1235,'The Barbarians',NULL,56,'Adventure','hell-rake','Ruggero Deodato',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1236,'The Last Emperor',NULL,67,'Biography','triphylite','Bernardo Bertolucci',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1237,'The Living Daylights',NULL,95,'Action','distancy','John Glen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1238,'The Princess Bride',NULL,47,'Adventure','spinnies','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1239,'The Running Man',NULL,4,'Action','resmethrin','Paul Michael Glaser',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1240,'The Untouchables',NULL,81,'Crime','angledozer','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1241,'Wall Street',NULL,93,'Crime','ethoxylate','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1242,'A Nightmare on Elm Street 4: The Dream Master',NULL,81,'Fantasy','ursidae','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1243,'Action Jackson',NULL,14,'Action','whippowill','Craig R. Baxley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1244,'Akira',NULL,93,'Action','silurid','Katsuhiro ��tomo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1245,'Beetlejuice',NULL,95,'Comedy','bardiche','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1246,'Big',NULL,43,'Comedy','logicists','Penny Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1247,'Bloodsport',NULL,82,'Action','parroter','Newt Arnold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1248,'Bright Lights, Big City',NULL,1,'Drama','hell-rake','James Bridges',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1249,'Child''s Play',NULL,37,'Fantasy','triphylite','Tom Holland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1250,'Crocodile Dundee II',NULL,52,'Action','distancy','John Cornell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1251,'Dangerous Liaisons',NULL,92,'Drama','spinnies','Stephen Frears',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1252,'Die Hard',NULL,43,'Action','resmethrin','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1253,'Friday the 13th Part VII: The New Blood',NULL,12,'Horror','angledozer','John Carl Buechler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1254,'Halloween 4: The Return of Michael Myers',NULL,14,'Horror','ethoxylate','Dwight H. Little',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1255,'Lady in White',NULL,41,'Fantasy','ursidae','Frank LaLoggia',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1256,'Midnight Run',NULL,90,'Action','whippowill','Martin Brest',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1257,'My Stepmother Is an Alien',NULL,56,'Comedy','silurid','Richard Benjamin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1258,'Mystic Pizza',NULL,37,'Comedy','bardiche','Donald Petrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1259,'Phantasm II',NULL,41,'Action','logicists','Don Coscarelli',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1260,'Poltergeist III',NULL,63,'Horror','parroter','Gary Sherman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1261,'Rain Man',NULL,32,'Drama','hell-rake','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1262,'Rambo III',NULL,7,'Action','triphylite','Peter MacDonald',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1263,'School Daze',NULL,46,'Comedy','distancy','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1264,'Scrooged',NULL,29,'Comedy','spinnies','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1265,'Talk Radio',NULL,34,'Drama','resmethrin','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1266,'The Land Before Time',NULL,39,'Adventure','angledozer','Don Bluth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1267,'The Last Temptation of Christ',NULL,65,'Drama','ethoxylate','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1268,'They Live',NULL,28,'Horror','ursidae','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1269,'Twins',NULL,82,'Comedy','whippowill','Ivan Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1270,'Young Guns',NULL,39,'Action','silurid','Christopher Cain',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1271,'A Nightmare on Elm Street 5: The Dream Child',NULL,29,'Fantasy','bardiche','Stephen Hopkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1272,'Back to the Future Part II',NULL,51,'Adventure','logicists','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1273,'Batman',NULL,74,'Action','parroter','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1274,'Bill & Ted''s Excellent Adventure',NULL,32,'Adventure','hell-rake','Stephen Herek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1275,'Black Rain',NULL,23,'Action','triphylite','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1276,'Born on the Fourth of July',NULL,97,'Biography','distancy','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1277,'Dead Poets Society',NULL,6,'Comedy','spinnies','Peter Weir',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1278,'Do the Right Thing',NULL,98,'Drama','resmethrin','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1279,'Driving Miss Daisy',NULL,64,'Comedy','angledozer','Bruce Beresford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1280,'Friday the 13th Part VIII: Jason Takes Manhattan',NULL,43,'Adventure','ethoxylate','Rob Hedden',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1281,'Glory',NULL,56,'Drama','ursidae','Edward Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1282,'Halloween 5',NULL,37,'Horror','whippowill','Dominique Othenin-Girard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1283,'Henry V',NULL,54,'Action','silurid','Kenneth Branagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1284,'Indiana Jones and the Last Crusade',NULL,60,'Action','bardiche','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1285,'Licence to Kill',NULL,70,'Action','logicists','John Glen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1286,'Major League',NULL,86,'Comedy','parroter','David S. Ward',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1287,'New York Stories',NULL,49,'Comedy','hell-rake','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1288,'Pet Sematary',NULL,74,'Fantasy','triphylite','Mary Lambert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1289,'Road House',NULL,19,'Action','distancy','Rowdy Herrington',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1290,'Roger & Me',NULL,64,'Documentary','spinnies','Michael Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1291,'Sea of Love',NULL,82,'Crime','resmethrin','Harold Becker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1292,'Sex, Lies, and Videotape',NULL,4,'Drama','angledozer','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1293,'Star Trek V: The Final Frontier',NULL,33,'Action','ethoxylate','William Shatner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1294,'Tango & Cash',NULL,12,'Action','ursidae','Andrey Konchalovskiy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1295,'The Abyss',NULL,77,'Adventure','whippowill','James Cameron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1296,'The Blood of Heroes',NULL,26,'Action','silurid','David Webb Peoples',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1297,'The Toxic Avenger Part II',NULL,12,'Action','bardiche','Michael Herz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1298,'Troop Beverly Hills',NULL,56,'Adventure','logicists','Jeff Kanew',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1299,'UHF',NULL,74,'Comedy','parroter','Jay Levey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1300,'Warlock',NULL,12,'Action','hell-rake','Steve Miner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1301,'We''re No Angels',NULL,62,'Comedy','triphylite','Neil Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1302,'When Harry Met Sally...',NULL,21,'Comedy','distancy','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1303,'Arachnophobia',NULL,92,'Comedy','spinnies','Frank Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1304,'Back to the Future Part III',NULL,51,'Adventure','resmethrin','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1305,'Child''s Play 2',NULL,11,'Fantasy','angledozer','John Lafia',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1306,'Dances with Wolves',NULL,23,'Adventure','ethoxylate','Kevin Costner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1307,'Days of Thunder',NULL,61,'Action','ursidae','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1308,'Dick Tracy',NULL,12,'Action','whippowill','Warren Beatty',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1309,'Die Hard 2',NULL,69,'Action','silurid','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1310,'Edward Scissorhands',NULL,98,'Fantasy','bardiche','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1311,'Flatliners',NULL,18,'Drama','logicists','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1312,'Ghost',NULL,24,'Drama','parroter','Jerry Zucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1313,'Goodfellas',NULL,11,'Biography','hell-rake','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1314,'Gremlins 2: The New Batch',NULL,32,'Comedy','triphylite','Joe Dante',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1315,'Home Alone',NULL,88,'Comedy','distancy','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1316,'Kindergarten Cop',NULL,45,'Action','spinnies','Ivan Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1317,'Marilyn Hotchkiss'' Ballroom Dancing and Charm School',NULL,30,'Comedy','resmethrin','Randall Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1318,'Metropolitan',NULL,3,'Comedy','angledozer','Whit Stillman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1319,'Mo'' Better Blues',NULL,2,'Drama','ethoxylate','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1320,'Predator 2',NULL,5,'Action','ursidae','Stephen Hopkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1321,'Pretty Woman',NULL,81,'Comedy','whippowill','Garry Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1322,'Quigley Down Under',NULL,44,'Action','silurid','Simon Wincer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1323,'Spaced Invaders',NULL,14,'Adventure','bardiche','Patrick Read Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1324,'The Adventures of Ford Fairlane',NULL,81,'Action','logicists','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1325,'The Godfather: Part III',NULL,37,'Crime','parroter','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1326,'The Hunt for Red October',NULL,77,'Action','hell-rake','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1327,'Total Recall',NULL,84,'Action','triphylite','Paul Verhoeven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1328,'Tremors',NULL,92,'Comedy','distancy','Ron Underwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1329,'Two Evil Eyes',NULL,85,'Horror','spinnies','Dario Argento',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1330,'Beastmaster 2: Through the Portal of Time',NULL,11,'Action','resmethrin','Sylvio Tabet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1331,'Bill & Ted''s Bogus Journey',NULL,88,'Adventure','angledozer','Peter Hewitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1332,'Boyz n the Hood',NULL,89,'Crime','ethoxylate','John Singleton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1333,'Cape Fear',NULL,56,'Crime','ursidae','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1334,'Double Impact',NULL,78,'Action','whippowill','Sheldon Lettich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1335,'Flight of the Intruder',NULL,56,'Action','silurid','John Milius',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1336,'Freddy''s Dead: The Final Nightmare',NULL,67,'Comedy','bardiche','Rachel Talalay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1337,'Harley Davidson and the Marlboro Man',NULL,95,'Action','logicists','Simon Wincer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1338,'Hook',NULL,47,'Adventure','parroter','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1339,'House Party 2',NULL,4,'Comedy','hell-rake','George Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1340,'Hudson Hawk',NULL,81,'Action','triphylite','Michael Lehmann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1341,'JFK',NULL,93,'Drama','distancy','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1342,'My Girl',NULL,81,'Comedy','spinnies','Howard Zieff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1343,'My Own Private Idaho',NULL,14,'Drama','resmethrin','Gus Van Sant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1344,'Return to the Blue Lagoon',NULL,93,'Adventure','angledozer','William A. Graham',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1345,'Robin Hood: Prince of Thieves',NULL,95,'Action','ethoxylate','Kevin Reynolds',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1346,'Showdown in Little Tokyo',NULL,43,'Action','ursidae','Mark L. Lester',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1347,'Slacker',NULL,82,'Comedy','whippowill','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1348,'Star Trek VI: The Undiscovered Country',NULL,1,'Action','silurid','Nicholas Meyer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1349,'Stone Cold',NULL,37,'Action','bardiche','Craig R. Baxley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1350,'Straight Out of Brooklyn',NULL,52,'Crime','logicists','Matty Rich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1351,'Teenage Mutant Ninja Turtles II: The Secret of the Ooze',NULL,92,'Action','parroter','Michael Pressman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1352,'Terminator 2: Judgment Day',NULL,43,'Action','hell-rake','James Cameron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1353,'The Addams Family',NULL,12,'Comedy','triphylite','Barry Sonnenfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1354,'The Doors',NULL,14,'Biography','distancy','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1355,'The Fisher King',NULL,41,'Comedy','spinnies','Terry Gilliam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1356,'The Naked Gun 2�?: The Smell of Fear',NULL,90,'Comedy','resmethrin','David Zucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1357,'The Prince of Tides',NULL,56,'Drama','angledozer','Barbra Streisand',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1358,'The Silence of the Lambs',NULL,37,'Crime','ethoxylate','Jonathan Demme',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1359,'White Fang',NULL,41,'Adventure','ursidae','Randal Kleiser',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1360,'A Few Good Men',NULL,63,'Drama','whippowill','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1361,'A League of Their Own',NULL,32,'Comedy','silurid','Penny Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1362,'Aladdin',NULL,7,'Adventure','bardiche','Ron Clements',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1363,'Alien 3',NULL,46,'Action','logicists','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1364,'Army of Darkness',NULL,29,'Comedy','parroter','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1365,'Batman Returns',NULL,34,'Action','hell-rake','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1366,'Boomerang',NULL,39,'Comedy','triphylite','Reginald Hudlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1367,'Bram Stoker''s Dracula',NULL,65,'Fantasy','distancy','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1368,'Death Becomes Her',NULL,28,'Comedy','spinnies','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1369,'El Mariachi',NULL,82,'Action','resmethrin','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1370,'Fortress',NULL,39,'Action','angledozer','Stuart Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1371,'Glengarry Glen Ross',NULL,29,'Crime','ethoxylate','James Foley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1372,'Hoffa',NULL,51,'Biography','ursidae','Danny DeVito',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1373,'Home Alone 2: Lost in New York',NULL,74,'Adventure','whippowill','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1374,'Lethal Weapon 3',NULL,32,'Action','silurid','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1375,'Light Sleeper',NULL,23,'Crime','bardiche','Paul Schrader',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1376,'Malcolm X',NULL,97,'Biography','logicists','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1377,'Medicine Man',NULL,6,'Adventure','parroter','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1378,'Memoirs of an Invisible Man',NULL,98,'Comedy','hell-rake','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1379,'My Cousin Vinny',NULL,64,'Comedy','triphylite','Jonathan Lynn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1380,'Patriot Games',NULL,43,'Action','distancy','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1381,'Radio Flyer',NULL,56,'Drama','spinnies','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1382,'Raising Cain',NULL,37,'Crime','resmethrin','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1383,'Reservoir Dogs',NULL,54,'Crime','angledozer','Quentin Tarantino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1384,'Split Second',NULL,60,'Action','ethoxylate','Tony Maylam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1385,'The Bodyguard',NULL,70,'Action','ursidae','Mick Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1386,'The Crying Game',NULL,86,'Crime','whippowill','Neil Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1387,'The Last of the Mohicans',NULL,49,'Action','silurid','Michael Mann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1388,'The Lawnmower Man',NULL,74,'Horror','bardiche','Brett Leonard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1389,'The Mighty Ducks',NULL,19,'Comedy','logicists','Stephen Herek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1390,'The Muppet Christmas Carol',NULL,64,'Comedy','parroter','Brian Henson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1391,'Unforgiven',NULL,82,'Drama','hell-rake','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1392,'Wayne''s World',NULL,4,'Comedy','triphylite','Penelope Spheeris',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1393,'Airborne',NULL,33,'Adventure','distancy','Rob Bowman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1394,'Alive',NULL,12,'Adventure','spinnies','Frank Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1395,'Blood In, Blood Out',NULL,77,'Crime','resmethrin','Taylor Hackford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1396,'Cliffhanger',NULL,26,'Action','angledozer','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1397,'Cool Runnings',NULL,12,'Adventure','ethoxylate','Jon Turteltaub',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1398,'Dazed and Confused',NULL,56,'Comedy','ursidae','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1399,'Excessive Force',NULL,74,'Action','whippowill','Jon Hess',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1400,'Gettysburg',NULL,12,'Drama','silurid','Ron Maxwell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1401,'Groundhog Day',NULL,62,'Comedy','bardiche','Harold Ramis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1402,'Hocus Pocus',NULL,21,'Comedy','logicists','Kenny Ortega',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1403,'Jason Goes to Hell: The Final Friday',NULL,92,'Fantasy','parroter','Adam Marcus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1404,'Jurassic Park',NULL,51,'Adventure','hell-rake','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1405,'Killing Zoe',NULL,11,'Crime','triphylite','Roger Avary',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1406,'Last Action Hero',NULL,23,'Action','distancy','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1407,'Les visiteurs',NULL,61,'Comedy','spinnies','Jean-Marie Poir̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1408,'Loaded Weapon 1',NULL,12,'Action','resmethrin','Gene Quintano',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1409,'Madadayo',NULL,69,'Drama','angledozer','Akira Kurosawa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1410,'Menace II Society',NULL,98,'Crime','ethoxylate','Albert Hughes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1411,'Mrs. Doubtfire',NULL,18,'Comedy','ursidae','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1412,'Much Ado About Nothing',NULL,24,'Comedy','whippowill','Kenneth Branagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1413,'Nowhere to Run',NULL,11,'Action','silurid','Robert Harmon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1414,'Only the Strong',NULL,32,'Action','bardiche','Sheldon Lettich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1415,'Philadelphia',NULL,88,'Drama','logicists','Jonathan Demme',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1416,'Poetic Justice',NULL,45,'Drama','parroter','John Singleton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1417,'RoboCop 3',NULL,30,'Action','hell-rake','Fred Dekker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1418,'Romeo Is Bleeding',NULL,3,'Action','triphylite','Peter Medak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1419,'Ruby in Paradise',NULL,2,'Drama','distancy','Victor Nunez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1420,'Schindler''s List',NULL,5,'Biography','spinnies','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1421,'Shadowlands',NULL,81,'Biography','resmethrin','Richard Attenborough',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1422,'Sugar Hill',NULL,44,'Drama','angledozer','Leon Ichaso',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1423,'Super Mario Bros.',NULL,14,'Adventure','ethoxylate','Annabel Jankel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1424,'Teenage Mutant Ninja Turtles III',NULL,81,'Action','ursidae','Stuart Gillard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1425,'The Adventures of Huck Finn',NULL,37,'Adventure','whippowill','Stephen Sommers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1426,'The Age of Innocence',NULL,77,'Drama','silurid','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1427,'The Firm',NULL,84,'Drama','bardiche','Sydney Pollack',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1428,'The Fugitive',NULL,92,'Action','logicists','Andrew Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1429,'The Nutcracker',NULL,85,'Family','parroter','Emile Ardolino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1430,'The Pelican Brief',NULL,11,'Crime','hell-rake','Alan J. Pakula',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1431,'The Piano',NULL,88,'Drama','triphylite','Jane Campion',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1432,'The Princess and the Cobbler',NULL,89,'Action','distancy','Richard Williams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1433,'The Remains of the Day',NULL,56,'Drama','spinnies','James Ivory',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1434,'Tombstone',NULL,78,'Action','resmethrin','George P. Cosmatos',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1435,'True Romance',NULL,56,'Action','angledozer','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1436,'Warlock: The Armageddon',NULL,67,'Fantasy','ethoxylate','Anthony Hickox',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1437,'What''s Eating Gilbert Grape',NULL,95,'Drama','ursidae','Lasse Hallstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1438,'3 Ninjas Kick Back',NULL,47,'Action','whippowill','Charles T. Kanganis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1439,'A Low Down Dirty Shame',NULL,4,'Action','silurid','Keenen Ivory Wayans',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1440,'Ace Ventura: Pet Detective',NULL,81,'Comedy','bardiche','Tom Shadyac',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1441,'Baby''s Day Out',NULL,93,'Adventure','logicists','Patrick Read Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1442,'Beverly Hills Cop III',NULL,81,'Action','parroter','John Landis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1443,'Bullets Over Broadway',NULL,14,'Comedy','hell-rake','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1444,'Clear and Present Danger',NULL,93,'Action','triphylite','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1445,'Clerks',NULL,95,'Comedy','distancy','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1446,'Crooklyn',NULL,43,'Comedy','spinnies','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1447,'Disclosure',NULL,82,'Drama','resmethrin','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1448,'Don Juan DeMarco',NULL,1,'Comedy','angledozer','Jeremy Leven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1449,'Dumb & Dumber',NULL,37,'Comedy','ethoxylate','Peter Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1450,'Ed Wood',NULL,52,'Biography','ursidae','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1451,'Exotica',NULL,92,'Drama','whippowill','Atom Egoyan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1452,'Forrest Gump',NULL,43,'Comedy','silurid','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1453,'Four Weddings and a Funeral',NULL,12,'Comedy','bardiche','Mike Newell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1454,'Heavenly Creatures',NULL,14,'Biography','logicists','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1455,'Highlander: The Final Dimension',NULL,41,'Action','parroter','Andrew Morahan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1456,'Hoop Dreams',NULL,90,'Documentary','hell-rake','Steve James',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1457,'Interview with the Vampire: The Vampire Chronicles',NULL,56,'Drama','triphylite','Neil Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1458,'Legends of the Fall',NULL,37,'Drama','distancy','Edward Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1459,'Little Women',NULL,41,'Drama','spinnies','Gillian Armstrong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1460,'Naked Gun 33 1/3: The Final Insult',NULL,63,'Comedy','resmethrin','Peter Segal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1461,'New Nightmare',NULL,32,'Fantasy','angledozer','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1462,'On Deadly Ground',NULL,7,'Action','ethoxylate','Steven Seagal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1463,'PCU',NULL,46,'Comedy','ursidae','Hart Bochner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1464,'Police Academy: Mission to Moscow',NULL,29,'Comedy','whippowill','Alan Metter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1465,'Pulp Fiction',NULL,34,'Crime','silurid','Quentin Tarantino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1466,'Rapa Nui',NULL,39,'Action','bardiche','Kevin Reynolds',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1467,'Renaissance Man',NULL,65,'Comedy','logicists','Penny Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1468,'Ri�hie Ri�h',NULL,28,'Comedy','parroter','Donald Petrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1469,'Serial Mom',NULL,82,'Comedy','hell-rake','John Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1470,'Speed',NULL,39,'Action','triphylite','Jan de Bont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1471,'Star Trek: Generations',NULL,29,'Action','distancy','David Carson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1472,'Street Fighter',NULL,51,'Action','spinnies','Steven E. de Souza',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1473,'The Client',NULL,74,'Crime','resmethrin','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1474,'The Crow',NULL,32,'Action','angledozer','Alex Proyas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1475,'The Flintstones',NULL,23,'Comedy','ethoxylate','Brian Levant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1476,'The Hudsucker Proxy',NULL,97,'Comedy','ursidae','Joel Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1477,'The Legend of Drunken Master',NULL,6,'Action','whippowill','Chia-Liang Liu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1478,'The Lion King',NULL,98,'Adventure','silurid','Roger Allers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1479,'The Mask',NULL,64,'Action','bardiche','Chuck Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1480,'The River Wild',NULL,43,'Action','logicists','Curtis Hanson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1481,'The Santa Clause',NULL,56,'Comedy','parroter','John Pasquin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1482,'The Shadow',NULL,37,'Action','hell-rake','Russell Mulcahy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1483,'The Shawshank Redemption',NULL,54,'Crime','triphylite','Frank Darabont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1484,'The Specialist',NULL,60,'Action','distancy','Luis Llosa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1485,'There Goes My Baby',NULL,70,'Comedy','spinnies','Floyd Mutrux',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1486,'Timecop',NULL,86,'Action','resmethrin','Peter Hyams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1487,'True Lies',NULL,49,'Action','angledozer','James Cameron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1488,'Wolf',NULL,74,'Drama','ethoxylate','Mike Nichols',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1489,'Wyatt Earp',NULL,19,'Adventure','ursidae','Lawrence Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1490,'Ace Ventura: When Nature Calls',NULL,64,'Adventure','whippowill','Steve Oedekerk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1491,'Apollo 13',NULL,82,'Adventure','silurid','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1492,'Assassins',NULL,4,'Action','bardiche','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1493,'Babe',NULL,33,'Comedy','logicists','Chris Noonan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1494,'Bad Boys',NULL,12,'Action','parroter','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1495,'Batman Forever',NULL,77,'Action','hell-rake','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1496,'Before Sunrise',NULL,26,'Drama','triphylite','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1497,'Braveheart',NULL,12,'Biography','distancy','Mel Gibson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1498,'Casino',NULL,56,'Biography','spinnies','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1499,'Casper',NULL,74,'Comedy','resmethrin','Brad Silberling',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1500,'Clueless',NULL,12,'Comedy','angledozer','Amy Heckerling',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1501,'Congo',NULL,62,'Action','ethoxylate','Frank Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1502,'Copycat',NULL,21,'Crime','ursidae','Jon Amiel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1503,'Crimson Tide',NULL,92,'Action','whippowill','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1504,'Cutthroat Island',NULL,51,'Action','silurid','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1505,'Dead Man Walking',NULL,11,'Crime','bardiche','Tim Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1506,'Desperado',NULL,23,'Action','logicists','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1507,'Die Hard with a Vengeance',NULL,61,'Action','parroter','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1508,'First Knight',NULL,12,'Action','hell-rake','Jerry Zucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1509,'Four Rooms',NULL,69,'Comedy','triphylite','Allison Anders',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1510,'Friday',NULL,98,'Comedy','distancy','F. Gary Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1511,'Get Shorty',NULL,18,'Comedy','spinnies','Barry Sonnenfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1512,'GoldenEye',NULL,24,'Action','resmethrin','Martin Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1513,'Hackers',NULL,11,'Comedy','angledozer','Iain Softley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1514,'Halloween: The Curse of Michael Myers',NULL,32,'Horror','ethoxylate','Joe Chappelle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1515,'Home for the Holidays',NULL,88,'Comedy','ursidae','Jodie Foster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1516,'Jade',NULL,45,'Crime','whippowill','William Friedkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1517,'Jefferson in Paris',NULL,30,'Biography','silurid','James Ivory',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1518,'Kids',NULL,3,'Drama','bardiche','Larry Clark',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1519,'Kiss of Death',NULL,2,'Action','logicists','Barbet Schroeder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1520,'Leaving Las Vegas',NULL,5,'Drama','parroter','Mike Figgis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1521,'Mallrats',NULL,81,'Comedy','hell-rake','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1522,'Money Train',NULL,44,'Action','triphylite','Joseph Ruben',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1523,'Mortal Kombat',NULL,14,'Action','distancy','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1524,'Mr. Holland''s Opus',NULL,81,'Drama','spinnies','Stephen Herek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1525,'Nixon',NULL,37,'Biography','resmethrin','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1526,'Outbreak',NULL,77,'Action','angledozer','Wolfgang Petersen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1527,'Pocahontas',NULL,84,'Adventure','ethoxylate','Mike Gabriel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1528,'Richard III',NULL,92,'Drama','ursidae','Richard Loncraine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1529,'Rob Roy',NULL,85,'Adventure','whippowill','Michael Caton-Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1530,'Rumble in the Bronx',NULL,11,'Action','silurid','Stanley Tong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1531,'Se7en',NULL,88,'Crime','bardiche','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1532,'Sense and Sensibility',NULL,89,'Drama','logicists','Ang Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1533,'Showgirls',NULL,56,'Drama','parroter','Paul Verhoeven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1534,'Species',NULL,78,'Action','hell-rake','Roger Donaldson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1535,'Tales from the Crypt: Demon Knight',NULL,56,'Action','triphylite','Ernest R. Dickerson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1536,'Tales from the Hood',NULL,67,'Comedy','distancy','Rusty Cundieff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1537,'Tank Girl',NULL,95,'Action','spinnies','Rachel Talalay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1538,'The American President',NULL,47,'Comedy','resmethrin','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1539,'The Bridges of Madison County',NULL,4,'Drama','angledozer','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1540,'The Brothers McMullen',NULL,81,'Comedy','ethoxylate','Edward Burns',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1541,'The Incredibly True Adventure of Two Girls in Love',NULL,93,'Comedy','ursidae','Maria Maggenti',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1542,'The Indian in the Cupboard',NULL,81,'Drama','whippowill','Frank Oz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1543,'The Net',NULL,14,'Action','silurid','Irwin Winkler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1544,'The Perez Family',NULL,93,'Comedy','bardiche','Mira Nair',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1545,'The Prophecy',NULL,95,'Action','logicists','Gregory Widen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1546,'The Quick and the Dead',NULL,43,'Action','parroter','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1547,'The Scarlet Letter',NULL,82,'Drama','hell-rake','Roland Joff̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1548,'The Usual Suspects',NULL,1,'Crime','triphylite','Bryan Singer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1549,'Things to Do in Denver When You''re Dead',NULL,37,'Crime','distancy','Gary Fleder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1550,'To Die For',NULL,52,'Comedy','spinnies','Gus Van Sant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1551,'Toy Story',NULL,92,'Adventure','resmethrin','John Lasseter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1552,'Under Siege 2: Dark Territory',NULL,43,'Action','angledozer','Geoff Murphy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1553,'Vampire in Brooklyn',NULL,12,'Comedy','ethoxylate','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1554,'Virtuosity',NULL,14,'Action','ursidae','Brett Leonard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1555,'Waterworld',NULL,41,'Action','whippowill','Kevin Reynolds',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1556,'Welcome to the Dollhouse',NULL,90,'Comedy','silurid','Todd Solondz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1557,'A Thin Line Between Love and Hate',NULL,56,'Comedy','bardiche','Martin Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1558,'A Time to Kill',NULL,37,'Crime','logicists','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1559,'Albino Alligator',NULL,41,'Crime','parroter','Kevin Spacey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1560,'Basquiat',NULL,63,'Biography','hell-rake','Julian Schnabel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1561,'Beavis and Butt-Head Do America',NULL,32,'Adventure','triphylite','Mike Judge',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1562,'Blood and Wine',NULL,7,'Crime','distancy','Bob Rafelson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1563,'Bogus',NULL,46,'Comedy','spinnies','Norman Jewison',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1564,'Bottle Rocket',NULL,29,'Comedy','resmethrin','Wes Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1565,'Bound',NULL,34,'Crime','angledozer','Lana Wachowski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1566,'Broken Arrow',NULL,39,'Action','ethoxylate','John Woo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1567,'Chain Reaction',NULL,65,'Action','ursidae','Andrew Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1568,'City Hall',NULL,28,'Drama','whippowill','Harold Becker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1569,'Courage Under Fire',NULL,82,'Action','silurid','Edward Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1570,'Daylight',NULL,39,'Action','bardiche','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1571,'DragonHeart',NULL,29,'Action','logicists','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1572,'Eraser',NULL,51,'Action','parroter','Chuck Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1573,'Escape from L.A.',NULL,74,'Action','hell-rake','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1574,'Everyone Says I Love You',NULL,32,'Comedy','triphylite','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1575,'Evita',NULL,23,'Biography','distancy','Alan Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1576,'Executive Decision',NULL,97,'Action','spinnies','Stuart Baird',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1577,'Extreme Measures',NULL,6,'Crime','resmethrin','Michael Apted',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1578,'Eye for an Eye',NULL,98,'Crime','angledozer','John Schlesinger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1579,'Faithful',NULL,64,'Comedy','ethoxylate','Paul Mazursky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1580,'Fled',NULL,43,'Action','ursidae','Kevin Hooks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1581,'Flipper',NULL,56,'Adventure','whippowill','Alan Shapiro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1582,'Flirting with Disaster',NULL,37,'Comedy','silurid','David O. Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1583,'From Dusk Till Dawn',NULL,54,'Crime','bardiche','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1584,'Get on the Bus',NULL,60,'Drama','logicists','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1585,'Ghosts of Mississippi',NULL,70,'Drama','parroter','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1586,'Girl 6',NULL,86,'Comedy','hell-rake','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1587,'Hamlet',NULL,49,'Drama','triphylite','Kenneth Branagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1588,'Happy Gilmore',NULL,74,'Comedy','distancy','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1589,'Harriet the Spy',NULL,19,'Comedy','spinnies','Bronwen Hughes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1590,'Independence Day',NULL,64,'Action','resmethrin','Roland Emmerich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1591,'Jerry Maguire',NULL,82,'Comedy','angledozer','Cameron Crowe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1592,'Jingle All the Way',NULL,4,'Comedy','ethoxylate','Brian Levant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1593,'Kama Sutra: A Tale of Love',NULL,33,'Crime','ursidae','Mira Nair',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1594,'Kansas City',NULL,12,'Crime','whippowill','Robert Altman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1595,'Kingpin',NULL,77,'Comedy','silurid','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1596,'Lone Star',NULL,26,'Drama','bardiche','John Sayles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1597,'Love and Other Catastrophes',NULL,12,'Comedy','logicists','Emma-Kate Croghan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1598,'Mars Attacks!',NULL,56,'Action','parroter','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1599,'Marvin''s Room',NULL,74,'Drama','hell-rake','Jerry Zaks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1600,'Mary Reilly',NULL,12,'Drama','triphylite','Stephen Frears',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1601,'Maximum Risk',NULL,62,'Action','distancy','Ringo Lam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1602,'Michael Collins',NULL,21,'Biography','spinnies','Neil Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1603,'Mission: Impossible',NULL,92,'Action','resmethrin','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1604,'Mrs. Winterbourne',NULL,51,'Comedy','angledozer','Richard Benjamin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1605,'Multiplicity',NULL,11,'Comedy','ethoxylate','Harold Ramis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1606,'My Fellow Americans',NULL,23,'Adventure','ursidae','Peter Segal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1607,'Phenomenon',NULL,61,'Drama','whippowill','Jon Turteltaub',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1608,'Ransom',NULL,12,'Crime','silurid','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1609,'Romeo + Juliet',NULL,69,'Drama','bardiche','Baz Luhrmann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1610,'Scream',NULL,98,'Horror','logicists','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1611,'Set It Off',NULL,18,'Action','parroter','F. Gary Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1612,'Sgt. Bilko',NULL,24,'Comedy','hell-rake','Jonathan Lynn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1613,'She''s the One',NULL,11,'Comedy','triphylite','Edward Burns',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1614,'Shine',NULL,32,'Biography','distancy','Scott Hicks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1615,'Sleepers',NULL,88,'Crime','spinnies','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1616,'Sling Blade',NULL,45,'Drama','resmethrin','Billy Bob Thornton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1617,'Space Jam',NULL,30,'Adventure','angledozer','Joe Pytka',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1618,'Spy Hard',NULL,3,'Action','ethoxylate','Rick Friedberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1619,'Star Trek: First Contact',NULL,2,'Action','ursidae','Jonathan Frakes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1620,'Striptease',NULL,5,'Comedy','whippowill','Andrew Bergman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1621,'Swingers',NULL,81,'Comedy','silurid','Doug Liman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1622,'That Thing You Do!',NULL,44,'Comedy','bardiche','Tom Hanks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1623,'The Adventures of Pinocchio',NULL,14,'Adventure','logicists','Steve Barron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1624,'The Cable Guy',NULL,81,'Comedy','parroter','Ben Stiller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1625,'The Craft',NULL,37,'Drama','hell-rake','Andrew Fleming',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1626,'The English Patient',NULL,77,'Drama','triphylite','Anthony Minghella',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1627,'The Fan',NULL,84,'Action','distancy','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1628,'The First Wives Club',NULL,92,'Comedy','spinnies','Hugh Wilson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1629,'The Funeral',NULL,85,'Crime','resmethrin','Abel Ferrara',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1630,'The Ghost and the Darkness',NULL,11,'Adventure','angledozer','Stephen Hopkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1631,'The Glimmer Man',NULL,88,'Action','ethoxylate','John Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1632,'The Hunchback of Notre Dame',NULL,89,'Animation','ursidae','Gary Trousdale',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1633,'The Island of Dr. Moreau',NULL,56,'Horror','whippowill','John Frankenheimer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1634,'The Juror',NULL,78,'Drama','silurid','Brian Gibson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1635,'The Long Kiss Goodnight',NULL,56,'Action','bardiche','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1636,'The Mirror Has Two Faces',NULL,67,'Comedy','logicists','Barbra Streisand',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1637,'The Nutty Professor',NULL,95,'Comedy','parroter','Tom Shadyac',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1638,'The Phantom',NULL,47,'Action','hell-rake','Simon Wincer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1639,'The Rock',NULL,4,'Action','triphylite','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1640,'Thinner',NULL,81,'Fantasy','distancy','Tom Holland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1641,'Tin Cup',NULL,93,'Comedy','spinnies','Ron Shelton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1642,'Trainspotting',NULL,81,'Drama','resmethrin','Danny Boyle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1643,'Trees Lounge',NULL,14,'Comedy','angledozer','Steve Buscemi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1644,'Twister',NULL,93,'Action','ethoxylate','Jan de Bont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1645,'Up Close & Personal',NULL,95,'Drama','ursidae','Jon Avnet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1646,'Waiting for Guffman',NULL,43,'Comedy','whippowill','Christopher Guest',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1647,'Walking and Talking',NULL,82,'Comedy','silurid','Nicole Holofcener',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1648,'When the Cat''s Away',NULL,1,'Comedy','bardiche','C̩dric Klapisch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1649,'White Squall',NULL,37,'Adventure','logicists','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1650,'8 Heads in a Duffel Bag',NULL,52,'Comedy','parroter','Tom Schulman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1651,'A Simple Wish',NULL,92,'Comedy','hell-rake','Michael Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1652,'Absolute Power',NULL,43,'Action','triphylite','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1653,'Air Bud',NULL,12,'Comedy','distancy','Charles Martin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1654,'Air Force One',NULL,14,'Action','spinnies','Wolfgang Petersen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1655,'Alien: Resurrection',NULL,41,'Action','resmethrin','Jean-Pierre Jeunet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1656,'Amistad',NULL,90,'Drama','angledozer','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1657,'An Alan Smithee Film: Burn Hollywood Burn',NULL,56,'Comedy','ethoxylate','Arthur Hiller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1658,'Anaconda',NULL,37,'Action','ursidae','Luis Llosa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1659,'Anastasia',NULL,41,'Adventure','whippowill','Don Bluth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1660,'As Good as It Gets',NULL,63,'Comedy','silurid','James L. Brooks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1661,'Austin Powers: International Man of Mystery',NULL,32,'Comedy','bardiche','Jay Roach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1662,'Batman & Robin',NULL,7,'Action','logicists','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1663,'Boogie Nights',NULL,46,'Drama','parroter','Paul Thomas Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1664,'Breakdown',NULL,29,'Action','hell-rake','Jonathan Mostow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1665,'Cats Don''t Dance',NULL,34,'Animation','triphylite','Mark Dindal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1666,'Character',NULL,39,'Crime','distancy','Mike van Diem',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1667,'Chasing Amy',NULL,65,'Comedy','spinnies','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1668,'Children of Heaven',NULL,28,'Drama','resmethrin','Majid Majidi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1669,'Con Air',NULL,82,'Action','angledozer','Simon West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1670,'Conspiracy Theory',NULL,39,'Action','ethoxylate','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1671,'Contact',NULL,29,'Drama','ursidae','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1672,'Cop Land',NULL,51,'Crime','whippowill','James Mangold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1673,'Critical Care',NULL,74,'Comedy','silurid','Sidney Lumet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1674,'Cube',NULL,32,'Mystery','bardiche','Vincenzo Natali',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1675,'Dante''s Peak',NULL,23,'Action','logicists','Roger Donaldson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1676,'Deconstructing Harry',NULL,97,'Comedy','parroter','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1677,'Donnie Brasco',NULL,6,'Biography','hell-rake','Mike Newell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1678,'Dream with the Fishes',NULL,98,'Comedy','triphylite','Finn Taylor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1679,'Event Horizon',NULL,64,'Horror','distancy','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1680,'Eve''s Bayou',NULL,43,'Drama','spinnies','Kasi Lemmons',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1681,'Face/Off',NULL,56,'Action','resmethrin','John Woo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1682,'First Love, Last Rites',NULL,37,'Drama','angledozer','Jesse Peretz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1683,'Flubber',NULL,54,'Comedy','ethoxylate','Les Mayfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1684,'G.I. Jane',NULL,60,'Action','ursidae','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1685,'Gattaca',NULL,70,'Drama','whippowill','Andrew Niccol',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1686,'George of the Jungle',NULL,86,'Action','silurid','Sam Weisman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1687,'Good Will Hunting',NULL,49,'Drama','bardiche','Gus Van Sant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1688,'Grosse Pointe Blank',NULL,74,'Action','logicists','George Armitage',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1689,'Hav Plenty',NULL,19,'Comedy','parroter','Christopher Scott Cherot',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1690,'Hurricane Streets',NULL,64,'Crime','hell-rake','Morgan J. Freeman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1691,'I Know What You Did Last Summer',NULL,82,'Horror','triphylite','Jim Gillespie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1692,'I Married a Strange Person!',NULL,4,'Animation','distancy','Bill Plympton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1693,'In & Out',NULL,33,'Comedy','spinnies','Frank Oz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1694,'In the Company of Men',NULL,12,'Comedy','resmethrin','Neil LaBute',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1695,'Jackie Brown',NULL,77,'Crime','angledozer','Quentin Tarantino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1696,'Kiss the Girls',NULL,26,'Crime','ethoxylate','Gary Fleder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1697,'Kundun',NULL,12,'Biography','ursidae','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1698,'L.A. Confidential',NULL,56,'Crime','whippowill','Curtis Hanson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1699,'Liar Liar',NULL,74,'Comedy','silurid','Tom Shadyac',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1700,'Love Jones',NULL,12,'Drama','bardiche','Theodore Witcher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1701,'Mad City',NULL,62,'Crime','logicists','Costa-Gavras',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1702,'Men in Black',NULL,21,'Adventure','parroter','Barry Sonnenfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1703,'Midnight in the Garden of Good and Evil',NULL,92,'Crime','hell-rake','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1704,'Money Talks',NULL,51,'Action','triphylite','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1705,'Mortal Kombat: Annihilation',NULL,11,'Action','distancy','John R. Leonetti',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1706,'My Best Friend''s Wedding',NULL,23,'Comedy','spinnies','P.J. Hogan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1707,'Nothing to Lose',NULL,61,'Action','resmethrin','Steve Oedekerk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1708,'Orgazmo',NULL,12,'Comedy','angledozer','Trey Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1709,'Oscar and Lucinda',NULL,69,'Drama','ethoxylate','Gillian Armstrong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1710,'Prefontaine',NULL,98,'Biography','ursidae','Steve James',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1711,'Princess Mononoke',NULL,18,'Adventure','whippowill','Hayao Miyazaki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1712,'Scream 2',NULL,24,'Horror','silurid','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1713,'Selena',NULL,11,'Biography','bardiche','Gregory Nava',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1714,'Seven Years in Tibet',NULL,32,'Adventure','logicists','Jean-Jacques Annaud',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1715,'Shadow Conspiracy',NULL,88,'Action','parroter','George P. Cosmatos',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1716,'Shooting Fish',NULL,45,'Comedy','hell-rake','Stefan Schwartz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1717,'Smilla''s Sense of Snow',NULL,30,'Action','triphylite','Bille August',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1718,'Soul Food',NULL,3,'Comedy','distancy','George Tillman Jr.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1719,'Spawn',NULL,2,'Action','spinnies','Mark A.Z. Dipp̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1720,'Speed 2: Cruise Control',NULL,5,'Action','resmethrin','Jan de Bont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1721,'Spice World',NULL,81,'Comedy','angledozer','Bob Spiers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1722,'Starship Troopers',NULL,44,'Action','ethoxylate','Paul Verhoeven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1723,'Steel',NULL,14,'Action','ursidae','Kenneth Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1724,'Switchback',NULL,81,'Crime','whippowill','Jeb Stuart',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1725,'The Apostle',NULL,37,'Drama','silurid','Robert Duvall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1726,'The Borrowers',NULL,77,'Adventure','bardiche','Peter Hewitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1727,'The Cure',NULL,84,'Crime','logicists','Kiyoshi Kurosawa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1728,'The Devil''s Advocate',NULL,92,'Drama','parroter','Taylor Hackford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1729,'The Devil''s Own',NULL,85,'Action','hell-rake','Alan J. Pakula',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1730,'The Fifth Element',NULL,11,'Action','triphylite','Luc Besson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1731,'The Full Monty',NULL,88,'Comedy','distancy','Peter Cattaneo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1732,'The Game',NULL,89,'Drama','spinnies','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1733,'The Ice Storm',NULL,56,'Drama','resmethrin','Ang Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1734,'The Jackal',NULL,78,'Action','angledozer','Michael Caton-Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1735,'The Last Time I Committed Suicide',NULL,56,'Biography','ethoxylate','Stephen Kay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1736,'The Lost World: Jurassic Park',NULL,67,'Action','ursidae','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1737,'The Man Who Knew Too Little',NULL,95,'Action','whippowill','Jon Amiel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1738,'The Peacemaker',NULL,47,'Action','silurid','Mimi Leder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1739,'The Postman',NULL,4,'Action','bardiche','Kevin Costner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1740,'The Rainmaker',NULL,81,'Crime','logicists','Francis Ford Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1741,'The Relic',NULL,93,'Horror','parroter','Peter Hyams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1742,'The Saint',NULL,81,'Action','hell-rake','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1743,'The Spanish Prisoner',NULL,14,'Drama','triphylite','David Mamet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1744,'The Sticky Fingers of Time',NULL,93,'Sci-Fi','distancy','Hilary Brougher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1745,'The Sweet Hereafter',NULL,95,'Drama','spinnies','Atom Egoyan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1746,'The Swindle',NULL,43,'Comedy','resmethrin','Claude Chabrol',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1747,'Titanic',NULL,82,'Drama','angledozer','James Cameron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1748,'Tomorrow Never Dies',NULL,1,'Action','ethoxylate','Roger Spottiswoode',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1749,'Trekkies',NULL,37,'Documentary','ursidae','Roger Nygard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1750,'Turbulence',NULL,52,'Action','whippowill','Robert Butler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1751,'Two Girls and a Guy',NULL,92,'Comedy','silurid','James Toback',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1752,'Ulee''s Gold',NULL,43,'Drama','bardiche','Victor Nunez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1753,'Volcano',NULL,12,'Action','logicists','Mick Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1754,'Wag the Dog',NULL,14,'Comedy','parroter','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1755,'Warriors of Virtue',NULL,41,'Action','hell-rake','Ronny Yu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1756,'20 Dates',NULL,90,'Biography','triphylite','Myles Berkowitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1757,'54',NULL,56,'Drama','distancy','Mark Christopher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1758,'A Bug''s Life',NULL,37,'Adventure','spinnies','John Lasseter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1759,'A Civil Action',NULL,41,'Drama','resmethrin','Steven Zaillian',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1760,'A Night at the Roxbury',NULL,63,'Comedy','angledozer','John Fortenberry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1761,'A Simple Plan',NULL,32,'Crime','ethoxylate','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1762,'American History X',NULL,7,'Crime','ursidae','Tony Kaye',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1763,'Among Giants',NULL,46,'Comedy','whippowill','Sam Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1764,'Antz',NULL,29,'Adventure','silurid','Eric Darnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1765,'Armageddon',NULL,34,'Action','bardiche','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1766,'Babe: Pig in the City',NULL,39,'Adventure','logicists','George Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1767,'Barney''s Great Adventure',NULL,65,'Adventure','parroter','Steve Gomer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1768,'Beloved',NULL,28,'Drama','hell-rake','Jonathan Demme',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1769,'Blade',NULL,82,'Action','triphylite','Stephen Norrington',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1770,'Bride of Chucky',NULL,39,'Comedy','distancy','Ronny Yu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1771,'Broken Vessels',NULL,29,'Drama','spinnies','Scott Ziehl',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1772,'Buffalo ''66',NULL,51,'Comedy','resmethrin','Vincent Gallo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1773,'Bulworth',NULL,74,'Comedy','angledozer','Warren Beatty',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1774,'Can''t Hardly Wait',NULL,32,'Comedy','ethoxylate','Harry Elfont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1775,'Celebrity',NULL,23,'Comedy','ursidae','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1776,'Central Station',NULL,97,'Drama','whippowill','Walter Salles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1777,'Chairman of the Board',NULL,6,'Comedy','silurid','Alex Zamm',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1778,'City of Angels',NULL,98,'Drama','bardiche','Brad Silberling',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1779,'Clay Pigeons',NULL,64,'Comedy','logicists','David Dobkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1780,'Dark City',NULL,43,'Action','parroter','Alex Proyas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1781,'Dead Man on Campus',NULL,56,'Comedy','hell-rake','Alan Cohn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1782,'Deep Impact',NULL,37,'Action','triphylite','Mimi Leder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1783,'Deep Rising',NULL,54,'Action','distancy','Stephen Sommers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1784,'Desert Blue',NULL,60,'Drama','spinnies','Morgan J. Freeman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1785,'Dirty Work',NULL,70,'Comedy','resmethrin','Bob Saget',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1786,'Disturbing Behavior',NULL,86,'Horror','angledozer','David Nutter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1787,'Doctor Dolittle',NULL,49,'Comedy','ethoxylate','Betty Thomas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1788,'Elizabeth',NULL,74,'Biography','ursidae','Shekhar Kapur',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1789,'Enemy of the State',NULL,19,'Action','whippowill','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1790,'Ever After: A Cinderella Story',NULL,64,'Comedy','silurid','Andy Tennant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1791,'Fear and Loathing in Las Vegas',NULL,82,'Adventure','bardiche','Terry Gilliam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1792,'Gods and Monsters',NULL,4,'Biography','logicists','Bill Condon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1793,'Half Baked',NULL,33,'Comedy','parroter','Tamra Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1794,'Happiness',NULL,12,'Comedy','hell-rake','Todd Solondz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1795,'Hard Rain',NULL,77,'Action','triphylite','Mikael Salomon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1796,'He Got Game',NULL,26,'Drama','distancy','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1797,'Holy Man',NULL,12,'Comedy','spinnies','Stephen Herek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1798,'Home Fries',NULL,56,'Comedy','resmethrin','Dean Parisot',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1799,'Hope Floats',NULL,74,'Drama','angledozer','Forest Whitaker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1800,'How Stella Got Her Groove Back',NULL,12,'Comedy','ethoxylate','Kevin Rodney Sullivan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1801,'I Got the Hook Up',NULL,62,'Comedy','ursidae','Michael Martin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1802,'I Still Know What You Did Last Summer',NULL,21,'Horror','whippowill','Danny Cannon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1803,'Knock Off',NULL,92,'Action','silurid','Hark Tsui',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1804,'La otra conquista',NULL,51,'Drama','bardiche','Salvador Carrasco',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1805,'Les couloirs du temps: Les visiteurs II',NULL,11,'Comedy','logicists','Jean-Marie Poir̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1806,'Lethal Weapon 4',NULL,23,'Action','parroter','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1807,'Living Out Loud',NULL,61,'Comedy','hell-rake','Richard LaGravenese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1808,'Lock, Stock and Two Smoking Barrels',NULL,12,'Comedy','triphylite','Guy Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1809,'Lost in Space',NULL,69,'Action','distancy','Stephen Hopkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1810,'Meet Joe Black',NULL,98,'Drama','spinnies','Martin Brest',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1811,'Meet the Deedles',NULL,18,'Comedy','resmethrin','Steve Boyum',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1812,'Mercury Rising',NULL,24,'Action','angledozer','Harold Becker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1813,'Mighty Joe Young',NULL,11,'Action','ethoxylate','Ron Underwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1814,'Mulan',NULL,32,'Adventure','ursidae','Tony Bancroft',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1815,'Naturally Native',NULL,88,'Drama','whippowill','Jennifer Wynne Farmer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1816,'Next Stop Wonderland',NULL,45,'Comedy','silurid','Brad Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1817,'One True Thing',NULL,30,'Drama','bardiche','Carl Franklin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1818,'Out of Sight',NULL,3,'Crime','logicists','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1819,'Patch Adams',NULL,2,'Biography','parroter','Tom Shadyac',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1820,'Pi',NULL,5,'Drama','hell-rake','Darren Aronofsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1821,'Practical Magic',NULL,81,'Comedy','triphylite','Griffin Dunne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1822,'Primary Colors',NULL,44,'Comedy','distancy','Mike Nichols',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1823,'Ronin',NULL,14,'Action','spinnies','John Frankenheimer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1824,'Rounders',NULL,81,'Crime','resmethrin','John Dahl',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1825,'Run Lola Run',NULL,37,'Crime','angledozer','Tom Tykwer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1826,'Rushmore',NULL,77,'Comedy','ethoxylate','Wes Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1827,'Safe Men',NULL,84,'Comedy','ursidae','John Hamburg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1828,'Saving Private Ryan',NULL,92,'Action','whippowill','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1829,'Shakespeare in Love',NULL,85,'Comedy','silurid','John Madden',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1830,'Simon Birch',NULL,11,'Comedy','bardiche','Mark Steven Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1831,'Six Days Seven Nights',NULL,88,'Action','logicists','Ivan Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1832,'Six-String Samurai',NULL,89,'Action','parroter','Lance Mungia',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1833,'Slam',NULL,56,'Drama','hell-rake','Marc Levin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1834,'Sliding Doors',NULL,78,'Comedy','triphylite','Peter Howitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1835,'Slums of Beverly Hills',NULL,56,'Comedy','distancy','Tamara Jenkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1836,'Small Soldiers',NULL,67,'Action','spinnies','Joe Dante',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1837,'Smoke Signals',NULL,95,'Comedy','resmethrin','Chris Eyre',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1838,'Snake Eyes',NULL,47,'Crime','angledozer','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1839,'Soldier',NULL,4,'Action','ethoxylate','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1840,'Sphere',NULL,81,'Drama','ursidae','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1841,'Star Trek: Insurrection',NULL,93,'Action','whippowill','Jonathan Frakes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1842,'Stepmom',NULL,81,'Comedy','silurid','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1843,'Tango',NULL,14,'Drama','bardiche','Carlos Saura',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1844,'The Big Hit',NULL,93,'Action','logicists','Kirk Wong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1845,'The Big Lebowski',NULL,95,'Comedy','parroter','Joel Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1846,'The Celebration',NULL,43,'Drama','hell-rake','Thomas Vinterberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1847,'The Faculty',NULL,82,'Horror','triphylite','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1848,'The Horse Whisperer',NULL,1,'Drama','distancy','Robert Redford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1849,'The Magic Sword: Quest for Camelot',NULL,37,'Adventure','spinnies','Frederik Du Chau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1850,'The Man in the Iron Mask',NULL,52,'Action','resmethrin','Randall Wallace',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1851,'The Mask of Zorro',NULL,92,'Action','angledozer','Martin Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1852,'The Negotiator',NULL,43,'Action','ethoxylate','F. Gary Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1853,'The Newton Boys',NULL,12,'Action','ursidae','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1854,'The Object of My Affection',NULL,14,'Comedy','whippowill','Nicholas Hytner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1855,'The Players Club',NULL,41,'Comedy','silurid','Ice Cube',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1856,'The Prince of Egypt',NULL,90,'Adventure','bardiche','Brenda Chapman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1857,'The Red Violin',NULL,56,'Drama','logicists','Fran̤ois Girard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1858,'The Replacement Killers',NULL,37,'Action','parroter','Antoine Fuqua',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1859,'The Rugrats Movie',NULL,41,'Adventure','hell-rake','Igor Kovalyov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1860,'The Siege',NULL,63,'Action','triphylite','Edward Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1861,'The Thin Red Line',NULL,32,'Drama','distancy','Terrence Malick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1862,'The Truman Show',NULL,7,'Comedy','spinnies','Peter Weir',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1863,'The Waterboy',NULL,46,'Comedy','resmethrin','Frank Coraci',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1864,'The X Files',NULL,29,'Drama','angledozer','Rob Bowman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1865,'There''s Something About Mary',NULL,34,'Comedy','ethoxylate','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1866,'Urban Legend',NULL,39,'Horror','ursidae','Jamie Blanks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1867,'Vampires',NULL,65,'Action','whippowill','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1868,'Very Bad Things',NULL,28,'Comedy','silurid','Peter Berg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1869,'Waking Ned Devine',NULL,82,'Comedy','bardiche','Kirk Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1870,'What Dreams May Come',NULL,39,'Drama','logicists','Vincent Ward',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1871,'Wild Things',NULL,29,'Crime','parroter','John McNaughton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1872,'Without Limits',NULL,51,'Biography','hell-rake','Robert Towne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1873,'Woo',NULL,74,'Comedy','triphylite','Daisy von Scherler Mayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1874,'You''ve Got Mail',NULL,32,'Comedy','distancy','Nora Ephron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1875,'Zero Effect',NULL,23,'Comedy','spinnies','Jake Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1876,'10 Things I Hate About You',NULL,97,'Comedy','resmethrin','Gil Junger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1877,'200 Cigarettes',NULL,6,'Comedy','angledozer','Risa Bramon Garcia',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1878,'8MM',NULL,98,'Mystery','ethoxylate','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1879,'A Dog of Flanders',NULL,64,'Drama','ursidae','Kevin Brodie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1880,'A Walk on the Moon',NULL,43,'Drama','whippowill','Tony Goldwyn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1881,'Aimee & Jaguar',NULL,56,'Biography','silurid','Max F�?rberb̦ck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1882,'American Beauty',NULL,37,'Drama','bardiche','Sam Mendes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1883,'American Pie',NULL,54,'Comedy','logicists','Paul Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1884,'An Ideal Husband',NULL,60,'Comedy','parroter','Oliver Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1885,'Analyze This',NULL,70,'Comedy','hell-rake','Harold Ramis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1886,'Angela''s Ashes',NULL,86,'Drama','triphylite','Alan Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1887,'Anna and the King',NULL,49,'Drama','distancy','Andy Tennant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1888,'Any Given Sunday',NULL,74,'Drama','spinnies','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1889,'Anywhere But Here',NULL,19,'Comedy','resmethrin','Wayne Wang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1890,'Arlington Road',NULL,64,'Crime','angledozer','Mark Pellington',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1891,'At First Sight',NULL,82,'Drama','ethoxylate','Irwin Winkler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1892,'Austin Powers: The Spy Who Shagged Me',NULL,4,'Action','ursidae','Jay Roach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1893,'Baby Geniuses',NULL,33,'Comedy','whippowill','Bob Clark',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1894,'Bats',NULL,12,'Horror','silurid','Louis Morneau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1895,'Being John Malkovich',NULL,77,'Comedy','bardiche','Spike Jonze',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1896,'Beyond the Mat',NULL,26,'Biography','logicists','Barry W. Blaustein',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1897,'Bicentennial Man',NULL,12,'Comedy','parroter','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1898,'Big Daddy',NULL,56,'Comedy','hell-rake','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1899,'Blast from the Past',NULL,74,'Comedy','triphylite','Hugh Wilson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1900,'Blue Streak',NULL,12,'Action','distancy','Les Mayfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (1901,'Bowfinger',NULL,62,'Comedy','spinnies','Frank Oz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1902,'Boys Don''t Cry',NULL,21,'Biography','resmethrin','Kimberly Peirce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1903,'Breakfast of Champions',NULL,92,'Comedy','angledozer','Alan Rudolph',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1904,'Bringing Out the Dead',NULL,51,'Drama','ethoxylate','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1905,'Brokedown Palace',NULL,11,'Drama','ursidae','Jonathan Kaplan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1906,'But I''m a Cheerleader',NULL,23,'Comedy','whippowill','Jamie Babbit',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1907,'Chill Factor',NULL,61,'Action','silurid','Hugh Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1908,'Cradle Will Rock',NULL,12,'Drama','bardiche','Tim Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1909,'Crazy in Alabama',NULL,69,'Comedy','logicists','Antonio Banderas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1910,'Cruel Intentions',NULL,98,'Drama','parroter','Roger Kumble',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1911,'Deep Blue Sea',NULL,18,'Action','hell-rake','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1912,'Deterrence',NULL,24,'Drama','triphylite','Rod Lurie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1913,'Detroit Rock City',NULL,11,'Comedy','distancy','Adam Rifkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1914,'Deuce Bigalow: Male Gigolo',NULL,32,'Comedy','spinnies','Mike Mitchell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1915,'Dick',NULL,88,'Comedy','resmethrin','Andrew Fleming',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1916,'Dogma',NULL,45,'Adventure','angledozer','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1917,'Double Jeopardy',NULL,30,'Crime','ethoxylate','Bruce Beresford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1918,'Doug''s 1st Movie',NULL,3,'Animation','ursidae','Maurice Joyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1919,'Dreaming of Joseph Lees',NULL,2,'Drama','whippowill','Eric Styles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1920,'Drive Me Crazy',NULL,5,'Comedy','silurid','John Schultz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1921,'Drop Dead Gorgeous',NULL,81,'Comedy','bardiche','Michael Patrick Jann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1922,'Dudley Do-Right',NULL,44,'Comedy','logicists','Hugh Wilson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1923,'East Is East',NULL,14,'Comedy','parroter','Damien O''Donnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1924,'Edtv',NULL,81,'Comedy','hell-rake','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1925,'Election',NULL,37,'Comedy','triphylite','Alexander Payne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1926,'End of Days',NULL,77,'Action','distancy','Peter Hyams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1927,'Entrapment',NULL,84,'Action','spinnies','Jon Amiel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1928,'eXistenZ',NULL,92,'Horror','resmethrin','David Cronenberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1929,'Eye of the Beholder',NULL,85,'Drama','angledozer','Stephan Elliott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1930,'Eyes Wide Shut',NULL,11,'Drama','ethoxylate','Stanley Kubrick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1931,'Fantasia 2000',NULL,88,'Animation','ursidae','James Algar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1932,'Fight Club',NULL,89,'Drama','whippowill','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1933,'Flawless',NULL,56,'Comedy','silurid','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1934,'Foolish',NULL,78,'Comedy','bardiche','Dave Meyers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1935,'For Love of the Game',NULL,56,'Drama','logicists','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1936,'Galaxy Quest',NULL,67,'Adventure','parroter','Dean Parisot',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1937,'Girl, Interrupted',NULL,95,'Biography','hell-rake','James Mangold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1938,'Go',NULL,47,'Comedy','triphylite','Doug Liman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1939,'Godzilla 2000',NULL,4,'Action','distancy','Takao Okawara',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1940,'Happy, Texas',NULL,81,'Comedy','spinnies','Mark Illsley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1941,'Held Up',NULL,93,'Comedy','resmethrin','Steve Rash',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1942,'House on Haunted Hill',NULL,81,'Horror','angledozer','William Malone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1943,'Human Traffic',NULL,14,'Comedy','ethoxylate','Justin Kerrigan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1944,'Idle Hands',NULL,93,'Comedy','ursidae','Rodman Flender',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1945,'In Dreams',NULL,95,'Drama','whippowill','Neil Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1946,'In Too Deep',NULL,43,'Crime','silurid','Michael Rymer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1947,'Inspector Gadget',NULL,82,'Action','bardiche','David Kellogg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1948,'Instinct',NULL,1,'Drama','logicists','Jon Turteltaub',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1949,'Jakob the Liar',NULL,37,'Drama','parroter','Peter Kassovitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1950,'Jawbreaker',NULL,52,'Comedy','hell-rake','Darren Stein',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1951,'Jesus'' Son',NULL,92,'Drama','triphylite','Alison Maclean',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1952,'Just Looking',NULL,43,'Comedy','distancy','Jason Alexander',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1953,'Lake Placid',NULL,12,'Action','spinnies','Steve Miner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1954,'Light It Up',NULL,14,'Drama','resmethrin','Craig Bolotin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1955,'Limbo',NULL,41,'Adventure','angledozer','John Sayles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1956,'Love Stinks',NULL,90,'Comedy','ethoxylate','Jeff Franklin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1957,'Magnolia',NULL,56,'Drama','ursidae','Paul Thomas Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1958,'Man on the Moon',NULL,37,'Biography','whippowill','Milos Forman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1959,'Message in a Bottle',NULL,41,'Drama','silurid','Luis Mandoki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1960,'Mickey Blue Eyes',NULL,63,'Comedy','bardiche','Kelly Makin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1961,'Molly',NULL,32,'Comedy','logicists','John Duigan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1962,'Mumford',NULL,7,'Comedy','parroter','Lawrence Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1963,'Muppets from Space',NULL,46,'Adventure','hell-rake','Tim Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1964,'My Favorite Martian',NULL,29,'Comedy','triphylite','Donald Petrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1965,'Mystery Men',NULL,34,'Action','distancy','Kinka Usher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1966,'Mystery, Alaska',NULL,39,'Comedy','spinnies','Jay Roach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1967,'Notting Hill',NULL,65,'Comedy','resmethrin','Roger Michell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1968,'Office Space',NULL,28,'Comedy','angledozer','Mike Judge',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1969,'One Man''s Hero',NULL,82,'Action','ethoxylate','Lance Hool',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1970,'Outside Providence',NULL,39,'Comedy','ursidae','Michael Corrente',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1971,'Payback',NULL,29,'Action','whippowill','Brian Helgeland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1972,'Play It to the Bone',NULL,51,'Comedy','silurid','Ron Shelton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1973,'Pushing Tin',NULL,74,'Comedy','bardiche','Mike Newell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1974,'Random Hearts',NULL,32,'Drama','logicists','Sydney Pollack',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1975,'Ravenous',NULL,23,'Fantasy','parroter','Antonia Bird',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1976,'Ride with the Devil',NULL,97,'Drama','hell-rake','Ang Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1977,'Runaway Bride',NULL,6,'Comedy','triphylite','Garry Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1978,'She''s All That',NULL,98,'Comedy','distancy','Robert Iscove',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1979,'Simply Irresistible',NULL,64,'Comedy','spinnies','Mark Tarlov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1980,'Smiling Fish & Goat on Fire',NULL,43,'Comedy','resmethrin','Kevin Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1981,'Snow Falling on Cedars',NULL,56,'Drama','angledozer','Scott Hicks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1982,'South Park: Bigger Longer & Uncut',NULL,37,'Animation','ethoxylate','Trey Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1983,'Star Wars: Episode I - The Phantom Menace',NULL,54,'Action','ursidae','George Lucas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1984,'Stigmata',NULL,60,'Horror','whippowill','Rupert Wainwright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1985,'Stir of Echoes',NULL,70,'Horror','silurid','David Koepp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1986,'Stuart Little',NULL,86,'Adventure','bardiche','Rob Minkoff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1987,'Sugar Town',NULL,49,'Comedy','logicists','Allison Anders',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1988,'Summer of Sam',NULL,74,'Crime','parroter','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1989,'Superstar',NULL,19,'Comedy','hell-rake','Bruce McCulloch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1990,'Tea with Mussolini',NULL,64,'Comedy','triphylite','Franco Zeffirelli',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1991,'The 13th Warrior',NULL,82,'Action','distancy','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1992,'The Adventures of Elmo in Grouchland',NULL,4,'Adventure','spinnies','Gary Halvorson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1993,'The Astronaut''s Wife',NULL,33,'Drama','resmethrin','Rand Ravich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1994,'The Basket',NULL,12,'Drama','angledozer','Rich Cowan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1995,'The Best Man',NULL,77,'Comedy','ethoxylate','Malcolm D. Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1996,'The Big Tease',NULL,26,'Comedy','ursidae','Kevin Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1997,'The Blair Witch Project',NULL,12,'Horror','whippowill','Daniel Myrick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1998,'The Bone Collector',NULL,56,'Crime','silurid','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(1999,'The Corruptor',NULL,74,'Action','bardiche','James Foley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2000,'The Deep End of the Ocean',NULL,12,'Drama','logicists','Ulu Grosbard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2001,'The End of the Affair',NULL,62,'Drama','parroter','Neil Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2002,'The General''s Daughter',NULL,21,'Drama','hell-rake','Simon West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2003,'The Green Mile',NULL,92,'Crime','triphylite','Frank Darabont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2004,'The Haunting',NULL,51,'Fantasy','distancy','Jan de Bont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2005,'The Hurricane',NULL,11,'Biography','spinnies','Norman Jewison',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2006,'The Insider',NULL,23,'Biography','resmethrin','Michael Mann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2007,'The Iron Giant',NULL,61,'Action','angledozer','Brad Bird',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2008,'The Limey',NULL,12,'Crime','ethoxylate','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2009,'The Loss of Sexual Innocence',NULL,69,'Drama','ursidae','Mike Figgis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2010,'The Matrix',NULL,98,'Action','whippowill','Lana Wachowski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2011,'The Messenger: The Story of Joan of Arc',NULL,18,'Adventure','silurid','Luc Besson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2012,'The Muse',NULL,24,'Comedy','bardiche','Albert Brooks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2013,'The Ninth Gate',NULL,11,'Mystery','logicists','Roman Polanski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2014,'The Omega Code',NULL,32,'Action','parroter','Robert Marcarelli',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2015,'The Out-of-Towners',NULL,88,'Comedy','hell-rake','Sam Weisman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2016,'The Rage: Carrie 2',NULL,45,'Horror','triphylite','Katt Shea',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2017,'The Sixth Sense',NULL,30,'Drama','distancy','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2018,'The Story of Us',NULL,3,'Comedy','spinnies','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2019,'The Straight Story',NULL,2,'Biography','resmethrin','David Lynch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2020,'The Talented Mr. Ripley',NULL,5,'Crime','angledozer','Anthony Minghella',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2021,'The Thirteenth Floor',NULL,81,'Mystery','ethoxylate','Josef Rusnak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2022,'The Thomas Crown Affair',NULL,44,'Crime','ursidae','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2023,'The Virgin Suicides',NULL,14,'Drama','whippowill','Sofia Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2024,'The Woman Chaser',NULL,81,'Comedy','silurid','Robinson Devor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2025,'The Wood',NULL,37,'Comedy','bardiche','Rick Famuyiwa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2026,'The World Is Not Enough',NULL,77,'Action','logicists','Michael Apted',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2027,'Three Kings',NULL,84,'Action','parroter','David O. Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2028,'Three to Tango',NULL,92,'Comedy','hell-rake','Damon Santostefano',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2029,'Topsy-Turvy',NULL,85,'Biography','triphylite','Mike Leigh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2030,'Toy Story 2',NULL,11,'Adventure','distancy','John Lasseter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2031,'Tumbleweeds',NULL,88,'Comedy','spinnies','Gavin O''Connor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2032,'Twin Falls Idaho',NULL,89,'Drama','resmethrin','Michael Polish',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2033,'Universal Soldier: The Return',NULL,56,'Action','angledozer','Mic Rodgers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2034,'Varsity Blues',NULL,78,'Comedy','ethoxylate','Brian Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2035,'Wild Wild West',NULL,56,'Action','ursidae','Barry Sonnenfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2036,'Wing Commander',NULL,67,'Action','whippowill','Chris Roberts',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2037,'102 Dalmatians',NULL,95,'Adventure','silurid','Kevin Lima',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2038,'28 Days',NULL,47,'Comedy','bardiche','Betty Thomas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2039,'3 Strikes',NULL,4,'Comedy','logicists','DJ Pooh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2040,'Aberdeen',NULL,81,'Drama','parroter','Hans Petter Moland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2041,'All the Pretty Horses',NULL,93,'Drama','hell-rake','Billy Bob Thornton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2042,'Almost Famous',NULL,81,'Adventure','triphylite','Cameron Crowe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2043,'American Psycho',NULL,14,'Crime','distancy','Mary Harron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2044,'Amores Perros',NULL,93,'Drama','spinnies','Alejandro G. I̱��rritu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2045,'An Everlasting Piece',NULL,95,'Comedy','resmethrin','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2046,'Anatomy',NULL,43,'Horror','angledozer','Stefan Ruzowitzky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2047,'Autumn in New York',NULL,82,'Drama','ethoxylate','Joan Chen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2048,'Bamboozled',NULL,1,'Comedy','ursidae','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2049,'Battlefield Earth',NULL,37,'Action','whippowill','Roger Christian',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2050,'Bedazzled',NULL,52,'Comedy','silurid','Harold Ramis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2051,'Best in Show',NULL,92,'Comedy','bardiche','Christopher Guest',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2052,'Big Momma''s House',NULL,43,'Action','logicists','Raja Gosnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2053,'Billy Elliot',NULL,12,'Drama','parroter','Stephen Daldry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2054,'Bless the Child',NULL,14,'Crime','hell-rake','Chuck Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2055,'Boiler Room',NULL,41,'Crime','triphylite','Ben Younger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2056,'Book of Shadows: Blair Witch 2',NULL,90,'Adventure','distancy','Joe Berlinger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2057,'Boys and Girls',NULL,56,'Comedy','spinnies','Robert Iscove',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2058,'Bring It On',NULL,37,'Comedy','resmethrin','Peyton Reed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2059,'Brother',NULL,41,'Crime','angledozer','Takeshi Kitano',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2060,'Cast Away',NULL,63,'Adventure','ethoxylate','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2061,'Cecil B. DeMented',NULL,32,'Comedy','ursidae','John Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2062,'Center Stage',NULL,7,'Drama','whippowill','Nicholas Hytner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2063,'Charlie''s Angels',NULL,46,'Action','silurid','McG',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2064,'Chicken Run',NULL,29,'Adventure','bardiche','Peter Lord',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2065,'Chocolat',NULL,34,'Drama','logicists','Lasse Hallstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2066,'Chuck & Buck',NULL,39,'Comedy','parroter','Miguel Arteta',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2067,'Coyote Ugly',NULL,65,'Comedy','hell-rake','David McNally',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2068,'Crouching Tiger, Hidden Dragon',NULL,28,'Action','triphylite','Ang Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2069,'Dancer in the Dark',NULL,82,'Crime','distancy','Lars von Trier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2070,'Digimon: The Movie',NULL,39,'Action','spinnies','Mamoru Hosoda',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2071,'Dinosaur',NULL,29,'Adventure','resmethrin','Eric Leighton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2072,'Down to You',NULL,51,'Comedy','angledozer','Kris Isacsson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2073,'Dracula 2000',NULL,74,'Action','ethoxylate','Patrick Lussier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2074,'Drowning Mona',NULL,32,'Comedy','ursidae','Nick Gomez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2075,'Dude, Where''s My Car?',NULL,23,'Comedy','whippowill','Danny Leiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2076,'Duets',NULL,97,'Comedy','silurid','Bruce Paltrow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2077,'Erin Brockovich',NULL,6,'Biography','bardiche','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2078,'Final Destination',NULL,98,'Horror','logicists','James Wong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2079,'Finding Forrester',NULL,64,'Drama','parroter','Gus Van Sant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2080,'Fiza',NULL,43,'Drama','hell-rake','Khalid Mohamed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2081,'Frequency',NULL,56,'Crime','triphylite','Gregory Hoblit',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2082,'George Washington',NULL,37,'Drama','distancy','David Gordon Green',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2083,'Get Carter',NULL,54,'Action','spinnies','Stephen Kay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2084,'Gladiator',NULL,60,'Action','resmethrin','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2085,'Gone in Sixty Seconds',NULL,70,'Action','angledozer','Dominic Sena',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2086,'Gossip',NULL,86,'Drama','ethoxylate','Davis Guggenheim',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2087,'Groove',NULL,49,'Drama','ursidae','Greg Harrison',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2088,'Gun Shy',NULL,74,'Comedy','whippowill','Eric Blakeney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2089,'Hanging Up',NULL,19,'Comedy','silurid','Diane Keaton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2090,'Here on Earth',NULL,64,'Drama','bardiche','Mark Piznarski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2091,'High Fidelity',NULL,82,'Comedy','logicists','Stephen Frears',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2092,'Highlander: Endgame',NULL,4,'Action','parroter','Douglas Aarniokoski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2093,'Hollow Man',NULL,33,'Action','hell-rake','Paul Verhoeven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2094,'How the Grinch Stole Christmas',NULL,12,'Comedy','triphylite','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2095,'I Dreamed of Africa',NULL,77,'Adventure','distancy','Hugh Hudson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2096,'Isn''t She Great',NULL,26,'Biography','spinnies','Andrew Bergman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2097,'Keeping the Faith',NULL,12,'Comedy','resmethrin','Edward Norton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2098,'Little Nicky',NULL,56,'Comedy','angledozer','Steven Brill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2099,'Loser',NULL,74,'Comedy','ethoxylate','Amy Heckerling',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2100,'Lost Souls',NULL,12,'Drama','ursidae','Janusz Kaminski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2101,'Love & Basketball',NULL,62,'Drama','whippowill','Gina Prince-Bythewood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2102,'Lucky Numbers',NULL,21,'Comedy','silurid','Nora Ephron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2103,'Luminarias',NULL,92,'Comedy','bardiche','Jos̩ Luis Valenzuela',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2104,'Me, Myself & Irene',NULL,51,'Comedy','logicists','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2105,'Meet the Parents',NULL,11,'Comedy','parroter','Jay Roach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2106,'Memento',NULL,23,'Mystery','hell-rake','Christopher Nolan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2107,'Men of Honor',NULL,61,'Biography','triphylite','George Tillman Jr.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2108,'Mercy Streets',NULL,12,'Action','distancy','Jon Gunn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2109,'Miss Congeniality',NULL,69,'Action','spinnies','Donald Petrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2110,'Mission to Mars',NULL,98,'Adventure','resmethrin','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2111,'Mission: Impossible II',NULL,18,'Action','angledozer','John Woo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2112,'My Dog Skip',NULL,24,'Drama','ethoxylate','Jay Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2113,'Next Friday',NULL,11,'Comedy','ursidae','Steve Carr',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2114,'Nine Queens',NULL,32,'Crime','whippowill','Fabi��n Bielinsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2115,'Nurse Betty',NULL,88,'Comedy','silurid','Neil LaBute',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2116,'Nutty Professor II: The Klumps',NULL,45,'Comedy','bardiche','Peter Segal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2117,'O Brother, Where Art Thou?',NULL,30,'Adventure','logicists','Joel Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2118,'Pay It Forward',NULL,3,'Drama','parroter','Mimi Leder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2119,'Pitch Black',NULL,2,'Horror','hell-rake','David Twohy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2120,'Pollock',NULL,5,'Biography','triphylite','Ed Harris',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2121,'Proof of Life',NULL,81,'Action','distancy','Taylor Hackford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2122,'Psycho Beach Party',NULL,44,'Comedy','spinnies','Robert Lee King',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2123,'Quills',NULL,14,'Biography','resmethrin','Philip Kaufman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2124,'Ready to Rumble',NULL,81,'Comedy','angledozer','Brian Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2125,'Red Planet',NULL,37,'Action','ethoxylate','Antony Hoffman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2126,'Reindeer Games',NULL,77,'Action','ursidae','John Frankenheimer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2127,'Remember the Titans',NULL,84,'Biography','whippowill','Boaz Yakin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2128,'Requiem for a Dream',NULL,92,'Drama','silurid','Darren Aronofsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2129,'Return to Me',NULL,85,'Comedy','bardiche','Bonnie Hunt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2130,'Road Trip',NULL,11,'Comedy','logicists','Todd Phillips',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2131,'Romeo Must Die',NULL,88,'Action','parroter','Andrzej Bartkowiak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2132,'Rugrats in Paris: The Movie',NULL,89,'Adventure','hell-rake','Stig Bergqvist',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2133,'Scream 3',NULL,56,'Horror','triphylite','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2134,'Screwed',NULL,78,'Comedy','distancy','Scott Alexander',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2135,'Shadow of the Vampire',NULL,56,'Drama','spinnies','E. Elias Merhige',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2136,'Shaft',NULL,67,'Action','resmethrin','John Singleton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2137,'Shanghai Noon',NULL,95,'Action','angledozer','Tom Dey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2138,'Small Time Crooks',NULL,47,'Comedy','ethoxylate','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2139,'Snatch',NULL,4,'Comedy','ursidae','Guy Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2140,'Snow Day',NULL,81,'Adventure','whippowill','Chris Koch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2141,'Songcatcher',NULL,93,'Drama','silurid','Maggie Greenwald',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2142,'Space Cowboys',NULL,81,'Action','bardiche','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2143,'Supernova',NULL,14,'Horror','logicists','Walter Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2144,'Tadpole',NULL,93,'Comedy','parroter','Gary Winick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2145,'The 6th Day',NULL,95,'Action','hell-rake','Roger Spottiswoode',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2146,'The Adventures of Rocky & Bullwinkle',NULL,43,'Adventure','triphylite','Des McAnuff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2147,'The Art of War',NULL,82,'Action','distancy','Christian Duguay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2148,'The Beach',NULL,1,'Adventure','spinnies','Danny Boyle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2149,'The Broken Hearts Club: A Romantic Comedy',NULL,37,'Comedy','resmethrin','Greg Berlanti',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2150,'The Cell',NULL,52,'Horror','angledozer','Tarsem Singh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2151,'The Circle',NULL,92,'Drama','ethoxylate','Jafar Panahi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2152,'The Claim',NULL,43,'Drama','ursidae','Michael Winterbottom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2153,'The Contender',NULL,12,'Drama','whippowill','Rod Lurie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2154,'The Crew',NULL,14,'Comedy','silurid','Michael Dinner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2155,'The Emperor''s New Groove',NULL,41,'Adventure','bardiche','Mark Dindal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2156,'The Family Man',NULL,90,'Comedy','logicists','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2157,'The Flintstones in Viva Rock Vegas',NULL,56,'Comedy','parroter','Brian Levant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2158,'The House of Mirth',NULL,37,'Drama','hell-rake','Terence Davies',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2159,'The In Crowd',NULL,41,'Drama','triphylite','Mary Lambert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2160,'The Kid',NULL,63,'Comedy','distancy','Jon Turteltaub',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2161,'The Ladies Man',NULL,32,'Comedy','spinnies','Reginald Hudlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2162,'The Legend of Bagger Vance',NULL,7,'Drama','resmethrin','Robert Redford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2163,'The Little Vampire',NULL,46,'Adventure','angledozer','Uli Edel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2164,'The Next Best Thing',NULL,29,'Comedy','ethoxylate','John Schlesinger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2165,'The Original Kings of Comedy',NULL,34,'Comedy','ursidae','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2166,'The Patriot',NULL,39,'Action','whippowill','Roland Emmerich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2167,'The Perfect Storm',NULL,65,'Action','silurid','Wolfgang Petersen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2168,'The Replacements',NULL,28,'Comedy','bardiche','Howard Deutch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2169,'The Road to El Dorado',NULL,82,'Adventure','logicists','Bibo Bergeron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2170,'The Skulls',NULL,39,'Action','parroter','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2171,'The Specials',NULL,29,'Action','hell-rake','Craig Mazin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2172,'The Tigger Movie',NULL,51,'Animation','triphylite','Jun Falkenstein',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2173,'The Watcher',NULL,74,'Crime','distancy','Joe Charbanic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2174,'The Way of the Gun',NULL,32,'Action','spinnies','Christopher McQuarrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2175,'The Whole Nine Yards',NULL,23,'Comedy','resmethrin','Jonathan Lynn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2176,'The Widow of Saint-Pierre',NULL,97,'Drama','angledozer','Patrice Leconte',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2177,'The Yards',NULL,6,'Crime','ethoxylate','James Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2178,'Thirteen Days',NULL,98,'Drama','ursidae','Roger Donaldson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2179,'Thomas and the Magic Railroad',NULL,64,'Adventure','whippowill','Britt Allcroft',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2180,'Titan A.E.',NULL,43,'Action','silurid','Don Bluth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2181,'Traffic',NULL,56,'Crime','bardiche','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2182,'U-571',NULL,37,'Action','logicists','Jonathan Mostow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2183,'Unbreakable',NULL,54,'Drama','parroter','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2184,'Urban Legends: Final Cut',NULL,60,'Horror','hell-rake','John Ottman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2185,'Urbania',NULL,70,'Drama','triphylite','Jon Shear',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2186,'Vertical Limit',NULL,86,'Action','distancy','Martin Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2187,'What Lies Beneath',NULL,49,'Drama','spinnies','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2188,'What Planet Are You From?',NULL,74,'Comedy','resmethrin','Mike Nichols',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2189,'What Women Want',NULL,19,'Comedy','angledozer','Nancy Meyers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2190,'Whatever It Takes',NULL,64,'Comedy','ethoxylate','David Raynr',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2191,'Where the Heart Is',NULL,82,'Comedy','ursidae','Matt Williams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2192,'Whipped',NULL,4,'Comedy','whippowill','Peter M. Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2193,'Woman on Top',NULL,33,'Comedy','silurid','Fina Torres',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2194,'Wonder Boys',NULL,12,'Comedy','bardiche','Curtis Hanson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2195,'X-Men',NULL,77,'Action','logicists','Bryan Singer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2196,'You Can Count on Me',NULL,26,'Drama','parroter','Kenneth Lonergan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2197,'15 Minutes',NULL,12,'Action','hell-rake','John Herzfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2198,'3000 Miles to Graceland',NULL,56,'Action','triphylite','Demian Lichtenstein',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2199,'A Beautiful Mind',NULL,74,'Biography','distancy','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2200,'A Knight''s Tale',NULL,12,'Action','spinnies','Brian Helgeland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2201,'A.I. Artificial Intelligence',NULL,62,'Adventure','resmethrin','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2202,'Ali',NULL,21,'Biography','angledozer','Michael Mann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2203,'Alias Betty',NULL,92,'Comedy','ethoxylate','Claude Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2204,'All the Queen''s Men',NULL,51,'Action','ursidae','Stefan Ruzowitzky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2205,'Along Came a Spider',NULL,11,'Crime','whippowill','Lee Tamahori',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2206,'Am̩lie',NULL,23,'Comedy','silurid','Jean-Pierre Jeunet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2207,'American Desi',NULL,61,'Comedy','bardiche','Piyush Dinker Pandya',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2208,'American Outlaws',NULL,12,'Action','logicists','Les Mayfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2209,'American Pie 2',NULL,69,'Comedy','parroter','J.B. Rogers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2210,'America''s Sweethearts',NULL,98,'Comedy','hell-rake','Joe Roth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2211,'Angel Eyes',NULL,18,'Drama','triphylite','Luis Mandoki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2212,'Antitrust',NULL,24,'Action','distancy','Peter Howitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2213,'Atlantis: The Lost Empire',NULL,11,'Action','spinnies','Gary Trousdale',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2214,'Ayurveda: Art of Being',NULL,32,'Documentary','resmethrin','Pan Nalin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2215,'Baby Boy',NULL,88,'Crime','angledozer','John Singleton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2216,'Bandits',NULL,45,'Comedy','ethoxylate','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2217,'Behind Enemy Lines',NULL,30,'Action','ursidae','John Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2218,'Birthday Girl',NULL,3,'Comedy','whippowill','Jez Butterworth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2219,'Black Hawk Down',NULL,2,'Drama','silurid','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2220,'Black Knight',NULL,5,'Adventure','bardiche','Gil Junger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2221,'Blow',NULL,81,'Biography','logicists','Ted Demme',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2222,'Bridget Jones''s Diary',NULL,44,'Comedy','parroter','Sharon Maguire',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2223,'Brigham City',NULL,14,'Crime','hell-rake','Richard Dutcher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2224,'Bubble Boy',NULL,81,'Adventure','triphylite','Blair Hayes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2225,'Buffalo Soldiers',NULL,37,'Comedy','distancy','Gregor Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2226,'Captain Corelli''s Mandolin',NULL,77,'Drama','spinnies','John Madden',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2227,'Cats & Dogs',NULL,84,'Action','resmethrin','Lawrence Guterman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2228,'Corky Romano',NULL,92,'Comedy','angledozer','Rob Pritts',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2229,'Crazy/Beautiful',NULL,85,'Drama','ethoxylate','John Stockwell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2230,'Crocodile Dundee in Los Angeles',NULL,11,'Adventure','ursidae','Simon Wincer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2231,'Domestic Disturbance',NULL,88,'Crime','whippowill','Harold Becker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2232,'Donnie Darko',NULL,89,'Drama','silurid','Richard Kelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2233,'Don''t Say a Word',NULL,56,'Crime','bardiche','Gary Fleder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2234,'Double Take',NULL,78,'Action','logicists','George Gallo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2235,'Down and Out with the Dolls',NULL,56,'Comedy','parroter','Kurt Voss',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2236,'Down to Earth',NULL,67,'Comedy','hell-rake','Chris Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2237,'Dr. Dolittle 2',NULL,95,'Comedy','triphylite','Steve Carr',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2238,'Driven',NULL,47,'Action','distancy','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2239,'Elling',NULL,4,'Comedy','spinnies','Petter N�?ss',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2240,'Enemy at the Gates',NULL,81,'Drama','resmethrin','Jean-Jacques Annaud',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2241,'Exit Wounds',NULL,93,'Action','angledozer','Andrzej Bartkowiak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2242,'Final Fantasy: The Spirits Within',NULL,81,'Action','ethoxylate','Hironobu Sakaguchi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2243,'Formula 51',NULL,14,'Action','ursidae','Ronny Yu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2244,'Frailty',NULL,93,'Crime','whippowill','Bill Paxton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2245,'Freddy Got Fingered',NULL,95,'Comedy','silurid','Tom Green',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2246,'From Hell',NULL,43,'Horror','bardiche','Albert Hughes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2247,'Get Over It',NULL,82,'Comedy','logicists','Tommy O''Haver',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2248,'Ghost World',NULL,1,'Comedy','parroter','Terry Zwigoff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2249,'Ghosts of Mars',NULL,37,'Action','hell-rake','John Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2250,'Glitter',NULL,52,'Drama','triphylite','Vondie Curtis-Hall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2251,'Gosford Park',NULL,92,'Drama','distancy','Robert Altman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2252,'Hardball',NULL,43,'Drama','spinnies','Brian Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2253,'Harry Potter and the Sorcerer''s Stone',NULL,12,'Adventure','resmethrin','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2254,'Harvard Man',NULL,14,'Comedy','angledozer','James Toback',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2255,'Head Over Heels',NULL,41,'Comedy','ethoxylate','Mark Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2256,'Heartbreakers',NULL,90,'Comedy','ursidae','David Mirkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2257,'Hearts in Atlantis',NULL,56,'Drama','whippowill','Scott Hicks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2258,'Hedwig and the Angry Inch',NULL,37,'Comedy','silurid','John Cameron Mitchell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2259,'High Heels and Low Lifes',NULL,41,'Action','bardiche','Mel Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2260,'How High',NULL,63,'Comedy','logicists','Jesse Dylan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2261,'I Am Sam',NULL,32,'Drama','parroter','Jessie Nelson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2262,'Impostor',NULL,7,'Drama','hell-rake','Gary Fleder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2263,'In the Bedroom',NULL,46,'Crime','triphylite','Todd Field',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2264,'Iris',NULL,29,'Biography','distancy','Richard Eyre',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2265,'Jason X',NULL,34,'Action','spinnies','James Isaac',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2266,'Jay and Silent Bob Strike Back',NULL,39,'Comedy','resmethrin','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2267,'Jeepers Creepers',NULL,65,'Horror','angledozer','Victor Salva',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2268,'Jimmy Neutron: Boy Genius',NULL,28,'Action','ethoxylate','John A. Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2269,'Joe Dirt',NULL,82,'Adventure','ursidae','Dennie Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2270,'Joe Somebody',NULL,39,'Comedy','whippowill','John Pasquin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2271,'Josie and the Pussycats',NULL,29,'Comedy','silurid','Harry Elfont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2272,'Joy Ride',NULL,51,'Mystery','bardiche','John Dahl',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2273,'Jurassic Park III',NULL,74,'Action','logicists','Joe Johnston',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2274,'Just Visiting',NULL,32,'Comedy','parroter','Jean-Marie Poir̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2275,'Kate & Leopold',NULL,23,'Comedy','hell-rake','James Mangold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2276,'Kiss of the Dragon',NULL,97,'Action','triphylite','Chris Nahon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2277,'Kissing Jessica Stein',NULL,6,'Comedy','distancy','Charles Herman-Wurmfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2278,'K-PAX',NULL,98,'Drama','spinnies','Iain Softley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2279,'L.I.E.',NULL,64,'Crime','resmethrin','Michael Cuesta',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2280,'Lara Croft: Tomb Raider',NULL,43,'Action','angledozer','Simon West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2281,'Last Orders',NULL,56,'Drama','ethoxylate','Fred Schepisi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2282,'Legally Blonde',NULL,37,'Comedy','ursidae','Robert Luketic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2283,'Life as a House',NULL,54,'Drama','whippowill','Irwin Winkler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2284,'Lovely & Amazing',NULL,60,'Comedy','silurid','Nicole Holofcener',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2285,'Lucky Break',NULL,70,'Comedy','bardiche','Peter Cattaneo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2286,'Made',NULL,86,'Comedy','logicists','Jon Favreau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2287,'Max Keeble''s Big Move',NULL,49,'Comedy','parroter','Tim Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2288,'Mean Machine',NULL,74,'Comedy','hell-rake','Barry Skolnick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2289,'Megiddo: The Omega Code 2',NULL,19,'Action','triphylite','Brian Trenchard-Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2290,'Monkeybone',NULL,64,'Animation','distancy','Henry Selick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2291,'Monsoon Wedding',NULL,82,'Comedy','spinnies','Mira Nair',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2292,'Monster''s Ball',NULL,4,'Drama','resmethrin','Marc Forster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2293,'Monsters, Inc.',NULL,33,'Adventure','angledozer','Pete Docter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2294,'Moulin Rouge!',NULL,12,'Drama','ethoxylate','Baz Luhrmann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2295,'Mulholland Drive',NULL,77,'Drama','ursidae','David Lynch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2296,'Never Again',NULL,26,'Comedy','whippowill','Eric Schaeffer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2297,'Not Another Teen Movie',NULL,12,'Comedy','silurid','Joel Gallen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2298,'Novocaine',NULL,56,'Comedy','bardiche','David Atkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2299,'Nowhere in Africa',NULL,74,'Biography','logicists','Caroline Link',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2300,'O',NULL,12,'Drama','parroter','Tim Blake Nelson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2301,'Ocean''s Eleven',NULL,62,'Crime','hell-rake','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2302,'On the Line',NULL,21,'Comedy','triphylite','Eric Bross',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2303,'Original Sin',NULL,92,'Drama','distancy','Michael Cristofer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2304,'Osmosis Jones',NULL,51,'Action','spinnies','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2305,'Out Cold',NULL,11,'Comedy','resmethrin','Brendan Malloy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2306,'Pearl Harbor',NULL,23,'Action','angledozer','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2307,'Planet of the Apes',NULL,61,'Action','ethoxylate','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2308,'Pootie Tang',NULL,12,'Action','ursidae','Louis C.K.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2309,'Rat Race',NULL,69,'Adventure','whippowill','Jerry Zucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2310,'Recess: School''s Out',NULL,NULL,'Animation','silurid','Chuck Sheetz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2311,'Riding in Cars with Boys',NULL,98,'Biography','bardiche','Penny Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2312,'Rock Star',NULL,18,'Drama','logicists','Stephen Herek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2313,'Rush Hour 2',NULL,24,'Action','parroter','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2314,'Save the Last Dance',NULL,11,'Drama','hell-rake','Thomas Carter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2315,'Saving Silverman',NULL,32,'Comedy','triphylite','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2316,'Say It Isn''t So',NULL,88,'Comedy','distancy','J.B. Rogers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2317,'Scary Movie 2',NULL,45,'Comedy','spinnies','Keenen Ivory Wayans',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2318,'See Spot Run',NULL,30,'Action','resmethrin','John Whitesell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2319,'Serendipity',NULL,3,'Comedy','angledozer','Peter Chelsom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2320,'Session 9',NULL,2,'Horror','ethoxylate','Brad Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2321,'Shallow Hal',NULL,5,'Comedy','ursidae','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2322,'Shaolin Soccer',NULL,81,'Action','whippowill','Stephen Chow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2323,'Shrek',NULL,44,'Adventure','silurid','Andrew Adamson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2324,'Someone Like You...',NULL,14,'Comedy','bardiche','Tony Goldwyn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2325,'Soul Survivors',NULL,81,'Drama','logicists','Stephen Carpenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2326,'Spirited Away',NULL,37,'Adventure','parroter','Hayao Miyazaki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2327,'Spy Game',NULL,77,'Action','hell-rake','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2328,'Spy Kids',NULL,84,'Action','triphylite','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2329,'Summer Catch',NULL,92,'Comedy','distancy','Michael Tollin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2330,'Super Troopers',NULL,85,'Comedy','spinnies','Jay Chandrasekhar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2331,'Sweet November',NULL,11,'Drama','resmethrin','Pat O''Connor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2332,'Swordfish',NULL,88,'Action','angledozer','Dominic Sena',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2333,'Texas Rangers',NULL,89,'Action','ethoxylate','Steve Miner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2334,'The Animal',NULL,56,'Comedy','ursidae','Luke Greenfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2335,'The Believer',NULL,78,'Drama','whippowill','Henry Bean',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2336,'The Brothers',NULL,56,'Comedy','silurid','Gary Hardwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2337,'The Curse of the Jade Scorpion',NULL,67,'Comedy','bardiche','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2338,'The Fast and the Furious',NULL,95,'Action','logicists','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2339,'The Forsaken',NULL,47,'Horror','parroter','J.S. Cardone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2340,'The Glass House',NULL,4,'Crime','hell-rake','Daniel Sackheim',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2341,'The Jimmy Show',NULL,81,'Comedy','triphylite','Frank Whaley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2342,'The Last Castle',NULL,93,'Action','distancy','Rod Lurie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2343,'The Legend of Suriyothai',NULL,81,'Action','spinnies','Chatrichalerm Yukol',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2344,'The Lord of the Rings: The Fellowship of the Ring',NULL,14,'Action','resmethrin','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2345,'The Lost Skeleton of Cadavra',NULL,93,'Comedy','angledozer','Larry Blamire',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2346,'The Majestic',NULL,95,'Drama','ethoxylate','Frank Darabont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2347,'The Mexican',NULL,43,'Adventure','ursidae','Gore Verbinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2348,'The Mummy Returns',NULL,82,'Action','whippowill','Stephen Sommers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2349,'The Musketeer',NULL,1,'Action','silurid','Peter Hyams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2350,'The One',NULL,37,'Action','bardiche','James Wong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2351,'The Other Side of Heaven',NULL,52,'Adventure','logicists','Mitch Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2352,'The Others',NULL,92,'Fantasy','parroter','Alejandro Amen��bar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2353,'The Pledge',NULL,43,'Crime','hell-rake','Sean Penn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2354,'The Princess Diaries',NULL,12,'Comedy','triphylite','Garry Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2355,'The Royal Tenenbaums',NULL,14,'Comedy','distancy','Wes Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2356,'The Score',NULL,41,'Crime','spinnies','Frank Oz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2357,'The Shipping News',NULL,90,'Drama','resmethrin','Lasse Hallstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2358,'The Tailor of Panama',NULL,56,'Drama','angledozer','John Boorman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2359,'The Wash',NULL,37,'Comedy','ethoxylate','DJ Pooh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2360,'The Wedding Planner',NULL,41,'Comedy','ursidae','Adam Shankman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2361,'Thir13en Ghosts',NULL,63,'Horror','whippowill','Steve Beck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2362,'Thirteen Conversations About One Thing',NULL,32,'Drama','silurid','Jill Sprecher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2363,'Tomcats',NULL,7,'Comedy','bardiche','Gregory Poirier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2364,'Town & Country',NULL,46,'Comedy','logicists','Peter Chelsom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2365,'Training Day',NULL,29,'Crime','parroter','Antoine Fuqua',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2366,'Two Can Play That Game',NULL,34,'Comedy','hell-rake','Mark Brown',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2367,'Valentine',NULL,39,'Horror','triphylite','Jamie Blanks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2368,'Vanilla Sky',NULL,65,'Fantasy','distancy','Cameron Crowe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2369,'Wasabi',NULL,28,'Action','spinnies','G̩rard Krawczyk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2370,'What''s the Worst That Could Happen?',NULL,82,'Comedy','resmethrin','Sam Weisman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2371,'Winged Migration',NULL,39,'Documentary','angledozer','Jacques Perrin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2372,'Y Tu Mam�� Tambi̩n',NULL,29,'Adventure','ethoxylate','Alfonso Cuar�?n',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2373,'Zoolander',NULL,51,'Comedy','ursidae','Ben Stiller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2374,'25th Hour',NULL,74,'Drama','whippowill','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2375,'28 Days Later...',NULL,32,'Drama','silurid','Danny Boyle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2376,'40 Days and 40 Nights',NULL,23,'Comedy','bardiche','Michael Lehmann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2377,'8 Mile',NULL,97,'Drama','logicists','Curtis Hanson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2378,'8 Women',NULL,6,'Comedy','parroter','Fran̤ois Ozon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2379,'A Walk to Remember',NULL,98,'Drama','hell-rake','Adam Shankman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2380,'Abandon',NULL,64,'Drama','triphylite','Stephen Gaghan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2381,'About a Boy',NULL,43,'Comedy','distancy','Chris Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2382,'About Schmidt',NULL,56,'Comedy','spinnies','Alexander Payne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2383,'Adaptation.',NULL,37,'Comedy','resmethrin','Spike Jonze',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2384,'All About the Benjamins',NULL,54,'Action','angledozer','Kevin Bray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2385,'All or Nothing',NULL,60,'Drama','ethoxylate','Mike Leigh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2386,'Amen.',NULL,70,'Biography','ursidae','Costa-Gavras',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2387,'Analyze That',NULL,86,'Comedy','whippowill','Harold Ramis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2388,'Antwone Fisher',NULL,49,'Biography','silurid','Denzel Washington',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2389,'Austin Powers in Goldmember',NULL,74,'Action','bardiche','Jay Roach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2390,'Auto Focus',NULL,19,'Biography','logicists','Paul Schrader',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2391,'Bad Company',NULL,64,'Action','parroter','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2392,'Ballistic: Ecks vs. Sever',NULL,82,'Action','hell-rake','Wych Kaosayananda',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2393,'Barbershop',NULL,4,'Comedy','triphylite','Tim Story',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2394,'Bend It Like Beckham',NULL,33,'Comedy','distancy','Gurinder Chadha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2395,'Better Luck Tomorrow',NULL,12,'Crime','spinnies','Justin Lin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2396,'Big Fat Liar',NULL,77,'Adventure','resmethrin','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2397,'Big Trouble',NULL,26,'Comedy','angledozer','Barry Sonnenfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2398,'Blade II',NULL,12,'Action','ethoxylate','Guillermo del Toro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2399,'Blood Work',NULL,56,'Action','ursidae','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2400,'Bloody Sunday',NULL,74,'Drama','whippowill','Paul Greengrass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2401,'Blue Car',NULL,12,'Drama','silurid','Karen Moncrieff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2402,'Blue Crush',NULL,62,'Drama','bardiche','John Stockwell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2403,'Boat Trip',NULL,21,'Comedy','logicists','Mort Nathan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2404,'Bowling for Columbine',NULL,92,'Crime','parroter','Michael Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2405,'Brown Sugar',NULL,51,'Comedy','hell-rake','Rick Famuyiwa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2406,'Catch Me If You Can',NULL,11,'Biography','triphylite','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2407,'Changing Lanes',NULL,23,'Drama','distancy','Roger Michell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2408,'Chicago',NULL,61,'Comedy','spinnies','Rob Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2409,'City by the Sea',NULL,12,'Crime','resmethrin','Michael Caton-Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2410,'City of Ghosts',NULL,69,'Crime','angledozer','Matt Dillon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2411,'City of God',NULL,98,'Crime','ethoxylate','Fernando Meirelles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2412,'Civil Brand',NULL,18,'Crime','ursidae','Neema Barnette',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2413,'Clockstoppers',NULL,24,'Action','whippowill','Jonathan Frakes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2414,'Collateral Damage',NULL,11,'Action','silurid','Andrew Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2415,'Crossroads',NULL,32,'Comedy','bardiche','Tamra Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2416,'Dark Blue',NULL,88,'Crime','logicists','Ron Shelton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2417,'Darkness',NULL,45,'Horror','parroter','Jaume Balaguer�?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2418,'Death to Smoochy',NULL,30,'Comedy','hell-rake','Danny DeVito',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2419,'Deuces Wild',NULL,3,'Action','triphylite','Scott Kalvert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2420,'Die Another Day',NULL,2,'Action','distancy','Lee Tamahori',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2421,'Dirty Pretty Things',NULL,5,'Crime','spinnies','Stephen Frears',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2422,'Divine Secrets of the Ya-Ya Sisterhood',NULL,81,'Drama','resmethrin','Callie Khouri',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2423,'Dracula: Pages from a Virgin''s Diary',NULL,44,'Comedy','angledozer','Guy Maddin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2424,'Dragonfly',NULL,14,'Drama','ethoxylate','Tom Shadyac',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2425,'Drumline',NULL,81,'Comedy','ursidae','Charles Stone III',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2426,'Eight Legged Freaks',NULL,37,'Action','whippowill','Ellory Elkayem',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2427,'El crimen del padre Amaro',NULL,77,'Drama','silurid','Carlos Carrera',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2428,'Enough',NULL,84,'Crime','bardiche','Michael Apted',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2429,'Equilibrium',NULL,92,'Action','logicists','Kurt Wimmer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2430,'Extreme Ops',NULL,85,'Action','parroter','Christian Duguay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2431,'Far from Heaven',NULL,11,'Drama','hell-rake','Todd Haynes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2432,'Feardotcom',NULL,88,'Crime','triphylite','William Malone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2433,'Femme Fatale',NULL,89,'Crime','distancy','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2434,'Frida',NULL,56,'Biography','spinnies','Julie Taymor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2435,'Friday After Next',NULL,78,'Comedy','resmethrin','Marcus Raboy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2436,'Full Frontal',NULL,56,'Comedy','angledozer','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2437,'Gangs of New York',NULL,67,'Crime','ethoxylate','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2438,'Gerry',NULL,95,'Adventure','ursidae','Gus Van Sant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2439,'Ghost Ship',NULL,47,'Horror','whippowill','Steve Beck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2440,'Half Past Dead',NULL,4,'Action','silurid','Don Michael Paul',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2441,'Halloween: Resurrection',NULL,81,'Comedy','bardiche','Rick Rosenthal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2442,'Harry Potter and the Chamber of Secrets',NULL,93,'Adventure','logicists','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2443,'Hart''s War',NULL,81,'Drama','parroter','Gregory Hoblit',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2444,'Hero',NULL,14,'Action','hell-rake','Yimou Zhang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2445,'Hey Arnold! The Movie',NULL,93,'Adventure','triphylite','Tuck Tucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2446,'High Crimes',NULL,95,'Crime','distancy','Carl Franklin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2447,'Hollywood Ending',NULL,43,'Comedy','spinnies','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2448,'I Spy',NULL,82,'Action','resmethrin','Betty Thomas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2449,'Ice Age',NULL,1,'Adventure','angledozer','Chris Wedge',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2450,'Igby Goes Down',NULL,37,'Comedy','ethoxylate','Burr Steers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2451,'Insomnia',NULL,52,'Drama','ursidae','Christopher Nolan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2452,'Interview with the Assassin',NULL,92,'Drama','whippowill','Neil Burger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2453,'Jackass: The Movie',NULL,43,'Comedy','silurid','Jeff Tremaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2454,'John Q',NULL,12,'Crime','bardiche','Nick Cassavetes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2455,'Jonah: A VeggieTales Movie',NULL,14,'Adventure','logicists','Mike Nawrocki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2456,'Juwanna Mann',NULL,41,'Comedy','parroter','Jesse Vaughan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2457,'K-19: The Widowmaker',NULL,90,'Drama','hell-rake','Kathryn Bigelow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2458,'Kung Pow: Enter the Fist',NULL,56,'Action','triphylite','Steve Oedekerk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2459,'L''auberge espagnole',NULL,37,'Comedy','distancy','C̩dric Klapisch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2460,'Life or Something Like It',NULL,41,'Comedy','spinnies','Stephen Herek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2461,'Like Mike',NULL,63,'Comedy','resmethrin','John Schultz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2462,'Lilo & Stitch',NULL,32,'Adventure','angledozer','Dean DeBlois',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2463,'Maid in Manhattan',NULL,7,'Comedy','ethoxylate','Wayne Wang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2464,'Martin Lawrence Live: Runteldat',NULL,46,'Biography','ursidae','David Raynr',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2465,'May',NULL,29,'Drama','whippowill','Lucky McKee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2466,'Men in Black II',NULL,34,'Action','silurid','Barry Sonnenfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2467,'Men with Brooms',NULL,39,'Comedy','bardiche','Paul Gross',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2468,'Minority Report',NULL,65,'Action','logicists','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2469,'Mondays in the Sun',NULL,28,'Comedy','parroter','Fernando Le�?n de Aranoa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2470,'Moonlight Mile',NULL,82,'Drama','hell-rake','Brad Silberling',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2471,'Mr. Deeds',NULL,39,'Comedy','triphylite','Steven Brill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2472,'Murder by Numbers',NULL,29,'Crime','distancy','Barbet Schroeder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2473,'My Big Fat Greek Wedding',NULL,51,'Comedy','spinnies','Joel Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2474,'Narc',NULL,74,'Crime','resmethrin','Joe Carnahan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2475,'Nicholas Nickleby',NULL,32,'Drama','angledozer','Douglas McGrath',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2476,'One Hour Photo',NULL,23,'Drama','ethoxylate','Mark Romanek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2477,'Panic Room',NULL,97,'Crime','ursidae','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2478,'People I Know',NULL,6,'Crime','whippowill','Daniel Algrant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2479,'Phone Booth',NULL,98,'Crime','silurid','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2480,'Poolhall Junkies',NULL,64,'Drama','bardiche','Mars Callahan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2481,'Punch-Drunk Love',NULL,43,'Comedy','logicists','Paul Thomas Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2482,'Queen of the Damned',NULL,56,'Drama','parroter','Michael Rymer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2483,'Rabbit-Proof Fence',NULL,37,'Adventure','hell-rake','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2484,'Raising Victor Vargas',NULL,54,'Drama','triphylite','Peter Sollett',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2485,'Real Women Have Curves',NULL,60,'Comedy','distancy','Patricia Cardoso',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2486,'Red Dragon',NULL,70,'Crime','spinnies','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2487,'Reign of Fire',NULL,86,'Action','resmethrin','Rob Bowman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2488,'Resident Evil',NULL,49,'Action','angledozer','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2489,'Return to Never Land',NULL,74,'Adventure','ethoxylate','Robin Budd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2490,'Road to Perdition',NULL,19,'Crime','ursidae','Sam Mendes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2491,'Rollerball',NULL,64,'Action','whippowill','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2492,'Scooby-Doo',NULL,82,'Adventure','silurid','Raja Gosnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2493,'Secretary',NULL,4,'Comedy','bardiche','Steven Shainberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2494,'Serving Sara',NULL,33,'Comedy','logicists','Reginald Hudlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2495,'Signs',NULL,12,'Drama','parroter','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2496,'Slackers',NULL,77,'Comedy','hell-rake','Dewey Nicks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2497,'Snow Dogs',NULL,26,'Adventure','triphylite','Brian Levant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2498,'Sorority Boys',NULL,12,'Comedy','distancy','Wallace Wolodarsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2499,'Spider',NULL,56,'Drama','spinnies','David Cronenberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2500,'Spider-Man',NULL,74,'Action','resmethrin','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2501,'Spirit: Stallion of the Cimarron',NULL,12,'Adventure','angledozer','Kelly Asbury',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2502,'Spun',NULL,62,'Comedy','ethoxylate','Jonas ��kerlund',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2503,'Spy Kids 2: Island of Lost Dreams',NULL,21,'Action','ursidae','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2504,'Star Trek: Nemesis',NULL,92,'Action','whippowill','Stuart Baird',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2505,'Star Wars: Episode II - Attack of the Clones',NULL,51,'Action','silurid','George Lucas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2506,'Stealing Harvard',NULL,11,'Comedy','bardiche','Bruce McCulloch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2507,'Stolen Summer',NULL,23,'Drama','logicists','Pete Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2508,'Stuart Little 2',NULL,61,'Adventure','parroter','Rob Minkoff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2509,'Sunshine State',NULL,12,'Drama','hell-rake','John Sayles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2510,'Sweet Home Alabama',NULL,69,'Comedy','triphylite','Andy Tennant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2511,'Swept Away',NULL,98,'Comedy','distancy','Guy Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2512,'Swimfan',NULL,18,'Drama','spinnies','John Polson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2513,'The Adventures of Pluto Nash',NULL,24,'Action','resmethrin','Ron Underwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2514,'The Banger Sisters',NULL,11,'Comedy','angledozer','Bob Dolman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2515,'The Bourne Identity',NULL,32,'Action','ethoxylate','Doug Liman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2516,'The Business of Fancydancing',NULL,88,'Drama','ursidae','Sherman Alexie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2517,'The Count of Monte Cristo',NULL,45,'Action','whippowill','Kevin Reynolds',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2518,'The Country Bears',NULL,30,'Comedy','silurid','Peter Hastings',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2519,'The Crocodile Hunter: Collision Course',NULL,3,'Action','bardiche','John Stainton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2520,'The Dangerous Lives of Altar Boys',NULL,2,'Comedy','logicists','Peter Care',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2521,'The Emperor''s Club',NULL,5,'Drama','parroter','Michael Hoffman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2522,'The Four Feathers',NULL,81,'Adventure','hell-rake','Shekhar Kapur',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2523,'The Good Girl',NULL,44,'Drama','triphylite','Miguel Arteta',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2524,'The Good Thief',NULL,14,'Action','distancy','Neil Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2525,'The Guru',NULL,81,'Comedy','spinnies','Daisy von Scherler Mayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2526,'The Heart of Me',NULL,37,'Drama','resmethrin','Thaddeus O''Sullivan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2527,'The Hours',NULL,77,'Drama','angledozer','Stephen Daldry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2528,'The Importance of Being Earnest',NULL,84,'Comedy','ethoxylate','Oliver Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2529,'The Lord of the Rings: The Two Towers',NULL,92,'Action','ursidae','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2530,'The Master of Disguise',NULL,85,'Comedy','whippowill','Perry Andelin Blake',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2531,'The Mothman Prophecies',NULL,11,'Drama','silurid','Mark Pellington',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2532,'The New Guy',NULL,88,'Comedy','bardiche','Ed Decter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2533,'The Pianist',NULL,89,'Biography','logicists','Roman Polanski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2534,'The Quiet American',NULL,56,'Drama','parroter','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2535,'The Rookie',NULL,78,'Drama','hell-rake','John Lee Hancock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2536,'The Rules of Attraction',NULL,56,'Comedy','triphylite','Roger Avary',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2537,'The Salton Sea',NULL,67,'Crime','distancy','D.J. Caruso',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2538,'The Santa Clause 2',NULL,95,'Comedy','spinnies','Michael Lembeck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2539,'The Scorpion King',NULL,47,'Action','resmethrin','Chuck Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2540,'The Singles Ward',NULL,4,'Comedy','angledozer','Kurt Hale',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2541,'The Slaughter Rule',NULL,81,'Drama','ethoxylate','Alex Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2542,'The Sum of All Fears',NULL,93,'Action','ursidae','Phil Alden Robinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2543,'The Sweetest Thing',NULL,81,'Comedy','whippowill','Roger Kumble',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2544,'The Time Machine',NULL,14,'Action','silurid','Simon Wells',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2545,'The Transporter',NULL,93,'Action','bardiche','Louis Leterrier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2546,'The Tuxedo',NULL,95,'Action','logicists','Kevin Donovan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2547,'The Wild Thornberrys Movie',NULL,43,'Adventure','parroter','Cathy Malkasian',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2548,'They',NULL,82,'Horror','hell-rake','Robert Harmon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2549,'Time Changer',NULL,1,'Drama','triphylite','Rich Christiano',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2550,'Treasure Planet',NULL,37,'Adventure','distancy','Ron Clements',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2551,'Tuck Everlasting',NULL,52,'Drama','spinnies','Jay Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2552,'Two Weeks Notice',NULL,92,'Comedy','resmethrin','Marc Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2553,'Undercover Brother',NULL,43,'Action','angledozer','Malcolm D. Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2554,'Undisputed',NULL,12,'Action','ethoxylate','Walter Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2555,'Unfaithful',NULL,14,'Drama','ursidae','Adrian Lyne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2556,'Van Wilder: Party Liaison',NULL,41,'Comedy','whippowill','Walt Becker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2557,'We Were Soldiers',NULL,90,'Action','silurid','Randall Wallace',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2558,'Welcome to Collinwood',NULL,56,'Comedy','bardiche','Anthony Russo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2559,'Whale Rider',NULL,37,'Drama','logicists','Niki Caro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2560,'White Oleander',NULL,41,'Drama','parroter','Peter Kosminsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2561,'Windtalkers',NULL,63,'Action','hell-rake','John Woo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2562,'xXx',NULL,32,'Action','triphylite','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2563,'2 Fast 2 Furious',NULL,7,'Action','distancy','John Singleton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2564,'21 Grams',NULL,46,'Drama','spinnies','Alejandro G. I̱��rritu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2565,'A Guy Thing',NULL,29,'Comedy','resmethrin','Chris Koch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2566,'A Man Apart',NULL,34,'Action','angledozer','F. Gary Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2567,'Agent Cody Banks',NULL,39,'Action','ethoxylate','Harald Zwart',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2568,'Alex & Emma',NULL,65,'Comedy','ursidae','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2569,'All the Real Girls',NULL,28,'Drama','whippowill','David Gordon Green',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2570,'American Wedding',NULL,82,'Comedy','silurid','Jesse Dylan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2571,'Anything Else',NULL,39,'Comedy','bardiche','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2572,'Bad Boys II',NULL,29,'Action','logicists','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2573,'Bad Santa',NULL,51,'Comedy','parroter','Terry Zwigoff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2574,'Basic',NULL,74,'Action','hell-rake','John McTiernan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2575,'Beyond Borders',NULL,32,'Adventure','triphylite','Martin Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2576,'Big Fish',NULL,23,'Adventure','distancy','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2577,'Bon voyage',NULL,97,'Comedy','spinnies','Jean-Paul Rappeneau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2578,'Bringing Down the House',NULL,6,'Comedy','resmethrin','Adam Shankman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2579,'Bruce Almighty',NULL,98,'Comedy','angledozer','Tom Shadyac',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2580,'Bulletproof Monk',NULL,64,'Action','ethoxylate','Paul Hunter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2581,'Charlie''s Angels: Full Throttle',NULL,43,'Action','ursidae','McG',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2582,'Cheaper by the Dozen',NULL,56,'Comedy','whippowill','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2583,'Code 46',NULL,37,'Drama','silurid','Michael Winterbottom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2584,'Cold Mountain',NULL,54,'Adventure','bardiche','Anthony Minghella',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2585,'Confidence',NULL,60,'Crime','logicists','James Foley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2586,'Cradle 2 the Grave',NULL,70,'Action','parroter','Andrzej Bartkowiak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2587,'Daddy Day Care',NULL,86,'Comedy','hell-rake','Steve Carr',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2588,'Darkness Falls',NULL,49,'Horror','triphylite','Jonathan Liebesman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2589,'Dickie Roberts: Former Child Star',NULL,74,'Comedy','distancy','Sam Weisman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2590,'Dreamcatcher',NULL,19,'Drama','spinnies','Lawrence Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2591,'Dumb and Dumberer: When Harry Met Lloyd',NULL,64,'Comedy','resmethrin','Troy Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2592,'Duplex',NULL,82,'Comedy','angledozer','Danny DeVito',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2593,'DysFunktional Family',NULL,4,'Comedy','ethoxylate','George Gallo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2594,'Elf',NULL,33,'Comedy','ursidae','Jon Favreau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2595,'Final Destination 2',NULL,12,'Horror','whippowill','David R. Ellis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2596,'Finding Nemo',NULL,77,'Adventure','silurid','Andrew Stanton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2597,'Freaky Friday',NULL,26,'Comedy','bardiche','Mark Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2598,'Freddy vs. Jason',NULL,12,'Action','logicists','Ronny Yu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2599,'From Justin to Kelly',NULL,56,'Comedy','parroter','Robert Iscove',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2600,'Gigli',NULL,74,'Comedy','hell-rake','Martin Brest',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2601,'Gods and Generals',NULL,12,'Drama','triphylite','Ron Maxwell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2602,'Good Boy!',NULL,62,'Comedy','distancy','John Hoffman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2603,'Good Bye Lenin!',NULL,21,'Drama','spinnies','Wolfgang Becker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2604,'Gory Gory Hallelujah',NULL,92,'Comedy','resmethrin','Sue Corcoran',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2605,'Gothika',NULL,51,'Horror','angledozer','Mathieu Kassovitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2606,'Head of State',NULL,11,'Comedy','ethoxylate','Chris Rock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2607,'High Tension',NULL,23,'Horror','ursidae','Alexandre Aja',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2608,'Holes',NULL,61,'Adventure','whippowill','Andrew Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2609,'Hollywood Homicide',NULL,12,'Action','silurid','Ron Shelton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2610,'Honey',NULL,69,'Drama','bardiche','Bille Woodruff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2611,'House of 1000 Corpses',NULL,98,'Horror','logicists','Rob Zombie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2612,'House of Sand and Fog',NULL,18,'Drama','parroter','Vadim Perelman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2613,'How to Deal',NULL,24,'Comedy','hell-rake','Clare Kilner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2614,'How to Lose a Guy in 10 Days',NULL,11,'Comedy','triphylite','Donald Petrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2615,'Hulk',NULL,32,'Action','distancy','Ang Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2616,'I Love Your Work',NULL,88,'Drama','spinnies','Adam Goldberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2617,'Identity',NULL,45,'Mystery','resmethrin','James Mangold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2618,'In the Cut',NULL,30,'Mystery','angledozer','Jane Campion',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2619,'Intolerable Cruelty',NULL,3,'Comedy','ethoxylate','Joel Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2620,'Jeepers Creepers II',NULL,2,'Horror','ursidae','Victor Salva',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2621,'Johnny English',NULL,5,'Action','whippowill','Peter Howitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2622,'Just Married',NULL,81,'Comedy','silurid','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2623,'Kangaroo Jack',NULL,44,'Action','bardiche','David McNally',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2624,'Kill Bill: Vol. 1',NULL,14,'Action','logicists','Quentin Tarantino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2625,'Lara Croft Tomb Raider: The Cradle of Life',NULL,81,'Action','parroter','Jan de Bont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2626,'Latter Days',NULL,37,'Comedy','hell-rake','C. Jay Cox',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2627,'Legally Blonde 2: Red, White & Blonde',NULL,77,'Comedy','triphylite','Charles Herman-Wurmfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2628,'Looney Tunes: Back in Action',NULL,84,'Adventure','distancy','Joe Dante',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2629,'Lost in Translation',NULL,92,'Drama','spinnies','Sofia Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2630,'Love Actually',NULL,85,'Comedy','resmethrin','Richard Curtis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2631,'Malibu''s Most Wanted',NULL,11,'Comedy','angledozer','John Whitesell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2632,'Mambo Italiano',NULL,88,'Comedy','ethoxylate','��mile Gaudreault',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2633,'Marci X',NULL,89,'Comedy','ursidae','Richard Benjamin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2634,'Master and Commander: The Far Side of the World',NULL,56,'Action','whippowill','Peter Weir',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2635,'Mona Lisa Smile',NULL,78,'Drama','silurid','Mike Newell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2636,'Monster',NULL,56,'Biography','bardiche','Patty Jenkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2637,'My Boss''s Daughter',NULL,67,'Comedy','logicists','David Zucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2638,'My Life Without Me',NULL,95,'Drama','parroter','Isabel Coixet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2639,'Mystic River',NULL,47,'Crime','hell-rake','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2640,'Northfork',NULL,4,'Drama','triphylite','Michael Polish',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2641,'Old School',NULL,81,'Comedy','distancy','Todd Phillips',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2642,'Oldboy',NULL,93,'Drama','spinnies','Chan-wook Park',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2643,'Once Upon a Time in Mexico',NULL,81,'Action','resmethrin','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2644,'Open Range',NULL,14,'Drama','angledozer','Kevin Costner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2645,'Open Water',NULL,93,'Adventure','ethoxylate','Chris Kentis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2646,'Osama',NULL,95,'Drama','ursidae','Siddiq Barmak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2647,'Out of Time',NULL,43,'Crime','whippowill','Carl Franklin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2648,'Owning Mahowny',NULL,82,'Crime','silurid','Richard Kwietniowski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2649,'Party Monster',NULL,1,'Biography','bardiche','Fenton Bailey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2650,'Paycheck',NULL,37,'Action','logicists','John Woo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2651,'Pieces of April',NULL,52,'Comedy','parroter','Peter Hedges',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2652,'Pirates of the Caribbean: The Curse of the Black Pearl',NULL,92,'Action','hell-rake','Gore Verbinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2653,'Radio',NULL,43,'Biography','triphylite','Michael Tollin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2654,'Remember Me, My Love',NULL,12,'Comedy','distancy','Gabriele Muccino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2655,'Rugrats Go Wild',NULL,14,'Adventure','spinnies','John Eng',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2656,'S.W.A.T.',NULL,41,'Action','resmethrin','Clark Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2657,'Saints and Soldiers',NULL,90,'Action','angledozer','Ryan Little',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2658,'Scary Movie 3',NULL,56,'Comedy','ethoxylate','David Zucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2659,'School of Rock',NULL,37,'Comedy','ursidae','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2660,'Seabiscuit',NULL,41,'Drama','whippowill','Gary Ross',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2661,'Secondhand Lions',NULL,63,'Comedy','silurid','Tim McCanlies',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2662,'Shade',NULL,32,'Crime','bardiche','Damian Nieman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2663,'Shanghai Knights',NULL,7,'Action','logicists','David Dobkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2664,'Shattered Glass',NULL,46,'Drama','parroter','Billy Ray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2665,'Sinbad: Legend of the Seven Seas',NULL,29,'Adventure','hell-rake','Patrick Gilmore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2666,'Something''s Gotta Give',NULL,34,'Comedy','triphylite','Nancy Meyers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2667,'Spy Kids 3-D: Game Over',NULL,39,'Action','distancy','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2668,'Stuck on You',NULL,65,'Comedy','spinnies','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2669,'Tarnation',NULL,28,'Biography','resmethrin','Jonathan Caouette',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2670,'Tears of the Sun',NULL,82,'Action','angledozer','Antoine Fuqua',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2671,'Terminator 3: Rise of the Machines',NULL,39,'Action','ethoxylate','Jonathan Mostow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2672,'The Barbarian Invasions',NULL,29,'Comedy','ursidae','Denys Arcand',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2673,'The Battle of Shaker Heights',NULL,51,'Comedy','whippowill','Efram Potelle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2674,'The Book of Mormon Movie, Volume 1: The Journey',NULL,74,'Adventure','silurid','Gary Rogers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2675,'The Brown Bunny',NULL,32,'Drama','bardiche','Vincent Gallo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2676,'The Cat in the Hat',NULL,23,'Adventure','logicists','Bo Welch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2677,'The Cooler',NULL,97,'Crime','parroter','Wayne Kramer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2678,'The Core',NULL,6,'Action','hell-rake','Jon Amiel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2679,'The Haunted Mansion',NULL,98,'Comedy','triphylite','Rob Minkoff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2680,'The Hebrew Hammer',NULL,64,'Comedy','distancy','Jonathan Kesselman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2681,'The Hunted',NULL,43,'Action','spinnies','William Friedkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2682,'The Italian Job',NULL,56,'Action','resmethrin','F. Gary Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2683,'The Jungle Book 2',NULL,37,'Adventure','angledozer','Steve Trenbirth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2684,'The Last Samurai',NULL,54,'Action','ethoxylate','Edward Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2685,'The League of Extraordinary Gentlemen',NULL,60,'Action','ursidae','Stephen Norrington',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2686,'The Life of David Gale',NULL,70,'Crime','whippowill','Alan Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2687,'The Lizzie McGuire Movie',NULL,86,'Adventure','silurid','Jim Fall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2688,'The Lord of the Rings: The Return of the King',NULL,49,'Action','bardiche','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2689,'The Matrix Reloaded',NULL,74,'Action','logicists','Lana Wachowski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2690,'The Matrix Revolutions',NULL,19,'Action','parroter','Lana Wachowski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2691,'The Medallion',NULL,64,'Action','hell-rake','Gordon Chan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2692,'The Order',NULL,82,'Action','triphylite','Brian Helgeland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2693,'The R.M.',NULL,4,'Comedy','distancy','Kurt Hale',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2694,'The Real Cancun',NULL,33,'Documentary','spinnies','Rick de Oliveira',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2695,'The Rundown',NULL,12,'Action','resmethrin','Peter Berg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2696,'The Singing Detective',NULL,77,'Comedy','angledozer','Keith Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2697,'The Statement',NULL,26,'Drama','ethoxylate','Norman Jewison',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2698,'The Station Agent',NULL,12,'Comedy','ursidae','Tom McCarthy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2699,'The Triplets of Belleville',NULL,56,'Animation','whippowill','Sylvain Chomet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2700,'The Visual Bible: The Gospel of John',NULL,74,'Biography','silurid','Philip Saville',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2701,'Thirteen',NULL,12,'Drama','bardiche','Catherine Hardwicke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2702,'Timeline',NULL,62,'Action','logicists','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2703,'Travelers and Magicians',NULL,21,'Adventure','parroter','Khyentse Norbu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2704,'Under the Tuscan Sun',NULL,92,'Comedy','hell-rake','Audrey Wells',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2705,'Underworld',NULL,51,'Action','triphylite','Len Wiseman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2706,'Veronica Guerin',NULL,11,'Biography','distancy','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2707,'What a Girl Wants',NULL,23,'Comedy','spinnies','Dennie Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2708,'Willard',NULL,61,'Drama','resmethrin','Glen Morgan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2709,'Wonderland',NULL,12,'Crime','angledozer','James Cox',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2710,'Wrong Turn',NULL,69,'Horror','ethoxylate','Rob Schmidt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2711,'X-Men 2',NULL,98,'Action','ursidae','Bryan Singer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2712,'13 Going on 30',NULL,18,'Comedy','whippowill','Gary Winick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2713,'2046',NULL,24,'Drama','silurid','Kar-Wai Wong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2714,'50 First Dates',NULL,11,'Comedy','bardiche','Peter Segal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2715,'A Cinderella Story',NULL,32,'Comedy','logicists','Mark Rosman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2716,'A Home at the End of the World',NULL,88,'Drama','parroter','Michael Mayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2717,'A Very Long Engagement',NULL,45,'Drama','hell-rake','Jean-Pierre Jeunet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2718,'After the Sunset',NULL,30,'Action','triphylite','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2719,'Against the Ropes',NULL,3,'Biography','distancy','Charles S. Dutton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2720,'Agent Cody Banks 2: Destination London',NULL,2,'Action','spinnies','Kevin Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2721,'Alexander',NULL,5,'Action','resmethrin','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2722,'Alfie',NULL,81,'Comedy','angledozer','Charles Shyer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2723,'Along Came Polly',NULL,44,'Comedy','ethoxylate','John Hamburg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2724,'Anacondas: The Hunt for the Blood Orchid',NULL,14,'Action','ursidae','Dwight H. Little',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2725,'Anchorman: The Legend of Ron Burgundy',NULL,81,'Comedy','whippowill','Adam McKay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2726,'Around the World in 80 Days',NULL,37,'Action','silurid','Frank Coraci',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2727,'As It Is in Heaven',NULL,77,'Comedy','bardiche','Kay Pollak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2728,'AVP: Alien vs. Predator',NULL,84,'Action','logicists','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2729,'Barbershop 2: Back in Business',NULL,92,'Comedy','parroter','Kevin Rodney Sullivan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2730,'Before Sunset',NULL,85,'Drama','hell-rake','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2731,'Being Julia',NULL,11,'Comedy','triphylite','Istv��n Szab�?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2732,'Beyond the Sea',NULL,88,'Biography','distancy','Kevin Spacey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2733,'Birth',NULL,89,'Drama','spinnies','Jonathan Glazer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2734,'Blade: Trinity',NULL,56,'Action','resmethrin','David S. Goyer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2735,'Bride & Prejudice',NULL,78,'Comedy','angledozer','Gurinder Chadha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2736,'Bridget Jones: The Edge of Reason',NULL,56,'Comedy','ethoxylate','Beeban Kidron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2737,'Catch That Kid',NULL,67,'Comedy','ursidae','Bart Freundlich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2738,'Catwoman',NULL,95,'Action','whippowill','Pitof',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2739,'Cellular',NULL,47,'Action','silurid','David R. Ellis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2740,'Chasing Liberty',NULL,4,'Comedy','bardiche','Andy Cadiff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2741,'Christmas with the Kranks',NULL,81,'Comedy','logicists','Joe Roth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2742,'Clean',NULL,93,'Drama','parroter','Olivier Assayas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2743,'Closer',NULL,81,'Drama','hell-rake','Mike Nichols',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2744,'Club Dread',NULL,14,'Comedy','triphylite','Jay Chandrasekhar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2745,'Collateral',NULL,93,'Crime','distancy','Michael Mann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2746,'Confessions of a Teenage Drama Queen',NULL,95,'Comedy','spinnies','Sara Sugarman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2747,'Connie and Carla',NULL,43,'Comedy','resmethrin','Michael Lembeck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2748,'Crash',NULL,82,'Crime','angledozer','Paul Haggis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2749,'D.E.B.S.',NULL,1,'Action','ethoxylate','Angela Robinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2750,'Dawn of the Dead',NULL,37,'Action','ursidae','Zack Snyder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2751,'Dead Man''s Shoes',NULL,52,'Crime','whippowill','Shane Meadows',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2752,'Dear Wendy',NULL,92,'Comedy','silurid','Thomas Vinterberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2753,'De-Lovely',NULL,43,'Biography','bardiche','Irwin Winkler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2754,'District B13',NULL,12,'Action','logicists','Pierre Morel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2755,'Dodgeball: A True Underdog Story',NULL,14,'Comedy','parroter','Rawson Marshall Thurber',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2756,'Downfall',NULL,41,'Biography','hell-rake','Oliver Hirschbiegel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2757,'Ella Enchanted',NULL,90,'Comedy','triphylite','Tommy O''Haver',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2758,'Envy',NULL,56,'Comedy','distancy','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2759,'Eternal Sunshine of the Spotless Mind',NULL,37,'Drama','spinnies','Michel Gondry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2760,'Eulogy',NULL,41,'Comedy','resmethrin','Michael Clancy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2761,'EuroTrip',NULL,63,'Comedy','angledozer','Jeff Schaffer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2762,'Exorcist: The Beginning',NULL,32,'Horror','ethoxylate','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2763,'Fahrenheit 9/11',NULL,7,'Documentary','ursidae','Michael Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2764,'Fascination',NULL,46,'Mystery','whippowill','Klaus Menzel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2765,'Fat Albert',NULL,29,'Comedy','silurid','Joel Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2766,'Fighting Tommy Riley',NULL,34,'Drama','bardiche','Eddie O''Flaherty',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2767,'Finding Neverland',NULL,39,'Biography','logicists','Marc Forster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2768,'Flight of the Phoenix',NULL,65,'Action','parroter','John Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2769,'Garden State',NULL,28,'Comedy','hell-rake','Zach Braff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2770,'Garfield',NULL,82,'Animation','triphylite','Peter Hewitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2771,'Godsend',NULL,39,'Drama','distancy','Nick Hamm',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2772,'Harold & Kumar Go to White Castle',NULL,29,'Adventure','spinnies','Danny Leiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2773,'Harry Potter and the Prisoner of Azkaban',NULL,51,'Adventure','resmethrin','Alfonso Cuar�?n',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2774,'Hellboy',NULL,74,'Action','angledozer','Guillermo del Toro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2775,'Hidalgo',NULL,32,'Action','ethoxylate','Joe Johnston',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2776,'Home on the Range',NULL,23,'Animation','ursidae','Will Finn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2777,'Hotel Rwanda',NULL,97,'Drama','whippowill','Terry George',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2778,'House of D',NULL,6,'Comedy','silurid','David Duchovny',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2779,'House of Flying Daggers',NULL,98,'Action','bardiche','Yimou Zhang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2780,'Howl''s Moving Castle',NULL,64,'Adventure','logicists','Hayao Miyazaki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2781,'I Heart Huckabees',NULL,43,'Comedy','parroter','David O. Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2782,'I, Robot',NULL,56,'Action','hell-rake','Alex Proyas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2783,'Imaginary Heroes',NULL,37,'Comedy','triphylite','Dan Harris',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2784,'In Good Company',NULL,54,'Comedy','distancy','Paul Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2785,'Incident at Loch Ness',NULL,60,'Adventure','spinnies','Zak Penn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2786,'Jersey Girl',NULL,70,'Comedy','resmethrin','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2787,'Johnson Family Vacation',NULL,86,'Comedy','angledozer','Christopher Erskin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2788,'Kill Bill: Vol. 2',NULL,49,'Action','ethoxylate','Quentin Tarantino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2789,'Kinsey',NULL,74,'Biography','ursidae','Bill Condon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2790,'Kung Fu Hustle',NULL,19,'Action','whippowill','Stephen Chow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2791,'Ladder 49',NULL,64,'Action','silurid','Jay Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2792,'Laws of Attraction',NULL,82,'Comedy','bardiche','Peter Howitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2793,'Layer Cake',NULL,4,'Crime','logicists','Matthew Vaughn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2794,'Little Black Book',NULL,33,'Comedy','parroter','Nick Hurran',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2795,'Man on Fire',NULL,12,'Action','hell-rake','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2796,'Maria Full of Grace',NULL,77,'Crime','triphylite','Joshua Marston',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2797,'Mean Creek',NULL,26,'Crime','distancy','Jacob Aaron Estes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2798,'Mean Girls',NULL,12,'Comedy','spinnies','Mark Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2799,'Meet the Fockers',NULL,56,'Comedy','resmethrin','Jay Roach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2800,'Million Dollar Baby',NULL,74,'Drama','angledozer','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2801,'Mindhunters',NULL,12,'Crime','ethoxylate','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2802,'Miracle',NULL,62,'Biography','ursidae','Gavin O''Connor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2803,'Mr 3000',NULL,21,'Comedy','whippowill','Charles Stone III',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2804,'My Date with Drew',NULL,92,'Documentary','silurid','Jon Gunn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2805,'My Summer of Love',NULL,51,'Drama','bardiche','Pawel Pawlikowski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2806,'Napoleon Dynamite',NULL,11,'Comedy','logicists','Jared Hess',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2807,'National Treasure',NULL,23,'Action','parroter','Jon Turteltaub',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2808,'New York Minute',NULL,61,'Comedy','hell-rake','Dennie Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2809,'Night Watch',NULL,12,'Fantasy','triphylite','Timur Bekmambetov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2810,'November',NULL,69,'Drama','distancy','Greg Harrison',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2811,'Ocean''s Twelve',NULL,98,'Crime','spinnies','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2812,'Paparazzi',NULL,18,'Action','resmethrin','Paul Abascal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2813,'Primer',NULL,24,'Drama','angledozer','Shane Carruth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2814,'Raise Your Voice',NULL,11,'Family','ethoxylate','Sean McNamara',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2815,'Raising Helen',NULL,32,'Comedy','ursidae','Garry Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2816,'Ray',NULL,88,'Biography','whippowill','Taylor Hackford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2817,'Resident Evil: Apocalypse',NULL,45,'Action','silurid','Alexander Witt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2818,'Saint Ralph',NULL,30,'Comedy','bardiche','Michael McGowan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2819,'Saved!',NULL,3,'Comedy','logicists','Brian Dannelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2820,'Saw',NULL,2,'Horror','parroter','James Wan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2821,'Scooby-Doo 2: Monsters Unleashed',NULL,5,'Adventure','hell-rake','Raja Gosnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2822,'Secret Window',NULL,81,'Mystery','triphylite','David Koepp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2823,'Seed of Chucky',NULL,44,'Comedy','distancy','Don Mancini',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2824,'Shall We Dance',NULL,14,'Comedy','spinnies','Peter Chelsom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2825,'Shark Tale',NULL,81,'Adventure','resmethrin','Bibo Bergeron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2826,'Shaun of the Dead',NULL,37,'Comedy','angledozer','Edgar Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2827,'Short Cut to Nirvana: Kumbh Mela',NULL,77,'Documentary','ethoxylate','Maurizio Benazzo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2828,'Shrek 2',NULL,84,'Adventure','ursidae','Andrew Adamson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2829,'Sideways',NULL,92,'Adventure','whippowill','Alexander Payne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2830,'Sky Captain and the World of Tomorrow',NULL,85,'Action','silurid','Kerry Conran',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2831,'Sleepover',NULL,11,'Comedy','bardiche','Joe Nussbaum',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2832,'Soul Plane',NULL,88,'Comedy','logicists','Jessy Terrero',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2833,'Spanglish',NULL,89,'Comedy','parroter','James L. Brooks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2834,'Spider-Man 2',NULL,56,'Action','hell-rake','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2835,'Starsky & Hutch',NULL,78,'Comedy','triphylite','Todd Phillips',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2836,'Steamboy',NULL,56,'Action','distancy','Katsuhiro ��tomo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2837,'Summer Storm',NULL,67,'Comedy','spinnies','Marco Kreuzpaintner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2838,'Super Size Me',NULL,95,'Comedy','resmethrin','Morgan Spurlock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2839,'Superbabies: Baby Geniuses 2',NULL,47,'Comedy','angledozer','Bob Clark',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2840,'Suspect Zero',NULL,4,'Crime','ethoxylate','E. Elias Merhige',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2841,'Tae Guk Gi: The Brotherhood of War',NULL,81,'Action','ursidae','Je-kyu Kang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2842,'Teacher''s Pet',NULL,93,'Animation','whippowill','Timothy Bj̦rklund',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2843,'Team America: World Police',NULL,81,'Action','silurid','Trey Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2844,'The Alamo',NULL,14,'Drama','bardiche','John Lee Hancock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2845,'The Aviator',NULL,93,'Biography','logicists','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2846,'The Big Bounce',NULL,95,'Comedy','parroter','George Armitage',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2847,'The Bourne Supremacy',NULL,43,'Action','hell-rake','Paul Greengrass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2848,'The Bridge of San Luis Rey',NULL,82,'Drama','triphylite','Mary McGuckian',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2849,'The Butterfly Effect',NULL,1,'Sci-Fi','distancy','Eric Bress',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2850,'The Chorus',NULL,37,'Drama','spinnies','Christophe Barratier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2851,'The Chronicles of Riddick',NULL,52,'Action','resmethrin','David Twohy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2852,'The Day After Tomorrow',NULL,92,'Action','angledozer','Roland Emmerich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2853,'The Girl Next Door',NULL,43,'Comedy','ethoxylate','Luke Greenfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2854,'The Grudge',NULL,12,'Horror','ursidae','Takashi Shimizu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2855,'The Holy Girl',NULL,14,'Drama','whippowill','Lucrecia Martel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2856,'The Incredibles',NULL,41,'Action','silurid','Brad Bird',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2857,'The Ladykillers',NULL,90,'Comedy','bardiche','Ethan Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2858,'The Life Aquatic with Steve Zissou',NULL,56,'Adventure','logicists','Wes Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2859,'The Machinist',NULL,37,'Drama','parroter','Brad Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2860,'The Manchurian Candidate',NULL,41,'Drama','hell-rake','Jonathan Demme',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2861,'The Merchant of Venice',NULL,63,'Drama','triphylite','Michael Radford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2862,'The Notebook',NULL,32,'Drama','distancy','Nick Cassavetes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2863,'The Passion of the Christ',NULL,7,'Drama','spinnies','Mel Gibson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2864,'The Phantom of the Opera',NULL,46,'Drama','resmethrin','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2865,'The Polar Express',NULL,29,'Adventure','angledozer','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2866,'The Princess Diaries 2: Royal Engagement',NULL,34,'Comedy','ethoxylate','Garry Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2867,'The Punisher',NULL,39,'Action','ursidae','Jonathan Hensleigh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2868,'The Sea Inside',NULL,65,'Biography','whippowill','Alejandro Amen��bar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2869,'The SpongeBob SquarePants Movie',NULL,28,'Adventure','silurid','Stephen Hillenburg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2870,'The Stepford Wives',NULL,82,'Comedy','bardiche','Frank Oz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2871,'The Terminal',NULL,39,'Comedy','logicists','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2872,'The Village',NULL,29,'Drama','parroter','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2873,'The Whole Ten Yards',NULL,51,'Comedy','hell-rake','Howard Deutch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2874,'The Work and the Glory',NULL,74,'Drama','triphylite','Russell Holt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2875,'Thunderbirds',NULL,32,'Action','distancy','Jonathan Frakes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2876,'Torque',NULL,23,'Action','spinnies','Joseph Kahn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2877,'Troy',NULL,97,'Adventure','resmethrin','Wolfgang Petersen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2878,'Two Brothers',NULL,6,'Adventure','angledozer','Jean-Jacques Annaud',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2879,'Vanity Fair',NULL,98,'Drama','ethoxylate','Mira Nair',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2880,'Veer-Zaara',NULL,64,'Drama','ursidae','Yash Chopra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2881,'Vera Drake',NULL,43,'Crime','whippowill','Mike Leigh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2882,'Walking Tall',NULL,56,'Action','silurid','Kevin Bray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2883,'Welcome to Mooseport',NULL,37,'Comedy','bardiche','Donald Petrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2884,'White Chicks',NULL,54,'Comedy','logicists','Keenen Ivory Wayans',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2885,'Wicker Park',NULL,60,'Drama','parroter','Paul McGuigan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2886,'Wimbledon',NULL,70,'Comedy','hell-rake','Richard Loncraine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2887,'Win a Date with Tad Hamilton!',NULL,86,'Comedy','triphylite','Robert Luketic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2888,'Without a Paddle',NULL,49,'Adventure','distancy','Steven Brill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2889,'Yes',NULL,74,'Drama','spinnies','Sally Potter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2890,'You Got Served',NULL,19,'Drama','resmethrin','Chris Stokes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2891,'A History of Violence',NULL,64,'Crime','angledozer','David Cronenberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2892,'A Lot Like Love',NULL,82,'Comedy','ethoxylate','Nigel Cole',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2893,'A Sound of Thunder',NULL,4,'Action','ursidae','Peter Hyams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2894,'̠on Flux',NULL,33,'Action','whippowill','Karyn Kusama',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2895,'Alone in the Dark',NULL,12,'Horror','silurid','Uwe Boll',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2896,'An American Haunting',NULL,77,'Horror','bardiche','Courtney Solomon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2897,'An Unfinished Life',NULL,26,'Drama','logicists','Lasse Hallstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2898,'Are We There Yet?',NULL,12,'Adventure','parroter','Brian Levant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2899,'Assault on Precinct 13',NULL,56,'Action','hell-rake','Jean-Fran̤ois Richet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2900,'Batman Begins',NULL,74,'Action','triphylite','Christopher Nolan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (2901,'Be Cool',NULL,12,'Comedy','distancy','F. Gary Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2902,'Because of Winn-Dixie',NULL,62,'Comedy','spinnies','Wayne Wang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2903,'BloodRayne',NULL,21,'Action','resmethrin','Uwe Boll',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2904,'Boogeyman',NULL,92,'Drama','angledozer','Stephen Kay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2905,'Boynton Beach Club',NULL,51,'Comedy','ethoxylate','Susan Seidelman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2906,'Brokeback Mountain',NULL,11,'Drama','ursidae','Ang Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2907,'Capote',NULL,23,'Biography','whippowill','Bennett Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2908,'Cavite',NULL,61,'Thriller','silurid','Neill Dela Llana',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2909,'Charlie and the Chocolate Factory',NULL,12,'Adventure','bardiche','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2910,'Cheaper by the Dozen 2',NULL,69,'Adventure','logicists','Adam Shankman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2911,'Chicken Little',NULL,98,'Adventure','parroter','Mark Dindal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2912,'Chocolate: Deep Dark Secrets',NULL,18,'Thriller','hell-rake','Vivek Agnihotri',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2913,'Cinderella Man',NULL,24,'Biography','triphylite','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2914,'Coach Carter',NULL,11,'Drama','distancy','Thomas Carter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2915,'Conversations with Other Women',NULL,32,'Comedy','spinnies','Hans Canosa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2916,'Corpse Bride',NULL,88,'Animation','resmethrin','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2917,'Cry_Wolf',NULL,45,'Drama','angledozer','Jeff Wadlow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2918,'Cursed',NULL,30,'Comedy','ethoxylate','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2919,'Dark Water',NULL,3,'Drama','ursidae','Walter Salles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2920,'Dave Chappelle''s Block Party',NULL,2,'Comedy','whippowill','Michel Gondry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2921,'Derailed',NULL,5,'Drama','silurid','Mikael H̴fstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2922,'Deuce Bigalow: European Gigolo',NULL,81,'Comedy','bardiche','Mike Bigelow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2923,'Diary of a Mad Black Woman',NULL,44,'Comedy','logicists','Darren Grant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2924,'Dil Jo Bhi Kahey...',NULL,14,'Romance','parroter','Romesh Sharma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2925,'Domino',NULL,81,'Action','hell-rake','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2926,'Doom',NULL,37,'Action','triphylite','Andrzej Bartkowiak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2927,'Down in the Valley',NULL,77,'Drama','distancy','David Jacobson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2928,'Dreamer: Inspired by a True Story',NULL,84,'Drama','spinnies','John Gatins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2929,'Duma',NULL,92,'Adventure','resmethrin','Carroll Ballard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2930,'Edmond',NULL,85,'Drama','angledozer','Stuart Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2931,'Elektra',NULL,11,'Action','ethoxylate','Rob Bowman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2932,'Elizabethtown',NULL,88,'Comedy','ursidae','Cameron Crowe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2933,'End of the Spear',NULL,89,'Adventure','whippowill','Jim Hanon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2934,'Fateless',NULL,56,'Drama','silurid','Lajos Koltai',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2935,'Fever Pitch',NULL,78,'Comedy','bardiche','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2936,'Flightplan',NULL,56,'Drama','logicists','Robert Schwentke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2937,'Four Brothers',NULL,67,'Action','parroter','John Singleton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2938,'Fun with Dick and Jane',NULL,95,'Comedy','hell-rake','Dean Parisot',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2939,'Get Rich or Die Tryin''',NULL,47,'Biography','triphylite','Jim Sheridan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2940,'Goal! The Dream Begins',NULL,4,'Drama','distancy','Danny Cannon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2941,'Good Night, and Good Luck.',NULL,81,'Biography','spinnies','George Clooney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2942,'Guess Who',NULL,93,'Comedy','resmethrin','Kevin Rodney Sullivan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2943,'Hard Candy',NULL,81,'Crime','angledozer','David Slade',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2944,'Harry Potter and the Goblet of Fire',NULL,14,'Adventure','ethoxylate','Mike Newell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2945,'Harsh Times',NULL,93,'Action','ursidae','David Ayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2946,'Herbie Fully Loaded',NULL,95,'Adventure','whippowill','Angela Robinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2947,'Hide and Seek',NULL,43,'Drama','silurid','John Polson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2948,'Hitch',NULL,82,'Comedy','bardiche','Andy Tennant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2949,'Hoodwinked!',NULL,1,'Action','logicists','Cory Edwards',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2950,'Hostage',NULL,37,'Action','parroter','Florent-Emilio Siri',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2951,'Hostel',NULL,52,'Horror','hell-rake','Eli Roth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2952,'House of Wax',NULL,92,'Horror','triphylite','Jaume Collet-Serra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2953,'Hustle & Flow',NULL,43,'Crime','distancy','Craig Brewer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2954,'Imagine Me & You',NULL,12,'Comedy','spinnies','Ol Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2955,'Inside Deep Throat',NULL,14,'Biography','resmethrin','Fenton Bailey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2956,'Into the Blue',NULL,41,'Action','angledozer','John Stockwell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2957,'Jarhead',NULL,90,'Action','ethoxylate','Sam Mendes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2958,'Joyeux Noel',NULL,56,'Drama','ursidae','Christian Carion',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2959,'Just Like Heaven',NULL,37,'Comedy','whippowill','Mark Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2960,'Kicking & Screaming',NULL,41,'Comedy','silurid','Jesse Dylan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2961,'King Kong',NULL,63,'Action','bardiche','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2962,'Kingdom of Heaven',NULL,32,'Action','logicists','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2963,'King''s Ransom',NULL,7,'Comedy','parroter','Jeffrey W. Byrd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2964,'Kiss Kiss Bang Bang',NULL,46,'Comedy','hell-rake','Shane Black',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2965,'Lady Vengeance',NULL,29,'Crime','triphylite','Chan-wook Park',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2966,'Land of the Dead',NULL,34,'Horror','distancy','George A. Romero',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2967,'London',NULL,39,'Drama','spinnies','Hunter Richards',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2968,'Lonesome Jim',NULL,65,'Comedy','resmethrin','Steve Buscemi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2969,'Lord of War',NULL,28,'Crime','angledozer','Andrew Niccol',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2970,'Lords of Dogtown',NULL,82,'Biography','ethoxylate','Catherine Hardwicke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2971,'Madagascar',NULL,39,'Adventure','ursidae','Eric Darnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2972,'Man of the House',NULL,29,'Action','whippowill','Stephen Herek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2973,'Manderlay',NULL,51,'Drama','silurid','Lars von Trier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2974,'March of the Penguins',NULL,74,'Documentary','bardiche','Luc Jacquet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2975,'Match Point',NULL,32,'Drama','logicists','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2976,'Me and You and Everyone We Know',NULL,23,'Comedy','parroter','Miranda July',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2977,'Memoirs of a Geisha',NULL,97,'Drama','hell-rake','Rob Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2978,'Mirrormask',NULL,6,'Adventure','triphylite','Dave McKean',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2979,'Miss Congeniality 2: Armed and Fabulous',NULL,98,'Action','distancy','John Pasquin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2980,'Monster-in-Law',NULL,64,'Comedy','spinnies','Robert Luketic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2981,'Mr. & Mrs. Smith',NULL,43,'Action','resmethrin','Doug Liman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2982,'Mrs Henderson Presents',NULL,56,'Comedy','angledozer','Stephen Frears',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2983,'Munich',NULL,37,'Drama','ethoxylate','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2984,'Murderball',NULL,54,'Documentary','ursidae','Henry Alex Rubin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2985,'Must Love Dogs',NULL,60,'Comedy','whippowill','Gary David Goldberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2986,'Nanny McPhee',NULL,70,'Comedy','silurid','Kirk Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2987,'Neal ''N'' Nikki',NULL,86,'Comedy','bardiche','Arjun Sablok',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2988,'Nomad: The Warrior',NULL,49,'Drama','logicists','Sergey Bodrov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2989,'North Country',NULL,74,'Drama','parroter','Niki Caro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2990,'Oliver Twist',NULL,19,'Crime','hell-rake','Roman Polanski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2991,'Pooh''s Heffalump Movie',NULL,64,'Animation','triphylite','Frank Nissen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2992,'Pride & Prejudice',NULL,82,'Drama','distancy','Joe Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2993,'Red Eye',NULL,4,'Mystery','spinnies','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2994,'Rent',NULL,33,'Drama','resmethrin','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2995,'Robots',NULL,12,'Adventure','angledozer','Chris Wedge',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2996,'Sahara',NULL,77,'Action','ethoxylate','Breck Eisner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2997,'Saw II',NULL,26,'Horror','ursidae','Darren Lynn Bousman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2998,'Serenity',NULL,12,'Action','whippowill','Joss Whedon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(2999,'Sin City',NULL,56,'Crime','silurid','Frank Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3000,'Sky High',NULL,74,'Adventure','bardiche','Mike Mitchell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3001,'Slow Burn',NULL,12,'Drama','logicists','Wayne Beach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3002,'Son of the Mask',NULL,62,'Comedy','parroter','Lawrence Guterman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3003,'Star Wars: Episode III - Revenge of the Sith',NULL,21,'Action','hell-rake','George Lucas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3004,'Stealth',NULL,92,'Action','triphylite','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3005,'Syriana',NULL,51,'Drama','distancy','Stephen Gaghan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3006,'Thank You for Smoking',NULL,11,'Comedy','spinnies','Jason Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3007,'The 40-Year-Old Virgin',NULL,23,'Comedy','resmethrin','Judd Apatow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3008,'The Adventures of Sharkboy and Lavagirl 3-D',NULL,61,'Action','angledozer','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3009,'The Amityville Horror',NULL,12,'Drama','ethoxylate','Andrew Douglas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3010,'The Ballad of Jack and Rose',NULL,69,'Drama','ursidae','Rebecca Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3011,'The Brothers Grimm',NULL,98,'Action','whippowill','Terry Gilliam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3012,'The Cave',NULL,18,'Adventure','silurid','Bruce Hunt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3013,'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe',NULL,24,'Adventure','bardiche','Andrew Adamson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3014,'The Chumscrubber',NULL,11,'Comedy','logicists','Arie Posin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3015,'The Constant Gardener',NULL,32,'Drama','parroter','Fernando Meirelles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3016,'The Curse of the Were-Rabbit',NULL,88,'Animation','hell-rake','Steve Box',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3017,'The Descent',NULL,45,'Adventure','triphylite','Neil Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3018,'The Devil''s Rejects',NULL,30,'Crime','distancy','Rob Zombie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3019,'The Dukes of Hazzard',NULL,3,'Action','spinnies','Jay Chandrasekhar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3020,'The Exorcism of Emily Rose',NULL,2,'Drama','resmethrin','Scott Derrickson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3021,'The Family Stone',NULL,5,'Comedy','angledozer','Thomas Bezucha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3022,'The Game of Their Lives',NULL,81,'Drama','ethoxylate','David Anspaugh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3023,'The Great Raid',NULL,44,'Action','ursidae','John Dahl',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3024,'The Hitchhiker''s Guide to the Galaxy',NULL,14,'Adventure','whippowill','Garth Jennings',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3025,'The Interpreter',NULL,81,'Crime','silurid','Sydney Pollack',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3026,'The Island',NULL,37,'Action','bardiche','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3027,'The Jacket',NULL,77,'Drama','logicists','John Maybury',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3028,'The Legend of Zorro',NULL,84,'Action','parroter','Martin Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3029,'The Longest Yard',NULL,92,'Comedy','hell-rake','Peter Segal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3030,'The Lost City',NULL,85,'Drama','triphylite','Andy Garcia',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3031,'The Man',NULL,11,'Action','distancy','Les Mayfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3032,'The Matador',NULL,88,'Comedy','spinnies','Richard Shepard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3033,'The New World',NULL,89,'Biography','resmethrin','Terrence Malick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3034,'The Pacifier',NULL,56,'Action','angledozer','Adam Shankman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3035,'The Perfect Man',NULL,78,'Comedy','ethoxylate','Mark Rosman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3036,'The Producers',NULL,56,'Comedy','ursidae','Susan Stroman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3037,'The Promise',NULL,67,'Action','whippowill','Kaige Chen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3038,'The Proposition',NULL,95,'Crime','silurid','John Hillcoat',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3039,'The Protector',NULL,47,'Action','bardiche','Prachya Pinkaew',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3040,'The Puffy Chair',NULL,4,'Comedy','logicists','Jay Duplass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3041,'The Quiet',NULL,81,'Drama','parroter','Jamie Babbit',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3042,'The Salon',NULL,93,'Comedy','hell-rake','Mark Brown',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3043,'The Sisterhood of the Traveling Pants',NULL,81,'Comedy','triphylite','Ken Kwapis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3044,'The Skeleton Key',NULL,14,'Horror','distancy','Iain Softley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3045,'The Squid and the Whale',NULL,93,'Comedy','spinnies','Noah Baumbach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3046,'The Upside of Anger',NULL,95,'Comedy','resmethrin','Mike Binder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3047,'The Weather Man',NULL,43,'Comedy','angledozer','Gore Verbinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3048,'The Wedding Date',NULL,82,'Comedy','ethoxylate','Clare Kilner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3049,'The Wendell Baker Story',NULL,1,'Comedy','ursidae','Andrew Wilson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3050,'The White Countess',NULL,37,'Drama','whippowill','James Ivory',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3051,'The Work and the Glory II: American Zion',NULL,52,'Drama','silurid','Sterling Van Wagenen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3052,'The World''s Fastest Indian',NULL,92,'Biography','bardiche','Roger Donaldson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3053,'Three Burials',NULL,43,'Adventure','logicists','Tommy Lee Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3054,'Thumbsucker',NULL,12,'Comedy','parroter','Mike Mills',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3055,'Transamerica',NULL,14,'Adventure','hell-rake','Duncan Tucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3056,'Transporter 2',NULL,41,'Action','triphylite','Louis Leterrier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3057,'Tristram Shandy: A Cock and Bull Story',NULL,90,'Comedy','distancy','Michael Winterbottom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3058,'Trust the Man',NULL,56,'Comedy','spinnies','Bart Freundlich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3059,'Tsotsi',NULL,37,'Crime','resmethrin','Gavin Hood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3060,'Underclassman',NULL,41,'Action','angledozer','Marcos Siega',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3061,'Undiscovered',NULL,63,'Comedy','ethoxylate','Meiert Avis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3062,'Unleashed',NULL,32,'Action','ursidae','Louis Leterrier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3063,'V for Vendetta',NULL,7,'Action','whippowill','James McTeigue',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3064,'Valiant',NULL,46,'Adventure','silurid','Gary Chapman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3065,'Wah-Wah',NULL,29,'Drama','bardiche','Richard E. Grant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3066,'Waiting...',NULL,34,'Comedy','logicists','Rob McKittrick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3067,'Walk the Line',NULL,39,'Biography','parroter','James Mangold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3068,'War of the Worlds',NULL,65,'Adventure','hell-rake','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3069,'Where the Truth Lies',NULL,28,'Crime','triphylite','Atom Egoyan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3070,'White Noise',NULL,82,'Drama','distancy','Geoffrey Sax',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3071,'Winter Passing',NULL,39,'Comedy','spinnies','Adam Rapp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3072,'xXx: State of the Union',NULL,29,'Action','resmethrin','Lee Tamahori',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3073,'Zathura: A Space Adventure',NULL,51,'Action','angledozer','Jon Favreau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3074,'10th & Wolf',NULL,74,'Crime','ethoxylate','Robert Moresco',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3075,'16 Blocks',NULL,32,'Action','ursidae','Richard Donner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3076,'300',NULL,23,'Action','whippowill','Zack Snyder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3077,'A Good Year',NULL,97,'Comedy','silurid','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3078,'A Prairie Home Companion',NULL,6,'Comedy','bardiche','Robert Altman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3079,'A Scanner Darkly',NULL,98,'Animation','logicists','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3080,'Alex Rider: Operation Stormbreaker',NULL,64,'Action','parroter','Geoffrey Sax',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3081,'All the King''s Men',NULL,43,'Drama','hell-rake','Steven Zaillian',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3082,'Alone with Her',NULL,56,'Crime','triphylite','Eric Nicholas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3083,'American Dreamz',NULL,37,'Comedy','distancy','Paul Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3084,'Apocalypto',NULL,54,'Action','spinnies','Mel Gibson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3085,'Aquamarine',NULL,60,'Comedy','resmethrin','Elizabeth Allen Rosenbaum',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3086,'Arthur and the Invisibles',NULL,70,'Adventure','angledozer','Luc Besson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3087,'Babel',NULL,86,'Drama','ethoxylate','Alejandro G. I̱��rritu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3088,'Barnyard',NULL,49,'Animation','ursidae','Steve Oedekerk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3089,'Basic Instinct 2',NULL,74,'Crime','whippowill','Michael Caton-Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3090,'Beer League',NULL,19,'Comedy','silurid','Frank Sebastiano',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3091,'Beerfest',NULL,64,'Comedy','bardiche','Jay Chandrasekhar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3092,'Bella',NULL,82,'Drama','logicists','Alejandro Monteverde',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3093,'Big Momma''s House 2',NULL,4,'Comedy','parroter','John Whitesell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3094,'Black Book',NULL,33,'Drama','hell-rake','Paul Verhoeven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3095,'Black Christmas',NULL,12,'Horror','triphylite','Glen Morgan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3096,'Black Snake Moan',NULL,77,'Drama','distancy','Craig Brewer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3097,'Blood Diamond',NULL,26,'Adventure','spinnies','Edward Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3098,'Bobby',NULL,12,'Drama','resmethrin','Emilio Estevez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3099,'Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan',NULL,56,'Comedy','angledozer','Larry Charles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3100,'Cars',NULL,74,'Adventure','ethoxylate','John Lasseter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3101,'Casino Royale',NULL,12,'Action','ursidae','Martin Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3102,'Catch a Fire',NULL,62,'Biography','whippowill','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3103,'Children of Men',NULL,21,'Drama','silurid','Alfonso Cuar�?n',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3104,'Clerks II',NULL,92,'Comedy','bardiche','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3105,'Click',NULL,51,'Comedy','logicists','Frank Coraci',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3106,'Come Early Morning',NULL,11,'Drama','parroter','Joey Lauren Adams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3107,'Copying Beethoven',NULL,23,'Biography','hell-rake','Agnieszka Holland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3108,'Crank',NULL,61,'Action','triphylite','Mark Neveldine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3109,'Crossover',NULL,12,'Action','distancy','Preston A. Whitmore II',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3110,'Curious George',NULL,69,'Adventure','spinnies','Matthew O''Callaghan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3111,'Curse of the Golden Flower',NULL,98,'Drama','resmethrin','Yimou Zhang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3112,'Date Movie',NULL,18,'Comedy','angledozer','Aaron Seltzer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3113,'DOA: Dead or Alive',NULL,24,'Action','ethoxylate','Corey Yuen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3114,'Doogal',NULL,11,'Adventure','ursidae','Dave Borthwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3115,'Dreamgirls',NULL,32,'Drama','whippowill','Bill Condon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3116,'Eight Below',NULL,88,'Adventure','silurid','Frank Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3117,'Employee of the Month',NULL,45,'Comedy','bardiche','Greg Coolidge',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3118,'Eragon',NULL,30,'Action','logicists','Stefen Fangmeier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3119,'Exiled',NULL,3,'Action','parroter','Johnnie To',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3120,'Eye of the Dolphin',NULL,2,'Comedy','hell-rake','Michael D. Sellers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3121,'Facing the Giants',NULL,5,'Drama','triphylite','Alex Kendrick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3122,'Factory Girl',NULL,81,'Biography','distancy','George Hickenlooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3123,'Failure to Launch',NULL,44,'Comedy','spinnies','Tom Dey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3124,'Fido',NULL,14,'Comedy','resmethrin','Andrew Currie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3125,'Final Destination 3',NULL,81,'Horror','angledozer','James Wong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3126,'Find Me Guilty',NULL,37,'Biography','ethoxylate','Sidney Lumet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3127,'Firewall',NULL,77,'Crime','ursidae','Richard Loncraine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3128,'Flags of Our Fathers',NULL,84,'Drama','whippowill','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3129,'Flicka',NULL,92,'Adventure','silurid','Michael Mayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3130,'Flushed Away',NULL,85,'Adventure','bardiche','David Bowers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3131,'Flyboys',NULL,11,'Action','logicists','Tony Bill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3132,'For Your Consideration',NULL,88,'Comedy','parroter','Christopher Guest',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3133,'Friends with Money',NULL,89,'Comedy','hell-rake','Nicole Holofcener',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3134,'Fur: An Imaginary Portrait of Diane Arbus',NULL,56,'Biography','triphylite','Steven Shainberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3135,'Gridiron Gang',NULL,78,'Crime','distancy','Phil Joanou',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3136,'Half Nelson',NULL,56,'Drama','spinnies','Ryan Fleck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3137,'Happily N''Ever After',NULL,67,'Adventure','resmethrin','Paul Bolger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3138,'Happy Feet',NULL,95,'Animation','angledozer','George Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3139,'Hoot',NULL,47,'Adventure','ethoxylate','Wil Shriner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3140,'I Served the King of England',NULL,4,'Comedy','ursidae','Jir�? Menzel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3141,'I Want Someone to Eat Cheese With',NULL,81,'Comedy','whippowill','Jeff Garlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3142,'Ice Age: The Meltdown',NULL,93,'Action','silurid','Carlos Saldanha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3143,'Idlewild',NULL,81,'Crime','bardiche','Bryan Barber',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3144,'In Her Line of Fire',NULL,14,'Action','logicists','Brian Trenchard-Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3145,'Infamous',NULL,93,'Biography','parroter','Douglas McGrath',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3146,'Inside Man',NULL,95,'Crime','hell-rake','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3147,'Ira & Abby',NULL,43,'Comedy','triphylite','Robert Cary',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3148,'Jindabyne',NULL,82,'Crime','distancy','Ray Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3149,'Journey from the Fall',NULL,1,'Drama','spinnies','Ham Tran',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3150,'Just My Luck',NULL,37,'Comedy','resmethrin','Donald Petrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3151,'Kabhi Alvida Naa Kehna',NULL,52,'Drama','angledozer','Karan Johar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3152,'Lady in the Water',NULL,92,'Drama','ethoxylate','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3153,'Larry the Cable Guy: Health Inspector',NULL,43,'Comedy','ursidae','Trent Cooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3154,'Last Holiday',NULL,12,'Adventure','whippowill','Wayne Wang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3155,'Letters from Iwo Jima',NULL,14,'Drama','silurid','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3156,'Little Children',NULL,41,'Drama','bardiche','Todd Field',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3157,'Little Miss Sunshine',NULL,90,'Comedy','logicists','Jonathan Dayton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3158,'Littleman',NULL,56,'Comedy','parroter','Keenen Ivory Wayans',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3159,'Love''s Abiding Joy',NULL,37,'Drama','hell-rake','Michael Landon Jr.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3160,'Lucky Number Slevin',NULL,41,'Crime','triphylite','Paul McGuigan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3161,'Madea''s Family Reunion',NULL,63,'Comedy','distancy','Tyler Perry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3162,'Man of the Year',NULL,32,'Comedy','spinnies','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3163,'Marie Antoinette',NULL,7,'Biography','resmethrin','Sofia Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3164,'Miss Potter',NULL,46,'Biography','angledozer','Chris Noonan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3165,'Mission: Impossible III',NULL,29,'Action','ethoxylate','J.J. Abrams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3166,'Monster House',NULL,34,'Animation','ursidae','Gil Kenan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3167,'My Super Ex-Girlfriend',NULL,39,'Comedy','whippowill','Ivan Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3168,'Nacho Libre',NULL,65,'Comedy','silurid','Jared Hess',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3169,'Night at the Museum',NULL,28,'Action','bardiche','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3170,'Notes on a Scandal',NULL,82,'Crime','logicists','Richard Eyre',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3171,'Old Joy',NULL,39,'Drama','parroter','Kelly Reichardt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3172,'Once in a Lifetime: The Extraordinary Story of the New York Cosmos',NULL,29,'Documentary','hell-rake','Paul Crowder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3173,'One Night with the King',NULL,51,'Biography','triphylite','Michael O. Sajbel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3174,'One to Another',NULL,74,'Drama','distancy','Pascal Arnold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3175,'Opal Dream',NULL,32,'Drama','spinnies','Peter Cattaneo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3176,'Open Season',NULL,23,'Adventure','resmethrin','Roger Allers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3177,'Over the Hedge',NULL,97,'Adventure','angledozer','Tim Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3178,'Pan''s Labyrinth',NULL,6,'Drama','ethoxylate','Guillermo del Toro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3179,'Paris, je t''aime',NULL,98,'Comedy','ursidae','Olivier Assayas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3180,'Peaceful Warrior',NULL,64,'Drama','whippowill','Victor Salva',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3181,'Perfume: The Story of a Murderer',NULL,43,'Crime','silurid','Tom Tykwer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3182,'Phat Girlz',NULL,56,'Comedy','bardiche','Nnegest Likk̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3183,'Pirates of the Caribbean: Dead Man''s Chest',NULL,37,'Action','logicists','Gore Verbinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3184,'Poseidon',NULL,54,'Action','parroter','Wolfgang Petersen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3185,'Poultrygeist: Night of the Chicken Dead',NULL,60,'Comedy','hell-rake','Lloyd Kaufman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3186,'Pulse',NULL,70,'Drama','triphylite','Jim Sonzero',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3187,'Quincea̱era',NULL,86,'Drama','distancy','Richard Glatzer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3188,'Renaissance',NULL,49,'Action','spinnies','Christian Volckman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3189,'Rescue Dawn',NULL,74,'Adventure','resmethrin','Werner Herzog',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3190,'Rocky Balboa',NULL,19,'Drama','angledozer','Sylvester Stallone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3191,'Running Scared',NULL,64,'Action','ethoxylate','Wayne Kramer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3192,'Running with Scissors',NULL,82,'Comedy','ursidae','Ryan Murphy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3193,'Saw III',NULL,4,'Horror','whippowill','Darren Lynn Bousman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3194,'Scary Movie 4',NULL,33,'Comedy','silurid','David Zucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3195,'School for Scoundrels',NULL,12,'Comedy','bardiche','Todd Phillips',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3196,'Scoop',NULL,77,'Comedy','logicists','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3197,'Severance',NULL,26,'Comedy','parroter','Christopher Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3198,'Sherrybaby',NULL,12,'Drama','hell-rake','Laurie Collyer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3199,'She''s the Man',NULL,56,'Comedy','triphylite','Andy Fickman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3200,'Shortbus',NULL,74,'Comedy','distancy','John Cameron Mitchell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3201,'Silent Hill',NULL,12,'Adventure','spinnies','Christophe Gans',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3202,'Slither',NULL,62,'Comedy','resmethrin','James Gunn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3203,'Smokin'' Aces',NULL,21,'Action','angledozer','Joe Carnahan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3204,'Snakes on a Plane',NULL,92,'Action','ethoxylate','David R. Ellis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3205,'Southland Tales',NULL,51,'Comedy','ursidae','Richard Kelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3206,'Special',NULL,11,'Comedy','whippowill','Hal Haberman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3207,'Stay Alive',NULL,23,'Horror','silurid','William Brent Bell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3208,'Step Up',NULL,61,'Crime','bardiche','Anne Fletcher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3209,'Stranger Than Fiction',NULL,12,'Comedy','logicists','Marc Forster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3210,'Superman Returns',NULL,69,'Action','parroter','Bryan Singer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3211,'Take the Lead',NULL,98,'Drama','hell-rake','Liz Friedlander',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3212,'Talladega Nights: The Ballad of Ricky Bobby',NULL,18,'Action','triphylite','Adam McKay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3213,'The Ant Bully',NULL,24,'Adventure','distancy','John A. Davis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3214,'The Astronaut Farmer',NULL,11,'Adventure','spinnies','Michael Polish',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3215,'The Benchwarmers',NULL,32,'Comedy','resmethrin','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3216,'The Black Dahlia',NULL,88,'Crime','angledozer','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3217,'The Break-Up',NULL,45,'Comedy','ethoxylate','Peyton Reed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3218,'The Bubble',NULL,30,'Comedy','ursidae','Eytan Fox',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3219,'The Covenant',NULL,3,'Action','whippowill','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3220,'The Da Vinci Code',NULL,2,'Mystery','silurid','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3221,'The Departed',NULL,5,'Crime','bardiche','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3222,'The Devil Wears Prada',NULL,81,'Comedy','logicists','David Frankel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3223,'The Fast and the Furious: Tokyo Drift',NULL,44,'Action','parroter','Justin Lin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3224,'The Fountain',NULL,14,'Drama','hell-rake','Darren Aronofsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3225,'The Good German',NULL,81,'Drama','triphylite','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3226,'The Grudge 2',NULL,37,'Horror','distancy','Takashi Shimizu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3227,'The Hills Have Eyes',NULL,77,'Horror','spinnies','Alexandre Aja',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3228,'The History Boys',NULL,84,'Comedy','resmethrin','Nicholas Hytner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3229,'The Hoax',NULL,92,'Comedy','angledozer','Lasse Hallstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3230,'The Holiday',NULL,85,'Comedy','ethoxylate','Nancy Meyers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3231,'The Host',NULL,11,'Comedy','ursidae','Joon-ho Bong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3232,'The Illusionist',NULL,88,'Drama','whippowill','Neil Burger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3233,'The Lake House',NULL,89,'Drama','silurid','Alejandro Agresti',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3234,'The Last King of Scotland',NULL,56,'Biography','bardiche','Kevin Macdonald',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3235,'The Lives of Others',NULL,78,'Drama','logicists','Florian Henckel von Donnersmarck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3236,'The Marine',NULL,56,'Action','parroter','John Bonito',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3237,'The Nativity Story',NULL,67,'Drama','hell-rake','Catherine Hardwicke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3238,'The Night Listener',NULL,95,'Crime','triphylite','Patrick Stettner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3239,'The Painted Veil',NULL,47,'Drama','distancy','John Curran',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3240,'The Pink Panther',NULL,4,'Adventure','spinnies','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3241,'The Prestige',NULL,81,'Drama','resmethrin','Christopher Nolan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3242,'The Pursuit of Happyness',NULL,93,'Biography','angledozer','Gabriele Muccino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3243,'The Queen',NULL,81,'Biography','ethoxylate','Stephen Frears',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3244,'The Sentinel',NULL,14,'Action','ursidae','Clark Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3245,'The Shaggy Dog',NULL,93,'Comedy','whippowill','Brian Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3246,'The Texas Chainsaw Massacre: The Beginning',NULL,95,'Horror','silurid','Jonathan Liebesman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3247,'The Trials of Darryl Hunt',NULL,43,'Crime','bardiche','Ricki Stern',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3248,'This Is England',NULL,82,'Crime','logicists','Shane Meadows',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3249,'Thr3e',NULL,1,'Drama','parroter','Robby Henson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3250,'Ultraviolet',NULL,37,'Action','hell-rake','Kurt Wimmer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3251,'Unaccompanied Minors',NULL,52,'Adventure','triphylite','Paul Feig',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3252,'Underworld: Evolution',NULL,92,'Action','distancy','Len Wiseman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3253,'United 93',NULL,43,'Drama','spinnies','Paul Greengrass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3254,'Valley of the Heart''s Delight',NULL,12,'Drama','resmethrin','Tim Boxell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3255,'We Are Marshall',NULL,14,'Drama','angledozer','McG',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3256,'When a Stranger Calls',NULL,41,'Horror','ethoxylate','Simon West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3257,'Who Killed the Electric Car?',NULL,90,'Documentary','ursidae','Chris Paine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3258,'World Trade Center',NULL,56,'Drama','whippowill','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3259,'Wristcutters: A Love Story',NULL,37,'Comedy','silurid','Goran Dukic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3260,'X-Men: The Last Stand',NULL,41,'Action','bardiche','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3261,'You, Me and Dupree',NULL,63,'Comedy','logicists','Anthony Russo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3262,'Zoom',NULL,32,'Action','parroter','Peter Hewitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3263,'1408',NULL,7,'Fantasy','hell-rake','Mikael H̴fstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3264,'28 Weeks Later',NULL,46,'Drama','triphylite','Juan Carlos Fresnadillo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3265,'3:10 to Yuma',NULL,29,'Adventure','distancy','James Mangold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3266,'30 Days of Night',NULL,34,'Horror','spinnies','David Slade',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3267,'4 Months, 3 Weeks and 2 Days',NULL,39,'Drama','resmethrin','Cristian Mungiu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3268,'88 Minutes',NULL,65,'Crime','angledozer','Jon Avnet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3269,'A Mighty Heart',NULL,28,'Biography','ethoxylate','Michael Winterbottom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3270,'Across the Universe',NULL,82,'Drama','ursidae','Julie Taymor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3271,'Aliens vs. Predator: Requiem',NULL,39,'Action','whippowill','Colin Strause',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3272,'Alvin and the Chipmunks',NULL,29,'Animation','silurid','Tim Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3273,'American Gangster',NULL,51,'Biography','bardiche','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3274,'Aqua Teen Hunger Force Colon Movie Film for Theaters',NULL,74,'Action','logicists','Matt Maiellaro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3275,'Arnolds Park',NULL,32,'Mystery','parroter','Gene Teigland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3276,'Atonement',NULL,23,'Drama','hell-rake','Joe Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3277,'August Rush',NULL,97,'Drama','triphylite','Kirsten Sheridan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3278,'Awake',NULL,6,'Crime','distancy','Joby Harold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3279,'Becoming Jane',NULL,98,'Biography','spinnies','Julian Jarrold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3280,'Bee Movie',NULL,64,'Adventure','resmethrin','Steve Hickner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3281,'Beowulf',NULL,43,'Action','angledozer','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3282,'Blades of Glory',NULL,56,'Comedy','ethoxylate','Josh Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3283,'Blonde Ambition',NULL,37,'Comedy','ursidae','Scott Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3284,'Bridge to Terabithia',NULL,54,'Adventure','whippowill','Gabor Csupo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3285,'Brooklyn Rules',NULL,60,'Crime','silurid','Michael Corrente',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3286,'Caramel',NULL,70,'Comedy','bardiche','Nadine Labaki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3287,'Certifiably Jonathan',NULL,86,'Comedy','logicists','James David Pasternak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3288,'Charlie Bartlett',NULL,49,'Comedy','parroter','Jon Poll',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3289,'Charlie Wilson''s War',NULL,74,'Biography','hell-rake','Mike Nichols',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3290,'Code Name: The Cleaner',NULL,19,'Action','triphylite','Les Mayfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3291,'Control',NULL,64,'Biography','distancy','Anton Corbijn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3292,'Daddy Day Camp',NULL,82,'Comedy','spinnies','Fred Savage',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3293,'Death at a Funeral',NULL,4,'Comedy','resmethrin','Frank Oz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3294,'Death Sentence',NULL,33,'Action','angledozer','James Wan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3295,'Diary of the Dead',NULL,12,'Horror','ethoxylate','George A. Romero',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3296,'Disturbia',NULL,77,'Drama','ursidae','D.J. Caruso',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3297,'Dragon Wars: D-War',NULL,26,'Action','whippowill','Hyung-rae Shim',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3298,'Eastern Promises',NULL,12,'Crime','silurid','David Cronenberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3299,'Elite Squad',NULL,56,'Action','bardiche','Jos̩ Padilha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3300,'Elizabeth: The Golden Age',NULL,74,'Biography','logicists','Shekhar Kapur',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3301,'Enchanted',NULL,12,'Animation','parroter','Kevin Lima',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3302,'Epic Movie',NULL,62,'Adventure','hell-rake','Jason Friedberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3303,'Evan Almighty',NULL,21,'Comedy','triphylite','Tom Shadyac',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3304,'Fantastic 4: Rise of the Silver Surfer',NULL,92,'Action','distancy','Tim Story',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3305,'Finishing the Game: The Search for a New Bruce Lee',NULL,51,'Comedy','spinnies','Justin Lin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3306,'Freedom Writers',NULL,11,'Biography','resmethrin','Richard LaGravenese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3307,'Funny Games',NULL,23,'Crime','angledozer','Michael Haneke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3308,'Georgia Rule',NULL,61,'Comedy','ethoxylate','Garry Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3309,'Ghost Rider',NULL,12,'Action','ursidae','Mark Steven Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3310,'Good Luck Chuck',NULL,69,'Comedy','whippowill','Mark Helfrich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3311,'Gracie',NULL,98,'Biography','silurid','Davis Guggenheim',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3312,'Grindhouse',NULL,18,'Action','bardiche','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3313,'Hairspray',NULL,24,'Comedy','logicists','Adam Shankman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3314,'Hannibal Rising',NULL,11,'Crime','parroter','Peter Webber',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3315,'Harry Potter and the Order of the Phoenix',NULL,32,'Adventure','hell-rake','David Yates',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3316,'Hitman',NULL,88,'Action','triphylite','Xavier Gens',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3317,'Hostel: Part II',NULL,45,'Horror','distancy','Eli Roth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3318,'Hot Fuzz',NULL,30,'Action','spinnies','Edgar Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3319,'I Am Legend',NULL,3,'Drama','resmethrin','Francis Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3320,'I''m Not There.',NULL,2,'Biography','angledozer','Todd Haynes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3321,'In the Land of Women',NULL,5,'Comedy','ethoxylate','Jon Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3322,'In the Name of the King: A Dungeon Siege Tale',NULL,81,'Action','ursidae','Uwe Boll',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3323,'In the Shadow of the Moon',NULL,44,'Documentary','whippowill','David Sington',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3324,'Into the Wild',NULL,14,'Adventure','silurid','Sean Penn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3325,'Juno',NULL,81,'Comedy','bardiche','Jason Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3326,'Kiss the Bride',NULL,37,'Comedy','logicists','C. Jay Cox',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3327,'Knocked Up',NULL,77,'Comedy','parroter','Judd Apatow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3328,'Lars and the Real Girl',NULL,84,'Comedy','hell-rake','Craig Gillespie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3329,'License to Wed',NULL,92,'Comedy','triphylite','Ken Kwapis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3330,'Lions for Lambs',NULL,85,'Drama','distancy','Robert Redford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3331,'Live Free or Die Hard',NULL,11,'Action','spinnies','Len Wiseman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3332,'Love in the Time of Cholera',NULL,88,'Drama','resmethrin','Mike Newell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3333,'Lucky You',NULL,89,'Drama','angledozer','Curtis Hanson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3334,'Married Life',NULL,56,'Crime','ethoxylate','Ira Sachs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3335,'Martian Child',NULL,78,'Comedy','ursidae','Menno Meyjes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3336,'Michael Clayton',NULL,56,'Crime','whippowill','Tony Gilroy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3337,'Moli̬re',NULL,67,'Comedy','silurid','Laurent Tirard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3338,'Mongol: The Rise of Genghis Khan',NULL,95,'Adventure','bardiche','Sergey Bodrov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3339,'Mr. Bean''s Holiday',NULL,47,'Comedy','logicists','Steve Bendelack',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3340,'My Blueberry Nights',NULL,4,'Drama','parroter','Kar-Wai Wong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3341,'My Name Is Bruce',NULL,81,'Comedy','hell-rake','Bruce Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3342,'Nancy Drew',NULL,93,'Comedy','triphylite','Andrew Fleming',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3343,'No Country for Old Men',NULL,81,'Crime','distancy','Ethan Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3344,'No End in Sight',NULL,14,'Documentary','spinnies','Charles Ferguson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3345,'No Reservations',NULL,93,'Comedy','resmethrin','Scott Hicks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3346,'Ocean''s Thirteen',NULL,95,'Crime','angledozer','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3347,'Once',NULL,43,'Drama','ethoxylate','John Carney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3348,'P.S. I Love You',NULL,82,'Drama','ursidae','Richard LaGravenese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3349,'Paranormal Activity',NULL,1,'Horror','whippowill','Oren Peli',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3350,'Persepolis',NULL,37,'Animation','silurid','Vincent Paronnaud',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3351,'Pirates of the Caribbean: At World''s End',NULL,52,'Action','bardiche','Gore Verbinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3352,'Premonition',NULL,92,'Drama','logicists','Mennan Yapo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3353,'Ratatouille',NULL,43,'Animation','parroter','Brad Bird',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3354,'Redacted',NULL,12,'Crime','hell-rake','Brian De Palma',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3355,'Reign Over Me',NULL,14,'Drama','triphylite','Mike Binder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3356,'Rendition',NULL,41,'Drama','distancy','Gavin Hood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3357,'Reno 911!: Miami',NULL,90,'Comedy','spinnies','Robert Ben Garant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3358,'Resident Evil: Extinction',NULL,56,'Action','resmethrin','Russell Mulcahy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3359,'Resurrecting the Champ',NULL,37,'Drama','angledozer','Rod Lurie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3360,'Rush Hour 3',NULL,41,'Action','ethoxylate','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3361,'Savage Grace',NULL,63,'Drama','ursidae','Tom Kalin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3362,'Saw IV',NULL,32,'Horror','whippowill','Darren Lynn Bousman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3363,'September Dawn',NULL,7,'Drama','silurid','Christopher Cain',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3364,'Shooter',NULL,46,'Action','bardiche','Antoine Fuqua',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3365,'Shrek the Third',NULL,29,'Adventure','logicists','Chris Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3366,'Sicko',NULL,34,'Documentary','parroter','Michael Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3367,'Spider-Man 3',NULL,39,'Action','hell-rake','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3368,'Stardust',NULL,65,'Adventure','triphylite','Matthew Vaughn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3369,'Stomp the Yard',NULL,28,'Drama','distancy','Sylvain White',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3370,'Sunshine',NULL,82,'Adventure','spinnies','Danny Boyle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3371,'Superbad',NULL,39,'Comedy','resmethrin','Greg Mottola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3372,'Surf''s Up',NULL,29,'Animation','angledozer','Ash Brannon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3373,'Sydney White',NULL,51,'Comedy','ethoxylate','Joe Nussbaum',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3374,'Ta Ra Rum Pum',NULL,74,'Comedy','ursidae','Siddharth Anand',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3375,'Taxi to the Dark Side',NULL,32,'Crime','whippowill','Alex Gibney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3376,'The Assassination of Jesse James by the Coward Robert Ford',NULL,23,'Biography','silurid','Andrew Dominik',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3377,'The Bourne Ultimatum',NULL,97,'Action','bardiche','Paul Greengrass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3378,'The Brothers Solomon',NULL,6,'Comedy','logicists','Bob Odenkirk',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3379,'The Bucket List',NULL,98,'Adventure','parroter','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3380,'The Game Plan',NULL,64,'Comedy','hell-rake','Andy Fickman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3381,'The Golden Compass',NULL,43,'Adventure','triphylite','Chris Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3382,'The Good Night',NULL,56,'Comedy','distancy','Jake Paltrow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3383,'The Great Debaters',NULL,37,'Biography','spinnies','Denzel Washington',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3384,'The Hammer',NULL,54,'Comedy','resmethrin','Charles Herman-Wurmfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3385,'The Hills Have Eyes II',NULL,60,'Horror','angledozer','Martin Weisz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3386,'The Hunting Party',NULL,70,'Adventure','ethoxylate','Richard Shepard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3387,'The Invasion',NULL,86,'Sci-Fi','ursidae','Oliver Hirschbiegel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3388,'The Kingdom',NULL,49,'Action','whippowill','Peter Berg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3389,'The Kite Runner',NULL,74,'Drama','silurid','Marc Forster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3390,'The Last Legion',NULL,19,'Action','bardiche','Doug Lefler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3391,'The Last Sin Eater',NULL,64,'Drama','logicists','Michael Landon Jr.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3392,'The Legend of God''s Gun',NULL,82,'Western','parroter','Mike Bruce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3393,'The Life Before Her Eyes',NULL,4,'Drama','hell-rake','Vadim Perelman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3394,'The Living Wake',NULL,33,'Comedy','triphylite','Sol Tryon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3395,'The Mist',NULL,12,'Horror','distancy','Frank Darabont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3396,'The Number 23',NULL,77,'Mystery','spinnies','Joel Schumacher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3397,'The Orphanage',NULL,26,'Drama','resmethrin','J.A. Bayona',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3398,'The Reaping',NULL,12,'Horror','angledozer','Stephen Hopkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3399,'The Simpsons Movie',NULL,56,'Adventure','ethoxylate','David Silverman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3400,'The Ten',NULL,74,'Comedy','ursidae','David Wain',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3401,'The Warlords',NULL,12,'Action','whippowill','Peter Ho-Sun Chan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3402,'There Will Be Blood',NULL,62,'Drama','silurid','Paul Thomas Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3403,'Things We Lost in the Fire',NULL,21,'Drama','bardiche','Susanne Bier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3404,'This Christmas',NULL,92,'Comedy','logicists','Preston A. Whitmore II',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3405,'Timecrimes',NULL,51,'Horror','parroter','Nacho Vigalondo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3406,'TMNT',NULL,11,'Action','hell-rake','Kevin Munroe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3407,'Trade',NULL,23,'Crime','triphylite','Marco Kreuzpaintner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3408,'Transformers',NULL,61,'Action','distancy','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3409,'Waitress',NULL,12,'Comedy','spinnies','Adrienne Shelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3410,'Walk Hard: The Dewey Cox Story',NULL,69,'Comedy','resmethrin','Jake Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3411,'War',NULL,98,'Action','angledozer','Philip G. Atwell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3412,'We Own the Night',NULL,18,'Crime','ethoxylate','James Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3413,'When Did You Last See Your Father?',NULL,24,'Biography','ursidae','Anand Tucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3414,'Who''s Your Caddy?',NULL,11,'Comedy','whippowill','Don Michael Paul',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3415,'Why Did I Get Married?',NULL,32,'Comedy','silurid','Tyler Perry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3416,'You Kill Me',NULL,88,'Comedy','bardiche','John Dahl',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3417,'Zodiac',NULL,45,'Crime','logicists','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3418,'21',NULL,30,'Crime','parroter','Robert Luketic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3419,'27 Dresses',NULL,3,'Comedy','hell-rake','Anne Fletcher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3420,'An American Carol',NULL,2,'Comedy','triphylite','David Zucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3421,'Australia',NULL,5,'Adventure','distancy','Baz Luhrmann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3422,'Baby Mama',NULL,81,'Comedy','spinnies','Michael McCullers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3423,'Babylon A.D.',NULL,44,'Action','resmethrin','Mathieu Kassovitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3424,'Bangkok Dangerous',NULL,14,'Action','angledozer','Danny Pang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3425,'Be Kind Rewind',NULL,81,'Comedy','ethoxylate','Michel Gondry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3426,'Bedtime Stories',NULL,37,'Comedy','ursidae','Adam Shankman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3427,'Beverly Hills Chihuahua',NULL,77,'Adventure','whippowill','Raja Gosnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3428,'Blindness',NULL,84,'Drama','silurid','Fernando Meirelles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3429,'Body of Lies',NULL,92,'Action','bardiche','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3430,'Bolt',NULL,85,'Adventure','logicists','Byron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3431,'Bottle Shock',NULL,11,'Comedy','parroter','Randall Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3432,'Burn After Reading',NULL,88,'Comedy','hell-rake','Ethan Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3433,'Cadillac Records',NULL,89,'Biography','triphylite','Darnell Martin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3434,'Call + Response',NULL,56,'Documentary','distancy','Justin Dillon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3435,'Changeling',NULL,78,'Crime','spinnies','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3436,'Choke',NULL,56,'Comedy','resmethrin','Clark Gregg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3437,'City of Ember',NULL,67,'Adventure','angledozer','Gil Kenan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3438,'Cloverfield',NULL,95,'Action','ethoxylate','Matt Reeves',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3439,'College',NULL,47,'Comedy','ursidae','Deb Hagan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3440,'Death Race',NULL,4,'Action','whippowill','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3441,'Delgo',NULL,81,'Adventure','silurid','Marc F. Adler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3442,'Disaster Movie',NULL,93,'Comedy','bardiche','Jason Friedberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3443,'Dolphins and Whales 3D: Tribes of the Ocean',NULL,81,'Adventure','logicists','Jean-Jacques Mantello',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3444,'Donkey Punch',NULL,14,'Crime','parroter','Oliver Blackburn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3445,'Doomsday',NULL,93,'Action','hell-rake','Neil Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3446,'Doubt',NULL,95,'Drama','triphylite','John Patrick Shanley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3447,'Drillbit Taylor',NULL,43,'Comedy','distancy','Steven Brill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3448,'Eagle Eye',NULL,82,'Action','spinnies','D.J. Caruso',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3449,'Fireproof',NULL,1,'Drama','resmethrin','Alex Kendrick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3450,'Flame and Citron',NULL,37,'Drama','angledozer','Ole Christian Madsen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3451,'Flash of Genius',NULL,52,'Biography','ethoxylate','Marc Abraham',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3452,'Fool''s Gold',NULL,92,'Action','ursidae','Andy Tennant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3453,'Forgetting Sarah Marshall',NULL,43,'Comedy','whippowill','Nicholas Stoller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3454,'Four Christmases',NULL,12,'Comedy','silurid','Seth Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3455,'Frost/Nixon',NULL,14,'Drama','bardiche','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3456,'Frozen River',NULL,41,'Crime','logicists','Courtney Hunt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3457,'Fuel',NULL,90,'Documentary','parroter','Joshua Tickell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3458,'Gangster''s Paradise: Jerusalema',NULL,56,'Action','hell-rake','Ralph Ziman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3459,'Get Smart',NULL,37,'Action','triphylite','Peter Segal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3460,'Ghost Town',NULL,41,'Comedy','distancy','David Koepp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3461,'Good',NULL,63,'Drama','spinnies','Vicente Amorim',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3462,'Gran Torino',NULL,32,'Drama','resmethrin','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3463,'Hamlet 2',NULL,7,'Comedy','angledozer','Andrew Fleming',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3464,'Hancock',NULL,46,'Action','ethoxylate','Peter Berg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3465,'Harold & Kumar Escape from Guantanamo Bay',NULL,29,'Adventure','ursidae','Jon Hurwitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3466,'Hellboy II: The Golden Army',NULL,34,'Action','whippowill','Guillermo del Toro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3467,'High School Musical 3: Senior Year',NULL,39,'Comedy','silurid','Kenny Ortega',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3468,'How to Lose Friends & Alienate People',NULL,65,'Comedy','bardiche','Robert B. Weide',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3469,'In Bruges',NULL,28,'Comedy','logicists','Martin McDonagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3470,'Indiana Jones and the Kingdom of the Crystal Skull',NULL,82,'Action','parroter','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3471,'Inkheart',NULL,39,'Adventure','hell-rake','Iain Softley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3472,'Iron Man',NULL,29,'Action','triphylite','Jon Favreau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3473,'Journey to the Center of the Earth',NULL,51,'Action','distancy','Eric Brevig',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3474,'Jumper',NULL,74,'Action','spinnies','Doug Liman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3475,'Kit Kittredge: An American Girl',NULL,32,'Drama','resmethrin','Patricia Rozema',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3476,'Kung Fu Panda',NULL,23,'Action','angledozer','Mark Osborne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3477,'Lakeview Terrace',NULL,97,'Crime','ethoxylate','Neil LaBute',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3478,'Leatherheads',NULL,6,'Comedy','ursidae','George Clooney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3479,'Lovely, Still',NULL,98,'Drama','whippowill','Nicholas Fackler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3480,'Mad Money',NULL,64,'Comedy','silurid','Callie Khouri',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3481,'Madagascar: Escape 2 Africa',NULL,43,'Action','bardiche','Eric Darnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3482,'Made of Honor',NULL,56,'Comedy','logicists','Paul Weiland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3483,'Mamma Mia!',NULL,37,'Comedy','parroter','Phyllida Lloyd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3484,'Man on Wire',NULL,54,'Biography','hell-rake','James Marsh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3485,'Marley & Me',NULL,60,'Comedy','triphylite','David Frankel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3486,'Max Payne',NULL,70,'Action','distancy','John Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3487,'Me and Orson Welles',NULL,86,'Drama','spinnies','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3488,'Meet Dave',NULL,49,'Adventure','resmethrin','Brian Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3489,'Meet the Spartans',NULL,74,'Comedy','angledozer','Jason Friedberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3490,'Milk',NULL,19,'Biography','ethoxylate','Gus Van Sant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3491,'Miracle at St. Anna',NULL,64,'Action','ursidae','Spike Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3492,'Mirrors',NULL,82,'Horror','whippowill','Alexandre Aja',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3493,'My Best Friend''s Girl',NULL,4,'Comedy','silurid','Howard Deutch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3494,'Never Back Down',NULL,33,'Action','bardiche','Jeff Wadlow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3495,'Nick and Norah''s Infinite Playlist',NULL,12,'Comedy','logicists','Peter Sollett',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3496,'Nim''s Island',NULL,77,'Adventure','parroter','Jennifer Flackett',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3497,'One Missed Call',NULL,26,'Horror','hell-rake','Eric Valette',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3498,'Ong-bak 2',NULL,12,'Action','triphylite','Tony Jaa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3499,'Over Her Dead Body',NULL,56,'Comedy','distancy','Jeff Lowell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3500,'Pathology',NULL,74,'Crime','spinnies','Marc Sch̦lermann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3501,'Pineapple Express',NULL,12,'Action','resmethrin','David Gordon Green',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3502,'Pontypool',NULL,62,'Fantasy','angledozer','Bruce McDonald',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3503,'Ponyo',NULL,21,'Adventure','ethoxylate','Hayao Miyazaki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3504,'Pride and Glory',NULL,92,'Crime','ursidae','Gavin O''Connor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3505,'Prom Night',NULL,51,'Horror','whippowill','Nelson McCormick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3506,'Punisher: War Zone',NULL,11,'Action','silurid','Lexi Alexander',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3507,'Quantum of Solace',NULL,23,'Action','bardiche','Marc Forster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3508,'Quarantine',NULL,61,'Horror','logicists','John Erick Dowdle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3509,'Red Cliff',NULL,12,'Action','parroter','John Woo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3510,'Redbelt',NULL,69,'Drama','hell-rake','David Mamet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3511,'Religulous',NULL,98,'Comedy','triphylite','Larry Charles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3512,'Repo! The Genetic Opera',NULL,18,'Horror','distancy','Darren Lynn Bousman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3513,'Revolutionary Road',NULL,24,'Drama','spinnies','Sam Mendes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3514,'Righteous Kill',NULL,11,'Action','resmethrin','Jon Avnet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3515,'RocknRolla',NULL,32,'Action','angledozer','Guy Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3516,'Role Models',NULL,88,'Comedy','ethoxylate','David Wain',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3517,'Saw V',NULL,45,'Horror','ursidae','David Hackl',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3518,'Semi-Pro',NULL,30,'Comedy','whippowill','Kent Alterman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3519,'Seven Pounds',NULL,3,'Drama','silurid','Gabriele Muccino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3520,'Sex Drive',NULL,2,'Adventure','bardiche','Sean Anders',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3521,'Shutter',NULL,5,'Horror','logicists','Masayuki Ochiai',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3522,'Sleep Dealer',NULL,81,'Drama','parroter','Alex Rivera',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3523,'Slumdog Millionaire',NULL,44,'Drama','hell-rake','Danny Boyle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3524,'Space Chimps',NULL,14,'Adventure','triphylite','Kirk De Micco',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3525,'Speed Racer',NULL,81,'Action','distancy','Lana Wachowski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3526,'Step Brothers',NULL,37,'Comedy','spinnies','Adam McKay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3527,'Step Up 2: The Streets',NULL,77,'Drama','resmethrin','Jon M. Chu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3528,'Stop-Loss',NULL,84,'Drama','angledozer','Kimberly Peirce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3529,'Strange Wilderness',NULL,92,'Adventure','ethoxylate','Fred Wolf',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3530,'Street Kings',NULL,85,'Action','ursidae','David Ayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3531,'Sunshine Cleaning',NULL,11,'Comedy','whippowill','Christine Jeffs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3532,'Superhero Movie',NULL,88,'Action','silurid','Craig Mazin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3533,'Surfer, Dude',NULL,89,'Comedy','bardiche','S.R. Bindler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3534,'Swing Vote',NULL,56,'Comedy','logicists','Joshua Michael Stern',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3535,'Synecdoche, New York',NULL,78,'Comedy','parroter','Charlie Kaufman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3536,'Taken',NULL,56,'Action','hell-rake','Pierre Morel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3537,'The Baader Meinhof Complex',NULL,67,'Action','triphylite','Uli Edel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3538,'The Bank Job',NULL,95,'Crime','distancy','Roger Donaldson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3539,'The Boy in the Striped Pajamas',NULL,47,'Drama','spinnies','Mark Herman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3540,'The Brothers Bloom',NULL,4,'Adventure','resmethrin','Rian Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3541,'The Children of Huang Shi',NULL,81,'Drama','angledozer','Roger Spottiswoode',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3542,'The Chronicles of Narnia: Prince Caspian',NULL,93,'Action','ethoxylate','Andrew Adamson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3543,'The Curious Case of Benjamin Button',NULL,81,'Drama','ursidae','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3544,'The Dark Knight',NULL,14,'Action','whippowill','Christopher Nolan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3545,'The Day the Earth Stood Still',NULL,93,'Drama','silurid','Scott Derrickson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3546,'The Duchess',NULL,95,'Biography','bardiche','Saul Dibb',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3547,'The Express',NULL,43,'Biography','logicists','Gary Fleder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3548,'The Eye',NULL,82,'Horror','parroter','David Moreau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3549,'The Forbidden Kingdom',NULL,1,'Action','hell-rake','Rob Minkoff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3550,'The Good, the Bad, the Weird',NULL,37,'Action','triphylite','Jee-woon Kim',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3551,'The Happening',NULL,52,'Sci-Fi','distancy','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3552,'The Haunting of Molly Hartley',NULL,92,'Drama','spinnies','Mickey Liddell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3553,'The House Bunny',NULL,43,'Comedy','resmethrin','Fred Wolf',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3554,'The Hurt Locker',NULL,12,'Drama','angledozer','Kathryn Bigelow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3555,'The Incredible Hulk',NULL,14,'Action','ethoxylate','Louis Leterrier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3556,'The Longshots',NULL,41,'Biography','ursidae','Fred Durst',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3557,'The Love Guru',NULL,90,'Comedy','whippowill','Marco Schnabel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3558,'The Lucky Ones',NULL,56,'Comedy','silurid','Neil Burger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3559,'The Midnight Meat Train',NULL,37,'Fantasy','bardiche','Ry��hei Kitamura',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3560,'The Mummy: Tomb of the Dragon Emperor',NULL,41,'Action','logicists','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3561,'The Other Boleyn Girl',NULL,63,'Biography','parroter','Justin Chadwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3562,'The Other End of the Line',NULL,32,'Comedy','hell-rake','James Dodson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3563,'The Oxford Murders',NULL,7,'Crime','triphylite','́lex de la Iglesia',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3564,'The Pirates Who Don''t Do Anything: A VeggieTales Movie',NULL,46,'Adventure','distancy','Mike Nawrocki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3565,'The Reader',NULL,29,'Drama','spinnies','Stephen Daldry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3566,'The Rocker',NULL,34,'Comedy','resmethrin','Peter Cattaneo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3567,'The Ruins',NULL,39,'Horror','angledozer','Carter Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3568,'The Secret Life of Bees',NULL,65,'Drama','ethoxylate','Gina Prince-Bythewood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3569,'The Spiderwick Chronicles',NULL,28,'Adventure','ursidae','Mark Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3570,'The Spirit',NULL,82,'Action','whippowill','Frank Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3571,'The Tale of Despereaux',NULL,39,'Adventure','silurid','Sam Fell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3572,'The Wackness',NULL,29,'Comedy','bardiche','Jonathan Levine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3573,'The Women',NULL,51,'Comedy','logicists','Diane English',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3574,'The Wrestler',NULL,74,'Drama','parroter','Darren Aronofsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3575,'The X Files: I Want to Believe',NULL,32,'Drama','hell-rake','Chris Carter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3576,'The Yellow Handkerchief',NULL,23,'Drama','triphylite','Udayan Prasad',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3577,'Transsiberian',NULL,97,'Crime','distancy','Brad Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3578,'Tropic Thunder',NULL,6,'Action','spinnies','Ben Stiller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3579,'Trucker',NULL,98,'Drama','resmethrin','James Mottern',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3580,'Twilight',NULL,64,'Drama','angledozer','Catherine Hardwicke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3581,'Two Lovers',NULL,43,'Drama','ethoxylate','James Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3582,'Untraceable',NULL,56,'Crime','ursidae','Gregory Hoblit',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3583,'Valkyrie',NULL,37,'Drama','whippowill','Bryan Singer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3584,'Vantage Point',NULL,54,'Crime','silurid','Pete Travis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3585,'Vicky Cristina Barcelona',NULL,60,'Drama','bardiche','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3586,'W.',NULL,70,'Biography','logicists','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3587,'WALL��E',NULL,86,'Adventure','parroter','Andrew Stanton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3588,'Waltz with Bashir',NULL,49,'Animation','hell-rake','Ari Folman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3589,'Wanted',NULL,74,'Action','triphylite','Timur Bekmambetov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3590,'War, Inc.',NULL,19,'Action','distancy','Joshua Seftel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3591,'Welcome Home, Roscoe Jenkins',NULL,64,'Comedy','spinnies','Malcolm D. Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3592,'Wendy and Lucy',NULL,82,'Drama','resmethrin','Kelly Reichardt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3593,'What Happens in Vegas',NULL,4,'Comedy','angledozer','Tom Vaughan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3594,'What Just Happened',NULL,33,'Comedy','ethoxylate','Barry Levinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3595,'Winter in Wartime',NULL,12,'Drama','ursidae','Martin Koolhoven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3596,'Witless Protection',NULL,77,'Comedy','whippowill','Charles Robert Carner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3597,'Yes Man',NULL,26,'Comedy','silurid','Peyton Reed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3598,'You Don''t Mess with the Zohan',NULL,12,'Action','bardiche','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3599,'Zack and Miri Make a Porno',NULL,56,'Comedy','logicists','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3600,'[Rec] 2',NULL,74,'Horror','parroter','Jaume Balaguer�?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3601,'12 Rounds',NULL,12,'Action','hell-rake','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3602,'17 Again',NULL,62,'Comedy','triphylite','Burr Steers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3603,'2012',NULL,21,'Action','distancy','Roland Emmerich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3604,'500 Days of Summer',NULL,92,'Comedy','spinnies','Marc Webb',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3605,'9',NULL,51,'Action','resmethrin','Shane Acker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3606,'A Christmas Carol',NULL,11,'Animation','angledozer','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3607,'A Perfect Getaway',NULL,23,'Adventure','ethoxylate','David Twohy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3608,'A Serious Man',NULL,61,'Comedy','ursidae','Ethan Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3609,'A Single Man',NULL,12,'Drama','whippowill','Tom Ford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3610,'After.Life',NULL,69,'Drama','silurid','Agnieszka Wojtowicz-Vosloo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3611,'Agora',NULL,98,'Adventure','bardiche','Alejandro Amen��bar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3612,'Aliens in the Attic',NULL,18,'Adventure','logicists','John Schultz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3613,'All About Steve',NULL,24,'Comedy','parroter','Phil Traill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3614,'Alvin and the Chipmunks: The Squeakquel',NULL,11,'Animation','hell-rake','Betty Thomas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3615,'An Education',NULL,32,'Drama','triphylite','Lone Scherfig',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3616,'Angels & Demons',NULL,88,'Mystery','distancy','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3617,'Armored',NULL,45,'Action','spinnies','Nimr�?d Antal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3618,'Astro Boy',NULL,30,'Action','resmethrin','David Bowers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3619,'Avatar',NULL,3,'Action','angledozer','James Cameron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3620,'Away We Go',NULL,2,'Comedy','ethoxylate','Sam Mendes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3621,'Bad Lieutenant: Port of Call New Orleans',NULL,5,'Crime','ursidae','Werner Herzog',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3622,'Bandslam',NULL,81,'Comedy','whippowill','Todd Graff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3623,'Br�?no',NULL,44,'Comedy','silurid','Larry Charles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3624,'Bran Nue Dae',NULL,14,'Comedy','bardiche','Rachel Perkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3625,'Breaking Upwards',NULL,81,'Romance','logicists','Daryl Wein',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3626,'Bride Wars',NULL,37,'Comedy','parroter','Gary Winick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3627,'Bright Star',NULL,77,'Biography','hell-rake','Jane Campion',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3628,'Brooklyn''s Finest',NULL,84,'Crime','triphylite','Antoine Fuqua',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3629,'Brothers',NULL,92,'Drama','distancy','Jim Sheridan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3630,'Case 39',NULL,85,'Horror','spinnies','Christian Alvart',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3631,'Ch̩ri',NULL,11,'Comedy','resmethrin','Stephen Frears',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3632,'Chain Letter',NULL,88,'Horror','angledozer','Deon Taylor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3633,'Chloe',NULL,89,'Drama','ethoxylate','Atom Egoyan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3634,'Cirque du Freak: The Vampire''s Assistant',NULL,56,'Action','ursidae','Paul Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3635,'City Island',NULL,78,'Comedy','whippowill','Raymond De Felitta',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3636,'City of Life and Death',NULL,56,'Drama','silurid','Chuan Lu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3637,'Cloudy with a Chance of Meatballs',NULL,67,'Animation','bardiche','Phil Lord',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3638,'Coco Before Chanel',NULL,95,'Biography','logicists','Anne Fontaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3639,'Coraline',NULL,47,'Animation','parroter','Henry Selick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3640,'Couples Retreat',NULL,4,'Comedy','hell-rake','Peter Billingsley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3641,'Crank: High Voltage',NULL,81,'Action','triphylite','Mark Neveldine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3642,'Crazy Heart',NULL,93,'Drama','distancy','Scott Cooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3643,'Dance Flick',NULL,81,'Action','spinnies','Damien Dante Wayans',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3644,'Daybreakers',NULL,14,'Action','resmethrin','Michael Spierig',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3645,'Dead Snow',NULL,93,'Comedy','angledozer','Tommy Wirkola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3646,'Defendor',NULL,95,'Comedy','ethoxylate','Peter Stebbings',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3647,'Did You Hear About the Morgans?',NULL,43,'Comedy','ursidae','Marc Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3648,'District 9',NULL,82,'Action','whippowill','Neill Blomkamp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3649,'Drag Me to Hell',NULL,1,'Horror','silurid','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3650,'Dragonball: Evolution',NULL,37,'Action','bardiche','James Wong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3651,'Duplicity',NULL,52,'Comedy','logicists','Tony Gilroy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3652,'Enter the Void',NULL,92,'Drama','parroter','Gaspar No̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3653,'Everybody''s Fine',NULL,43,'Adventure','hell-rake','Kirk Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3654,'Extract',NULL,12,'Comedy','triphylite','Mike Judge',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3655,'Fame',NULL,14,'Comedy','distancy','Kevin Tancharoen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3656,'Fantastic Mr. Fox',NULL,41,'Adventure','spinnies','Wes Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3657,'Funny People',NULL,90,'Comedy','resmethrin','Judd Apatow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3658,'G.I. Joe: The Rise of Cobra',NULL,56,'Action','angledozer','Stephen Sommers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3659,'Gamer',NULL,37,'Action','ethoxylate','Mark Neveldine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3660,'Get Low',NULL,41,'Drama','ursidae','Aaron Schneider',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3661,'G-Force',NULL,63,'Action','whippowill','Hoyt Yeatman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3662,'Halloween II',NULL,32,'Horror','silurid','Rob Zombie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3663,'Hannah Montana: The Movie',NULL,7,'Comedy','bardiche','Peter Chelsom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3664,'Harry Brown',NULL,46,'Action','logicists','Daniel Barber',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3665,'Harry Potter and the Half-Blood Prince',NULL,29,'Adventure','parroter','David Yates',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3666,'He''s Just Not That Into You',NULL,34,'Comedy','hell-rake','Ken Kwapis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3667,'Hotel for Dogs',NULL,39,'Comedy','triphylite','Thor Freudenthal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3668,'I Am Love',NULL,65,'Drama','distancy','Luca Guadagnino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3669,'I Can Do Bad All by Myself',NULL,28,'Comedy','spinnies','Tyler Perry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3670,'I Love You Phillip Morris',NULL,82,'Biography','resmethrin','Glenn Ficarra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3671,'I Love You, Beth Cooper',NULL,39,'Comedy','angledozer','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3672,'I Love You, Man',NULL,29,'Comedy','ethoxylate','John Hamburg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3673,'Ice Age: Dawn of the Dinosaurs',NULL,51,'Action','ursidae','Carlos Saldanha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3674,'Imagine That',NULL,74,'Comedy','whippowill','Karey Kirkpatrick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3675,'Inglourious Basterds',NULL,32,'Adventure','silurid','Quentin Tarantino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3676,'Invictus',NULL,23,'Biography','bardiche','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3677,'It''s Complicated',NULL,97,'Comedy','logicists','Nancy Meyers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3678,'Jennifer''s Body',NULL,6,'Comedy','parroter','Karyn Kusama',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3679,'Julie & Julia',NULL,98,'Biography','hell-rake','Nora Ephron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3680,'Knowing',NULL,64,'Drama','triphylite','Alex Proyas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3681,'Land of the Lost',NULL,43,'Adventure','distancy','Brad Silberling',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3682,'Law Abiding Citizen',NULL,56,'Crime','spinnies','F. Gary Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3683,'Love Happens',NULL,37,'Drama','resmethrin','Brandon Camp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3684,'Micmacs',NULL,54,'Action','angledozer','Jean-Pierre Jeunet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3685,'Miss March',NULL,60,'Comedy','ethoxylate','Zach Cregger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3686,'Monsters vs. Aliens',NULL,70,'Action','ursidae','Rob Letterman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3687,'Moon',NULL,86,'Drama','whippowill','Duncan Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3688,'Mother and Child',NULL,49,'Drama','silurid','Rodrigo Garc�?a',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3689,'Motherhood',NULL,74,'Comedy','bardiche','Katherine Dieckmann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3690,'My Bloody Valentine',NULL,19,'Horror','logicists','Patrick Lussier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3691,'My Life in Ruins',NULL,64,'Comedy','parroter','Donald Petrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3692,'My Sister''s Keeper',NULL,82,'Drama','hell-rake','Nick Cassavetes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3693,'New in Town',NULL,4,'Comedy','triphylite','Jonas Elmer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3694,'Next Day Air',NULL,33,'Action','distancy','Benny Boom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3695,'Night at the Museum: Battle of the Smithsonian',NULL,12,'Adventure','spinnies','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3696,'Nine',NULL,77,'Drama','resmethrin','Rob Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3697,'Ninja Assassin',NULL,26,'Action','angledozer','James McTeigue',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3698,'Not Easily Broken',NULL,12,'Drama','ethoxylate','Bill Duke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3699,'Observe and Report',NULL,56,'Comedy','ursidae','Jody Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3700,'Oceans',NULL,74,'Documentary','whippowill','Jacques Perrin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3701,'Old Dogs',NULL,12,'Comedy','silurid','Walt Becker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3702,'Ondine',NULL,62,'Drama','bardiche','Neil Jordan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3703,'Paa',NULL,21,'Comedy','logicists','R. Balki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3704,'Pandorum',NULL,92,'Action','parroter','Christian Alvart',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3705,'Paul Blart: Mall Cop',NULL,51,'Action','hell-rake','Steve Carr',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3706,'Planet 51',NULL,11,'Adventure','triphylite','Jorge Blanco',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3707,'Post Grad',NULL,23,'Comedy','distancy','Vicky Jenson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3708,'Precious',NULL,61,'Drama','spinnies','Lee Daniels',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3709,'Princess Kaiulani',NULL,12,'Drama','resmethrin','Marc Forby',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3710,'Public Enemies',NULL,69,'Biography','angledozer','Michael Mann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3711,'Race to Witch Mountain',NULL,98,'Action','ethoxylate','Andy Fickman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3712,'Saint John of Las Vegas',NULL,18,'Comedy','ursidae','Hue Rhodes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3713,'Saw VI',NULL,24,'Horror','whippowill','Kevin Greutert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3714,'Sherlock Holmes',NULL,11,'Action','silurid','Guy Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3715,'Shorts',NULL,32,'Comedy','bardiche','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3716,'Solitary Man',NULL,88,'Comedy','logicists','Brian Koppelman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3717,'Sorority Row',NULL,45,'Horror','parroter','Stewart Hendler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3718,'Soul Kitchen',NULL,30,'Comedy','hell-rake','Fatih Akin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3719,'Splice',NULL,3,'Drama','triphylite','Vincenzo Natali',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3720,'Star Trek',NULL,2,'Action','distancy','J.J. Abrams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3721,'Street Fighter: The Legend of Chun-Li',NULL,5,'Action','spinnies','Andrzej Bartkowiak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3722,'Surrogates',NULL,81,'Action','resmethrin','Jonathan Mostow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3723,'Survival of the Dead',NULL,44,'Horror','angledozer','George A. Romero',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3724,'Taking Woodstock',NULL,14,'Comedy','ethoxylate','Ang Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3725,'Tanner Hall',NULL,81,'Drama','ursidae','Francesca Gregorini',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3726,'Terminator Salvation',NULL,37,'Action','whippowill','McG',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3727,'The Blind Side',NULL,77,'Biography','silurid','John Lee Hancock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3728,'The Boondock Saints II: All Saints Day',NULL,84,'Action','bardiche','Troy Duffy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3729,'The Box',NULL,92,'Drama','logicists','Richard Kelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3730,'The Damned United',NULL,85,'Biography','parroter','Tom Hooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3731,'The Final Destination',NULL,11,'Horror','hell-rake','David R. Ellis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3732,'The Fourth Kind',NULL,88,'Mystery','triphylite','Olatunde Osunsanmi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3733,'The Good Guy',NULL,89,'Comedy','distancy','Julio DePietro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3734,'The Good Heart',NULL,56,'Drama','spinnies','Dagur K��ri',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3735,'The Greatest',NULL,78,'Drama','resmethrin','Shana Feste',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3736,'The Hangover',NULL,56,'Comedy','angledozer','Todd Phillips',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3737,'The Horse Boy',NULL,67,'Documentary','ethoxylate','Michel Orion Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3738,'The House of the Devil',NULL,95,'Horror','ursidae','Ti West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3739,'The Imaginarium of Doctor Parnassus',NULL,47,'Adventure','whippowill','Terry Gilliam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3740,'The Informant!',NULL,4,'Comedy','silurid','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3741,'The International',NULL,81,'Action','bardiche','Tom Tykwer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3742,'The Invention of Lying',NULL,93,'Comedy','logicists','Ricky Gervais',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3743,'The Joneses',NULL,81,'Comedy','parroter','Derrick Borte',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3744,'The Last House on the Left',NULL,14,'Crime','hell-rake','Dennis Iliadis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3745,'The Last Station',NULL,93,'Biography','triphylite','Michael Hoffman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3746,'The Lovely Bones',NULL,95,'Drama','distancy','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3747,'The Men Who Stare at Goats',NULL,43,'Comedy','spinnies','Grant Heslov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3748,'The Messenger',NULL,82,'Drama','resmethrin','Oren Moverman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3749,'The Mighty Macs',NULL,1,'Drama','angledozer','Tim Chambers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3750,'The Missing Person',NULL,37,'Drama','ethoxylate','Noah Buschel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3751,'The Open Road',NULL,52,'Comedy','ursidae','Michael Meredith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3752,'The Perfect Game',NULL,92,'Comedy','whippowill','William Dear',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3753,'The Princess and the Frog',NULL,43,'Animation','silurid','Ron Clements',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3754,'The Proposal',NULL,12,'Comedy','bardiche','Anne Fletcher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3755,'The Road',NULL,14,'Adventure','logicists','John Hillcoat',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3756,'The Secret in Their Eyes',NULL,41,'Drama','parroter','Juan Jos̩ Campanella',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3757,'The Secret of Kells',NULL,90,'Adventure','hell-rake','Tomm Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3758,'The Soloist',NULL,56,'Biography','triphylite','Joe Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3759,'The Taking of Pelham 1 2 3',NULL,37,'Action','distancy','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3760,'The Time Traveler''s Wife',NULL,41,'Drama','spinnies','Robert Schwentke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3761,'The Twilight Saga: New Moon',NULL,63,'Adventure','resmethrin','Chris Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3762,'The Ugly Truth',NULL,32,'Comedy','angledozer','Robert Luketic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3763,'The Unborn',NULL,7,'Drama','ethoxylate','David S. Goyer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3764,'The White Ribbon',NULL,46,'Drama','ursidae','Michael Haneke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3765,'The Young Victoria',NULL,29,'Biography','whippowill','Jean-Marc Vall̩e',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3766,'This Is It',NULL,34,'Documentary','silurid','Kenny Ortega',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3767,'To Save a Life',NULL,39,'Drama','bardiche','Brian Baugh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3768,'Transformers: Revenge of the Fallen',NULL,65,'Action','logicists','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3769,'Underworld: Rise of the Lycans',NULL,28,'Action','parroter','Patrick Tatopoulos',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3770,'Up',NULL,82,'Adventure','hell-rake','Pete Docter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3771,'Up in the Air',NULL,39,'Drama','triphylite','Jason Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3772,'Watchmen',NULL,29,'Action','distancy','Zack Snyder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3773,'Whatever Works',NULL,51,'Comedy','spinnies','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3774,'Where the Wild Things Are',NULL,74,'Adventure','resmethrin','Spike Jonze',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3775,'Whip It',NULL,32,'Drama','angledozer','Drew Barrymore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3776,'Whiteout',NULL,23,'Action','ethoxylate','Dominic Sena',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3777,'X-Men Origins: Wolverine',NULL,97,'Action','ursidae','Gavin Hood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3778,'Year One',NULL,6,'Adventure','whippowill','Harold Ramis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3779,'Youth in Revolt',NULL,98,'Comedy','silurid','Miguel Arteta',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3780,'Zombieland',NULL,64,'Adventure','bardiche','Ruben Fleischer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3781,'127 Hours',NULL,43,'Adventure','logicists','Danny Boyle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3782,'8: The Mormon Proposition',NULL,56,'Documentary','parroter','Reed Cowan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3783,'Alice in Wonderland',NULL,37,'Adventure','hell-rake','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3784,'Alpha and Omega',NULL,54,'Adventure','triphylite','Anthony Bell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3785,'Amigo',NULL,60,'Drama','distancy','John Sayles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3786,'Another Year',NULL,70,'Comedy','spinnies','Mike Leigh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3787,'Beginners',NULL,86,'Comedy','resmethrin','Mike Mills',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3788,'Beyond the Black Rainbow',NULL,49,'Sci-Fi','angledozer','Panos Cosmatos',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3789,'Black Swan',NULL,74,'Drama','ethoxylate','Darren Aronofsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3790,'Blue Valentine',NULL,19,'Drama','ursidae','Derek Cianfrance',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3791,'Buried',NULL,64,'Drama','whippowill','Rodrigo Cort̩s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3792,'Burlesque',NULL,82,'Drama','silurid','Steve Antin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3793,'Ca$h',NULL,4,'Comedy','bardiche','Stephen Milburn Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3794,'Casino Jack',NULL,33,'Biography','logicists','George Hickenlooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3795,'Cats & Dogs: The Revenge of Kitty Galore',NULL,12,'Action','parroter','Brad Peyton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3796,'Charlie St. Cloud',NULL,77,'Drama','hell-rake','Burr Steers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3797,'Clash of the Titans',NULL,26,'Action','triphylite','Louis Leterrier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3798,'Cop Out',NULL,12,'Action','distancy','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3799,'Country Strong',NULL,56,'Drama','spinnies','Shana Feste',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3800,'Cyrus',NULL,74,'Comedy','resmethrin','Jay Duplass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3801,'Date Night',NULL,12,'Comedy','angledozer','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3802,'Dear John',NULL,62,'Drama','ethoxylate','Lasse Hallstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3803,'Despicable Me',NULL,21,'Animation','ursidae','Pierre Coffin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3804,'Devil',NULL,92,'Horror','whippowill','John Erick Dowdle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3805,'Diary of a Wimpy Kid',NULL,51,'Comedy','silurid','Thor Freudenthal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3806,'Don''t Be Afraid of the Dark',NULL,11,'Fantasy','bardiche','Troy Nixey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3807,'Due Date',NULL,23,'Comedy','logicists','Todd Phillips',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3808,'Dylan Dog: Dead of Night',NULL,61,'Action','parroter','Kevin Munroe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3809,'Easy A',NULL,12,'Comedy','hell-rake','Will Gluck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3810,'Eat Pray Love',NULL,69,'Drama','triphylite','Ryan Murphy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3811,'Edge of Darkness',NULL,98,'Crime','distancy','Martin Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3812,'Everything Must Go',NULL,18,'Comedy','spinnies','Dan Rush',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3813,'Extraordinary Measures',NULL,24,'Drama','resmethrin','Tom Vaughan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3814,'Fair Game',NULL,11,'Biography','angledozer','Doug Liman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3815,'Faster',NULL,32,'Action','ethoxylate','George Tillman Jr.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3816,'Flipped',NULL,88,'Comedy','ursidae','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3817,'Freakonomics',NULL,45,'Documentary','whippowill','Heidi Ewing',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3818,'From Paris with Love',NULL,30,'Action','silurid','Pierre Morel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3819,'Furry Vengeance',NULL,3,'Comedy','bardiche','Roger Kumble',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3820,'Going the Distance',NULL,2,'Comedy','logicists','Nanette Burstein',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3821,'Green Zone',NULL,5,'Action','parroter','Paul Greengrass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3822,'Grown Ups',NULL,81,'Comedy','hell-rake','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3823,'Gulliver''s Travels',NULL,44,'Adventure','triphylite','Rob Letterman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3824,'Hereafter',NULL,14,'Drama','distancy','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3825,'Hesher',NULL,81,'Drama','spinnies','Spencer Susser',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3826,'Hot Tub Time Machine',NULL,37,'Comedy','resmethrin','Steve Pink',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3827,'How Do You Know',NULL,77,'Comedy','angledozer','James L. Brooks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3828,'How to Train Your Dragon',NULL,84,'Adventure','ethoxylate','Dean DeBlois',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3829,'I Spit on Your Grave',NULL,92,'Horror','ursidae','Steven R. Monroe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3830,'I Want Your Money',NULL,85,'Documentary','whippowill','Ray Griggs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3831,'Incendies',NULL,11,'Drama','silurid','Denis Villeneuve',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3832,'Inception',NULL,88,'Action','bardiche','Christopher Nolan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3833,'Insidious',NULL,89,'Fantasy','logicists','James Wan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3834,'Iron Man 2',NULL,56,'Action','parroter','Jon Favreau',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3835,'It''s Kind of a Funny Story',NULL,78,'Comedy','hell-rake','Anna Boden',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3836,'Jackass 3D',NULL,56,'Action','triphylite','Jeff Tremaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3837,'Jonah Hex',NULL,67,'Action','distancy','Jimmy Hayward',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3838,'Kick-Ass',NULL,95,'Action','spinnies','Matthew Vaughn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3839,'Killers',NULL,47,'Action','resmethrin','Robert Luketic',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3840,'Kites',NULL,4,'Action','angledozer','Anurag Basu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3841,'Knight and Day',NULL,81,'Action','ethoxylate','James Mangold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3842,'Leap Year',NULL,93,'Comedy','ursidae','Anand Tucker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3843,'Legend of the Guardians: The Owls of Ga''Hoole',NULL,81,'Action','whippowill','Zack Snyder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3844,'Legion',NULL,14,'Action','silurid','Scott Stewart',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3845,'Let Me In',NULL,93,'Drama','bardiche','Matt Reeves',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3846,'Letters to God',NULL,95,'Drama','logicists','David Nixon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3847,'Letters to Juliet',NULL,43,'Comedy','parroter','Gary Winick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3848,'Little Fockers',NULL,82,'Comedy','hell-rake','Paul Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3849,'Little White Lies',NULL,1,'Comedy','triphylite','Guillaume Canet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3850,'Love & Other Drugs',NULL,37,'Comedy','distancy','Edward Zwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3851,'Love Ranch',NULL,52,'Comedy','spinnies','Taylor Hackford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3852,'MacGruber',NULL,92,'Action','resmethrin','Jorma Taccone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3853,'Machete',NULL,43,'Action','angledozer','Ethan Maniquis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3854,'Made in Dagenham',NULL,12,'Biography','ethoxylate','Nigel Cole',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3855,'Marmaduke',NULL,14,'Comedy','ursidae','Tom Dey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3856,'Megamind',NULL,41,'Action','whippowill','Tom McGrath',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3857,'Monsters',NULL,90,'Drama','silurid','Gareth Edwards',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3858,'Morning Glory',NULL,56,'Comedy','bardiche','Roger Michell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3859,'My Name Is Khan',NULL,37,'Adventure','logicists','Karan Johar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3860,'My Soul to Take',NULL,41,'Horror','parroter','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3861,'Nanny McPhee Returns',NULL,63,'Comedy','hell-rake','Susanna White',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3862,'Never Let Me Go',NULL,32,'Drama','triphylite','Mark Romanek',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3863,'Of Gods and Men',NULL,7,'Drama','distancy','Xavier Beauvois',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3864,'Our Family Wedding',NULL,46,'Comedy','spinnies','Rick Famuyiwa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3865,'Paranormal Activity 2',NULL,29,'Horror','resmethrin','Tod Williams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3866,'Percy Jackson & the Olympians: The Lightning Thief',NULL,34,'Adventure','angledozer','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3867,'Piranha 3D',NULL,39,'Comedy','ethoxylate','Alexandre Aja',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3868,'Predators',NULL,65,'Action','ursidae','Nimr�?d Antal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3869,'Prince of Persia: The Sands of Time',NULL,28,'Action','whippowill','Mike Newell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3870,'Rabbit Hole',NULL,82,'Drama','silurid','John Cameron Mitchell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3871,'Ramona and Beezus',NULL,39,'Adventure','bardiche','Elizabeth Allen Rosenbaum',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3872,'RED',NULL,29,'Action','logicists','Robert Schwentke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3873,'Remember Me',NULL,51,'Drama','parroter','Allen Coulter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3874,'Repo Men',NULL,74,'Action','hell-rake','Miguel Sapochnik',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3875,'Resident Evil: Afterlife',NULL,32,'Action','triphylite','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3876,'Robin Hood',NULL,23,'Action','distancy','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3877,'Rubber',NULL,97,'Comedy','spinnies','Quentin Dupieux',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3878,'Salt',NULL,6,'Action','resmethrin','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3879,'Sarah''s Key',NULL,98,'Drama','angledozer','Gilles Paquet-Brenner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3880,'Saw 3D: The Final Chapter',NULL,64,'Horror','ethoxylate','Kevin Greutert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3881,'Scott Pilgrim vs. the World',NULL,43,'Action','ursidae','Edgar Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3882,'Sea Rex 3D: Journey to a Prehistoric World',NULL,56,'Documentary','whippowill','Ronan Chapalain',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3883,'Secretariat',NULL,37,'Biography','silurid','Randall Wallace',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3884,'Sex and the City 2',NULL,54,'Comedy','bardiche','Michael Patrick King',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3885,'She''s Out of My League',NULL,60,'Comedy','logicists','Jim Field Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3886,'Shrek Forever After',NULL,70,'Adventure','parroter','Mike Mitchell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3887,'Shutter Island',NULL,86,'Mystery','hell-rake','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3888,'Skyline',NULL,49,'Action','triphylite','Colin Strause',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3889,'Somewhere',NULL,74,'Comedy','distancy','Sofia Coppola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3890,'Stake Land',NULL,19,'Drama','spinnies','Jim Mickle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3891,'Step Up 3D',NULL,64,'Drama','resmethrin','Jon M. Chu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3892,'Stone',NULL,82,'Drama','angledozer','John Curran',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3893,'Super',NULL,4,'Comedy','ethoxylate','James Gunn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3894,'Takers',NULL,33,'Action','ursidae','John Luessenhop',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3895,'Tangled',NULL,12,'Adventure','whippowill','Nathan Greno',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3896,'The 5th Quarter',NULL,77,'Biography','silurid','Rick Bieber',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3897,'The American',NULL,26,'Crime','bardiche','Anton Corbijn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3898,'The Back-up Plan',NULL,12,'Comedy','logicists','Alan Poul',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3899,'The Book of Eli',NULL,56,'Action','parroter','Albert Hughes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3900,'The Bounty Hunter',NULL,74,'Action','hell-rake','Andy Tennant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (3901,'The Chronicles of Narnia: The Voyage of the Dawn Treader',NULL,12,'Adventure','triphylite','Michael Apted',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3902,'The Conspirator',NULL,62,'Crime','distancy','Robert Redford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3903,'The Crazies',NULL,21,'Horror','spinnies','Breck Eisner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3904,'The Debt',NULL,92,'Drama','resmethrin','John Madden',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3905,'The Expendables',NULL,51,'Action','angledozer','Sylvester Stallone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3906,'The Extra Man',NULL,11,'Comedy','ethoxylate','Shari Springer Berman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3907,'The Fighter',NULL,23,'Biography','ursidae','David O. Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3908,'The Ghost Writer',NULL,61,'Mystery','whippowill','Roman Polanski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3909,'The Grace Card',NULL,12,'Drama','silurid','David G. Evans',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3910,'The Kids Are All Right',NULL,69,'Comedy','bardiche','Lisa Cholodenko',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3911,'The Killer Inside Me',NULL,98,'Crime','logicists','Michael Winterbottom',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3912,'The King''s Speech',NULL,18,'Biography','parroter','Tom Hooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3913,'The Last Airbender',NULL,24,'Action','hell-rake','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3914,'The Last Exorcism',NULL,11,'Drama','triphylite','Daniel Stamm',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3915,'The Last Godfather',NULL,32,'Comedy','distancy','Hyung-rae Shim',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3916,'The Last Song',NULL,88,'Drama','spinnies','Julie Anne Robinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3917,'The Losers',NULL,45,'Action','resmethrin','Sylvain White',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3918,'The Names of Love',NULL,30,'Comedy','angledozer','Michel Leclerc',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3919,'The Next Three Days',NULL,3,'Crime','ethoxylate','Paul Haggis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3920,'The Nutcracker in 3D',NULL,2,'Action','ursidae','Andrey Konchalovskiy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3921,'The Other Guys',NULL,5,'Action','whippowill','Adam McKay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3922,'The Perfect Host',NULL,81,'Comedy','silurid','Nick Tomnay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3923,'The Runaways',NULL,44,'Biography','bardiche','Floria Sigismondi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3924,'The Social Network',NULL,14,'Biography','logicists','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3925,'The Sorcerer''s Apprentice',NULL,81,'Action','parroter','Jon Turteltaub',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3926,'The Spy Next Door',NULL,37,'Action','hell-rake','Brian Levant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3927,'The Switch',NULL,77,'Comedy','triphylite','Josh Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3928,'The Tempest',NULL,84,'Comedy','distancy','Julie Taymor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3929,'The Tourist',NULL,92,'Action','spinnies','Florian Henckel von Donnersmarck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3930,'The Town',NULL,85,'Crime','resmethrin','Ben Affleck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3931,'The Twilight Saga: Eclipse',NULL,11,'Adventure','angledozer','David Slade',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3932,'The Virginity Hit',NULL,88,'Comedy','ethoxylate','Huck Botko',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3933,'The Warrior''s Way',NULL,89,'Action','ursidae','Sngmoo Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3934,'The Wolfman',NULL,56,'Drama','whippowill','Joe Johnston',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3935,'Tiny Furniture',NULL,78,'Comedy','silurid','Lena Dunham',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3936,'Toy Story 3',NULL,56,'Adventure','bardiche','Lee Unkrich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3937,'Trollhunter',NULL,67,'Comedy','logicists','Andr̩ ��vredal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3938,'TRON: Legacy',NULL,95,'Action','parroter','Joseph Kosinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3939,'True Grit',NULL,47,'Adventure','hell-rake','Ethan Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3940,'Trust',NULL,4,'Crime','triphylite','David Schwimmer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3941,'Unstoppable',NULL,81,'Action','distancy','Tony Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3942,'Valentine''s Day',NULL,93,'Comedy','spinnies','Garry Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3943,'Vampires Suck',NULL,81,'Comedy','resmethrin','Jason Friedberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3944,'Wall Street: Money Never Sleeps',NULL,14,'Drama','angledozer','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3945,'Why Did I Get Married Too?',NULL,93,'Comedy','ethoxylate','Tyler Perry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3946,'Wild Target',NULL,95,'Action','ursidae','Jonathan Lynn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3947,'Winter''s Bone',NULL,43,'Drama','whippowill','Debra Granik',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3948,'Yogi Bear',NULL,82,'Adventure','silurid','Eric Brevig',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3949,'You Again',NULL,1,'Comedy','bardiche','Andy Fickman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3950,'You Will Meet a Tall Dark Stranger',NULL,37,'Comedy','logicists','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3951,'1911',NULL,52,'Action','parroter','Li Zhang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3952,'30 Minutes or Less',NULL,92,'Action','hell-rake','Ruben Fleischer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3953,'5 Days of War',NULL,43,'Action','triphylite','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3954,'50/50',NULL,12,'Comedy','distancy','Jonathan Levine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3955,'A Better Life',NULL,14,'Drama','spinnies','Chris Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3956,'A Dangerous Method',NULL,41,'Biography','resmethrin','David Cronenberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3957,'A Separation',NULL,90,'Drama','angledozer','Asghar Farhadi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3958,'A Very Harold & Kumar 3D Christmas',NULL,56,'Adventure','ethoxylate','Todd Strauss-Schulson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3959,'Abduction',NULL,37,'Action','ursidae','John Singleton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3960,'Albert Nobbs',NULL,41,'Drama','whippowill','Rodrigo Garc�?a',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3961,'Alvin and the Chipmunks: Chipwrecked',NULL,63,'Adventure','silurid','Mike Mitchell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3962,'Anonymous',NULL,32,'Drama','bardiche','Roland Emmerich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3963,'Another Earth',NULL,7,'Drama','logicists','Mike Cahill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3964,'Apollo 18',NULL,46,'Horror','parroter','Gonzalo L�?pez-Gallego',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3965,'Arthur Christmas',NULL,29,'Adventure','hell-rake','Sarah Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3966,'Attack the Block',NULL,34,'Action','triphylite','Joe Cornish',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3967,'Bad Teacher',NULL,39,'Comedy','distancy','Jake Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3968,'Battle Los Angeles',NULL,65,'Action','spinnies','Jonathan Liebesman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3969,'Beastly',NULL,28,'Drama','resmethrin','Daniel Barnz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3970,'Bernie',NULL,82,'Comedy','angledozer','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3971,'Big Mommas: Like Father, Like Son',NULL,39,'Action','ethoxylate','John Whitesell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3972,'Bridesmaids',NULL,29,'Comedy','ursidae','Paul Feig',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3973,'Bucky Larson: Born to Be a Star',NULL,51,'Comedy','whippowill','Tom Brady',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3974,'Captain America: The First Avenger',NULL,74,'Action','silurid','Joe Johnston',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3975,'Cars 2',NULL,32,'Adventure','bardiche','John Lasseter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3976,'Colombiana',NULL,23,'Action','logicists','Olivier Megaton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3977,'Contagion',NULL,97,'Drama','parroter','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3978,'Courageous',NULL,6,'Drama','hell-rake','Alex Kendrick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3979,'Crazy, Stupid, Love.',NULL,98,'Comedy','triphylite','Glenn Ficarra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3980,'Diary of a Wimpy Kid: Rodrick Rules',NULL,64,'Comedy','distancy','David Bowers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3981,'Dolphin Tale',NULL,43,'Drama','spinnies','Charles Martin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3982,'Dream House',NULL,56,'Drama','resmethrin','Jim Sheridan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3983,'Drive',NULL,37,'Crime','angledozer','Nicolas Winding Refn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3984,'Drive Angry',NULL,54,'Action','ethoxylate','Patrick Lussier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3985,'Extremely Loud & Incredibly Close',NULL,60,'Adventure','ursidae','Stephen Daldry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3986,'Fast Five',NULL,70,'Action','whippowill','Justin Lin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3987,'Final Destination 5',NULL,86,'Horror','silurid','Steven Quale',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3988,'Fort McCoy',NULL,49,'Drama','bardiche','Kate Connor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3989,'Friends with Benefits',NULL,74,'Comedy','logicists','Will Gluck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3990,'Fright Night',NULL,19,'Comedy','parroter','Craig Gillespie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3991,'Ghost Rider: Spirit of Vengeance',NULL,64,'Action','hell-rake','Mark Neveldine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3992,'Glee: The 3D Concert Movie',NULL,82,'Documentary','triphylite','Kevin Tancharoen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3993,'Go for It!',NULL,4,'Drama','distancy','Carmen Marron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3994,'Green Lantern',NULL,33,'Action','spinnies','Martin Campbell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3995,'Hall Pass',NULL,12,'Comedy','resmethrin','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3996,'Hanna',NULL,77,'Action','angledozer','Joe Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3997,'Happy Feet 2',NULL,26,'Animation','ethoxylate','George Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3998,'Haywire',NULL,12,'Action','ursidae','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(3999,'Headhunters',NULL,56,'Crime','whippowill','Morten Tyldum',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4000,'Hobo with a Shotgun',NULL,74,'Action','silurid','Jason Eisener',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (4001,'Hoodwinked Too! Hood vs. Evil',NULL,12,'Animation','bardiche','Mike Disa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4002,'Hop',NULL,62,'Adventure','logicists','Tim Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4003,'Horrible Bosses',NULL,21,'Comedy','parroter','Seth Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4004,'Hugo',NULL,92,'Adventure','hell-rake','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4005,'I Am Number Four',NULL,51,'Action','triphylite','D.J. Caruso',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4006,'I Don''t Know How She Does It',NULL,11,'Comedy','distancy','Douglas McGrath',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4007,'Immortals',NULL,23,'Action','spinnies','Tarsem Singh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4008,'In the Land of Blood and Honey',NULL,61,'Drama','resmethrin','Angelina Jolie Pitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4009,'In Time',NULL,12,'Action','angledozer','Andrew Niccol',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4010,'J. Edgar',NULL,69,'Biography','ethoxylate','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4011,'Jack and Jill',NULL,98,'Comedy','ursidae','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4012,'Jeff, Who Lives at Home',NULL,18,'Comedy','whippowill','Jay Duplass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4013,'Johnny English Reborn',NULL,24,'Action','silurid','Oliver Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4014,'Jumping the Broom',NULL,11,'Comedy','bardiche','Salim Akil',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4015,'Just Go with It',NULL,32,'Comedy','logicists','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4016,'Justin Bieber: Never Say Never',NULL,88,'Documentary','parroter','Jon M. Chu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4017,'Kill List',NULL,45,'Crime','hell-rake','Ben Wheatley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4018,'Killer Elite',NULL,30,'Action','triphylite','Gary McKendry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4019,'Killer Joe',NULL,3,'Crime','distancy','William Friedkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4020,'Kung Fu Panda 2',NULL,2,'Action','spinnies','Jennifer Yuh Nelson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4021,'L!fe Happens',NULL,5,'Comedy','resmethrin','Kat Coiro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4022,'Larry Crowne',NULL,81,'Comedy','angledozer','Tom Hanks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4023,'Le Havre',NULL,44,'Comedy','ethoxylate','Aki Kaurism�?ki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4024,'Like Crazy',NULL,14,'Drama','ursidae','Drake Doremus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4025,'Machine Gun Preacher',NULL,81,'Action','whippowill','Marc Forster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4026,'Margaret',NULL,37,'Drama','silurid','Kenneth Lonergan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4027,'Margin Call',NULL,77,'Biography','bardiche','J.C. Chandor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4028,'Mars Needs Moms',NULL,84,'Action','logicists','Simon Wells',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4029,'Melancholia',NULL,92,'Drama','parroter','Lars von Trier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4030,'Midnight in Paris',NULL,85,'Comedy','hell-rake','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4031,'Mission: Impossible - Ghost Protocol',NULL,11,'Action','triphylite','Brad Bird',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4032,'Moneyball',NULL,88,'Biography','distancy','Bennett Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4033,'Monte Carlo',NULL,89,'Adventure','spinnies','Thomas Bezucha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4034,'Mr. Popper''s Penguins',NULL,56,'Comedy','resmethrin','Mark Waters',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4035,'My Week with Marilyn',NULL,78,'Biography','angledozer','Simon Curtis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4036,'New Year''s Eve',NULL,56,'Comedy','ethoxylate','Garry Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4037,'Newlyweds',NULL,67,'Comedy','ursidae','Edward Burns',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4038,'No Strings Attached',NULL,95,'Comedy','whippowill','Ivan Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4039,'One Day',NULL,47,'Drama','silurid','Lone Scherfig',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4040,'Our Idiot Brother',NULL,4,'Comedy','bardiche','Jesse Peretz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4041,'Paranormal Activity 3',NULL,81,'Horror','logicists','Henry Joost',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4042,'Paul',NULL,93,'Adventure','parroter','Greg Mottola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4043,'Pink Ribbons, Inc.',NULL,81,'Documentary','hell-rake','L̩a Pool',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4044,'Pirates of the Caribbean: On Stranger Tides',NULL,14,'Action','triphylite','Rob Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4045,'Priest',NULL,93,'Action','distancy','Scott Stewart',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4046,'Prom',NULL,95,'Comedy','spinnies','Joe Nussbaum',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4047,'Puss in Boots',NULL,43,'Action','resmethrin','Chris Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4048,'Rango',NULL,82,'Adventure','angledozer','Gore Verbinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4049,'Real Steel',NULL,1,'Action','ethoxylate','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4050,'Red Riding Hood',NULL,37,'Fantasy','ursidae','Catherine Hardwicke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4051,'Rio',NULL,52,'Adventure','whippowill','Carlos Saldanha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4052,'Rise of the Planet of the Apes',NULL,92,'Action','silurid','Rupert Wyatt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4053,'Salvation Boulevard',NULL,43,'Action','bardiche','George Ratliff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4054,'Samsara',NULL,12,'Documentary','logicists','Ron Fricke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4055,'Sanctum',NULL,14,'Adventure','parroter','Alister Grierson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4056,'Scream 4',NULL,41,'Horror','hell-rake','Wes Craven',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4057,'Shame',NULL,90,'Drama','triphylite','Steve McQueen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4058,'Shark Night 3D',NULL,56,'Horror','distancy','David R. Ellis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4059,'Sherlock Holmes: A Game of Shadows',NULL,37,'Action','spinnies','Guy Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4060,'Sholem Aleichem: Laughing in the Darkness',NULL,41,'Documentary','resmethrin','Joseph Dorman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4061,'Silent House',NULL,63,'Drama','angledozer','Chris Kentis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4062,'Snow Flower and the Secret Fan',NULL,32,'Drama','ethoxylate','Wayne Wang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4063,'Something Borrowed',NULL,7,'Comedy','ursidae','Luke Greenfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4064,'Soul Surfer',NULL,46,'Biography','whippowill','Sean McNamara',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4065,'Source Code',NULL,29,'Mystery','silurid','Duncan Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4066,'Spy Kids: All the Time in the World in 4D',NULL,34,'Action','bardiche','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4067,'Straw Dogs',NULL,39,'Action','logicists','Rod Lurie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4068,'Sucker Punch',NULL,65,'Action','parroter','Zack Snyder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4069,'Super 8',NULL,28,'Mystery','hell-rake','J.J. Abrams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4070,'Take Me Home Tonight',NULL,82,'Comedy','triphylite','Michael Dowse',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4071,'Take Shelter',NULL,39,'Drama','distancy','Jeff Nichols',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4072,'The Adjustment Bureau',NULL,29,'Romance','spinnies','George Nolfi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4073,'The Adventures of Tintin',NULL,51,'Action','resmethrin','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4074,'The Artist',NULL,74,'Comedy','angledozer','Michel Hazanavicius',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4075,'The Beaver',NULL,32,'Drama','ethoxylate','Jodie Foster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4076,'The Best Exotic Marigold Hotel',NULL,23,'Comedy','ursidae','John Madden',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4077,'The Big Year',NULL,97,'Comedy','whippowill','David Frankel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4078,'The Change-Up',NULL,6,'Comedy','silurid','David Dobkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4079,'The Darkest Hour',NULL,98,'Action','bardiche','Chris Gorak',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4080,'The Descendants',NULL,64,'Comedy','logicists','Alexander Payne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4081,'The Devil''s Double',NULL,43,'Biography','parroter','Lee Tamahori',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4082,'The Dilemma',NULL,56,'Comedy','hell-rake','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4083,'The Divide',NULL,37,'Drama','triphylite','Xavier Gens',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4084,'The Flowers of War',NULL,54,'Drama','distancy','Yimou Zhang',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4085,'The FP',NULL,60,'Comedy','spinnies','Brandon Trost',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4086,'The Girl with the Dragon Tattoo',NULL,70,'Crime','resmethrin','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4087,'The Greatest Movie Ever Sold',NULL,86,'Comedy','angledozer','Morgan Spurlock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4088,'The Green Hornet',NULL,49,'Action','ethoxylate','Michel Gondry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4089,'The Grey',NULL,74,'Action','ursidae','Joe Carnahan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4090,'The Guard',NULL,19,'Comedy','whippowill','John Michael McDonagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4091,'The Hangover Part II',NULL,64,'Comedy','silurid','Todd Phillips',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4092,'The Harvest/La Cosecha',NULL,82,'Documentary','bardiche','U. Roberto Romano',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4093,'The Help',NULL,4,'Drama','logicists','Tate Taylor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4094,'The Ides of March',NULL,33,'Drama','parroter','George Clooney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4095,'The Innkeepers',NULL,12,'Horror','hell-rake','Ti West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4096,'The Iron Lady',NULL,77,'Biography','triphylite','Phyllida Lloyd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4097,'The Lincoln Lawyer',NULL,26,'Crime','distancy','Brad Furman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4098,'The Mechanic',NULL,12,'Action','spinnies','Simon West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4099,'The Muppets',NULL,56,'Adventure','resmethrin','James Bobin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4100,'The Raid: Redemption',NULL,74,'Action','angledozer','Gareth Evans',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (4101,'The Rite',NULL,12,'Drama','ethoxylate','Mikael H̴fstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4102,'The Roommate',NULL,62,'Drama','ursidae','Christian E. Christiansen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4103,'The Smurfs',NULL,21,'Adventure','whippowill','Raja Gosnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4104,'The Son of No One',NULL,92,'Crime','silurid','Dito Montiel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4105,'The Three Musketeers',NULL,51,'Action','bardiche','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4106,'The Tree of Life',NULL,11,'Drama','logicists','Terrence Malick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4107,'There Be Dragons',NULL,23,'Biography','parroter','Roland Joff̩',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4108,'Thor',NULL,61,'Action','hell-rake','Kenneth Branagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4109,'Tinker Tailor Soldier Spy',NULL,12,'Drama','triphylite','Tomas Alfredson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4110,'Tower Heist',NULL,69,'Action','distancy','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4111,'Transformers: Dark of the Moon',NULL,98,'Action','spinnies','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4112,'Unknown',NULL,18,'Action','resmethrin','Jaume Collet-Serra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4113,'War Horse',NULL,24,'Drama','angledozer','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4114,'Warrior',NULL,11,'Drama','ethoxylate','Gavin O''Connor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4115,'Water for Elephants',NULL,32,'Drama','ursidae','Francis Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4116,'We Need to Talk About Kevin',NULL,88,'Drama','whippowill','Lynne Ramsay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4117,'Weekend',NULL,45,'Drama','silurid','Andrew Haigh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4118,'What''s Your Number?',NULL,30,'Comedy','bardiche','Mark Mylod',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4119,'Winnie the Pooh',NULL,3,'Adventure','logicists','Stephen J. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4120,'X-Men: First Class',NULL,2,'Action','parroter','Matthew Vaughn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4121,'Young Adult',NULL,5,'Comedy','hell-rake','Jason Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4122,'Your Highness',NULL,81,'Adventure','triphylite','David Gordon Green',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4123,'Your Sister''s Sister',NULL,44,'Comedy','distancy','Lynn Shelton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4124,'Zookeeper',NULL,14,'Comedy','spinnies','Frank Coraci',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4125,'2016: Obama''s America',NULL,81,'Documentary','resmethrin','Dinesh D''Souza',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4126,'21 Jump Street',NULL,37,'Action','angledozer','Phil Lord',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4127,'A Thousand Words',NULL,77,'Comedy','ethoxylate','Brian Robbins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4128,'Abraham Lincoln: Vampire Hunter',NULL,84,'Action','ursidae','Timur Bekmambetov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4129,'Act of Valor',NULL,92,'Action','whippowill','Mike McCoy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4130,'Alex Cross',NULL,85,'Action','silurid','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4131,'American Reunion',NULL,11,'Comedy','bardiche','Jon Hurwitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4132,'Amour',NULL,88,'Drama','logicists','Michael Haneke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4133,'Arbitrage',NULL,89,'Drama','parroter','Nicholas Jarecki',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4134,'Argo',NULL,56,'Biography','hell-rake','Ben Affleck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4135,'Atlas Shrugged II: The Strike',NULL,78,'Drama','triphylite','John Putch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4136,'Bachelorette',NULL,56,'Comedy','distancy','Leslye Headland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4137,'Battleship',NULL,67,'Action','spinnies','Peter Berg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4138,'Beasts of the Southern Wild',NULL,95,'Drama','resmethrin','Benh Zeitlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4139,'Big Miracle',NULL,47,'Biography','angledozer','Ken Kwapis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4140,'Blue Like Jazz',NULL,4,'Comedy','ethoxylate','Steve Taylor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4141,'Brave',NULL,81,'Adventure','ursidae','Mark Andrews',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4142,'Bullet to the Head',NULL,93,'Action','whippowill','Walter Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4143,'Burn',NULL,81,'Documentary','silurid','Tom Putnam',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4144,'Casa de mi Padre',NULL,14,'Comedy','bardiche','Matt Piedmont',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4145,'Chasing Mavericks',NULL,93,'Biography','logicists','Michael Apted',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4146,'Chernobyl Diaries',NULL,95,'Horror','parroter','Bradley Parker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4147,'Chronicle',NULL,43,'Drama','hell-rake','Josh Trank',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4148,'Cloud Atlas',NULL,82,'Drama','triphylite','Tom Tykwer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4149,'Compliance',NULL,1,'Biography','distancy','Craig Zobel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4150,'Contraband',NULL,37,'Action','spinnies','Baltasar Korm��kur',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4151,'Dark Shadows',NULL,52,'Comedy','resmethrin','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4152,'Deadfall',NULL,92,'Crime','angledozer','Stefan Ruzowitzky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4153,'Deceptive Practice: The Mysteries and Mentors of Ricky Jay',NULL,43,'Documentary','ethoxylate','Molly Bernstein',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4154,'Detention of the Dead',NULL,12,'Comedy','ursidae','Alex Craig Mann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4155,'Diary of a Wimpy Kid: Dog Days',NULL,14,'Comedy','whippowill','David Bowers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4156,'Django Unchained',NULL,41,'Drama','silurid','Quentin Tarantino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4157,'Dredd',NULL,90,'Action','bardiche','Pete Travis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4158,'Eddie: The Sleepwalking Cannibal',NULL,56,'Comedy','logicists','Boris Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4159,'End of Watch',NULL,37,'Crime','parroter','David Ayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4160,'Ernest & Celestine',NULL,41,'Animation','hell-rake','St̩phane Aubier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4161,'Filly Brown',NULL,63,'Drama','triphylite','Youssef Delara',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4162,'Flight',NULL,32,'Drama','distancy','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4163,'For a Good Time, Call...',NULL,7,'Comedy','spinnies','Jamie Travis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4164,'For Greater Glory: The True Story of Cristiada',NULL,46,'Drama','resmethrin','Dean Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4165,'Frankenweenie',NULL,29,'Animation','angledozer','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4166,'Fun Size',NULL,34,'Adventure','ethoxylate','Josh Schwartz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4167,'Hardflip',NULL,39,'Action','ursidae','Johnny Remo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4168,'Here Comes the Boom',NULL,65,'Action','whippowill','Frank Coraci',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4169,'Hit and Run',NULL,28,'Action','silurid','David Palmer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4170,'Hope Springs',NULL,82,'Comedy','bardiche','David Frankel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4171,'Hotel Transylvania',NULL,39,'Animation','logicists','Genndy Tartakovsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4172,'House at the End of the Street',NULL,29,'Drama','parroter','Mark Tonderai',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4173,'Ice Age: Continental Drift',NULL,51,'Adventure','hell-rake','Steve Martino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4174,'Inescapable',NULL,74,'Drama','triphylite','Ruba Nadda',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4175,'Jab Tak Hai Jaan',NULL,32,'Drama','distancy','Yash Chopra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4176,'Jack Reacher',NULL,23,'Action','spinnies','Christopher McQuarrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4177,'John Carter',NULL,97,'Action','resmethrin','Andrew Stanton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4178,'Journey 2: The Mysterious Island',NULL,6,'Action','angledozer','Brad Peyton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4179,'Joyful Noise',NULL,98,'Comedy','ethoxylate','Todd Graff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4180,'Katy Perry: Part of Me',NULL,64,'Documentary','ursidae','Dan Cutforth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4181,'Killing Them Softly',NULL,43,'Crime','whippowill','Andrew Dominik',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4182,'Les Mis̩rables',NULL,56,'Drama','silurid','Tom Hooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4183,'Life of Pi',NULL,37,'Adventure','bardiche','Ang Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4184,'Lincoln',NULL,54,'Biography','logicists','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4185,'Lockout',NULL,60,'Action','parroter','James Mather',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4186,'Looper',NULL,70,'Action','hell-rake','Rian Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4187,'Madagascar 3: Europe''s Most Wanted',NULL,86,'Adventure','triphylite','Eric Darnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4188,'Madea''s Witness Protection',NULL,49,'Comedy','distancy','Tyler Perry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4189,'Magic Mike',NULL,74,'Comedy','spinnies','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4190,'Man on a Ledge',NULL,19,'Action','resmethrin','Asger Leth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4191,'Maniac',NULL,64,'Horror','angledozer','Franck Khalfoun',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4192,'Men in Black 3',NULL,82,'Action','ethoxylate','Barry Sonnenfeld',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4193,'Middle of Nowhere',NULL,4,'Drama','ursidae','Ava DuVernay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4194,'Mirror Mirror',NULL,33,'Adventure','whippowill','Tarsem Singh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4195,'Moonrise Kingdom',NULL,12,'Adventure','silurid','Wes Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4196,'Mud',NULL,77,'Drama','bardiche','Jeff Nichols',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4197,'On the Road',NULL,26,'Adventure','logicists','Walter Salles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4198,'One for the Money',NULL,12,'Action','parroter','Julie Anne Robinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4199,'Paranormal Activity 4',NULL,56,'Horror','hell-rake','Henry Joost',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4200,'ParaNorman',NULL,74,'Adventure','triphylite','Chris Butler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (4201,'Parental Guidance',NULL,12,'Comedy','distancy','Andy Fickman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4202,'Pitch Perfect',NULL,62,'Comedy','spinnies','Jason Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4203,'Playing for Keeps',NULL,21,'Comedy','resmethrin','Gabriele Muccino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4204,'Premium Rush',NULL,92,'Action','angledozer','David Koepp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4205,'Project X',NULL,51,'Comedy','ethoxylate','Nima Nourizadeh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4206,'Prometheus',NULL,11,'Adventure','ursidae','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4207,'Promised Land',NULL,23,'Drama','whippowill','Gus Van Sant',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4208,'Quartet',NULL,61,'Comedy','silurid','Dustin Hoffman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4209,'Red Tails',NULL,12,'Action','bardiche','Anthony Hemingway',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4210,'Resident Evil: Retribution',NULL,69,'Action','logicists','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4211,'Rise of the Guardians',NULL,98,'Adventure','parroter','Peter Ramsey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4212,'Robot & Frank',NULL,18,'Comedy','hell-rake','Jake Schreier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4213,'Rock of Ages',NULL,24,'Comedy','triphylite','Adam Shankman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4214,'Safe',NULL,11,'Action','distancy','Boaz Yakin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4215,'Safe House',NULL,32,'Action','spinnies','Daniel Espinosa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4216,'Safety Not Guaranteed',NULL,88,'Comedy','resmethrin','Colin Trevorrow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4217,'Savages',NULL,45,'Crime','angledozer','Oliver Stone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4218,'Seeking a Friend for the End of the World',NULL,30,'Adventure','ethoxylate','Lorene Scafaria',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4219,'Seven Psychopaths',NULL,3,'Comedy','ursidae','Martin McDonagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4220,'Silent Hill: Revelation 3D',NULL,2,'Adventure','whippowill','Michael J. Bassett',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4221,'Silver Linings Playbook',NULL,5,'Comedy','silurid','David O. Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4222,'Sinister',NULL,81,'Horror','bardiche','Scott Derrickson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4223,'Skyfall',NULL,44,'Action','logicists','Sam Mendes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4224,'Snow White and the Huntsman',NULL,14,'Action','parroter','Rupert Sanders',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4225,'Sparkle',NULL,81,'Drama','hell-rake','Salim Akil',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4226,'Spring Breakers',NULL,37,'Crime','triphylite','Harmony Korine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4227,'Step Up Revolution',NULL,77,'Drama','distancy','Scott Speer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4228,'Stolen',NULL,84,'Action','spinnies','Simon West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4229,'Taken 2',NULL,92,'Action','resmethrin','Olivier Megaton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4230,'Ted',NULL,85,'Comedy','angledozer','Seth MacFarlane',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4231,'That''s My Boy',NULL,11,'Comedy','ethoxylate','Sean Anders',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4232,'The Act of Killing',NULL,88,'Biography','ursidae','Joshua Oppenheimer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4233,'The Amazing Spider-Man',NULL,89,'Action','whippowill','Marc Webb',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4234,'The Apparition',NULL,56,'Horror','silurid','Todd Lincoln',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4235,'The Avengers',NULL,78,'Action','bardiche','Joss Whedon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4236,'The Bourne Legacy',NULL,56,'Action','logicists','Tony Gilroy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4237,'The Brass Teapot',NULL,67,'Comedy','parroter','Ramaa Mosley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4238,'The Cabin in the Woods',NULL,95,'Fantasy','hell-rake','Drew Goddard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4239,'The Campaign',NULL,47,'Comedy','triphylite','Jay Roach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4240,'The Cold Light of Day',NULL,4,'Action','distancy','Mabrouk El Mechri',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4241,'The Collection',NULL,81,'Action','spinnies','Marcus Dunstan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4242,'The Dark Knight Rises',NULL,93,'Action','resmethrin','Christopher Nolan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4243,'The Devil Inside',NULL,81,'Horror','angledozer','William Brent Bell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4244,'The Dictator',NULL,14,'Comedy','ethoxylate','Larry Charles',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4245,'The Expendables 2',NULL,93,'Action','ursidae','Simon West',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4246,'The Five-Year Engagement',NULL,95,'Comedy','whippowill','Nicholas Stoller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4247,'The Ghastly Love of Johnny X',NULL,43,'Comedy','silurid','Paul Bunnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4248,'The Guilt Trip',NULL,82,'Comedy','bardiche','Anne Fletcher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4249,'The Hobbit: An Unexpected Journey',NULL,1,'Adventure','logicists','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4250,'The Hunger Games',NULL,37,'Adventure','parroter','Gary Ross',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4251,'The Hunt',NULL,52,'Drama','hell-rake','Thomas Vinterberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4252,'The Iceman',NULL,92,'Biography','triphylite','Ariel Vromen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4253,'The Impossible',NULL,43,'Drama','distancy','J.A. Bayona',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4254,'The Lords of Salem',NULL,12,'Drama','spinnies','Rob Zombie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4255,'The Lucky One',NULL,14,'Drama','resmethrin','Scott Hicks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4256,'The Man with the Iron Fists',NULL,41,'Action','angledozer','RZA',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4257,'The Master',NULL,90,'Drama','ethoxylate','Paul Thomas Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4258,'The Odd Life of Timothy Green',NULL,56,'Comedy','ursidae','Peter Hedges',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4259,'The Oogieloves in the Big Balloon Adventure',NULL,37,'Adventure','whippowill','Matthew Diamond',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4260,'The Other Dream Team',NULL,41,'Documentary','silurid','Marius A. Markevicius',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4261,'The Perks of Being a Wallflower',NULL,63,'Drama','bardiche','Stephen Chbosky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4262,'The Pirates! Band of Misfits',NULL,32,'Adventure','logicists','Peter Lord',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4263,'The Place Beyond the Pines',NULL,7,'Crime','parroter','Derek Cianfrance',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4264,'The Possession',NULL,46,'Horror','hell-rake','Ole Bornedal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4265,'The Raven',NULL,29,'Crime','triphylite','James McTeigue',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4266,'The Sessions',NULL,34,'Biography','distancy','Ben Lewin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4267,'The Sweeney',NULL,39,'Action','spinnies','Nick Love',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4268,'The Twilight Saga: Breaking Dawn - Part 2',NULL,65,'Adventure','resmethrin','Bill Condon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4269,'The Vow',NULL,28,'Drama','angledozer','Michael Sucsy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4270,'The Watch',NULL,82,'Action','ethoxylate','Akiva Schaffer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4271,'The Woman in Black',NULL,39,'Drama','ursidae','James Watkins',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4272,'The Words',NULL,29,'Drama','whippowill','Brian Klugman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4273,'Think Like a Man',NULL,51,'Comedy','silurid','Tim Story',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4274,'This Is 40',NULL,74,'Comedy','bardiche','Judd Apatow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4275,'This Means War',NULL,32,'Action','logicists','McG',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4276,'Tim and Eric''s Billion Dollar Movie',NULL,23,'Comedy','parroter','Tim Heidecker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4277,'To Rome with Love',NULL,97,'Comedy','hell-rake','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4278,'Underworld: Awakening',NULL,6,'Action','triphylite','M̴ns M̴rlind',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4279,'Vamps',NULL,98,'Comedy','distancy','Amy Heckerling',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4280,'What to Expect When You''re Expecting',NULL,64,'Comedy','spinnies','Kirk Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4281,'Wrath of the Titans',NULL,43,'Action','resmethrin','Jonathan Liebesman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4282,'Wreck-It Ralph',NULL,56,'Adventure','angledozer','Rich Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4283,'Zero Dark Thirty',NULL,37,'Drama','ethoxylate','Kathryn Bigelow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4284,'12 Years a Slave',NULL,54,'Biography','ursidae','Steve McQueen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4285,'2 Guns',NULL,60,'Action','whippowill','Baltasar Korm��kur',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4286,'20 Feet from Stardom',NULL,70,'Documentary','silurid','Morgan Neville',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4287,'21 & Over',NULL,86,'Comedy','bardiche','Jon Lucas',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4288,'42',NULL,49,'Biography','logicists','Brian Helgeland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4289,'47 Ronin',NULL,74,'Action','parroter','Carl Rinsch',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4290,'A Good Day to Die Hard',NULL,19,'Action','hell-rake','John Moore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4291,'A Haunted House',NULL,64,'Comedy','triphylite','Michael Tiddes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4292,'A Madea Christmas',NULL,82,'Comedy','distancy','Tyler Perry',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4293,'About Time',NULL,4,'Drama','spinnies','Richard Curtis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4294,'Admission',NULL,33,'Comedy','resmethrin','Paul Weitz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4295,'Adore',NULL,12,'Drama','angledozer','Anne Fontaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4296,'After Earth',NULL,77,'Action','ethoxylate','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4297,'All Is Lost',NULL,26,'Action','ursidae','J.C. Chandor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4298,'American Hustle',NULL,12,'Crime','whippowill','David O. Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4299,'Anchorman 2: The Legend Continues',NULL,56,'Comedy','silurid','Adam McKay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4300,'Antarctica: A Year on Ice',NULL,74,'Adventure','bardiche','Anthony Powell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (4301,'August: Osage County',NULL,12,'Drama','logicists','John Wells',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4302,'Bad Grandpa',NULL,62,'Comedy','parroter','Jeff Tremaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4303,'Bad Words',NULL,21,'Comedy','hell-rake','Jason Bateman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4304,'Baggage Claim',NULL,92,'Comedy','triphylite','David E. Talbert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4305,'Battle of the Year',NULL,51,'Drama','distancy','Benson Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4306,'Beautiful Creatures',NULL,11,'Drama','spinnies','Richard LaGravenese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4307,'Before Midnight',NULL,23,'Drama','resmethrin','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4308,'Begin Again',NULL,61,'Drama','angledozer','John Carney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4309,'Black Nativity',NULL,12,'Drama','ethoxylate','Kasi Lemmons',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4310,'Blood Ties',NULL,69,'Crime','ursidae','Guillaume Canet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4311,'Blue Jasmine',NULL,98,'Drama','whippowill','Woody Allen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4312,'Blue Ruin',NULL,18,'Crime','silurid','Jeremy Saulnier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4313,'Broken City',NULL,24,'Crime','bardiche','Allen Hughes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4314,'Buen D�?a, Ram�?n',NULL,11,'Drama','logicists','Jorge Ram�?rez Su��rez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4315,'Captain Phillips',NULL,32,'Biography','parroter','Paul Greengrass',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4316,'Carrie',NULL,88,'Drama','hell-rake','Kimberly Peirce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4317,'Cheap Thrills',NULL,45,'Comedy','triphylite','E.L. Katz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4318,'Cinco de Mayo, La Batalla',NULL,30,'Drama','distancy','Rafa Lara',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4319,'Cloudy with a Chance of Meatballs 2',NULL,3,'Animation','spinnies','Cody Cameron',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4320,'Dallas Buyers Club',NULL,2,'Biography','resmethrin','Jean-Marc Vall̩e',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4321,'Dead Man Down',NULL,5,'Action','angledozer','Niels Arden Oplev',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4322,'Delivery Man',NULL,81,'Comedy','ethoxylate','Ken Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4323,'Despicable Me 2',NULL,44,'Animation','ursidae','Pierre Coffin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4324,'Don Jon',NULL,14,'Comedy','whippowill','Joseph Gordon-Levitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4325,'Elysium',NULL,81,'Action','silurid','Neill Blomkamp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4326,'Ender''s Game',NULL,37,'Action','bardiche','Gavin Hood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4327,'Enough Said',NULL,77,'Comedy','logicists','Nicole Holofcener',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4328,'Epic',NULL,84,'Adventure','parroter','Chris Wedge',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4329,'Escape from Planet Earth',NULL,92,'Adventure','hell-rake','Cal Brunker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4330,'Escape Plan',NULL,85,'Action','triphylite','Mikael H̴fstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4331,'Evil Dead',NULL,11,'Horror','distancy','Fede Alvarez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4332,'Free Birds',NULL,88,'Adventure','spinnies','Jimmy Hayward',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4333,'Frozen',NULL,89,'Adventure','resmethrin','Chris Buck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4334,'Fruitvale Station',NULL,56,'Biography','angledozer','Ryan Coogler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4335,'G.I. Joe: Retaliation',NULL,78,'Action','ethoxylate','Jon M. Chu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4336,'Gangster Squad',NULL,56,'Action','ursidae','Ruben Fleischer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4337,'Getaway',NULL,67,'Action','whippowill','Courtney Solomon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4338,'Gravity',NULL,95,'Adventure','silurid','Alfonso Cuar�?n',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4339,'Grown Ups 2',NULL,47,'Comedy','bardiche','Dennis Dugan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4340,'Grudge Match',NULL,4,'Comedy','logicists','Peter Segal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4341,'Hansel & Gretel: Witch Hunters',NULL,81,'Action','parroter','Tommy Wirkola',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4342,'Her',NULL,93,'Drama','hell-rake','Spike Jonze',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4343,'Home Run',NULL,81,'Drama','triphylite','David Boyd',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4344,'Homefront',NULL,14,'Action','distancy','Gary Fleder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4345,'Identity Thief',NULL,93,'Comedy','spinnies','Seth Gordon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4346,'Inside Llewyn Davis',NULL,95,'Drama','resmethrin','Ethan Coen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4347,'Insidious: Chapter 2',NULL,43,'Fantasy','angledozer','James Wan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4348,'Instructions Not Included',NULL,82,'Comedy','ethoxylate','Eugenio Derbez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4349,'Iron Man 3',NULL,1,'Action','ursidae','Shane Black',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4350,'Jack the Giant Slayer',NULL,37,'Adventure','whippowill','Bryan Singer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4351,'Joe',NULL,52,'Drama','silurid','David Gordon Green',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4352,'Kevin Hart: Let Me Explain',NULL,92,'Comedy','bardiche','Leslie Small',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4353,'Kick-Ass 2',NULL,43,'Action','logicists','Jeff Wadlow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4354,'Labor Day',NULL,12,'Drama','parroter','Jason Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4355,'Last Vegas',NULL,14,'Comedy','hell-rake','Jon Turteltaub',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4356,'Lee Daniels'' The Butler',NULL,41,'Biography','triphylite','Lee Daniels',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4357,'Legends of Oz: Dorothy''s Return',NULL,90,'Adventure','distancy','Will Finn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4358,'Lone Survivor',NULL,56,'Action','spinnies','Peter Berg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4359,'Machete Kills',NULL,37,'Action','resmethrin','Robert Rodriguez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4360,'Mama',NULL,41,'Fantasy','angledozer','Andr̩s Muschietti',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4361,'Man of Steel',NULL,63,'Action','ethoxylate','Zack Snyder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4362,'Mandela: Long Walk to Freedom',NULL,32,'Biography','ursidae','Justin Chadwick',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4363,'Monsters University',NULL,7,'Adventure','whippowill','Dan Scanlon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4364,'Movie 43',NULL,46,'Comedy','silurid','Elizabeth Banks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4365,'Nebraska',NULL,29,'Adventure','bardiche','Alexander Payne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4366,'Now You See Me',NULL,34,'Crime','logicists','Louis Leterrier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4367,'Oblivion',NULL,39,'Action','parroter','Joseph Kosinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4368,'Oculus',NULL,65,'Horror','hell-rake','Mike Flanagan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4369,'Of Horses and Men',NULL,28,'Comedy','triphylite','Benedikt Erlingsson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4370,'Olympus Has Fallen',NULL,82,'Action','distancy','Antoine Fuqua',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4371,'One Direction: This Is Us',NULL,39,'Documentary','spinnies','Morgan Spurlock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4372,'Only God Forgives',NULL,29,'Crime','resmethrin','Nicolas Winding Refn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4373,'Out of the Furnace',NULL,51,'Crime','angledozer','Scott Cooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4374,'Oz the Great and Powerful',NULL,74,'Adventure','ethoxylate','Sam Raimi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4375,'Pacific Rim',NULL,32,'Action','ursidae','Guillermo del Toro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4376,'Pain & Gain',NULL,23,'Comedy','whippowill','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4377,'Parker',NULL,97,'Action','silurid','Taylor Hackford',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4378,'Peeples',NULL,6,'Comedy','bardiche','Tina Gordon Chism',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4379,'Percy Jackson: Sea of Monsters',NULL,98,'Adventure','logicists','Thor Freudenthal',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4380,'Philomena',NULL,64,'Biography','parroter','Stephen Frears',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4381,'Prisoners',NULL,43,'Crime','hell-rake','Denis Villeneuve',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4382,'R.I.P.D.',NULL,56,'Action','triphylite','Robert Schwentke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4383,'R100',NULL,37,'Comedy','distancy','Hitoshi Matsumoto',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4384,'RED 2',NULL,54,'Action','spinnies','Dean Parisot',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4385,'Riddick',NULL,60,'Action','resmethrin','David Twohy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4386,'Runner Runner',NULL,70,'Crime','angledozer','Brad Furman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4387,'Rush',NULL,86,'Action','ethoxylate','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4388,'Safe Haven',NULL,49,'Drama','ursidae','Lasse Hallstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4389,'Saving Mr. Banks',NULL,74,'Biography','whippowill','John Lee Hancock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4390,'Scary Movie 5',NULL,19,'Comedy','silurid','Malcolm D. Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4391,'Side Effects',NULL,64,'Crime','bardiche','Steven Soderbergh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4392,'Snitch',NULL,82,'Action','logicists','Ric Roman Waugh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4393,'Snowpiercer',NULL,4,'Action','parroter','Joon-ho Bong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4394,'Star Trek Into Darkness',NULL,33,'Action','hell-rake','J.J. Abrams',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4395,'Stoker',NULL,12,'Drama','triphylite','Chan-wook Park',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4396,'Texas Chainsaw 3D',NULL,77,'Horror','distancy','John Luessenhop',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4397,'The Adventurer: The Curse of the Midas Box',NULL,26,'Adventure','spinnies','Jonathan Newman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4398,'The Amazing Catfish',NULL,12,'Comedy','resmethrin','Claudia Sainte-Luce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4399,'The Best Man Holiday',NULL,56,'Comedy','angledozer','Malcolm D. Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4400,'The Best Offer',NULL,74,'Crime','ethoxylate','Giuseppe Tornatore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (4401,'The Big Wedding',NULL,12,'Comedy','ursidae','Justin Zackham',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4402,'The Book Thief',NULL,62,'Drama','whippowill','Brian Percival',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4403,'The Call',NULL,21,'Crime','silurid','Brad Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4404,'The Canyons',NULL,92,'Drama','bardiche','Paul Schrader',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4405,'The Conjuring',NULL,51,'Horror','logicists','James Wan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4406,'The Counselor',NULL,11,'Crime','parroter','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4407,'The Croods',NULL,23,'Adventure','hell-rake','Kirk De Micco',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4408,'The East',NULL,61,'Drama','triphylite','Zal Batmanglij',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4409,'The Fifth Estate',NULL,12,'Biography','distancy','Bill Condon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4410,'The Grandmaster',NULL,69,'Action','spinnies','Kar-Wai Wong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4411,'The Great Beauty',NULL,98,'Drama','resmethrin','Paolo Sorrentino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4412,'The Great Gatsby',NULL,18,'Drama','angledozer','Baz Luhrmann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4413,'The Green Inferno',NULL,24,'Adventure','ethoxylate','Eli Roth',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4414,'The Heat',NULL,11,'Action','ursidae','Paul Feig',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4415,'The Hobbit: The Desolation of Smaug',NULL,32,'Adventure','whippowill','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4416,'The Hunger Games: Catching Fire',NULL,88,'Adventure','silurid','Francis Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4417,'The Immigrant',NULL,45,'Drama','bardiche','James Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4418,'The Incredible Burt Wonderstone',NULL,30,'Comedy','logicists','Don Scardino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4419,'The Internship',NULL,3,'Comedy','parroter','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4420,'The Knife of Don Juan',NULL,2,'Comedy','hell-rake','Tom Sanchez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4421,'The Last Days on Mars',NULL,5,'Horror','triphylite','Ruairi Robinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4422,'The Last Exorcism Part II',NULL,81,'Drama','distancy','Ed Gass-Donnelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4423,'The Last Stand',NULL,44,'Action','spinnies','Jee-woon Kim',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4424,'The Lone Ranger',NULL,14,'Action','resmethrin','Gore Verbinski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4425,'The Lunchbox',NULL,81,'Drama','angledozer','Ritesh Batra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4426,'The Mortal Instruments: City of Bones',NULL,37,'Fantasy','ethoxylate','Harald Zwart',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4427,'The Purge',NULL,77,'Horror','ursidae','James DeMonaco',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4428,'The Railway Man',NULL,84,'Biography','whippowill','Jonathan Teplitzky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4429,'The Secret Life of Walter Mitty',NULL,92,'Adventure','silurid','Ben Stiller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4430,'The Smurfs 2',NULL,85,'Adventure','bardiche','Raja Gosnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4431,'The Spectacular Now',NULL,11,'Comedy','logicists','James Ponsoldt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4432,'The To Do List',NULL,88,'Comedy','parroter','Maggie Carey',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4433,'The Way Way Back',NULL,89,'Comedy','hell-rake','Nat Faxon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4434,'The Wolf of Wall Street',NULL,56,'Biography','triphylite','Martin Scorsese',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4435,'The Wolverine',NULL,78,'Action','distancy','James Mangold',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4436,'The World''s End',NULL,56,'Action','spinnies','Edgar Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4437,'The Young and Prodigious T.S. Spivet',NULL,67,'Action','resmethrin','Jean-Pierre Jeunet',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4438,'This Is the End',NULL,95,'Comedy','angledozer','Evan Goldberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4439,'Thor: The Dark World',NULL,47,'Action','ethoxylate','Alan Taylor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4440,'Thunder and the House of Magic',NULL,4,'Adventure','ursidae','Jeremy Degruson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4441,'Trance',NULL,81,'Crime','whippowill','Danny Boyle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4442,'Turbo',NULL,93,'Adventure','silurid','David Soren',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4443,'Walking with Dinosaurs 3D',NULL,81,'Adventure','bardiche','Barry Cook',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4444,'Warm Bodies',NULL,14,'Comedy','logicists','Jonathan Levine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4445,'We''re the Millers',NULL,93,'Comedy','parroter','Rawson Marshall Thurber',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4446,'White House Down',NULL,95,'Action','hell-rake','Roland Emmerich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4447,'World War Z',NULL,43,'Action','triphylite','Marc Forster',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4448,'22 Jump Street',NULL,82,'Action','distancy','Phil Lord',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4449,'3 Days to Kill',NULL,1,'Action','spinnies','McG',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4450,'300: Rise of an Empire',NULL,37,'Action','resmethrin','Noam Murro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4451,'A Haunted House 2',NULL,52,'Comedy','angledozer','Michael Tiddes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4452,'A Lego Brickumentary',NULL,92,'Documentary','ethoxylate','Kief Davidson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4453,'A Million Ways to Die in the West',NULL,43,'Comedy','ursidae','Seth MacFarlane',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4454,'A Most Violent Year',NULL,12,'Action','whippowill','J.C. Chandor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4455,'A Most Wanted Man',NULL,14,'Crime','silurid','Anton Corbijn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4456,'A Walk Among the Tombstones',NULL,41,'Crime','bardiche','Scott Frank',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4457,'About Last Night',NULL,90,'Comedy','logicists','Steve Pink',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4458,'Addicted',NULL,56,'Drama','parroter','Bille Woodruff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4459,'Alexander and the Terrible, Horrible, No Good, Very Bad Day',NULL,37,'Comedy','hell-rake','Miguel Arteta',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4460,'Aloft',NULL,41,'Drama','triphylite','Claudia Llosa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4461,'American Sniper',NULL,63,'Action','distancy','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4462,'And So It Goes',NULL,32,'Comedy','spinnies','Rob Reiner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4463,'Annabelle',NULL,7,'Horror','resmethrin','John R. Leonetti',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4464,'Annie',NULL,46,'Comedy','angledozer','Will Gluck',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4465,'As Above, So Below',NULL,29,'Horror','ethoxylate','John Erick Dowdle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4466,'Atlas Shrugged: Who Is John Galt?',NULL,34,'Drama','ursidae','James Manera',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4467,'Before I Go to Sleep',NULL,39,'Drama','whippowill','Rowan Joffe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4468,'Beyond the Lights',NULL,65,'Drama','silurid','Gina Prince-Bythewood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4469,'Big Eyes',NULL,28,'Biography','bardiche','Tim Burton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4470,'Big Hero 6',NULL,82,'Action','logicists','Don Hall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4471,'Birdman or (The Unexpected Virtue of Ignorance)',NULL,39,'Comedy','parroter','Alejandro G. I̱��rritu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4472,'Black or White',NULL,29,'Drama','hell-rake','Mike Binder',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4473,'Blended',NULL,51,'Comedy','triphylite','Frank Coraci',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4474,'Born to Fly: Elizabeth Streb vs. Gravity',NULL,74,'Action','distancy','Catherine Gund',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4475,'Boyhood',NULL,32,'Drama','spinnies','Richard Linklater',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4476,'Brick Mansions',NULL,23,'Action','resmethrin','Camille Delamarre',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4477,'Captain America: The Winter Soldier',NULL,97,'Action','angledozer','Anthony Russo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4478,'Dawn of the Planet of the Apes',NULL,6,'Action','ethoxylate','Matt Reeves',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4479,'Deliver Us from Evil',NULL,98,'Horror','ursidae','Scott Derrickson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4480,'Desert Dancer',NULL,64,'Biography','whippowill','Richard Raymond',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4481,'Devil''s Due',NULL,43,'Horror','silurid','Matt Bettinelli-Olpin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4482,'Divergent',NULL,56,'Adventure','bardiche','Neil Burger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4483,'Dolphin Tale 2',NULL,37,'Drama','logicists','Charles Martin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4484,'Dracula Untold',NULL,54,'Action','parroter','Gary Shore',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4485,'Draft Day',NULL,60,'Drama','hell-rake','Ivan Reitman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4486,'Dumb and Dumber To',NULL,70,'Comedy','triphylite','Bobby Farrelly',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4487,'Earth to Echo',NULL,86,'Adventure','distancy','Dave Green',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4488,'Edge of Tomorrow',NULL,49,'Action','spinnies','Doug Liman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4489,'Endless Love',NULL,74,'Drama','resmethrin','Shana Feste',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4490,'Escobar: Paradise Lost',NULL,19,'Crime','angledozer','Andrea Di Stefano',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4491,'Exodus: Gods and Kings',NULL,64,'Action','ethoxylate','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4492,'Falcon Rising',NULL,82,'Action','ursidae','Ernie Barbarash',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4493,'Fury',NULL,4,'Action','whippowill','David Ayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4494,'Futuro Beach',NULL,33,'Drama','silurid','Karim A��nouz',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4495,'Get on Up',NULL,12,'Biography','bardiche','Tate Taylor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4496,'Gone Girl',NULL,77,'Crime','logicists','David Fincher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4497,'Guardians of the Galaxy',NULL,26,'Action','parroter','James Gunn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4498,'Happy Christmas',NULL,12,'Comedy','hell-rake','Joe Swanberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4499,'Heaven Is for Real',NULL,56,'Biography','triphylite','Randall Wallace',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4500,'Hercules',NULL,74,'Action','distancy','Brett Ratner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (4501,'Horrible Bosses 2',NULL,12,'Comedy','spinnies','Sean Anders',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4502,'How to Train Your Dragon 2',NULL,62,'Action','resmethrin','Dean DeBlois',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4503,'I, Frankenstein',NULL,21,'Action','angledozer','Stuart Beattie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4504,'If I Stay',NULL,92,'Drama','ethoxylate','R.J. Cutler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4505,'Inherent Vice',NULL,51,'Comedy','ursidae','Paul Thomas Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4506,'Interstellar',NULL,11,'Adventure','whippowill','Christopher Nolan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4507,'Into the Storm',NULL,23,'Action','silurid','Steven Quale',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4508,'Into the Woods',NULL,61,'Adventure','bardiche','Rob Marshall',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4509,'It Follows',NULL,12,'Horror','logicists','David Robert Mitchell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4510,'Jack Ryan: Shadow Recruit',NULL,69,'Action','parroter','Kenneth Branagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4511,'Jersey Boys',NULL,98,'Biography','hell-rake','Clint Eastwood',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4512,'Kill the Messenger',NULL,18,'Biography','triphylite','Michael Cuesta',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4513,'Kung Fu Killer',NULL,24,'Action','distancy','Teddy Chan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4514,'Left Behind',NULL,11,'Action','spinnies','Vic Armstrong',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4515,'Let''s Be Cops',NULL,32,'Comedy','resmethrin','Luke Greenfield',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4516,'Locker 13',NULL,88,'Thriller','angledozer','Bruce Dellis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4517,'Lucy',NULL,45,'Action','ethoxylate','Luc Besson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4518,'Maleficent',NULL,30,'Action','ursidae','Robert Stromberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4519,'Million Dollar Arm',NULL,3,'Biography','whippowill','Craig Gillespie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4520,'Moms'' Night Out',NULL,2,'Comedy','silurid','Andrew Erwin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4521,'Mr. Peabody & Sherman',NULL,5,'Adventure','bardiche','Rob Minkoff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4522,'Mr. Turner',NULL,81,'Biography','logicists','Mike Leigh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4523,'Muppets Most Wanted',NULL,44,'Adventure','parroter','James Bobin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4524,'Need for Speed',NULL,14,'Action','hell-rake','Scott Waugh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4525,'Neighbors',NULL,81,'Comedy','triphylite','Nicholas Stoller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4526,'Night at the Museum: Secret of the Tomb',NULL,37,'Adventure','distancy','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4527,'Nightcrawler',NULL,77,'Crime','spinnies','Dan Gilroy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4528,'No Good Deed',NULL,84,'Crime','resmethrin','Sam Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4529,'Noah',NULL,92,'Action','angledozer','Darren Aronofsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4530,'Non-Stop',NULL,85,'Action','ethoxylate','Jaume Collet-Serra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4531,'Not Cool',NULL,11,'Comedy','ursidae','Shane Dawson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4532,'Ouija',NULL,88,'Fantasy','whippowill','Stiles White',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4533,'Paddington',NULL,89,'Animation','silurid','Paul King',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4534,'Paranormal Activity: The Marked Ones',NULL,56,'Fantasy','bardiche','Christopher Landon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4535,'Penguins of Madagascar',NULL,78,'Adventure','logicists','Eric Darnell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4536,'Pompeii',NULL,56,'Action','parroter','Paul W.S. Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4537,'Ride Along',NULL,67,'Action','hell-rake','Tim Story',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4538,'Rio 2',NULL,95,'Adventure','triphylite','Carlos Saldanha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4539,'RoboCop',NULL,47,'Action','distancy','Jos̩ Padilha',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4540,'Rosewater',NULL,4,'Biography','spinnies','Jon Stewart',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4541,'Rudderless',NULL,81,'Comedy','resmethrin','William H. Macy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4542,'Sabotage',NULL,93,'Action','angledozer','David Ayer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4543,'Selma',NULL,81,'Biography','ethoxylate','Ava DuVernay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4544,'Seventh Son',NULL,14,'Action','ursidae','Sergey Bodrov',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4545,'Sex Tape',NULL,93,'Comedy','whippowill','Jake Kasdan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4546,'Sin City: A Dame to Kill For',NULL,95,'Action','silurid','Frank Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4547,'Skin Trade',NULL,43,'Action','bardiche','Ekachai Uekrongtham',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4548,'Son of God',NULL,82,'Biography','logicists','Christopher Spencer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4549,'Song One',NULL,1,'Drama','parroter','Kate Barker-Froyland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4550,'St. Vincent',NULL,37,'Comedy','hell-rake','Theodore Melfi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4551,'Still Alice',NULL,52,'Drama','triphylite','Richard Glatzer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4552,'Taken 3',NULL,92,'Action','distancy','Olivier Megaton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4553,'Tammy',NULL,43,'Comedy','spinnies','Ben Falcone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4554,'Teenage Mutant Ninja Turtles',NULL,12,'Action','resmethrin','Jonathan Liebesman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4555,'That Awkward Moment',NULL,14,'Comedy','angledozer','Tom Gormican',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4556,'The Amazing Spider-Man 2',NULL,41,'Action','ethoxylate','Marc Webb',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4557,'The Best of Me',NULL,90,'Drama','ursidae','Michael Hoffman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4558,'The Book of Life',NULL,56,'Adventure','whippowill','Jorge R. Guti̩rrez',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4559,'The Boxtrolls',NULL,37,'Adventure','silurid','Graham Annable',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4560,'The Equalizer',NULL,41,'Action','bardiche','Antoine Fuqua',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4561,'The Expendables 3',NULL,63,'Action','logicists','Patrick Hughes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4562,'The Fault in Our Stars',NULL,32,'Drama','parroter','Josh Boone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4563,'The Gambler',NULL,7,'Crime','hell-rake','Rupert Wyatt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4564,'The Giver',NULL,46,'Drama','triphylite','Phillip Noyce',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4565,'The Grand Budapest Hotel',NULL,29,'Adventure','distancy','Wes Anderson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4566,'The Hobbit: The Battle of the Five Armies',NULL,34,'Adventure','spinnies','Peter Jackson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4567,'The Homesman',NULL,39,'Drama','resmethrin','Tommy Lee Jones',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4568,'The Hundred-Foot Journey',NULL,65,'Comedy','angledozer','Lasse Hallstr̦m',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4569,'The Hunger Games: Mockingjay - Part 1',NULL,28,'Adventure','ethoxylate','Francis Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4570,'The Imitation Game',NULL,82,'Biography','ursidae','Morten Tyldum',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4571,'The Interview',NULL,39,'Comedy','whippowill','Evan Goldberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4572,'The Judge',NULL,29,'Crime','silurid','David Dobkin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4573,'The Legend of Hercules',NULL,51,'Action','bardiche','Renny Harlin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4574,'The Lego Movie',NULL,74,'Action','logicists','Phil Lord',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4575,'The Maze Runner',NULL,32,'Action','parroter','Wes Ball',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4576,'The Monuments Men',NULL,23,'Drama','hell-rake','George Clooney',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4577,'The November Man',NULL,97,'Action','triphylite','Roger Donaldson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4578,'The Nut Job',NULL,6,'Adventure','distancy','Peter Lepeniotis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4579,'The Other Woman',NULL,98,'Comedy','spinnies','Nick Cassavetes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4580,'The Purge: Anarchy',NULL,64,'Action','resmethrin','James DeMonaco',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4581,'The Theory of Everything',NULL,43,'Biography','angledozer','James Marsh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4582,'The Water Diviner',NULL,56,'Drama','ethoxylate','Russell Crowe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4583,'Think Like a Man Too',NULL,37,'Comedy','ursidae','Tim Story',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4584,'This Is Where I Leave You',NULL,54,'Comedy','whippowill','Shawn Levy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4585,'Top Five',NULL,60,'Comedy','silurid','Chris Rock',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4586,'Top Spin',NULL,70,'Documentary','bardiche','Sara Newens',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4587,'Transcendence',NULL,86,'Drama','logicists','Wally Pfister',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4588,'Transformers: Age of Extinction',NULL,49,'Action','parroter','Michael Bay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4589,'Tusk',NULL,74,'Comedy','hell-rake','Kevin Smith',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4590,'Unbroken',NULL,19,'Biography','triphylite','Angelina Jolie Pitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4591,'Unfriended',NULL,64,'Horror','distancy','Levan Gabriadze',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4592,'When the Game Stands Tall',NULL,82,'Drama','spinnies','Thomas Carter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4593,'While We''re Young',NULL,4,'Comedy','resmethrin','Noah Baumbach',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4594,'Whiplash',NULL,33,'Drama','angledozer','Damien Chazelle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4595,'Wild',NULL,12,'Adventure','ethoxylate','Jean-Marc Vall̩e',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4596,'Winter''s Tale',NULL,77,'Drama','ursidae','Akiva Goldsman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4597,'Wish I Was Here',NULL,26,'Comedy','whippowill','Zach Braff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4598,'X-Men: Days of Future Past',NULL,12,'Action','silurid','Bryan Singer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4599,'10 Days in a Madhouse',NULL,56,'Drama','bardiche','Timothy Hines',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4600,'90 Minutes in Heaven',NULL,74,'Drama','logicists','Michael Polish',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (4601,'Aloha',NULL,12,'Comedy','parroter','Cameron Crowe',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4602,'Alvin and the Chipmunks: The Road Chip',NULL,62,'Adventure','hell-rake','Walt Becker',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4603,'Anomalisa',NULL,21,'Animation','triphylite','Duke Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4604,'Antarctic Edge: 70� South',NULL,92,'Adventure','distancy','Dena Seidel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4605,'Ant-Man',NULL,51,'Action','spinnies','Peyton Reed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4606,'Avengers: Age of Ultron',NULL,11,'Action','resmethrin','Joss Whedon',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4607,'Baahubali: The Beginning',NULL,23,'Action','angledozer','S.S. Rajamouli',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4608,'Black Mass',NULL,61,'Biography','ethoxylate','Scott Cooper',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4609,'Blackhat',NULL,12,'Action','ursidae','Michael Mann',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4610,'Bridge of Spies',NULL,69,'Drama','whippowill','Steven Spielberg',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4611,'Brooklyn',NULL,98,'Drama','silurid','John Crowley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4612,'Brotherly Love',NULL,18,'Drama','bardiche','Jamal Hill',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4613,'Burnt',NULL,24,'Comedy','logicists','John Wells',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4614,'By the Sea',NULL,11,'Drama','parroter','Angelina Jolie Pitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4615,'Captive',NULL,32,'Crime','hell-rake','Jerry Jameson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4616,'Censored Voices',NULL,88,'Documentary','triphylite','Mor Loushy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4617,'Chappie',NULL,45,'Action','distancy','Neill Blomkamp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4618,'Child 44',NULL,30,'Crime','spinnies','Daniel Espinosa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4619,'Cinderella',NULL,3,'Drama','resmethrin','Kenneth Branagh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4620,'Concussion',NULL,2,'Biography','angledozer','Peter Landesman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4621,'Courage',NULL,5,'Biography','ethoxylate','Angelo Pizzo',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4622,'Creative Control',NULL,81,'Drama','ursidae','Benjamin Dickinson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4623,'Creed',NULL,44,'Drama','whippowill','Ryan Coogler',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4624,'Daddy''s Home',NULL,14,'Comedy','silurid','Sean Anders',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4625,'Danny Collins',NULL,81,'Comedy','bardiche','Dan Fogelman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4626,'Do You Believe?',NULL,37,'Drama','logicists','Jon Gunn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4627,'Dope',NULL,77,'Comedy','parroter','Rick Famuyiwa',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4628,'Dragon Blade',NULL,84,'Action','hell-rake','Daniel Lee',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4629,'Everest',NULL,92,'Adventure','triphylite','Baltasar Korm��kur',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4630,'Ex Machina',NULL,85,'Drama','distancy','Alex Garland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4631,'Fantastic Four',NULL,11,'Action','spinnies','Josh Trank',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4632,'Fifty Shades of Grey',NULL,88,'Drama','resmethrin','Sam Taylor-Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4633,'Focus',NULL,89,'Comedy','angledozer','Glenn Ficarra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4634,'Freeheld',NULL,56,'Biography','ethoxylate','Peter Sollett',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4635,'Furious 7',NULL,78,'Action','ursidae','James Wan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4636,'Get Hard',NULL,56,'Comedy','whippowill','Etan Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4637,'Goosebumps',NULL,67,'Adventure','silurid','Rob Letterman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4638,'Green Room',NULL,95,'Crime','bardiche','Jeremy Saulnier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4639,'Home',NULL,47,'Adventure','logicists','Tim Johnson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4640,'Hot Pursuit',NULL,4,'Action','parroter','Anne Fletcher',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4641,'Hot Tub Time Machine 2',NULL,81,'Comedy','hell-rake','Steve Pink',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4642,'Hotel Transylvania 2',NULL,93,'Animation','triphylite','Genndy Tartakovsky',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4643,'In the Heart of the Sea',NULL,81,'Action','distancy','Ron Howard',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4644,'Inside Out',NULL,14,'Adventure','spinnies','Pete Docter',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4645,'Insidious: Chapter 3',NULL,93,'Fantasy','resmethrin','Leigh Whannell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4646,'Insurgent',NULL,95,'Adventure','angledozer','Robert Schwentke',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4647,'Ip Man 3',NULL,43,'Action','ethoxylate','Wilson Yip',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4648,'Joy',NULL,82,'Biography','ursidae','David O. Russell',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4649,'Jupiter Ascending',NULL,1,'Action','whippowill','Lana Wachowski',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4650,'Jurassic World',NULL,37,'Action','silurid','Colin Trevorrow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4651,'Krampus',NULL,52,'Comedy','bardiche','Michael Dougherty',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4652,'Legend',NULL,92,'Biography','logicists','Brian Helgeland',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4653,'Little Boy',NULL,43,'Drama','parroter','Alejandro Monteverde',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4654,'Love the Coopers',NULL,12,'Comedy','hell-rake','Jessie Nelson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4655,'Mad Max: Fury Road',NULL,14,'Action','triphylite','George Miller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4656,'Maggie',NULL,41,'Drama','distancy','Henry Hobson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4657,'Magic Mike XXL',NULL,90,'Comedy','spinnies','Gregory Jacobs',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4658,'Max',NULL,56,'Adventure','resmethrin','Boaz Yakin',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4659,'McFarland, USA',NULL,37,'Biography','angledozer','Niki Caro',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4660,'Mi America',NULL,41,'Crime','ethoxylate','Robert Fontaine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4661,'Minions',NULL,63,'Action','ursidae','Kyle Balda',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4662,'Mission: Impossible - Rogue Nation',NULL,32,'Action','whippowill','Christopher McQuarrie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4663,'Mortdecai',NULL,7,'Action','silurid','David Koepp',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4664,'No Escape',NULL,46,'Action','bardiche','John Erick Dowdle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4665,'Our Brand Is Crisis',NULL,29,'Comedy','logicists','David Gordon Green',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4666,'Pan',NULL,34,'Adventure','parroter','Joe Wright',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4667,'Paper Towns',NULL,39,'Drama','hell-rake','Jake Schreier',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4668,'Paul Blart: Mall Cop 2',NULL,65,'Action','triphylite','Andy Fickman',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4669,'Pitch Perfect 2',NULL,28,'Comedy','distancy','Elizabeth Banks',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4670,'Pixels',NULL,82,'Action','spinnies','Chris Columbus',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4671,'Point Break',NULL,39,'Action','resmethrin','Ericson Core',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4672,'Project Almanac',NULL,29,'Sci-Fi','angledozer','Dean Israelite',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4673,'Road Hard',NULL,51,'Comedy','ethoxylate','Adam Carolla',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4674,'Room',NULL,74,'Drama','ursidae','Lenny Abrahamson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4675,'Run All Night',NULL,32,'Action','whippowill','Jaume Collet-Serra',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4676,'San Andreas',NULL,23,'Action','silurid','Brad Peyton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4677,'Self/less',NULL,97,'Action','bardiche','Tarsem Singh',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4678,'Sicario',NULL,6,'Action','logicists','Denis Villeneuve',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4679,'Sinister 2',NULL,98,'Horror','parroter','Ciar��n Foy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4680,'Southpaw',NULL,64,'Drama','hell-rake','Antoine Fuqua',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4681,'Spectre',NULL,43,'Action','triphylite','Sam Mendes',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4682,'Spotlight',NULL,56,'Biography','distancy','Tom McCarthy',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4683,'Steve Jobs',NULL,37,'Biography','spinnies','Danny Boyle',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4684,'Stonewall',NULL,54,'Drama','resmethrin','Roland Emmerich',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4685,'Straight Outta Compton',NULL,60,'Biography','angledozer','F. Gary Gray',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4686,'Ted 2',NULL,70,'Comedy','ethoxylate','Seth MacFarlane',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4687,'Terminator Genisys',NULL,86,'Action','ursidae','Alan Taylor',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4688,'The 33',NULL,49,'Biography','whippowill','Patricia Riggen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4689,'The Age of Adaline',NULL,74,'Drama','silurid','Lee Toland Krieger',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4690,'The Assassin',NULL,19,'Action','bardiche','Hsiao-Hsien Hou',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4691,'The Big Short',NULL,64,'Biography','logicists','Adam McKay',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4692,'The Boy Next Door',NULL,82,'Mystery','parroter','Rob Cohen',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4693,'The Diary of a Teenage Girl',NULL,4,'Drama','hell-rake','Marielle Heller',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4694,'The DUFF',NULL,33,'Comedy','triphylite','Ari Sandel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4695,'The Gallows',NULL,12,'Horror','distancy','Travis Cluff',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4696,'The Gift',NULL,77,'Mystery','spinnies','Joel Edgerton',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4697,'The Gunman',NULL,26,'Action','resmethrin','Pierre Morel',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4698,'The Hateful Eight',NULL,12,'Crime','angledozer','Quentin Tarantino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4699,'The Hunger Games: Mockingjay - Part 2',NULL,56,'Adventure','ethoxylate','Francis Lawrence',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4700,'The Intern',NULL,74,'Comedy','ursidae','Nancy Meyers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO mytable(MovieNumber,Title,MyGenre,Myrating,Genre,MyGenre,Director_Name,FIELD8,FIELD9,FIELD10,FIELD11,FIELD12,FIELD13,FIELD14,FIELD15) VALUES
- (4701,'The Last Witch Hunter',NULL,12,'Action','whippowill','Breck Eisner',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4702,'The Lazarus Effect',NULL,62,'Horror','silurid','David Gelb',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4703,'The Little Prince',NULL,21,'Adventure','bardiche','Mark Osborne',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4704,'The Longest Ride',NULL,92,'Drama','logicists','George Tillman Jr.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4705,'The Man from U.N.C.L.E.',NULL,51,'Action','parroter','Guy Ritchie',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4706,'The Martian',NULL,11,'Adventure','hell-rake','Ridley Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4707,'The Peanuts Movie',NULL,23,'Adventure','triphylite','Steve Martino',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4708,'The Revenant',NULL,61,'Adventure','distancy','Alejandro G. I̱��rritu',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4709,'The Scorch Trials',NULL,12,'Action','spinnies','Wes Ball',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4710,'The Second Best Exotic Marigold Hotel',NULL,69,'Comedy','resmethrin','John Madden',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4711,'The Second Mother',NULL,98,'Comedy','angledozer','Anna Muylaert',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4712,'The SpongeBob Movie: Sponge Out of Water',NULL,18,'Adventure','ethoxylate','Paul Tibbitt',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4713,'The Transporter Refueled',NULL,24,'Action','ursidae','Camille Delamarre',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4714,'The Vatican Tapes',NULL,11,'Horror','whippowill','Mark Neveldine',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4715,'The Visit',NULL,32,'Horror','silurid','M. Night Shyamalan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4716,'The Walk',NULL,88,'Adventure','bardiche','Robert Zemeckis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4717,'The Witch',NULL,45,'Horror','logicists','Robert Eggers',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4718,'Time to Choose',NULL,30,'Documentary','parroter','Charles Ferguson',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4719,'Tomorrowland',NULL,3,'Action','hell-rake','Brad Bird',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4720,'Trainwreck',NULL,2,'Comedy','triphylite','Judd Apatow',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4721,'Unfinished Business',NULL,5,'Comedy','distancy','Ken Scott',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4722,'Vacation',NULL,81,'Adventure','spinnies','John Francis Daley',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4723,'Victor Frankenstein',NULL,44,'Drama','resmethrin','Paul McGuigan',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4724,'We Are Your Friends',NULL,14,'Drama','angledozer','Max Joseph',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
-,(4725,'Woman in Gold',NULL,81,'Biography','ethoxylate','Simon Curtis',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1001,'Over the Hill to the Poorhouse',34,'Crime','hell-rake','Harry F. Millarde');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1002,'Metropolis',25,'Drama','triphylite','Fritz Lang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1003,'The Broadway Melody',2,'Musical','distancy','Harry Beaumont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1004,'42nd Street',74,'Comedy','spinnies','Lloyd Bacon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1005,'Top Hat',99,'Comedy','resmethrin','Mark Sandrich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1006,'Modern Times',64,'Comedy','angledozer','Charles Chaplin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1007,'Snow White and the Seven Dwarfs',3,'Animation','ethoxylate','William Cottrell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1008,'Gone with the Wind',45,'Drama','ursidae','Victor Fleming');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1009,'The Wizard of Oz',32,'Adventure','whippowill','Victor Fleming');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1010,'Fantasia',98,'Animation','silurid','James Algar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1011,'Pinocchio',18,'Animation','bardiche','Norman Ferguson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1012,'Duel in the Sun',24,'Drama','logicists','King Vidor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1013,'The Best Years of Our Lives',11,'Drama','parroter','William Wyler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1014,'The Lady from Shanghai',32,'Crime','hell-rake','Orson Welles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1015,'The Pirate',88,'Adventure','triphylite','Vincente Minnelli');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1016,'Annie Get Your Gun',45,'Biography','distancy','George Sidney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1017,'The Greatest Show on Earth',30,'Drama','spinnies','Cecil B. DeMille');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1018,'The Beast from 20,000 Fathoms',3,'Adventure','resmethrin','Eug̬ne Louri̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1019,'The Robe',2,'Drama','angledozer','Henry Koster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1020,'On the Waterfront',5,'Crime','ethoxylate','Elia Kazan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1021,'Seven Samurai',81,'Action','ursidae','Akira Kurosawa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1022,'The Bridge on the River Kwai',44,'Adventure','whippowill','David Lean');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1023,'Some Like It Hot',14,'Comedy','silurid','Billy Wilder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1024,'Psycho',81,'Horror','bardiche','Alfred Hitchcock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1025,'West Side Story',37,'Crime','logicists','Jerome Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1026,'Dr. No',77,'Action','parroter','Terence Young');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1027,'Lawrence of Arabia',84,'Adventure','hell-rake','David Lean');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1028,'Cleopatra',92,'Biography','triphylite','Joseph L. Mankiewicz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1029,'From Russia with Love',85,'Action','distancy','Terence Young');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1030,'It''s a Mad, Mad, Mad, Mad World',11,'Action','spinnies','Stanley Kramer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1031,'A Fistful of Dollars',88,'Action','resmethrin','Sergio Leone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1032,'A Hard Day''s Night',89,'Comedy','angledozer','Richard Lester');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1033,'Goldfinger',56,'Action','ethoxylate','Guy Hamilton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1034,'Mary Poppins',78,'Comedy','ursidae','Robert Stevenson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1035,'My Fair Lady',56,'Drama','whippowill','George Cukor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1036,'Nothing But a Man',67,'Drama','silurid','Michael Roemer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1037,'Doctor Zhivago',95,'Drama','bardiche','David Lean');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1038,'Major Dundee',47,'Adventure','logicists','Sam Peckinpah');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1039,'The Greatest Story Ever Told',4,'Biography','parroter','George Stevens');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1040,'The Sound of Music',81,'Biography','hell-rake','Robert Wise');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1041,'Thunderball',93,'Action','triphylite','Terence Young');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1042,'The Good, the Bad and the Ugly',81,'Western','distancy','Sergio Leone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1043,'You Only Live Twice',14,'Action','spinnies','Lewis Gilbert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1044,'2001: A Space Odyssey',93,'Adventure','resmethrin','Stanley Kubrick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1045,'Oliver!',95,'Drama','angledozer','Carol Reed');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1046,'Butch Cassidy and the Sundance Kid',43,'Biography','ethoxylate','George Roy Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1047,'Mississippi Mermaid',82,'Crime','ursidae','Fran̤ois Truffaut');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1048,'On Her Majesty''s Secret Service',1,'Action','whippowill','Peter R. Hunt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1049,'Beyond the Valley of the Dolls',37,'Comedy','silurid','Russ Meyer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1050,'Darling Lili',52,'Comedy','bardiche','Blake Edwards');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1051,'Tora! Tora! Tora!',92,'Action','logicists','Richard Fleischer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1052,'Woodstock',43,'Documentary','parroter','Michael Wadleigh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1053,'Diamonds Are Forever',12,'Action','hell-rake','Guy Hamilton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1054,'Fiddler on the Roof',14,'Drama','triphylite','Norman Jewison');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1055,'Pink Narcissus',41,'Drama','distancy','James Bidgood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1056,'Sweet Sweetback''s Baadasssss Song',90,'Crime','spinnies','Melvin Van Peebles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1057,'Pink Flamingos',56,'Comedy','resmethrin','John Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1058,'The Godfather',37,'Crime','angledozer','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1059,'American Graffiti',41,'Comedy','ethoxylate','George Lucas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1060,'Live and Let Die',63,'Action','ursidae','Guy Hamilton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1061,'Mean Streets',32,'Crime','whippowill','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1062,'The Exorcist',7,'Horror','silurid','William Friedkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1063,'The Sting',46,'Comedy','bardiche','George Roy Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1064,'Benji',29,'Adventure','logicists','Joe Camp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1065,'Blazing Saddles',34,'Comedy','parroter','Mel Brooks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1066,'The Godfather: Part II',39,'Crime','hell-rake','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1067,'The Man with the Golden Gun',65,'Action','triphylite','Guy Hamilton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1068,'The Texas Chain Saw Massacre',28,'Horror','distancy','Tobe Hooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1069,'Young Frankenstein',82,'Comedy','spinnies','Mel Brooks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1070,'Jaws',39,'Adventure','resmethrin','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1071,'Monty Python and the Holy Grail',29,'Adventure','angledozer','Terry Gilliam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1072,'One Flew Over the Cuckoo''s Nest',51,'Drama','ethoxylate','Milos Forman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1073,'Logan''s Run',74,'Action','ursidae','Michael Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1074,'Rocky',32,'Drama','whippowill','John G. Avildsen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1075,'A Bridge Too Far',23,'Drama','silurid','Richard Attenborough');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1076,'Annie Hall',97,'Comedy','bardiche','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1077,'Close Encounters of the Third Kind',6,'Drama','logicists','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1078,'Kingdom of the Spiders',98,'Horror','parroter','John ''Bud'' Cardos');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1079,'March or Die',64,'Adventure','hell-rake','Dick Richards');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1080,'Star Wars: Episode IV - A New Hope',43,'Action','triphylite','George Lucas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1081,'The Spy Who Loved Me',56,'Action','distancy','Lewis Gilbert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1082,'Animal House',37,'Comedy','spinnies','John Landis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1083,'Caravans',54,'Action','resmethrin','James Fargo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1084,'Grease',60,'Musical','angledozer','Randal Kleiser');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1085,'Halloween',70,'Horror','ethoxylate','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1086,'Jaws 2',86,'Adventure','ursidae','Jeannot Szwarc');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1087,'Superman',49,'Action','whippowill','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1088,'The Wiz',74,'Adventure','silurid','Sidney Lumet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1089,'Alien',19,'Horror','bardiche','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1090,'Apocalypse Now',64,'Drama','logicists','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1091,'Escape from Alcatraz',82,'Biography','parroter','Don Siegel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1092,'Moonraker',4,'Action','hell-rake','Lewis Gilbert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1093,'Star Trek: The Motion Picture',33,'Adventure','triphylite','Robert Wise');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1094,'The Rose',12,'Drama','distancy','Mark Rydell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1095,'Airplane!',77,'Comedy','spinnies','Jim Abrahams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1096,'Caddyshack',26,'Comedy','resmethrin','Harold Ramis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1097,'Can''t Stop the Music',12,'Biography','angledozer','Nancy Walker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1098,'Dressed to Kill',56,'Mystery','ethoxylate','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1099,'Heaven''s Gate',74,'Adventure','ursidae','Michael Cimino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1100,'Ordinary People',12,'Drama','whippowill','Robert Redford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1101,'Private Benjamin',62,'Comedy','silurid','Howard Zieff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1102,'Raging Bull',21,'Biography','bardiche','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1103,'Raise the Titanic',92,'Action','logicists','Jerry Jameson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1104,'Star Wars: Episode V - The Empire Strikes Back',51,'Action','parroter','Irvin Kershner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1105,'Superman II',11,'Action','hell-rake','Richard Lester');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1106,'The Blues Brothers',23,'Action','triphylite','John Landis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1107,'The Fog',61,'Fantasy','distancy','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1108,'Chariots of Fire',12,'Biography','spinnies','Hugh Hudson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1109,'Das Boot',69,'Adventure','resmethrin','Wolfgang Petersen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1110,'Dragonslayer',98,'Action','angledozer','Matthew Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1111,'Escape from New York',18,'Action','ethoxylate','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1112,'For Your Eyes Only',24,'Action','ursidae','John Glen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1113,'Friday the 13th Part 2',11,'Horror','whippowill','Steve Miner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1114,'Mad Max 2: The Road Warrior',32,'Action','silurid','George Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1115,'Porky''s',88,'Comedy','bardiche','Bob Clark');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1116,'Raiders of the Lost Ark',45,'Action','logicists','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1117,'Roar',30,'Adventure','parroter','Noel Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1118,'Sphinx',3,'Adventure','hell-rake','Franklin J. Schaffner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1119,'Stripes',2,'Action','triphylite','Ivan Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1120,'The Beyond',5,'Horror','distancy','Lucio Fulci');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1121,'The Howling',81,'Horror','spinnies','Joe Dante');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1122,'The Legend of the Lone Ranger',44,'Action','resmethrin','William A. Fraker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1123,'Time Bandits',14,'Adventure','angledozer','Terry Gilliam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1124,'Under the Rainbow',81,'Comedy','ethoxylate','Steve Rash');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1125,'Blade Runner',37,'Sci-Fi','ursidae','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1126,'Conan the Barbarian',77,'Adventure','whippowill','John Milius');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1127,'Diner',84,'Comedy','silurid','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1128,'E.T. the Extra-Terrestrial',92,'Family','bardiche','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1129,'Firefox',85,'Action','logicists','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1130,'Friday the 13th Part III',11,'Horror','parroter','Steve Miner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1131,'Halloween III: Season of the Witch',88,'Horror','hell-rake','Tommy Lee Wallace');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1132,'Megaforce',89,'Action','triphylite','Hal Needham');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1133,'Poltergeist',56,'Fantasy','distancy','Tobe Hooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1134,'Star Trek II: The Wrath of Khan',78,'Action','spinnies','Nicholas Meyer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1135,'The Best Little Whorehouse in Texas',56,'Comedy','resmethrin','Colin Higgins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1136,'The Thing',67,'Horror','angledozer','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1137,'The Verdict',95,'Drama','ethoxylate','Sidney Lumet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1138,'Tootsie',47,'Comedy','ursidae','Sydney Pollack');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1139,'Flashdance',4,'Drama','whippowill','Adrian Lyne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1140,'Lone Wolf McQuade',81,'Action','silurid','Steve Carver');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1141,'National Lampoon''s Vacation',93,'Adventure','bardiche','Harold Ramis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1142,'Never Say Never Again',81,'Action','logicists','Irvin Kershner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1143,'Octopussy',14,'Action','parroter','John Glen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1144,'Scarface',93,'Crime','hell-rake','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1145,'Star Wars: Episode VI - Return of the Jedi',95,'Action','triphylite','Richard Marquand');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1146,'Superman III',43,'Action','distancy','Richard Lester');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1147,'The Outsiders',82,'Crime','spinnies','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1148,'The Right Stuff',1,'Adventure','resmethrin','Philip Kaufman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1149,'Twilight Zone: The Movie',37,'Fantasy','angledozer','Joe Dante');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1150,'WarGames',52,'Sci-Fi','ethoxylate','John Badham');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1151,'Yentl',92,'Drama','ursidae','Barbra Streisand');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1152,'A Nightmare on Elm Street',43,'Horror','whippowill','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1153,'A Passage to India',12,'Adventure','silurid','David Lean');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1154,'Amadeus',14,'Biography','bardiche','Milos Forman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1155,'Beverly Hills Cop',41,'Action','logicists','Martin Brest');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1156,'Conan the Destroyer',90,'Action','parroter','Richard Fleischer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1157,'Dune',56,'Action','hell-rake','David Lynch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1158,'Firestarter',37,'Action','triphylite','Mark L. Lester');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1159,'Footloose',41,'Drama','distancy','Herbert Ross');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1160,'Friday the 13th: The Final Chapter',63,'Horror','spinnies','Joseph Zito');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1161,'Gremlins',32,'Comedy','resmethrin','Joe Dante');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1162,'Indiana Jones and the Temple of Doom',7,'Action','angledozer','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1163,'Once Upon a Time in America',46,'Crime','ethoxylate','Sergio Leone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1164,'Police Academy',29,'Comedy','ursidae','Hugh Wilson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1165,'Splash',34,'Comedy','whippowill','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1166,'Star Trek III: The Search for Spock',39,'Action','silurid','Leonard Nimoy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1167,'The Bounty',65,'Action','bardiche','Roger Donaldson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1168,'The Cotton Club',28,'Crime','logicists','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1169,'The Hotel New Hampshire',82,'Comedy','parroter','Tony Richardson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1170,'The Karate Kid',39,'Action','hell-rake','John G. Avildsen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1171,'The Terminator',29,'Action','triphylite','James Cameron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1172,'A Nightmare on Elm Street 2: Freddy''s Revenge',51,'Fantasy','distancy','Jack Sholder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1173,'A Room with a View',74,'Drama','spinnies','James Ivory');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1174,'A View to a Kill',32,'Action','resmethrin','John Glen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1175,'Back to the Future',23,'Adventure','angledozer','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1176,'Brazil',97,'Drama','ethoxylate','Terry Gilliam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1177,'Friday the 13th: A New Beginning',6,'Horror','ursidae','Danny Steinmann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1178,'Mad Max Beyond Thunderdome',98,'Action','whippowill','George Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1179,'Out of Africa',64,'Biography','silurid','Sydney Pollack');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1180,'Pale Rider',43,'Western','bardiche','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1181,'Rambo: First Blood Part II',56,'Action','logicists','George P. Cosmatos');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1182,'Silverado',37,'Action','parroter','Lawrence Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1183,'The Color Purple',54,'Drama','hell-rake','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1184,'The Last Dragon',60,'Action','triphylite','Michael Schultz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1185,'Witness',70,'Crime','distancy','Peter Weir');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1186,'Young Sherlock Holmes',86,'Adventure','spinnies','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1187,'9�? Weeks',49,'Drama','resmethrin','Adrian Lyne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1188,'Aliens',74,'Action','angledozer','James Cameron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1189,'April Fool''s Day',19,'Horror','ethoxylate','Fred Walton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1190,'Big Trouble in Little China',64,'Action','ursidae','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1191,'Crocodile Dundee',82,'Adventure','whippowill','Peter Faiman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1192,'Highlander',4,'Action','silurid','Russell Mulcahy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1193,'Howard the Duck',33,'Action','bardiche','Willard Huyck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1194,'Invaders from Mars',12,'Horror','logicists','Tobe Hooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1195,'Jason Lives: Friday the 13th Part VI',77,'Horror','parroter','Tom McLoughlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1196,'Legal Eagles',26,'Comedy','hell-rake','Ivan Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1197,'Little Shop of Horrors',12,'Comedy','triphylite','Frank Oz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1198,'Peggy Sue Got Married',56,'Comedy','distancy','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1199,'Platoon',74,'Drama','spinnies','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1200,'River''s Edge',12,'Crime','resmethrin','Tim Hunter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1201,'Shanghai Surprise',62,'Adventure','angledozer','Jim Goddard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1202,'She''s Gotta Have It',21,'Comedy','ethoxylate','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1203,'Stand by Me',92,'Adventure','ursidae','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1204,'Star Trek IV: The Voyage Home',51,'Adventure','whippowill','Leonard Nimoy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1205,'The Clan of the Cave Bear',11,'Adventure','silurid','Michael Chapman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1206,'The Color of Money',23,'Drama','bardiche','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1207,'The Golden Child',61,'Action','logicists','Michael Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1208,'The Texas Chainsaw Massacre 2',12,'Comedy','parroter','Tobe Hooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1209,'The Wraith',69,'Action','hell-rake','Mike Marvin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1210,'Top Gun',98,'Action','triphylite','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1211,'Witchboard',18,'Horror','distancy','Kevin Tenney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1212,'3 Men and a Baby',24,'Comedy','spinnies','Leonard Nimoy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1213,'A Nightmare on Elm Street 3: Dream Warriors',11,'Action','resmethrin','Chuck Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1214,'American Ninja 2: The Confrontation',32,'Action','angledozer','Sam Firstenberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1215,'Beverly Hills Cop II',88,'Action','ethoxylate','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1216,'Creepshow 2',45,'Comedy','ursidae','Michael Gornick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1217,'Cry Freedom',30,'Biography','whippowill','Richard Attenborough');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1218,'Evil Dead II',3,'Comedy','silurid','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1219,'Fatal Attraction',2,'Drama','bardiche','Adrian Lyne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1220,'From a Whisper to a Scream',5,'Action','logicists','Jeff Burr');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1221,'Good Morning, Vietnam',81,'Biography','parroter','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1222,'Hellraiser',44,'Fantasy','hell-rake','Clive Barker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1223,'Hollywood Shuffle',14,'Comedy','triphylite','Robert Townsend');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1224,'Ishtar',81,'Action','distancy','Elaine May');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1225,'Jaws: The Revenge',37,'Adventure','spinnies','Joseph Sargent');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1226,'La Bamba',77,'Biography','resmethrin','Luis Valdez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1227,'Malone',84,'Action','angledozer','Harley Cokeliss');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1228,'Maurice',92,'Drama','ethoxylate','James Ivory');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1229,'Predator',85,'Action','ursidae','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1230,'Prison',11,'Crime','whippowill','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1231,'Radio Days',88,'Comedy','silurid','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1232,'Spaceballs',89,'Adventure','bardiche','Mel Brooks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1233,'Superman IV: The Quest for Peace',56,'Action','logicists','Sidney J. Furie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1234,'Teen Wolf Too',78,'Comedy','parroter','Christopher Leitch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1235,'The Barbarians',56,'Adventure','hell-rake','Ruggero Deodato');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1236,'The Last Emperor',67,'Biography','triphylite','Bernardo Bertolucci');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1237,'The Living Daylights',95,'Action','distancy','John Glen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1238,'The Princess Bride',47,'Adventure','spinnies','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1239,'The Running Man',4,'Action','resmethrin','Paul Michael Glaser');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1240,'The Untouchables',81,'Crime','angledozer','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1241,'Wall Street',93,'Crime','ethoxylate','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1242,'A Nightmare on Elm Street 4: The Dream Master',81,'Fantasy','ursidae','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1243,'Action Jackson',14,'Action','whippowill','Craig R. Baxley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1244,'Akira',93,'Action','silurid','Katsuhiro ��tomo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1245,'Beetlejuice',95,'Comedy','bardiche','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1246,'Big',43,'Comedy','logicists','Penny Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1247,'Bloodsport',82,'Action','parroter','Newt Arnold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1248,'Bright Lights, Big City',1,'Drama','hell-rake','James Bridges');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1249,'Child''s Play',37,'Fantasy','triphylite','Tom Holland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1250,'Crocodile Dundee II',52,'Action','distancy','John Cornell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1251,'Dangerous Liaisons',92,'Drama','spinnies','Stephen Frears');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1252,'Die Hard',43,'Action','resmethrin','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1253,'Friday the 13th Part VII: The New Blood',12,'Horror','angledozer','John Carl Buechler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1254,'Halloween 4: The Return of Michael Myers',14,'Horror','ethoxylate','Dwight H. Little');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1255,'Lady in White',41,'Fantasy','ursidae','Frank LaLoggia');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1256,'Midnight Run',90,'Action','whippowill','Martin Brest');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1257,'My Stepmother Is an Alien',56,'Comedy','silurid','Richard Benjamin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1258,'Mystic Pizza',37,'Comedy','bardiche','Donald Petrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1259,'Phantasm II',41,'Action','logicists','Don Coscarelli');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1260,'Poltergeist III',63,'Horror','parroter','Gary Sherman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1261,'Rain Man',32,'Drama','hell-rake','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1262,'Rambo III',7,'Action','triphylite','Peter MacDonald');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1263,'School Daze',46,'Comedy','distancy','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1264,'Scrooged',29,'Comedy','spinnies','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1265,'Talk Radio',34,'Drama','resmethrin','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1266,'The Land Before Time',39,'Adventure','angledozer','Don Bluth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1267,'The Last Temptation of Christ',65,'Drama','ethoxylate','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1268,'They Live',28,'Horror','ursidae','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1269,'Twins',82,'Comedy','whippowill','Ivan Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1270,'Young Guns',39,'Action','silurid','Christopher Cain');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1271,'A Nightmare on Elm Street 5: The Dream Child',29,'Fantasy','bardiche','Stephen Hopkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1272,'Back to the Future Part II',51,'Adventure','logicists','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1273,'Batman',74,'Action','parroter','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1274,'Bill & Ted''s Excellent Adventure',32,'Adventure','hell-rake','Stephen Herek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1275,'Black Rain',23,'Action','triphylite','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1276,'Born on the Fourth of July',97,'Biography','distancy','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1277,'Dead Poets Society',6,'Comedy','spinnies','Peter Weir');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1278,'Do the Right Thing',98,'Drama','resmethrin','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1279,'Driving Miss Daisy',64,'Comedy','angledozer','Bruce Beresford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1280,'Friday the 13th Part VIII: Jason Takes Manhattan',43,'Adventure','ethoxylate','Rob Hedden');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1281,'Glory',56,'Drama','ursidae','Edward Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1282,'Halloween 5',37,'Horror','whippowill','Dominique Othenin-Girard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1283,'Henry V',54,'Action','silurid','Kenneth Branagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1284,'Indiana Jones and the Last Crusade',60,'Action','bardiche','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1285,'Licence to Kill',70,'Action','logicists','John Glen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1286,'Major League',86,'Comedy','parroter','David S. Ward');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1287,'New York Stories',49,'Comedy','hell-rake','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1288,'Pet Sematary',74,'Fantasy','triphylite','Mary Lambert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1289,'Road House',19,'Action','distancy','Rowdy Herrington');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1290,'Roger & Me',64,'Documentary','spinnies','Michael Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1291,'Sea of Love',82,'Crime','resmethrin','Harold Becker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1292,'Sex, Lies, and Videotape',4,'Drama','angledozer','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1293,'Star Trek V: The Final Frontier',33,'Action','ethoxylate','William Shatner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1294,'Tango & Cash',12,'Action','ursidae','Andrey Konchalovskiy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1295,'The Abyss',77,'Adventure','whippowill','James Cameron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1296,'The Blood of Heroes',26,'Action','silurid','David Webb Peoples');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1297,'The Toxic Avenger Part II',12,'Action','bardiche','Michael Herz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1298,'Troop Beverly Hills',56,'Adventure','logicists','Jeff Kanew');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1299,'UHF',74,'Comedy','parroter','Jay Levey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1300,'Warlock',12,'Action','hell-rake','Steve Miner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1301,'We''re No Angels',62,'Comedy','triphylite','Neil Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1302,'When Harry Met Sally...',21,'Comedy','distancy','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1303,'Arachnophobia',92,'Comedy','spinnies','Frank Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1304,'Back to the Future Part III',51,'Adventure','resmethrin','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1305,'Child''s Play 2',11,'Fantasy','angledozer','John Lafia');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1306,'Dances with Wolves',23,'Adventure','ethoxylate','Kevin Costner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1307,'Days of Thunder',61,'Action','ursidae','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1308,'Dick Tracy',12,'Action','whippowill','Warren Beatty');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1309,'Die Hard 2',69,'Action','silurid','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1310,'Edward Scissorhands',98,'Fantasy','bardiche','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1311,'Flatliners',18,'Drama','logicists','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1312,'Ghost',24,'Drama','parroter','Jerry Zucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1313,'Goodfellas',11,'Biography','hell-rake','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1314,'Gremlins 2: The New Batch',32,'Comedy','triphylite','Joe Dante');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1315,'Home Alone',88,'Comedy','distancy','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1316,'Kindergarten Cop',45,'Action','spinnies','Ivan Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1317,'Marilyn Hotchkiss'' Ballroom Dancing and Charm School',30,'Comedy','resmethrin','Randall Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1318,'Metropolitan',3,'Comedy','angledozer','Whit Stillman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1319,'Mo'' Better Blues',2,'Drama','ethoxylate','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1320,'Predator 2',5,'Action','ursidae','Stephen Hopkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1321,'Pretty Woman',81,'Comedy','whippowill','Garry Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1322,'Quigley Down Under',44,'Action','silurid','Simon Wincer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1323,'Spaced Invaders',14,'Adventure','bardiche','Patrick Read Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1324,'The Adventures of Ford Fairlane',81,'Action','logicists','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1325,'The Godfather: Part III',37,'Crime','parroter','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1326,'The Hunt for Red October',77,'Action','hell-rake','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1327,'Total Recall',84,'Action','triphylite','Paul Verhoeven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1328,'Tremors',92,'Comedy','distancy','Ron Underwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1329,'Two Evil Eyes',85,'Horror','spinnies','Dario Argento');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1330,'Beastmaster 2: Through the Portal of Time',11,'Action','resmethrin','Sylvio Tabet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1331,'Bill & Ted''s Bogus Journey',88,'Adventure','angledozer','Peter Hewitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1332,'Boyz n the Hood',89,'Crime','ethoxylate','John Singleton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1333,'Cape Fear',56,'Crime','ursidae','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1334,'Double Impact',78,'Action','whippowill','Sheldon Lettich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1335,'Flight of the Intruder',56,'Action','silurid','John Milius');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1336,'Freddy''s Dead: The Final Nightmare',67,'Comedy','bardiche','Rachel Talalay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1337,'Harley Davidson and the Marlboro Man',95,'Action','logicists','Simon Wincer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1338,'Hook',47,'Adventure','parroter','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1339,'House Party 2',4,'Comedy','hell-rake','George Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1340,'Hudson Hawk',81,'Action','triphylite','Michael Lehmann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1341,'JFK',93,'Drama','distancy','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1342,'My Girl',81,'Comedy','spinnies','Howard Zieff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1343,'My Own Private Idaho',14,'Drama','resmethrin','Gus Van Sant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1344,'Return to the Blue Lagoon',93,'Adventure','angledozer','William A. Graham');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1345,'Robin Hood: Prince of Thieves',95,'Action','ethoxylate','Kevin Reynolds');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1346,'Showdown in Little Tokyo',43,'Action','ursidae','Mark L. Lester');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1347,'Slacker',82,'Comedy','whippowill','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1348,'Star Trek VI: The Undiscovered Country',1,'Action','silurid','Nicholas Meyer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1349,'Stone Cold',37,'Action','bardiche','Craig R. Baxley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1350,'Straight Out of Brooklyn',52,'Crime','logicists','Matty Rich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1351,'Teenage Mutant Ninja Turtles II: The Secret of the Ooze',92,'Action','parroter','Michael Pressman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1352,'Terminator 2: Judgment Day',43,'Action','hell-rake','James Cameron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1353,'The Addams Family',12,'Comedy','triphylite','Barry Sonnenfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1354,'The Doors',14,'Biography','distancy','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1355,'The Fisher King',41,'Comedy','spinnies','Terry Gilliam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1356,'The Naked Gun 2�?: The Smell of Fear',90,'Comedy','resmethrin','David Zucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1357,'The Prince of Tides',56,'Drama','angledozer','Barbra Streisand');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1358,'The Silence of the Lambs',37,'Crime','ethoxylate','Jonathan Demme');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1359,'White Fang',41,'Adventure','ursidae','Randal Kleiser');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1360,'A Few Good Men',63,'Drama','whippowill','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1361,'A League of Their Own',32,'Comedy','silurid','Penny Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1362,'Aladdin',7,'Adventure','bardiche','Ron Clements');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1363,'Alien 3',46,'Action','logicists','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1364,'Army of Darkness',29,'Comedy','parroter','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1365,'Batman Returns',34,'Action','hell-rake','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1366,'Boomerang',39,'Comedy','triphylite','Reginald Hudlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1367,'Bram Stoker''s Dracula',65,'Fantasy','distancy','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1368,'Death Becomes Her',28,'Comedy','spinnies','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1369,'El Mariachi',82,'Action','resmethrin','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1370,'Fortress',39,'Action','angledozer','Stuart Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1371,'Glengarry Glen Ross',29,'Crime','ethoxylate','James Foley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1372,'Hoffa',51,'Biography','ursidae','Danny DeVito');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1373,'Home Alone 2: Lost in New York',74,'Adventure','whippowill','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1374,'Lethal Weapon 3',32,'Action','silurid','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1375,'Light Sleeper',23,'Crime','bardiche','Paul Schrader');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1376,'Malcolm X',97,'Biography','logicists','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1377,'Medicine Man',6,'Adventure','parroter','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1378,'Memoirs of an Invisible Man',98,'Comedy','hell-rake','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1379,'My Cousin Vinny',64,'Comedy','triphylite','Jonathan Lynn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1380,'Patriot Games',43,'Action','distancy','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1381,'Radio Flyer',56,'Drama','spinnies','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1382,'Raising Cain',37,'Crime','resmethrin','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1383,'Reservoir Dogs',54,'Crime','angledozer','Quentin Tarantino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1384,'Split Second',60,'Action','ethoxylate','Tony Maylam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1385,'The Bodyguard',70,'Action','ursidae','Mick Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1386,'The Crying Game',86,'Crime','whippowill','Neil Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1387,'The Last of the Mohicans',49,'Action','silurid','Michael Mann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1388,'The Lawnmower Man',74,'Horror','bardiche','Brett Leonard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1389,'The Mighty Ducks',19,'Comedy','logicists','Stephen Herek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1390,'The Muppet Christmas Carol',64,'Comedy','parroter','Brian Henson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1391,'Unforgiven',82,'Drama','hell-rake','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1392,'Wayne''s World',4,'Comedy','triphylite','Penelope Spheeris');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1393,'Airborne',33,'Adventure','distancy','Rob Bowman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1394,'Alive',12,'Adventure','spinnies','Frank Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1395,'Blood In, Blood Out',77,'Crime','resmethrin','Taylor Hackford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1396,'Cliffhanger',26,'Action','angledozer','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1397,'Cool Runnings',12,'Adventure','ethoxylate','Jon Turteltaub');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1398,'Dazed and Confused',56,'Comedy','ursidae','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1399,'Excessive Force',74,'Action','whippowill','Jon Hess');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1400,'Gettysburg',12,'Drama','silurid','Ron Maxwell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1401,'Groundhog Day',62,'Comedy','bardiche','Harold Ramis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1402,'Hocus Pocus',21,'Comedy','logicists','Kenny Ortega');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1403,'Jason Goes to Hell: The Final Friday',92,'Fantasy','parroter','Adam Marcus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1404,'Jurassic Park',51,'Adventure','hell-rake','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1405,'Killing Zoe',11,'Crime','triphylite','Roger Avary');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1406,'Last Action Hero',23,'Action','distancy','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1407,'Les visiteurs',61,'Comedy','spinnies','Jean-Marie Poir̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1408,'Loaded Weapon 1',12,'Action','resmethrin','Gene Quintano');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1409,'Madadayo',69,'Drama','angledozer','Akira Kurosawa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1410,'Menace II Society',98,'Crime','ethoxylate','Albert Hughes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1411,'Mrs. Doubtfire',18,'Comedy','ursidae','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1412,'Much Ado About Nothing',24,'Comedy','whippowill','Kenneth Branagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1413,'Nowhere to Run',11,'Action','silurid','Robert Harmon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1414,'Only the Strong',32,'Action','bardiche','Sheldon Lettich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1415,'Philadelphia',88,'Drama','logicists','Jonathan Demme');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1416,'Poetic Justice',45,'Drama','parroter','John Singleton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1417,'RoboCop 3',30,'Action','hell-rake','Fred Dekker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1418,'Romeo Is Bleeding',3,'Action','triphylite','Peter Medak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1419,'Ruby in Paradise',2,'Drama','distancy','Victor Nunez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1420,'Schindler''s List',5,'Biography','spinnies','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1421,'Shadowlands',81,'Biography','resmethrin','Richard Attenborough');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1422,'Sugar Hill',44,'Drama','angledozer','Leon Ichaso');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1423,'Super Mario Bros.',14,'Adventure','ethoxylate','Annabel Jankel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1424,'Teenage Mutant Ninja Turtles III',81,'Action','ursidae','Stuart Gillard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1425,'The Adventures of Huck Finn',37,'Adventure','whippowill','Stephen Sommers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1426,'The Age of Innocence',77,'Drama','silurid','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1427,'The Firm',84,'Drama','bardiche','Sydney Pollack');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1428,'The Fugitive',92,'Action','logicists','Andrew Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1429,'The Nutcracker',85,'Family','parroter','Emile Ardolino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1430,'The Pelican Brief',11,'Crime','hell-rake','Alan J. Pakula');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1431,'The Piano',88,'Drama','triphylite','Jane Campion');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1432,'The Princess and the Cobbler',89,'Action','distancy','Richard Williams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1433,'The Remains of the Day',56,'Drama','spinnies','James Ivory');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1434,'Tombstone',78,'Action','resmethrin','George P. Cosmatos');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1435,'True Romance',56,'Action','angledozer','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1436,'Warlock: The Armageddon',67,'Fantasy','ethoxylate','Anthony Hickox');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1437,'What''s Eating Gilbert Grape',95,'Drama','ursidae','Lasse Hallstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1438,'3 Ninjas Kick Back',47,'Action','whippowill','Charles T. Kanganis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1439,'A Low Down Dirty Shame',4,'Action','silurid','Keenen Ivory Wayans');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1440,'Ace Ventura: Pet Detective',81,'Comedy','bardiche','Tom Shadyac');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1441,'Baby''s Day Out',93,'Adventure','logicists','Patrick Read Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1442,'Beverly Hills Cop III',81,'Action','parroter','John Landis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1443,'Bullets Over Broadway',14,'Comedy','hell-rake','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1444,'Clear and Present Danger',93,'Action','triphylite','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1445,'Clerks',95,'Comedy','distancy','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1446,'Crooklyn',43,'Comedy','spinnies','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1447,'Disclosure',82,'Drama','resmethrin','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1448,'Don Juan DeMarco',1,'Comedy','angledozer','Jeremy Leven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1449,'Dumb & Dumber',37,'Comedy','ethoxylate','Peter Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1450,'Ed Wood',52,'Biography','ursidae','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1451,'Exotica',92,'Drama','whippowill','Atom Egoyan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1452,'Forrest Gump',43,'Comedy','silurid','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1453,'Four Weddings and a Funeral',12,'Comedy','bardiche','Mike Newell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1454,'Heavenly Creatures',14,'Biography','logicists','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1455,'Highlander: The Final Dimension',41,'Action','parroter','Andrew Morahan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1456,'Hoop Dreams',90,'Documentary','hell-rake','Steve James');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1457,'Interview with the Vampire: The Vampire Chronicles',56,'Drama','triphylite','Neil Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1458,'Legends of the Fall',37,'Drama','distancy','Edward Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1459,'Little Women',41,'Drama','spinnies','Gillian Armstrong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1460,'Naked Gun 33 1/3: The Final Insult',63,'Comedy','resmethrin','Peter Segal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1461,'New Nightmare',32,'Fantasy','angledozer','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1462,'On Deadly Ground',7,'Action','ethoxylate','Steven Seagal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1463,'PCU',46,'Comedy','ursidae','Hart Bochner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1464,'Police Academy: Mission to Moscow',29,'Comedy','whippowill','Alan Metter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1465,'Pulp Fiction',34,'Crime','silurid','Quentin Tarantino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1466,'Rapa Nui',39,'Action','bardiche','Kevin Reynolds');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1467,'Renaissance Man',65,'Comedy','logicists','Penny Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1468,'Ri�hie Ri�h',28,'Comedy','parroter','Donald Petrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1469,'Serial Mom',82,'Comedy','hell-rake','John Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1470,'Speed',39,'Action','triphylite','Jan de Bont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1471,'Star Trek: Generations',29,'Action','distancy','David Carson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1472,'Street Fighter',51,'Action','spinnies','Steven E. de Souza');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1473,'The Client',74,'Crime','resmethrin','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1474,'The Crow',32,'Action','angledozer','Alex Proyas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1475,'The Flintstones',23,'Comedy','ethoxylate','Brian Levant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1476,'The Hudsucker Proxy',97,'Comedy','ursidae','Joel Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1477,'The Legend of Drunken Master',6,'Action','whippowill','Chia-Liang Liu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1478,'The Lion King',98,'Adventure','silurid','Roger Allers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1479,'The Mask',64,'Action','bardiche','Chuck Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1480,'The River Wild',43,'Action','logicists','Curtis Hanson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1481,'The Santa Clause',56,'Comedy','parroter','John Pasquin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1482,'The Shadow',37,'Action','hell-rake','Russell Mulcahy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1483,'The Shawshank Redemption',54,'Crime','triphylite','Frank Darabont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1484,'The Specialist',60,'Action','distancy','Luis Llosa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1485,'There Goes My Baby',70,'Comedy','spinnies','Floyd Mutrux');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1486,'Timecop',86,'Action','resmethrin','Peter Hyams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1487,'True Lies',49,'Action','angledozer','James Cameron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1488,'Wolf',74,'Drama','ethoxylate','Mike Nichols');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1489,'Wyatt Earp',19,'Adventure','ursidae','Lawrence Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1490,'Ace Ventura: When Nature Calls',64,'Adventure','whippowill','Steve Oedekerk');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1491,'Apollo 13',82,'Adventure','silurid','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1492,'Assassins',4,'Action','bardiche','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1493,'Babe',33,'Comedy','logicists','Chris Noonan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1494,'Bad Boys',12,'Action','parroter','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1495,'Batman Forever',77,'Action','hell-rake','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1496,'Before Sunrise',26,'Drama','triphylite','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1497,'Braveheart',12,'Biography','distancy','Mel Gibson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1498,'Casino',56,'Biography','spinnies','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1499,'Casper',74,'Comedy','resmethrin','Brad Silberling');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1500,'Clueless',12,'Comedy','angledozer','Amy Heckerling');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1501,'Congo',62,'Action','ethoxylate','Frank Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1502,'Copycat',21,'Crime','ursidae','Jon Amiel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1503,'Crimson Tide',92,'Action','whippowill','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1504,'Cutthroat Island',51,'Action','silurid','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1505,'Dead Man Walking',11,'Crime','bardiche','Tim Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1506,'Desperado',23,'Action','logicists','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1507,'Die Hard with a Vengeance',61,'Action','parroter','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1508,'First Knight',12,'Action','hell-rake','Jerry Zucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1509,'Four Rooms',69,'Comedy','triphylite','Allison Anders');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1510,'Friday',98,'Comedy','distancy','F. Gary Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1511,'Get Shorty',18,'Comedy','spinnies','Barry Sonnenfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1512,'GoldenEye',24,'Action','resmethrin','Martin Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1513,'Hackers',11,'Comedy','angledozer','Iain Softley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1514,'Halloween: The Curse of Michael Myers',32,'Horror','ethoxylate','Joe Chappelle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1515,'Home for the Holidays',88,'Comedy','ursidae','Jodie Foster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1516,'Jade',45,'Crime','whippowill','William Friedkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1517,'Jefferson in Paris',30,'Biography','silurid','James Ivory');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1518,'Kids',3,'Drama','bardiche','Larry Clark');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1519,'Kiss of Death',2,'Action','logicists','Barbet Schroeder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1520,'Leaving Las Vegas',5,'Drama','parroter','Mike Figgis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1521,'Mallrats',81,'Comedy','hell-rake','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1522,'Money Train',44,'Action','triphylite','Joseph Ruben');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1523,'Mortal Kombat',14,'Action','distancy','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1524,'Mr. Holland''s Opus',81,'Drama','spinnies','Stephen Herek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1525,'Nixon',37,'Biography','resmethrin','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1526,'Outbreak',77,'Action','angledozer','Wolfgang Petersen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1527,'Pocahontas',84,'Adventure','ethoxylate','Mike Gabriel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1528,'Richard III',92,'Drama','ursidae','Richard Loncraine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1529,'Rob Roy',85,'Adventure','whippowill','Michael Caton-Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1530,'Rumble in the Bronx',11,'Action','silurid','Stanley Tong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1531,'Se7en',88,'Crime','bardiche','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1532,'Sense and Sensibility',89,'Drama','logicists','Ang Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1533,'Showgirls',56,'Drama','parroter','Paul Verhoeven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1534,'Species',78,'Action','hell-rake','Roger Donaldson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1535,'Tales from the Crypt: Demon Knight',56,'Action','triphylite','Ernest R. Dickerson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1536,'Tales from the Hood',67,'Comedy','distancy','Rusty Cundieff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1537,'Tank Girl',95,'Action','spinnies','Rachel Talalay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1538,'The American President',47,'Comedy','resmethrin','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1539,'The Bridges of Madison County',4,'Drama','angledozer','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1540,'The Brothers McMullen',81,'Comedy','ethoxylate','Edward Burns');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1541,'The Incredibly True Adventure of Two Girls in Love',93,'Comedy','ursidae','Maria Maggenti');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1542,'The Indian in the Cupboard',81,'Drama','whippowill','Frank Oz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1543,'The Net',14,'Action','silurid','Irwin Winkler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1544,'The Perez Family',93,'Comedy','bardiche','Mira Nair');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1545,'The Prophecy',95,'Action','logicists','Gregory Widen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1546,'The Quick and the Dead',43,'Action','parroter','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1547,'The Scarlet Letter',82,'Drama','hell-rake','Roland Joff̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1548,'The Usual Suspects',1,'Crime','triphylite','Bryan Singer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1549,'Things to Do in Denver When You''re Dead',37,'Crime','distancy','Gary Fleder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1550,'To Die For',52,'Comedy','spinnies','Gus Van Sant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1551,'Toy Story',92,'Adventure','resmethrin','John Lasseter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1552,'Under Siege 2: Dark Territory',43,'Action','angledozer','Geoff Murphy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1553,'Vampire in Brooklyn',12,'Comedy','ethoxylate','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1554,'Virtuosity',14,'Action','ursidae','Brett Leonard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1555,'Waterworld',41,'Action','whippowill','Kevin Reynolds');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1556,'Welcome to the Dollhouse',90,'Comedy','silurid','Todd Solondz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1557,'A Thin Line Between Love and Hate',56,'Comedy','bardiche','Martin Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1558,'A Time to Kill',37,'Crime','logicists','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1559,'Albino Alligator',41,'Crime','parroter','Kevin Spacey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1560,'Basquiat',63,'Biography','hell-rake','Julian Schnabel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1561,'Beavis and Butt-Head Do America',32,'Adventure','triphylite','Mike Judge');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1562,'Blood and Wine',7,'Crime','distancy','Bob Rafelson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1563,'Bogus',46,'Comedy','spinnies','Norman Jewison');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1564,'Bottle Rocket',29,'Comedy','resmethrin','Wes Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1565,'Bound',34,'Crime','angledozer','Lana Wachowski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1566,'Broken Arrow',39,'Action','ethoxylate','John Woo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1567,'Chain Reaction',65,'Action','ursidae','Andrew Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1568,'City Hall',28,'Drama','whippowill','Harold Becker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1569,'Courage Under Fire',82,'Action','silurid','Edward Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1570,'Daylight',39,'Action','bardiche','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1571,'DragonHeart',29,'Action','logicists','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1572,'Eraser',51,'Action','parroter','Chuck Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1573,'Escape from L.A.',74,'Action','hell-rake','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1574,'Everyone Says I Love You',32,'Comedy','triphylite','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1575,'Evita',23,'Biography','distancy','Alan Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1576,'Executive Decision',97,'Action','spinnies','Stuart Baird');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1577,'Extreme Measures',6,'Crime','resmethrin','Michael Apted');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1578,'Eye for an Eye',98,'Crime','angledozer','John Schlesinger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1579,'Faithful',64,'Comedy','ethoxylate','Paul Mazursky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1580,'Fled',43,'Action','ursidae','Kevin Hooks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1581,'Flipper',56,'Adventure','whippowill','Alan Shapiro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1582,'Flirting with Disaster',37,'Comedy','silurid','David O. Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1583,'From Dusk Till Dawn',54,'Crime','bardiche','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1584,'Get on the Bus',60,'Drama','logicists','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1585,'Ghosts of Mississippi',70,'Drama','parroter','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1586,'Girl 6',86,'Comedy','hell-rake','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1587,'Hamlet',49,'Drama','triphylite','Kenneth Branagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1588,'Happy Gilmore',74,'Comedy','distancy','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1589,'Harriet the Spy',19,'Comedy','spinnies','Bronwen Hughes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1590,'Independence Day',64,'Action','resmethrin','Roland Emmerich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1591,'Jerry Maguire',82,'Comedy','angledozer','Cameron Crowe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1592,'Jingle All the Way',4,'Comedy','ethoxylate','Brian Levant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1593,'Kama Sutra: A Tale of Love',33,'Crime','ursidae','Mira Nair');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1594,'Kansas City',12,'Crime','whippowill','Robert Altman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1595,'Kingpin',77,'Comedy','silurid','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1596,'Lone Star',26,'Drama','bardiche','John Sayles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1597,'Love and Other Catastrophes',12,'Comedy','logicists','Emma-Kate Croghan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1598,'Mars Attacks!',56,'Action','parroter','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1599,'Marvin''s Room',74,'Drama','hell-rake','Jerry Zaks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1600,'Mary Reilly',12,'Drama','triphylite','Stephen Frears');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1601,'Maximum Risk',62,'Action','distancy','Ringo Lam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1602,'Michael Collins',21,'Biography','spinnies','Neil Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1603,'Mission: Impossible',92,'Action','resmethrin','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1604,'Mrs. Winterbourne',51,'Comedy','angledozer','Richard Benjamin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1605,'Multiplicity',11,'Comedy','ethoxylate','Harold Ramis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1606,'My Fellow Americans',23,'Adventure','ursidae','Peter Segal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1607,'Phenomenon',61,'Drama','whippowill','Jon Turteltaub');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1608,'Ransom',12,'Crime','silurid','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1609,'Romeo + Juliet',69,'Drama','bardiche','Baz Luhrmann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1610,'Scream',98,'Horror','logicists','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1611,'Set It Off',18,'Action','parroter','F. Gary Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1612,'Sgt. Bilko',24,'Comedy','hell-rake','Jonathan Lynn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1613,'She''s the One',11,'Comedy','triphylite','Edward Burns');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1614,'Shine',32,'Biography','distancy','Scott Hicks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1615,'Sleepers',88,'Crime','spinnies','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1616,'Sling Blade',45,'Drama','resmethrin','Billy Bob Thornton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1617,'Space Jam',30,'Adventure','angledozer','Joe Pytka');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1618,'Spy Hard',3,'Action','ethoxylate','Rick Friedberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1619,'Star Trek: First Contact',2,'Action','ursidae','Jonathan Frakes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1620,'Striptease',5,'Comedy','whippowill','Andrew Bergman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1621,'Swingers',81,'Comedy','silurid','Doug Liman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1622,'That Thing You Do!',44,'Comedy','bardiche','Tom Hanks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1623,'The Adventures of Pinocchio',14,'Adventure','logicists','Steve Barron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1624,'The Cable Guy',81,'Comedy','parroter','Ben Stiller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1625,'The Craft',37,'Drama','hell-rake','Andrew Fleming');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1626,'The English Patient',77,'Drama','triphylite','Anthony Minghella');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1627,'The Fan',84,'Action','distancy','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1628,'The First Wives Club',92,'Comedy','spinnies','Hugh Wilson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1629,'The Funeral',85,'Crime','resmethrin','Abel Ferrara');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1630,'The Ghost and the Darkness',11,'Adventure','angledozer','Stephen Hopkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1631,'The Glimmer Man',88,'Action','ethoxylate','John Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1632,'The Hunchback of Notre Dame',89,'Animation','ursidae','Gary Trousdale');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1633,'The Island of Dr. Moreau',56,'Horror','whippowill','John Frankenheimer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1634,'The Juror',78,'Drama','silurid','Brian Gibson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1635,'The Long Kiss Goodnight',56,'Action','bardiche','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1636,'The Mirror Has Two Faces',67,'Comedy','logicists','Barbra Streisand');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1637,'The Nutty Professor',95,'Comedy','parroter','Tom Shadyac');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1638,'The Phantom',47,'Action','hell-rake','Simon Wincer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1639,'The Rock',4,'Action','triphylite','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1640,'Thinner',81,'Fantasy','distancy','Tom Holland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1641,'Tin Cup',93,'Comedy','spinnies','Ron Shelton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1642,'Trainspotting',81,'Drama','resmethrin','Danny Boyle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1643,'Trees Lounge',14,'Comedy','angledozer','Steve Buscemi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1644,'Twister',93,'Action','ethoxylate','Jan de Bont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1645,'Up Close & Personal',95,'Drama','ursidae','Jon Avnet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1646,'Waiting for Guffman',43,'Comedy','whippowill','Christopher Guest');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1647,'Walking and Talking',82,'Comedy','silurid','Nicole Holofcener');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1648,'When the Cat''s Away',1,'Comedy','bardiche','C̩dric Klapisch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1649,'White Squall',37,'Adventure','logicists','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1650,'8 Heads in a Duffel Bag',52,'Comedy','parroter','Tom Schulman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1651,'A Simple Wish',92,'Comedy','hell-rake','Michael Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1652,'Absolute Power',43,'Action','triphylite','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1653,'Air Bud',12,'Comedy','distancy','Charles Martin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1654,'Air Force One',14,'Action','spinnies','Wolfgang Petersen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1655,'Alien: Resurrection',41,'Action','resmethrin','Jean-Pierre Jeunet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1656,'Amistad',90,'Drama','angledozer','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1657,'An Alan Smithee Film: Burn Hollywood Burn',56,'Comedy','ethoxylate','Arthur Hiller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1658,'Anaconda',37,'Action','ursidae','Luis Llosa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1659,'Anastasia',41,'Adventure','whippowill','Don Bluth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1660,'As Good as It Gets',63,'Comedy','silurid','James L. Brooks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1661,'Austin Powers: International Man of Mystery',32,'Comedy','bardiche','Jay Roach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1662,'Batman & Robin',7,'Action','logicists','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1663,'Boogie Nights',46,'Drama','parroter','Paul Thomas Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1664,'Breakdown',29,'Action','hell-rake','Jonathan Mostow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1665,'Cats Don''t Dance',34,'Animation','triphylite','Mark Dindal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1666,'Character',39,'Crime','distancy','Mike van Diem');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1667,'Chasing Amy',65,'Comedy','spinnies','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1668,'Children of Heaven',28,'Drama','resmethrin','Majid Majidi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1669,'Con Air',82,'Action','angledozer','Simon West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1670,'Conspiracy Theory',39,'Action','ethoxylate','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1671,'Contact',29,'Drama','ursidae','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1672,'Cop Land',51,'Crime','whippowill','James Mangold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1673,'Critical Care',74,'Comedy','silurid','Sidney Lumet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1674,'Cube',32,'Mystery','bardiche','Vincenzo Natali');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1675,'Dante''s Peak',23,'Action','logicists','Roger Donaldson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1676,'Deconstructing Harry',97,'Comedy','parroter','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1677,'Donnie Brasco',6,'Biography','hell-rake','Mike Newell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1678,'Dream with the Fishes',98,'Comedy','triphylite','Finn Taylor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1679,'Event Horizon',64,'Horror','distancy','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1680,'Eve''s Bayou',43,'Drama','spinnies','Kasi Lemmons');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1681,'Face/Off',56,'Action','resmethrin','John Woo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1682,'First Love, Last Rites',37,'Drama','angledozer','Jesse Peretz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1683,'Flubber',54,'Comedy','ethoxylate','Les Mayfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1684,'G.I. Jane',60,'Action','ursidae','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1685,'Gattaca',70,'Drama','whippowill','Andrew Niccol');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1686,'George of the Jungle',86,'Action','silurid','Sam Weisman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1687,'Good Will Hunting',49,'Drama','bardiche','Gus Van Sant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1688,'Grosse Pointe Blank',74,'Action','logicists','George Armitage');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1689,'Hav Plenty',19,'Comedy','parroter','Christopher Scott Cherot');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1690,'Hurricane Streets',64,'Crime','hell-rake','Morgan J. Freeman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1691,'I Know What You Did Last Summer',82,'Horror','triphylite','Jim Gillespie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1692,'I Married a Strange Person!',4,'Animation','distancy','Bill Plympton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1693,'In & Out',33,'Comedy','spinnies','Frank Oz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1694,'In the Company of Men',12,'Comedy','resmethrin','Neil LaBute');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1695,'Jackie Brown',77,'Crime','angledozer','Quentin Tarantino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1696,'Kiss the Girls',26,'Crime','ethoxylate','Gary Fleder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1697,'Kundun',12,'Biography','ursidae','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1698,'L.A. Confidential',56,'Crime','whippowill','Curtis Hanson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1699,'Liar Liar',74,'Comedy','silurid','Tom Shadyac');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1700,'Love Jones',12,'Drama','bardiche','Theodore Witcher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1701,'Mad City',62,'Crime','logicists','Costa-Gavras');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1702,'Men in Black',21,'Adventure','parroter','Barry Sonnenfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1703,'Midnight in the Garden of Good and Evil',92,'Crime','hell-rake','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1704,'Money Talks',51,'Action','triphylite','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1705,'Mortal Kombat: Annihilation',11,'Action','distancy','John R. Leonetti');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1706,'My Best Friend''s Wedding',23,'Comedy','spinnies','P.J. Hogan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1707,'Nothing to Lose',61,'Action','resmethrin','Steve Oedekerk');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1708,'Orgazmo',12,'Comedy','angledozer','Trey Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1709,'Oscar and Lucinda',69,'Drama','ethoxylate','Gillian Armstrong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1710,'Prefontaine',98,'Biography','ursidae','Steve James');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1711,'Princess Mononoke',18,'Adventure','whippowill','Hayao Miyazaki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1712,'Scream 2',24,'Horror','silurid','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1713,'Selena',11,'Biography','bardiche','Gregory Nava');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1714,'Seven Years in Tibet',32,'Adventure','logicists','Jean-Jacques Annaud');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1715,'Shadow Conspiracy',88,'Action','parroter','George P. Cosmatos');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1716,'Shooting Fish',45,'Comedy','hell-rake','Stefan Schwartz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1717,'Smilla''s Sense of Snow',30,'Action','triphylite','Bille August');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1718,'Soul Food',3,'Comedy','distancy','George Tillman Jr.');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1719,'Spawn',2,'Action','spinnies','Mark A.Z. Dipp̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1720,'Speed 2: Cruise Control',5,'Action','resmethrin','Jan de Bont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1721,'Spice World',81,'Comedy','angledozer','Bob Spiers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1722,'Starship Troopers',44,'Action','ethoxylate','Paul Verhoeven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1723,'Steel',14,'Action','ursidae','Kenneth Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1724,'Switchback',81,'Crime','whippowill','Jeb Stuart');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1725,'The Apostle',37,'Drama','silurid','Robert Duvall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1726,'The Borrowers',77,'Adventure','bardiche','Peter Hewitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1727,'The Cure',84,'Crime','logicists','Kiyoshi Kurosawa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1728,'The Devil''s Advocate',92,'Drama','parroter','Taylor Hackford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1729,'The Devil''s Own',85,'Action','hell-rake','Alan J. Pakula');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1730,'The Fifth Element',11,'Action','triphylite','Luc Besson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1731,'The Full Monty',88,'Comedy','distancy','Peter Cattaneo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1732,'The Game',89,'Drama','spinnies','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1733,'The Ice Storm',56,'Drama','resmethrin','Ang Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1734,'The Jackal',78,'Action','angledozer','Michael Caton-Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1735,'The Last Time I Committed Suicide',56,'Biography','ethoxylate','Stephen Kay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1736,'The Lost World: Jurassic Park',67,'Action','ursidae','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1737,'The Man Who Knew Too Little',95,'Action','whippowill','Jon Amiel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1738,'The Peacemaker',47,'Action','silurid','Mimi Leder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1739,'The Postman',4,'Action','bardiche','Kevin Costner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1740,'The Rainmaker',81,'Crime','logicists','Francis Ford Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1741,'The Relic',93,'Horror','parroter','Peter Hyams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1742,'The Saint',81,'Action','hell-rake','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1743,'The Spanish Prisoner',14,'Drama','triphylite','David Mamet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1744,'The Sticky Fingers of Time',93,'Sci-Fi','distancy','Hilary Brougher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1745,'The Sweet Hereafter',95,'Drama','spinnies','Atom Egoyan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1746,'The Swindle',43,'Comedy','resmethrin','Claude Chabrol');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1747,'Titanic',82,'Drama','angledozer','James Cameron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1748,'Tomorrow Never Dies',1,'Action','ethoxylate','Roger Spottiswoode');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1749,'Trekkies',37,'Documentary','ursidae','Roger Nygard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1750,'Turbulence',52,'Action','whippowill','Robert Butler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1751,'Two Girls and a Guy',92,'Comedy','silurid','James Toback');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1752,'Ulee''s Gold',43,'Drama','bardiche','Victor Nunez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1753,'Volcano',12,'Action','logicists','Mick Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1754,'Wag the Dog',14,'Comedy','parroter','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1755,'Warriors of Virtue',41,'Action','hell-rake','Ronny Yu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1756,'20 Dates',90,'Biography','triphylite','Myles Berkowitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1757,'54',56,'Drama','distancy','Mark Christopher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1758,'A Bug''s Life',37,'Adventure','spinnies','John Lasseter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1759,'A Civil Action',41,'Drama','resmethrin','Steven Zaillian');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1760,'A Night at the Roxbury',63,'Comedy','angledozer','John Fortenberry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1761,'A Simple Plan',32,'Crime','ethoxylate','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1762,'American History X',7,'Crime','ursidae','Tony Kaye');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1763,'Among Giants',46,'Comedy','whippowill','Sam Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1764,'Antz',29,'Adventure','silurid','Eric Darnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1765,'Armageddon',34,'Action','bardiche','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1766,'Babe: Pig in the City',39,'Adventure','logicists','George Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1767,'Barney''s Great Adventure',65,'Adventure','parroter','Steve Gomer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1768,'Beloved',28,'Drama','hell-rake','Jonathan Demme');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1769,'Blade',82,'Action','triphylite','Stephen Norrington');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1770,'Bride of Chucky',39,'Comedy','distancy','Ronny Yu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1771,'Broken Vessels',29,'Drama','spinnies','Scott Ziehl');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1772,'Buffalo ''66',51,'Comedy','resmethrin','Vincent Gallo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1773,'Bulworth',74,'Comedy','angledozer','Warren Beatty');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1774,'Can''t Hardly Wait',32,'Comedy','ethoxylate','Harry Elfont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1775,'Celebrity',23,'Comedy','ursidae','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1776,'Central Station',97,'Drama','whippowill','Walter Salles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1777,'Chairman of the Board',6,'Comedy','silurid','Alex Zamm');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1778,'City of Angels',98,'Drama','bardiche','Brad Silberling');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1779,'Clay Pigeons',64,'Comedy','logicists','David Dobkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1780,'Dark City',43,'Action','parroter','Alex Proyas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1781,'Dead Man on Campus',56,'Comedy','hell-rake','Alan Cohn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1782,'Deep Impact',37,'Action','triphylite','Mimi Leder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1783,'Deep Rising',54,'Action','distancy','Stephen Sommers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1784,'Desert Blue',60,'Drama','spinnies','Morgan J. Freeman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1785,'Dirty Work',70,'Comedy','resmethrin','Bob Saget');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1786,'Disturbing Behavior',86,'Horror','angledozer','David Nutter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1787,'Doctor Dolittle',49,'Comedy','ethoxylate','Betty Thomas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1788,'Elizabeth',74,'Biography','ursidae','Shekhar Kapur');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1789,'Enemy of the State',19,'Action','whippowill','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1790,'Ever After: A Cinderella Story',64,'Comedy','silurid','Andy Tennant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1791,'Fear and Loathing in Las Vegas',82,'Adventure','bardiche','Terry Gilliam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1792,'Gods and Monsters',4,'Biography','logicists','Bill Condon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1793,'Half Baked',33,'Comedy','parroter','Tamra Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1794,'Happiness',12,'Comedy','hell-rake','Todd Solondz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1795,'Hard Rain',77,'Action','triphylite','Mikael Salomon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1796,'He Got Game',26,'Drama','distancy','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1797,'Holy Man',12,'Comedy','spinnies','Stephen Herek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1798,'Home Fries',56,'Comedy','resmethrin','Dean Parisot');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1799,'Hope Floats',74,'Drama','angledozer','Forest Whitaker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1800,'How Stella Got Her Groove Back',12,'Comedy','ethoxylate','Kevin Rodney Sullivan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1801,'I Got the Hook Up',62,'Comedy','ursidae','Michael Martin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1802,'I Still Know What You Did Last Summer',21,'Horror','whippowill','Danny Cannon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1803,'Knock Off',92,'Action','silurid','Hark Tsui');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1804,'La otra conquista',51,'Drama','bardiche','Salvador Carrasco');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1805,'Les couloirs du temps: Les visiteurs II',11,'Comedy','logicists','Jean-Marie Poir̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1806,'Lethal Weapon 4',23,'Action','parroter','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1807,'Living Out Loud',61,'Comedy','hell-rake','Richard LaGravenese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1808,'Lock, Stock and Two Smoking Barrels',12,'Comedy','triphylite','Guy Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1809,'Lost in Space',69,'Action','distancy','Stephen Hopkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1810,'Meet Joe Black',98,'Drama','spinnies','Martin Brest');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1811,'Meet the Deedles',18,'Comedy','resmethrin','Steve Boyum');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1812,'Mercury Rising',24,'Action','angledozer','Harold Becker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1813,'Mighty Joe Young',11,'Action','ethoxylate','Ron Underwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1814,'Mulan',32,'Adventure','ursidae','Tony Bancroft');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1815,'Naturally Native',88,'Drama','whippowill','Jennifer Wynne Farmer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1816,'Next Stop Wonderland',45,'Comedy','silurid','Brad Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1817,'One True Thing',30,'Drama','bardiche','Carl Franklin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1818,'Out of Sight',3,'Crime','logicists','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1819,'Patch Adams',2,'Biography','parroter','Tom Shadyac');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1820,'Pi',5,'Drama','hell-rake','Darren Aronofsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1821,'Practical Magic',81,'Comedy','triphylite','Griffin Dunne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1822,'Primary Colors',44,'Comedy','distancy','Mike Nichols');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1823,'Ronin',14,'Action','spinnies','John Frankenheimer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1824,'Rounders',81,'Crime','resmethrin','John Dahl');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1825,'Run Lola Run',37,'Crime','angledozer','Tom Tykwer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1826,'Rushmore',77,'Comedy','ethoxylate','Wes Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1827,'Safe Men',84,'Comedy','ursidae','John Hamburg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1828,'Saving Private Ryan',92,'Action','whippowill','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1829,'Shakespeare in Love',85,'Comedy','silurid','John Madden');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1830,'Simon Birch',11,'Comedy','bardiche','Mark Steven Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1831,'Six Days Seven Nights',88,'Action','logicists','Ivan Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1832,'Six-String Samurai',89,'Action','parroter','Lance Mungia');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1833,'Slam',56,'Drama','hell-rake','Marc Levin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1834,'Sliding Doors',78,'Comedy','triphylite','Peter Howitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1835,'Slums of Beverly Hills',56,'Comedy','distancy','Tamara Jenkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1836,'Small Soldiers',67,'Action','spinnies','Joe Dante');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1837,'Smoke Signals',95,'Comedy','resmethrin','Chris Eyre');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1838,'Snake Eyes',47,'Crime','angledozer','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1839,'Soldier',4,'Action','ethoxylate','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1840,'Sphere',81,'Drama','ursidae','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1841,'Star Trek: Insurrection',93,'Action','whippowill','Jonathan Frakes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1842,'Stepmom',81,'Comedy','silurid','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1843,'Tango',14,'Drama','bardiche','Carlos Saura');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1844,'The Big Hit',93,'Action','logicists','Kirk Wong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1845,'The Big Lebowski',95,'Comedy','parroter','Joel Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1846,'The Celebration',43,'Drama','hell-rake','Thomas Vinterberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1847,'The Faculty',82,'Horror','triphylite','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1848,'The Horse Whisperer',1,'Drama','distancy','Robert Redford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1849,'The Magic Sword: Quest for Camelot',37,'Adventure','spinnies','Frederik Du Chau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1850,'The Man in the Iron Mask',52,'Action','resmethrin','Randall Wallace');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1851,'The Mask of Zorro',92,'Action','angledozer','Martin Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1852,'The Negotiator',43,'Action','ethoxylate','F. Gary Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1853,'The Newton Boys',12,'Action','ursidae','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1854,'The Object of My Affection',14,'Comedy','whippowill','Nicholas Hytner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1855,'The Players Club',41,'Comedy','silurid','Ice Cube');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1856,'The Prince of Egypt',90,'Adventure','bardiche','Brenda Chapman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1857,'The Red Violin',56,'Drama','logicists','Fran̤ois Girard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1858,'The Replacement Killers',37,'Action','parroter','Antoine Fuqua');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1859,'The Rugrats Movie',41,'Adventure','hell-rake','Igor Kovalyov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1860,'The Siege',63,'Action','triphylite','Edward Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1861,'The Thin Red Line',32,'Drama','distancy','Terrence Malick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1862,'The Truman Show',7,'Comedy','spinnies','Peter Weir');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1863,'The Waterboy',46,'Comedy','resmethrin','Frank Coraci');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1864,'The X Files',29,'Drama','angledozer','Rob Bowman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1865,'There''s Something About Mary',34,'Comedy','ethoxylate','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1866,'Urban Legend',39,'Horror','ursidae','Jamie Blanks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1867,'Vampires',65,'Action','whippowill','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1868,'Very Bad Things',28,'Comedy','silurid','Peter Berg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1869,'Waking Ned Devine',82,'Comedy','bardiche','Kirk Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1870,'What Dreams May Come',39,'Drama','logicists','Vincent Ward');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1871,'Wild Things',29,'Crime','parroter','John McNaughton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1872,'Without Limits',51,'Biography','hell-rake','Robert Towne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1873,'Woo',74,'Comedy','triphylite','Daisy von Scherler Mayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1874,'You''ve Got Mail',32,'Comedy','distancy','Nora Ephron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1875,'Zero Effect',23,'Comedy','spinnies','Jake Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1876,'10 Things I Hate About You',97,'Comedy','resmethrin','Gil Junger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1877,'200 Cigarettes',6,'Comedy','angledozer','Risa Bramon Garcia');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1878,'8MM',98,'Mystery','ethoxylate','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1879,'A Dog of Flanders',64,'Drama','ursidae','Kevin Brodie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1880,'A Walk on the Moon',43,'Drama','whippowill','Tony Goldwyn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1881,'Aimee & Jaguar',56,'Biography','silurid','Max F�?rberb̦ck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1882,'American Beauty',37,'Drama','bardiche','Sam Mendes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1883,'American Pie',54,'Comedy','logicists','Paul Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1884,'An Ideal Husband',60,'Comedy','parroter','Oliver Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1885,'Analyze This',70,'Comedy','hell-rake','Harold Ramis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1886,'Angela''s Ashes',86,'Drama','triphylite','Alan Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1887,'Anna and the King',49,'Drama','distancy','Andy Tennant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1888,'Any Given Sunday',74,'Drama','spinnies','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1889,'Anywhere But Here',19,'Comedy','resmethrin','Wayne Wang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1890,'Arlington Road',64,'Crime','angledozer','Mark Pellington');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1891,'At First Sight',82,'Drama','ethoxylate','Irwin Winkler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1892,'Austin Powers: The Spy Who Shagged Me',4,'Action','ursidae','Jay Roach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1893,'Baby Geniuses',33,'Comedy','whippowill','Bob Clark');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1894,'Bats',12,'Horror','silurid','Louis Morneau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1895,'Being John Malkovich',77,'Comedy','bardiche','Spike Jonze');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1896,'Beyond the Mat',26,'Biography','logicists','Barry W. Blaustein');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1897,'Bicentennial Man',12,'Comedy','parroter','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1898,'Big Daddy',56,'Comedy','hell-rake','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1899,'Blast from the Past',74,'Comedy','triphylite','Hugh Wilson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1900,'Blue Streak',12,'Action','distancy','Les Mayfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1901,'Bowfinger',62,'Comedy','spinnies','Frank Oz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1902,'Boys Don''t Cry',21,'Biography','resmethrin','Kimberly Peirce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1903,'Breakfast of Champions',92,'Comedy','angledozer','Alan Rudolph');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1904,'Bringing Out the Dead',51,'Drama','ethoxylate','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1905,'Brokedown Palace',11,'Drama','ursidae','Jonathan Kaplan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1906,'But I''m a Cheerleader',23,'Comedy','whippowill','Jamie Babbit');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1907,'Chill Factor',61,'Action','silurid','Hugh Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1908,'Cradle Will Rock',12,'Drama','bardiche','Tim Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1909,'Crazy in Alabama',69,'Comedy','logicists','Antonio Banderas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1910,'Cruel Intentions',98,'Drama','parroter','Roger Kumble');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1911,'Deep Blue Sea',18,'Action','hell-rake','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1912,'Deterrence',24,'Drama','triphylite','Rod Lurie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1913,'Detroit Rock City',11,'Comedy','distancy','Adam Rifkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1914,'Deuce Bigalow: Male Gigolo',32,'Comedy','spinnies','Mike Mitchell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1915,'Dick',88,'Comedy','resmethrin','Andrew Fleming');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1916,'Dogma',45,'Adventure','angledozer','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1917,'Double Jeopardy',30,'Crime','ethoxylate','Bruce Beresford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1918,'Doug''s 1st Movie',3,'Animation','ursidae','Maurice Joyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1919,'Dreaming of Joseph Lees',2,'Drama','whippowill','Eric Styles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1920,'Drive Me Crazy',5,'Comedy','silurid','John Schultz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1921,'Drop Dead Gorgeous',81,'Comedy','bardiche','Michael Patrick Jann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1922,'Dudley Do-Right',44,'Comedy','logicists','Hugh Wilson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1923,'East Is East',14,'Comedy','parroter','Damien O''Donnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1924,'Edtv',81,'Comedy','hell-rake','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1925,'Election',37,'Comedy','triphylite','Alexander Payne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1926,'End of Days',77,'Action','distancy','Peter Hyams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1927,'Entrapment',84,'Action','spinnies','Jon Amiel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1928,'eXistenZ',92,'Horror','resmethrin','David Cronenberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1929,'Eye of the Beholder',85,'Drama','angledozer','Stephan Elliott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1930,'Eyes Wide Shut',11,'Drama','ethoxylate','Stanley Kubrick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1931,'Fantasia 2000',88,'Animation','ursidae','James Algar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1932,'Fight Club',89,'Drama','whippowill','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1933,'Flawless',56,'Comedy','silurid','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1934,'Foolish',78,'Comedy','bardiche','Dave Meyers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1935,'For Love of the Game',56,'Drama','logicists','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1936,'Galaxy Quest',67,'Adventure','parroter','Dean Parisot');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1937,'Girl, Interrupted',95,'Biography','hell-rake','James Mangold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1938,'Go',47,'Comedy','triphylite','Doug Liman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1939,'Godzilla 2000',4,'Action','distancy','Takao Okawara');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1940,'Happy, Texas',81,'Comedy','spinnies','Mark Illsley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1941,'Held Up',93,'Comedy','resmethrin','Steve Rash');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1942,'House on Haunted Hill',81,'Horror','angledozer','William Malone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1943,'Human Traffic',14,'Comedy','ethoxylate','Justin Kerrigan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1944,'Idle Hands',93,'Comedy','ursidae','Rodman Flender');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1945,'In Dreams',95,'Drama','whippowill','Neil Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1946,'In Too Deep',43,'Crime','silurid','Michael Rymer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1947,'Inspector Gadget',82,'Action','bardiche','David Kellogg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1948,'Instinct',1,'Drama','logicists','Jon Turteltaub');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1949,'Jakob the Liar',37,'Drama','parroter','Peter Kassovitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1950,'Jawbreaker',52,'Comedy','hell-rake','Darren Stein');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1951,'Jesus'' Son',92,'Drama','triphylite','Alison Maclean');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1952,'Just Looking',43,'Comedy','distancy','Jason Alexander');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1953,'Lake Placid',12,'Action','spinnies','Steve Miner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1954,'Light It Up',14,'Drama','resmethrin','Craig Bolotin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1955,'Limbo',41,'Adventure','angledozer','John Sayles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1956,'Love Stinks',90,'Comedy','ethoxylate','Jeff Franklin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1957,'Magnolia',56,'Drama','ursidae','Paul Thomas Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1958,'Man on the Moon',37,'Biography','whippowill','Milos Forman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1959,'Message in a Bottle',41,'Drama','silurid','Luis Mandoki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1960,'Mickey Blue Eyes',63,'Comedy','bardiche','Kelly Makin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1961,'Molly',32,'Comedy','logicists','John Duigan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1962,'Mumford',7,'Comedy','parroter','Lawrence Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1963,'Muppets from Space',46,'Adventure','hell-rake','Tim Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1964,'My Favorite Martian',29,'Comedy','triphylite','Donald Petrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1965,'Mystery Men',34,'Action','distancy','Kinka Usher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1966,'Mystery, Alaska',39,'Comedy','spinnies','Jay Roach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1967,'Notting Hill',65,'Comedy','resmethrin','Roger Michell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1968,'Office Space',28,'Comedy','angledozer','Mike Judge');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1969,'One Man''s Hero',82,'Action','ethoxylate','Lance Hool');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1970,'Outside Providence',39,'Comedy','ursidae','Michael Corrente');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1971,'Payback',29,'Action','whippowill','Brian Helgeland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1972,'Play It to the Bone',51,'Comedy','silurid','Ron Shelton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1973,'Pushing Tin',74,'Comedy','bardiche','Mike Newell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1974,'Random Hearts',32,'Drama','logicists','Sydney Pollack');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1975,'Ravenous',23,'Fantasy','parroter','Antonia Bird');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1976,'Ride with the Devil',97,'Drama','hell-rake','Ang Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1977,'Runaway Bride',6,'Comedy','triphylite','Garry Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1978,'She''s All That',98,'Comedy','distancy','Robert Iscove');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1979,'Simply Irresistible',64,'Comedy','spinnies','Mark Tarlov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1980,'Smiling Fish & Goat on Fire',43,'Comedy','resmethrin','Kevin Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1981,'Snow Falling on Cedars',56,'Drama','angledozer','Scott Hicks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1982,'South Park: Bigger Longer & Uncut',37,'Animation','ethoxylate','Trey Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1983,'Star Wars: Episode I - The Phantom Menace',54,'Action','ursidae','George Lucas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1984,'Stigmata',60,'Horror','whippowill','Rupert Wainwright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1985,'Stir of Echoes',70,'Horror','silurid','David Koepp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1986,'Stuart Little',86,'Adventure','bardiche','Rob Minkoff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1987,'Sugar Town',49,'Comedy','logicists','Allison Anders');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1988,'Summer of Sam',74,'Crime','parroter','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1989,'Superstar',19,'Comedy','hell-rake','Bruce McCulloch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1990,'Tea with Mussolini',64,'Comedy','triphylite','Franco Zeffirelli');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1991,'The 13th Warrior',82,'Action','distancy','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1992,'The Adventures of Elmo in Grouchland',4,'Adventure','spinnies','Gary Halvorson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1993,'The Astronaut''s Wife',33,'Drama','resmethrin','Rand Ravich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1994,'The Basket',12,'Drama','angledozer','Rich Cowan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1995,'The Best Man',77,'Comedy','ethoxylate','Malcolm D. Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1996,'The Big Tease',26,'Comedy','ursidae','Kevin Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1997,'The Blair Witch Project',12,'Horror','whippowill','Daniel Myrick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1998,'The Bone Collector',56,'Crime','silurid','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (1999,'The Corruptor',74,'Action','bardiche','James Foley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2000,'The Deep End of the Ocean',12,'Drama','logicists','Ulu Grosbard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2001,'The End of the Affair',62,'Drama','parroter','Neil Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2002,'The General''s Daughter',21,'Drama','hell-rake','Simon West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2003,'The Green Mile',92,'Crime','triphylite','Frank Darabont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2004,'The Haunting',51,'Fantasy','distancy','Jan de Bont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2005,'The Hurricane',11,'Biography','spinnies','Norman Jewison');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2006,'The Insider',23,'Biography','resmethrin','Michael Mann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2007,'The Iron Giant',61,'Action','angledozer','Brad Bird');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2008,'The Limey',12,'Crime','ethoxylate','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2009,'The Loss of Sexual Innocence',69,'Drama','ursidae','Mike Figgis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2010,'The Matrix',98,'Action','whippowill','Lana Wachowski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2011,'The Messenger: The Story of Joan of Arc',18,'Adventure','silurid','Luc Besson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2012,'The Muse',24,'Comedy','bardiche','Albert Brooks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2013,'The Ninth Gate',11,'Mystery','logicists','Roman Polanski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2014,'The Omega Code',32,'Action','parroter','Robert Marcarelli');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2015,'The Out-of-Towners',88,'Comedy','hell-rake','Sam Weisman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2016,'The Rage: Carrie 2',45,'Horror','triphylite','Katt Shea');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2017,'The Sixth Sense',30,'Drama','distancy','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2018,'The Story of Us',3,'Comedy','spinnies','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2019,'The Straight Story',2,'Biography','resmethrin','David Lynch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2020,'The Talented Mr. Ripley',5,'Crime','angledozer','Anthony Minghella');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2021,'The Thirteenth Floor',81,'Mystery','ethoxylate','Josef Rusnak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2022,'The Thomas Crown Affair',44,'Crime','ursidae','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2023,'The Virgin Suicides',14,'Drama','whippowill','Sofia Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2024,'The Woman Chaser',81,'Comedy','silurid','Robinson Devor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2025,'The Wood',37,'Comedy','bardiche','Rick Famuyiwa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2026,'The World Is Not Enough',77,'Action','logicists','Michael Apted');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2027,'Three Kings',84,'Action','parroter','David O. Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2028,'Three to Tango',92,'Comedy','hell-rake','Damon Santostefano');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2029,'Topsy-Turvy',85,'Biography','triphylite','Mike Leigh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2030,'Toy Story 2',11,'Adventure','distancy','John Lasseter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2031,'Tumbleweeds',88,'Comedy','spinnies','Gavin O''Connor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2032,'Twin Falls Idaho',89,'Drama','resmethrin','Michael Polish');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2033,'Universal Soldier: The Return',56,'Action','angledozer','Mic Rodgers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2034,'Varsity Blues',78,'Comedy','ethoxylate','Brian Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2035,'Wild Wild West',56,'Action','ursidae','Barry Sonnenfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2036,'Wing Commander',67,'Action','whippowill','Chris Roberts');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2037,'102 Dalmatians',95,'Adventure','silurid','Kevin Lima');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2038,'28 Days',47,'Comedy','bardiche','Betty Thomas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2039,'3 Strikes',4,'Comedy','logicists','DJ Pooh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2040,'Aberdeen',81,'Drama','parroter','Hans Petter Moland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2041,'All the Pretty Horses',93,'Drama','hell-rake','Billy Bob Thornton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2042,'Almost Famous',81,'Adventure','triphylite','Cameron Crowe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2043,'American Psycho',14,'Crime','distancy','Mary Harron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2044,'Amores Perros',93,'Drama','spinnies','Alejandro G. I̱��rritu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2045,'An Everlasting Piece',95,'Comedy','resmethrin','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2046,'Anatomy',43,'Horror','angledozer','Stefan Ruzowitzky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2047,'Autumn in New York',82,'Drama','ethoxylate','Joan Chen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2048,'Bamboozled',1,'Comedy','ursidae','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2049,'Battlefield Earth',37,'Action','whippowill','Roger Christian');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2050,'Bedazzled',52,'Comedy','silurid','Harold Ramis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2051,'Best in Show',92,'Comedy','bardiche','Christopher Guest');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2052,'Big Momma''s House',43,'Action','logicists','Raja Gosnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2053,'Billy Elliot',12,'Drama','parroter','Stephen Daldry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2054,'Bless the Child',14,'Crime','hell-rake','Chuck Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2055,'Boiler Room',41,'Crime','triphylite','Ben Younger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2056,'Book of Shadows: Blair Witch 2',90,'Adventure','distancy','Joe Berlinger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2057,'Boys and Girls',56,'Comedy','spinnies','Robert Iscove');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2058,'Bring It On',37,'Comedy','resmethrin','Peyton Reed');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2059,'Brother',41,'Crime','angledozer','Takeshi Kitano');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2060,'Cast Away',63,'Adventure','ethoxylate','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2061,'Cecil B. DeMented',32,'Comedy','ursidae','John Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2062,'Center Stage',7,'Drama','whippowill','Nicholas Hytner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2063,'Charlie''s Angels',46,'Action','silurid','McG');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2064,'Chicken Run',29,'Adventure','bardiche','Peter Lord');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2065,'Chocolat',34,'Drama','logicists','Lasse Hallstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2066,'Chuck & Buck',39,'Comedy','parroter','Miguel Arteta');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2067,'Coyote Ugly',65,'Comedy','hell-rake','David McNally');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2068,'Crouching Tiger, Hidden Dragon',28,'Action','triphylite','Ang Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2069,'Dancer in the Dark',82,'Crime','distancy','Lars von Trier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2070,'Digimon: The Movie',39,'Action','spinnies','Mamoru Hosoda');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2071,'Dinosaur',29,'Adventure','resmethrin','Eric Leighton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2072,'Down to You',51,'Comedy','angledozer','Kris Isacsson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2073,'Dracula 2000',74,'Action','ethoxylate','Patrick Lussier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2074,'Drowning Mona',32,'Comedy','ursidae','Nick Gomez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2075,'Dude, Where''s My Car?',23,'Comedy','whippowill','Danny Leiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2076,'Duets',97,'Comedy','silurid','Bruce Paltrow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2077,'Erin Brockovich',6,'Biography','bardiche','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2078,'Final Destination',98,'Horror','logicists','James Wong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2079,'Finding Forrester',64,'Drama','parroter','Gus Van Sant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2080,'Fiza',43,'Drama','hell-rake','Khalid Mohamed');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2081,'Frequency',56,'Crime','triphylite','Gregory Hoblit');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2082,'George Washington',37,'Drama','distancy','David Gordon Green');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2083,'Get Carter',54,'Action','spinnies','Stephen Kay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2084,'Gladiator',60,'Action','resmethrin','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2085,'Gone in Sixty Seconds',70,'Action','angledozer','Dominic Sena');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2086,'Gossip',86,'Drama','ethoxylate','Davis Guggenheim');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2087,'Groove',49,'Drama','ursidae','Greg Harrison');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2088,'Gun Shy',74,'Comedy','whippowill','Eric Blakeney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2089,'Hanging Up',19,'Comedy','silurid','Diane Keaton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2090,'Here on Earth',64,'Drama','bardiche','Mark Piznarski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2091,'High Fidelity',82,'Comedy','logicists','Stephen Frears');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2092,'Highlander: Endgame',4,'Action','parroter','Douglas Aarniokoski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2093,'Hollow Man',33,'Action','hell-rake','Paul Verhoeven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2094,'How the Grinch Stole Christmas',12,'Comedy','triphylite','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2095,'I Dreamed of Africa',77,'Adventure','distancy','Hugh Hudson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2096,'Isn''t She Great',26,'Biography','spinnies','Andrew Bergman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2097,'Keeping the Faith',12,'Comedy','resmethrin','Edward Norton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2098,'Little Nicky',56,'Comedy','angledozer','Steven Brill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2099,'Loser',74,'Comedy','ethoxylate','Amy Heckerling');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2100,'Lost Souls',12,'Drama','ursidae','Janusz Kaminski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2101,'Love & Basketball',62,'Drama','whippowill','Gina Prince-Bythewood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2102,'Lucky Numbers',21,'Comedy','silurid','Nora Ephron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2103,'Luminarias',92,'Comedy','bardiche','Jos̩ Luis Valenzuela');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2104,'Me, Myself & Irene',51,'Comedy','logicists','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2105,'Meet the Parents',11,'Comedy','parroter','Jay Roach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2106,'Memento',23,'Mystery','hell-rake','Christopher Nolan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2107,'Men of Honor',61,'Biography','triphylite','George Tillman Jr.');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2108,'Mercy Streets',12,'Action','distancy','Jon Gunn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2109,'Miss Congeniality',69,'Action','spinnies','Donald Petrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2110,'Mission to Mars',98,'Adventure','resmethrin','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2111,'Mission: Impossible II',18,'Action','angledozer','John Woo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2112,'My Dog Skip',24,'Drama','ethoxylate','Jay Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2113,'Next Friday',11,'Comedy','ursidae','Steve Carr');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2114,'Nine Queens',32,'Crime','whippowill','Fabi��n Bielinsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2115,'Nurse Betty',88,'Comedy','silurid','Neil LaBute');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2116,'Nutty Professor II: The Klumps',45,'Comedy','bardiche','Peter Segal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2117,'O Brother, Where Art Thou?',30,'Adventure','logicists','Joel Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2118,'Pay It Forward',3,'Drama','parroter','Mimi Leder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2119,'Pitch Black',2,'Horror','hell-rake','David Twohy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2120,'Pollock',5,'Biography','triphylite','Ed Harris');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2121,'Proof of Life',81,'Action','distancy','Taylor Hackford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2122,'Psycho Beach Party',44,'Comedy','spinnies','Robert Lee King');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2123,'Quills',14,'Biography','resmethrin','Philip Kaufman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2124,'Ready to Rumble',81,'Comedy','angledozer','Brian Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2125,'Red Planet',37,'Action','ethoxylate','Antony Hoffman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2126,'Reindeer Games',77,'Action','ursidae','John Frankenheimer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2127,'Remember the Titans',84,'Biography','whippowill','Boaz Yakin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2128,'Requiem for a Dream',92,'Drama','silurid','Darren Aronofsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2129,'Return to Me',85,'Comedy','bardiche','Bonnie Hunt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2130,'Road Trip',11,'Comedy','logicists','Todd Phillips');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2131,'Romeo Must Die',88,'Action','parroter','Andrzej Bartkowiak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2132,'Rugrats in Paris: The Movie',89,'Adventure','hell-rake','Stig Bergqvist');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2133,'Scream 3',56,'Horror','triphylite','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2134,'Screwed',78,'Comedy','distancy','Scott Alexander');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2135,'Shadow of the Vampire',56,'Drama','spinnies','E. Elias Merhige');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2136,'Shaft',67,'Action','resmethrin','John Singleton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2137,'Shanghai Noon',95,'Action','angledozer','Tom Dey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2138,'Small Time Crooks',47,'Comedy','ethoxylate','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2139,'Snatch',4,'Comedy','ursidae','Guy Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2140,'Snow Day',81,'Adventure','whippowill','Chris Koch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2141,'Songcatcher',93,'Drama','silurid','Maggie Greenwald');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2142,'Space Cowboys',81,'Action','bardiche','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2143,'Supernova',14,'Horror','logicists','Walter Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2144,'Tadpole',93,'Comedy','parroter','Gary Winick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2145,'The 6th Day',95,'Action','hell-rake','Roger Spottiswoode');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2146,'The Adventures of Rocky & Bullwinkle',43,'Adventure','triphylite','Des McAnuff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2147,'The Art of War',82,'Action','distancy','Christian Duguay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2148,'The Beach',1,'Adventure','spinnies','Danny Boyle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2149,'The Broken Hearts Club: A Romantic Comedy',37,'Comedy','resmethrin','Greg Berlanti');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2150,'The Cell',52,'Horror','angledozer','Tarsem Singh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2151,'The Circle',92,'Drama','ethoxylate','Jafar Panahi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2152,'The Claim',43,'Drama','ursidae','Michael Winterbottom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2153,'The Contender',12,'Drama','whippowill','Rod Lurie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2154,'The Crew',14,'Comedy','silurid','Michael Dinner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2155,'The Emperor''s New Groove',41,'Adventure','bardiche','Mark Dindal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2156,'The Family Man',90,'Comedy','logicists','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2157,'The Flintstones in Viva Rock Vegas',56,'Comedy','parroter','Brian Levant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2158,'The House of Mirth',37,'Drama','hell-rake','Terence Davies');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2159,'The In Crowd',41,'Drama','triphylite','Mary Lambert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2160,'The Kid',63,'Comedy','distancy','Jon Turteltaub');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2161,'The Ladies Man',32,'Comedy','spinnies','Reginald Hudlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2162,'The Legend of Bagger Vance',7,'Drama','resmethrin','Robert Redford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2163,'The Little Vampire',46,'Adventure','angledozer','Uli Edel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2164,'The Next Best Thing',29,'Comedy','ethoxylate','John Schlesinger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2165,'The Original Kings of Comedy',34,'Comedy','ursidae','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2166,'The Patriot',39,'Action','whippowill','Roland Emmerich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2167,'The Perfect Storm',65,'Action','silurid','Wolfgang Petersen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2168,'The Replacements',28,'Comedy','bardiche','Howard Deutch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2169,'The Road to El Dorado',82,'Adventure','logicists','Bibo Bergeron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2170,'The Skulls',39,'Action','parroter','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2171,'The Specials',29,'Action','hell-rake','Craig Mazin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2172,'The Tigger Movie',51,'Animation','triphylite','Jun Falkenstein');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2173,'The Watcher',74,'Crime','distancy','Joe Charbanic');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2174,'The Way of the Gun',32,'Action','spinnies','Christopher McQuarrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2175,'The Whole Nine Yards',23,'Comedy','resmethrin','Jonathan Lynn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2176,'The Widow of Saint-Pierre',97,'Drama','angledozer','Patrice Leconte');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2177,'The Yards',6,'Crime','ethoxylate','James Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2178,'Thirteen Days',98,'Drama','ursidae','Roger Donaldson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2179,'Thomas and the Magic Railroad',64,'Adventure','whippowill','Britt Allcroft');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2180,'Titan A.E.',43,'Action','silurid','Don Bluth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2181,'Traffic',56,'Crime','bardiche','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2182,'U-571',37,'Action','logicists','Jonathan Mostow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2183,'Unbreakable',54,'Drama','parroter','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2184,'Urban Legends: Final Cut',60,'Horror','hell-rake','John Ottman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2185,'Urbania',70,'Drama','triphylite','Jon Shear');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2186,'Vertical Limit',86,'Action','distancy','Martin Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2187,'What Lies Beneath',49,'Drama','spinnies','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2188,'What Planet Are You From?',74,'Comedy','resmethrin','Mike Nichols');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2189,'What Women Want',19,'Comedy','angledozer','Nancy Meyers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2190,'Whatever It Takes',64,'Comedy','ethoxylate','David Raynr');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2191,'Where the Heart Is',82,'Comedy','ursidae','Matt Williams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2192,'Whipped',4,'Comedy','whippowill','Peter M. Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2193,'Woman on Top',33,'Comedy','silurid','Fina Torres');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2194,'Wonder Boys',12,'Comedy','bardiche','Curtis Hanson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2195,'X-Men',77,'Action','logicists','Bryan Singer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2196,'You Can Count on Me',26,'Drama','parroter','Kenneth Lonergan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2197,'15 Minutes',12,'Action','hell-rake','John Herzfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2198,'3000 Miles to Graceland',56,'Action','triphylite','Demian Lichtenstein');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2199,'A Beautiful Mind',74,'Biography','distancy','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2200,'A Knight''s Tale',12,'Action','spinnies','Brian Helgeland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2201,'A.I. Artificial Intelligence',62,'Adventure','resmethrin','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2202,'Ali',21,'Biography','angledozer','Michael Mann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2203,'Alias Betty',92,'Comedy','ethoxylate','Claude Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2204,'All the Queen''s Men',51,'Action','ursidae','Stefan Ruzowitzky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2205,'Along Came a Spider',11,'Crime','whippowill','Lee Tamahori');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2206,'Am̩lie',23,'Comedy','silurid','Jean-Pierre Jeunet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2207,'American Desi',61,'Comedy','bardiche','Piyush Dinker Pandya');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2208,'American Outlaws',12,'Action','logicists','Les Mayfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2209,'American Pie 2',69,'Comedy','parroter','J.B. Rogers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2210,'America''s Sweethearts',98,'Comedy','hell-rake','Joe Roth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2211,'Angel Eyes',18,'Drama','triphylite','Luis Mandoki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2212,'Antitrust',24,'Action','distancy','Peter Howitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2213,'Atlantis: The Lost Empire',11,'Action','spinnies','Gary Trousdale');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2214,'Ayurveda: Art of Being',32,'Documentary','resmethrin','Pan Nalin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2215,'Baby Boy',88,'Crime','angledozer','John Singleton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2216,'Bandits',45,'Comedy','ethoxylate','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2217,'Behind Enemy Lines',30,'Action','ursidae','John Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2218,'Birthday Girl',3,'Comedy','whippowill','Jez Butterworth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2219,'Black Hawk Down',2,'Drama','silurid','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2220,'Black Knight',5,'Adventure','bardiche','Gil Junger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2221,'Blow',81,'Biography','logicists','Ted Demme');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2222,'Bridget Jones''s Diary',44,'Comedy','parroter','Sharon Maguire');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2223,'Brigham City',14,'Crime','hell-rake','Richard Dutcher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2224,'Bubble Boy',81,'Adventure','triphylite','Blair Hayes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2225,'Buffalo Soldiers',37,'Comedy','distancy','Gregor Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2226,'Captain Corelli''s Mandolin',77,'Drama','spinnies','John Madden');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2227,'Cats & Dogs',84,'Action','resmethrin','Lawrence Guterman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2228,'Corky Romano',92,'Comedy','angledozer','Rob Pritts');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2229,'Crazy/Beautiful',85,'Drama','ethoxylate','John Stockwell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2230,'Crocodile Dundee in Los Angeles',11,'Adventure','ursidae','Simon Wincer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2231,'Domestic Disturbance',88,'Crime','whippowill','Harold Becker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2232,'Donnie Darko',89,'Drama','silurid','Richard Kelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2233,'Don''t Say a Word',56,'Crime','bardiche','Gary Fleder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2234,'Double Take',78,'Action','logicists','George Gallo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2235,'Down and Out with the Dolls',56,'Comedy','parroter','Kurt Voss');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2236,'Down to Earth',67,'Comedy','hell-rake','Chris Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2237,'Dr. Dolittle 2',95,'Comedy','triphylite','Steve Carr');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2238,'Driven',47,'Action','distancy','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2239,'Elling',4,'Comedy','spinnies','Petter N�?ss');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2240,'Enemy at the Gates',81,'Drama','resmethrin','Jean-Jacques Annaud');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2241,'Exit Wounds',93,'Action','angledozer','Andrzej Bartkowiak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2242,'Final Fantasy: The Spirits Within',81,'Action','ethoxylate','Hironobu Sakaguchi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2243,'Formula 51',14,'Action','ursidae','Ronny Yu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2244,'Frailty',93,'Crime','whippowill','Bill Paxton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2245,'Freddy Got Fingered',95,'Comedy','silurid','Tom Green');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2246,'From Hell',43,'Horror','bardiche','Albert Hughes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2247,'Get Over It',82,'Comedy','logicists','Tommy O''Haver');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2248,'Ghost World',1,'Comedy','parroter','Terry Zwigoff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2249,'Ghosts of Mars',37,'Action','hell-rake','John Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2250,'Glitter',52,'Drama','triphylite','Vondie Curtis-Hall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2251,'Gosford Park',92,'Drama','distancy','Robert Altman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2252,'Hardball',43,'Drama','spinnies','Brian Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2253,'Harry Potter and the Sorcerer''s Stone',12,'Adventure','resmethrin','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2254,'Harvard Man',14,'Comedy','angledozer','James Toback');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2255,'Head Over Heels',41,'Comedy','ethoxylate','Mark Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2256,'Heartbreakers',90,'Comedy','ursidae','David Mirkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2257,'Hearts in Atlantis',56,'Drama','whippowill','Scott Hicks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2258,'Hedwig and the Angry Inch',37,'Comedy','silurid','John Cameron Mitchell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2259,'High Heels and Low Lifes',41,'Action','bardiche','Mel Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2260,'How High',63,'Comedy','logicists','Jesse Dylan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2261,'I Am Sam',32,'Drama','parroter','Jessie Nelson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2262,'Impostor',7,'Drama','hell-rake','Gary Fleder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2263,'In the Bedroom',46,'Crime','triphylite','Todd Field');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2264,'Iris',29,'Biography','distancy','Richard Eyre');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2265,'Jason X',34,'Action','spinnies','James Isaac');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2266,'Jay and Silent Bob Strike Back',39,'Comedy','resmethrin','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2267,'Jeepers Creepers',65,'Horror','angledozer','Victor Salva');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2268,'Jimmy Neutron: Boy Genius',28,'Action','ethoxylate','John A. Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2269,'Joe Dirt',82,'Adventure','ursidae','Dennie Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2270,'Joe Somebody',39,'Comedy','whippowill','John Pasquin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2271,'Josie and the Pussycats',29,'Comedy','silurid','Harry Elfont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2272,'Joy Ride',51,'Mystery','bardiche','John Dahl');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2273,'Jurassic Park III',74,'Action','logicists','Joe Johnston');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2274,'Just Visiting',32,'Comedy','parroter','Jean-Marie Poir̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2275,'Kate & Leopold',23,'Comedy','hell-rake','James Mangold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2276,'Kiss of the Dragon',97,'Action','triphylite','Chris Nahon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2277,'Kissing Jessica Stein',6,'Comedy','distancy','Charles Herman-Wurmfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2278,'K-PAX',98,'Drama','spinnies','Iain Softley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2279,'L.I.E.',64,'Crime','resmethrin','Michael Cuesta');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2280,'Lara Croft: Tomb Raider',43,'Action','angledozer','Simon West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2281,'Last Orders',56,'Drama','ethoxylate','Fred Schepisi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2282,'Legally Blonde',37,'Comedy','ursidae','Robert Luketic');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2283,'Life as a House',54,'Drama','whippowill','Irwin Winkler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2284,'Lovely & Amazing',60,'Comedy','silurid','Nicole Holofcener');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2285,'Lucky Break',70,'Comedy','bardiche','Peter Cattaneo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2286,'Made',86,'Comedy','logicists','Jon Favreau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2287,'Max Keeble''s Big Move',49,'Comedy','parroter','Tim Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2288,'Mean Machine',74,'Comedy','hell-rake','Barry Skolnick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2289,'Megiddo: The Omega Code 2',19,'Action','triphylite','Brian Trenchard-Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2290,'Monkeybone',64,'Animation','distancy','Henry Selick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2291,'Monsoon Wedding',82,'Comedy','spinnies','Mira Nair');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2292,'Monster''s Ball',4,'Drama','resmethrin','Marc Forster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2293,'Monsters, Inc.',33,'Adventure','angledozer','Pete Docter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2294,'Moulin Rouge!',12,'Drama','ethoxylate','Baz Luhrmann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2295,'Mulholland Drive',77,'Drama','ursidae','David Lynch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2296,'Never Again',26,'Comedy','whippowill','Eric Schaeffer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2297,'Not Another Teen Movie',12,'Comedy','silurid','Joel Gallen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2298,'Novocaine',56,'Comedy','bardiche','David Atkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2299,'Nowhere in Africa',74,'Biography','logicists','Caroline Link');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2300,'O',12,'Drama','parroter','Tim Blake Nelson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2301,'Ocean''s Eleven',62,'Crime','hell-rake','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2302,'On the Line',21,'Comedy','triphylite','Eric Bross');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2303,'Original Sin',92,'Drama','distancy','Michael Cristofer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2304,'Osmosis Jones',51,'Action','spinnies','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2305,'Out Cold',11,'Comedy','resmethrin','Brendan Malloy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2306,'Pearl Harbor',23,'Action','angledozer','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2307,'Planet of the Apes',61,'Action','ethoxylate','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2308,'Pootie Tang',12,'Action','ursidae','Louis C.K.');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2309,'Rat Race',69,'Adventure','whippowill','Jerry Zucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2310,'Recess: School''s Out',NULL,'Animation','silurid','Chuck Sheetz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2311,'Riding in Cars with Boys',98,'Biography','bardiche','Penny Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2312,'Rock Star',18,'Drama','logicists','Stephen Herek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2313,'Rush Hour 2',24,'Action','parroter','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2314,'Save the Last Dance',11,'Drama','hell-rake','Thomas Carter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2315,'Saving Silverman',32,'Comedy','triphylite','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2316,'Say It Isn''t So',88,'Comedy','distancy','J.B. Rogers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2317,'Scary Movie 2',45,'Comedy','spinnies','Keenen Ivory Wayans');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2318,'See Spot Run',30,'Action','resmethrin','John Whitesell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2319,'Serendipity',3,'Comedy','angledozer','Peter Chelsom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2320,'Session 9',2,'Horror','ethoxylate','Brad Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2321,'Shallow Hal',5,'Comedy','ursidae','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2322,'Shaolin Soccer',81,'Action','whippowill','Stephen Chow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2323,'Shrek',44,'Adventure','silurid','Andrew Adamson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2324,'Someone Like You...',14,'Comedy','bardiche','Tony Goldwyn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2325,'Soul Survivors',81,'Drama','logicists','Stephen Carpenter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2326,'Spirited Away',37,'Adventure','parroter','Hayao Miyazaki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2327,'Spy Game',77,'Action','hell-rake','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2328,'Spy Kids',84,'Action','triphylite','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2329,'Summer Catch',92,'Comedy','distancy','Michael Tollin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2330,'Super Troopers',85,'Comedy','spinnies','Jay Chandrasekhar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2331,'Sweet November',11,'Drama','resmethrin','Pat O''Connor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2332,'Swordfish',88,'Action','angledozer','Dominic Sena');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2333,'Texas Rangers',89,'Action','ethoxylate','Steve Miner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2334,'The Animal',56,'Comedy','ursidae','Luke Greenfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2335,'The Believer',78,'Drama','whippowill','Henry Bean');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2336,'The Brothers',56,'Comedy','silurid','Gary Hardwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2337,'The Curse of the Jade Scorpion',67,'Comedy','bardiche','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2338,'The Fast and the Furious',95,'Action','logicists','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2339,'The Forsaken',47,'Horror','parroter','J.S. Cardone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2340,'The Glass House',4,'Crime','hell-rake','Daniel Sackheim');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2341,'The Jimmy Show',81,'Comedy','triphylite','Frank Whaley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2342,'The Last Castle',93,'Action','distancy','Rod Lurie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2343,'The Legend of Suriyothai',81,'Action','spinnies','Chatrichalerm Yukol');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2344,'The Lord of the Rings: The Fellowship of the Ring',14,'Action','resmethrin','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2345,'The Lost Skeleton of Cadavra',93,'Comedy','angledozer','Larry Blamire');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2346,'The Majestic',95,'Drama','ethoxylate','Frank Darabont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2347,'The Mexican',43,'Adventure','ursidae','Gore Verbinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2348,'The Mummy Returns',82,'Action','whippowill','Stephen Sommers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2349,'The Musketeer',1,'Action','silurid','Peter Hyams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2350,'The One',37,'Action','bardiche','James Wong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2351,'The Other Side of Heaven',52,'Adventure','logicists','Mitch Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2352,'The Others',92,'Fantasy','parroter','Alejandro Amen��bar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2353,'The Pledge',43,'Crime','hell-rake','Sean Penn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2354,'The Princess Diaries',12,'Comedy','triphylite','Garry Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2355,'The Royal Tenenbaums',14,'Comedy','distancy','Wes Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2356,'The Score',41,'Crime','spinnies','Frank Oz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2357,'The Shipping News',90,'Drama','resmethrin','Lasse Hallstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2358,'The Tailor of Panama',56,'Drama','angledozer','John Boorman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2359,'The Wash',37,'Comedy','ethoxylate','DJ Pooh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2360,'The Wedding Planner',41,'Comedy','ursidae','Adam Shankman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2361,'Thir13en Ghosts',63,'Horror','whippowill','Steve Beck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2362,'Thirteen Conversations About One Thing',32,'Drama','silurid','Jill Sprecher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2363,'Tomcats',7,'Comedy','bardiche','Gregory Poirier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2364,'Town & Country',46,'Comedy','logicists','Peter Chelsom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2365,'Training Day',29,'Crime','parroter','Antoine Fuqua');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2366,'Two Can Play That Game',34,'Comedy','hell-rake','Mark Brown');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2367,'Valentine',39,'Horror','triphylite','Jamie Blanks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2368,'Vanilla Sky',65,'Fantasy','distancy','Cameron Crowe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2369,'Wasabi',28,'Action','spinnies','G̩rard Krawczyk');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2370,'What''s the Worst That Could Happen?',82,'Comedy','resmethrin','Sam Weisman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2371,'Winged Migration',39,'Documentary','angledozer','Jacques Perrin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2372,'Y Tu Mam�� Tambi̩n',29,'Adventure','ethoxylate','Alfonso Cuar�?n');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2373,'Zoolander',51,'Comedy','ursidae','Ben Stiller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2374,'25th Hour',74,'Drama','whippowill','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2375,'28 Days Later...',32,'Drama','silurid','Danny Boyle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2376,'40 Days and 40 Nights',23,'Comedy','bardiche','Michael Lehmann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2377,'8 Mile',97,'Drama','logicists','Curtis Hanson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2378,'8 Women',6,'Comedy','parroter','Fran̤ois Ozon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2379,'A Walk to Remember',98,'Drama','hell-rake','Adam Shankman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2380,'Abandon',64,'Drama','triphylite','Stephen Gaghan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2381,'About a Boy',43,'Comedy','distancy','Chris Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2382,'About Schmidt',56,'Comedy','spinnies','Alexander Payne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2383,'Adaptation.',37,'Comedy','resmethrin','Spike Jonze');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2384,'All About the Benjamins',54,'Action','angledozer','Kevin Bray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2385,'All or Nothing',60,'Drama','ethoxylate','Mike Leigh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2386,'Amen.',70,'Biography','ursidae','Costa-Gavras');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2387,'Analyze That',86,'Comedy','whippowill','Harold Ramis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2388,'Antwone Fisher',49,'Biography','silurid','Denzel Washington');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2389,'Austin Powers in Goldmember',74,'Action','bardiche','Jay Roach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2390,'Auto Focus',19,'Biography','logicists','Paul Schrader');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2391,'Bad Company',64,'Action','parroter','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2392,'Ballistic: Ecks vs. Sever',82,'Action','hell-rake','Wych Kaosayananda');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2393,'Barbershop',4,'Comedy','triphylite','Tim Story');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2394,'Bend It Like Beckham',33,'Comedy','distancy','Gurinder Chadha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2395,'Better Luck Tomorrow',12,'Crime','spinnies','Justin Lin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2396,'Big Fat Liar',77,'Adventure','resmethrin','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2397,'Big Trouble',26,'Comedy','angledozer','Barry Sonnenfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2398,'Blade II',12,'Action','ethoxylate','Guillermo del Toro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2399,'Blood Work',56,'Action','ursidae','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2400,'Bloody Sunday',74,'Drama','whippowill','Paul Greengrass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2401,'Blue Car',12,'Drama','silurid','Karen Moncrieff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2402,'Blue Crush',62,'Drama','bardiche','John Stockwell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2403,'Boat Trip',21,'Comedy','logicists','Mort Nathan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2404,'Bowling for Columbine',92,'Crime','parroter','Michael Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2405,'Brown Sugar',51,'Comedy','hell-rake','Rick Famuyiwa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2406,'Catch Me If You Can',11,'Biography','triphylite','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2407,'Changing Lanes',23,'Drama','distancy','Roger Michell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2408,'Chicago',61,'Comedy','spinnies','Rob Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2409,'City by the Sea',12,'Crime','resmethrin','Michael Caton-Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2410,'City of Ghosts',69,'Crime','angledozer','Matt Dillon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2411,'City of God',98,'Crime','ethoxylate','Fernando Meirelles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2412,'Civil Brand',18,'Crime','ursidae','Neema Barnette');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2413,'Clockstoppers',24,'Action','whippowill','Jonathan Frakes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2414,'Collateral Damage',11,'Action','silurid','Andrew Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2415,'Crossroads',32,'Comedy','bardiche','Tamra Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2416,'Dark Blue',88,'Crime','logicists','Ron Shelton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2417,'Darkness',45,'Horror','parroter','Jaume Balaguer�?');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2418,'Death to Smoochy',30,'Comedy','hell-rake','Danny DeVito');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2419,'Deuces Wild',3,'Action','triphylite','Scott Kalvert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2420,'Die Another Day',2,'Action','distancy','Lee Tamahori');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2421,'Dirty Pretty Things',5,'Crime','spinnies','Stephen Frears');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2422,'Divine Secrets of the Ya-Ya Sisterhood',81,'Drama','resmethrin','Callie Khouri');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2423,'Dracula: Pages from a Virgin''s Diary',44,'Comedy','angledozer','Guy Maddin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2424,'Dragonfly',14,'Drama','ethoxylate','Tom Shadyac');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2425,'Drumline',81,'Comedy','ursidae','Charles Stone III');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2426,'Eight Legged Freaks',37,'Action','whippowill','Ellory Elkayem');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2427,'El crimen del padre Amaro',77,'Drama','silurid','Carlos Carrera');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2428,'Enough',84,'Crime','bardiche','Michael Apted');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2429,'Equilibrium',92,'Action','logicists','Kurt Wimmer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2430,'Extreme Ops',85,'Action','parroter','Christian Duguay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2431,'Far from Heaven',11,'Drama','hell-rake','Todd Haynes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2432,'Feardotcom',88,'Crime','triphylite','William Malone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2433,'Femme Fatale',89,'Crime','distancy','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2434,'Frida',56,'Biography','spinnies','Julie Taymor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2435,'Friday After Next',78,'Comedy','resmethrin','Marcus Raboy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2436,'Full Frontal',56,'Comedy','angledozer','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2437,'Gangs of New York',67,'Crime','ethoxylate','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2438,'Gerry',95,'Adventure','ursidae','Gus Van Sant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2439,'Ghost Ship',47,'Horror','whippowill','Steve Beck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2440,'Half Past Dead',4,'Action','silurid','Don Michael Paul');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2441,'Halloween: Resurrection',81,'Comedy','bardiche','Rick Rosenthal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2442,'Harry Potter and the Chamber of Secrets',93,'Adventure','logicists','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2443,'Hart''s War',81,'Drama','parroter','Gregory Hoblit');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2444,'Hero',14,'Action','hell-rake','Yimou Zhang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2445,'Hey Arnold! The Movie',93,'Adventure','triphylite','Tuck Tucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2446,'High Crimes',95,'Crime','distancy','Carl Franklin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2447,'Hollywood Ending',43,'Comedy','spinnies','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2448,'I Spy',82,'Action','resmethrin','Betty Thomas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2449,'Ice Age',1,'Adventure','angledozer','Chris Wedge');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2450,'Igby Goes Down',37,'Comedy','ethoxylate','Burr Steers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2451,'Insomnia',52,'Drama','ursidae','Christopher Nolan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2452,'Interview with the Assassin',92,'Drama','whippowill','Neil Burger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2453,'Jackass: The Movie',43,'Comedy','silurid','Jeff Tremaine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2454,'John Q',12,'Crime','bardiche','Nick Cassavetes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2455,'Jonah: A VeggieTales Movie',14,'Adventure','logicists','Mike Nawrocki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2456,'Juwanna Mann',41,'Comedy','parroter','Jesse Vaughan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2457,'K-19: The Widowmaker',90,'Drama','hell-rake','Kathryn Bigelow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2458,'Kung Pow: Enter the Fist',56,'Action','triphylite','Steve Oedekerk');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2459,'L''auberge espagnole',37,'Comedy','distancy','C̩dric Klapisch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2460,'Life or Something Like It',41,'Comedy','spinnies','Stephen Herek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2461,'Like Mike',63,'Comedy','resmethrin','John Schultz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2462,'Lilo & Stitch',32,'Adventure','angledozer','Dean DeBlois');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2463,'Maid in Manhattan',7,'Comedy','ethoxylate','Wayne Wang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2464,'Martin Lawrence Live: Runteldat',46,'Biography','ursidae','David Raynr');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2465,'May',29,'Drama','whippowill','Lucky McKee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2466,'Men in Black II',34,'Action','silurid','Barry Sonnenfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2467,'Men with Brooms',39,'Comedy','bardiche','Paul Gross');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2468,'Minority Report',65,'Action','logicists','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2469,'Mondays in the Sun',28,'Comedy','parroter','Fernando Le�?n de Aranoa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2470,'Moonlight Mile',82,'Drama','hell-rake','Brad Silberling');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2471,'Mr. Deeds',39,'Comedy','triphylite','Steven Brill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2472,'Murder by Numbers',29,'Crime','distancy','Barbet Schroeder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2473,'My Big Fat Greek Wedding',51,'Comedy','spinnies','Joel Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2474,'Narc',74,'Crime','resmethrin','Joe Carnahan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2475,'Nicholas Nickleby',32,'Drama','angledozer','Douglas McGrath');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2476,'One Hour Photo',23,'Drama','ethoxylate','Mark Romanek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2477,'Panic Room',97,'Crime','ursidae','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2478,'People I Know',6,'Crime','whippowill','Daniel Algrant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2479,'Phone Booth',98,'Crime','silurid','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2480,'Poolhall Junkies',64,'Drama','bardiche','Mars Callahan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2481,'Punch-Drunk Love',43,'Comedy','logicists','Paul Thomas Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2482,'Queen of the Damned',56,'Drama','parroter','Michael Rymer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2483,'Rabbit-Proof Fence',37,'Adventure','hell-rake','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2484,'Raising Victor Vargas',54,'Drama','triphylite','Peter Sollett');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2485,'Real Women Have Curves',60,'Comedy','distancy','Patricia Cardoso');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2486,'Red Dragon',70,'Crime','spinnies','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2487,'Reign of Fire',86,'Action','resmethrin','Rob Bowman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2488,'Resident Evil',49,'Action','angledozer','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2489,'Return to Never Land',74,'Adventure','ethoxylate','Robin Budd');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2490,'Road to Perdition',19,'Crime','ursidae','Sam Mendes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2491,'Rollerball',64,'Action','whippowill','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2492,'Scooby-Doo',82,'Adventure','silurid','Raja Gosnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2493,'Secretary',4,'Comedy','bardiche','Steven Shainberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2494,'Serving Sara',33,'Comedy','logicists','Reginald Hudlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2495,'Signs',12,'Drama','parroter','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2496,'Slackers',77,'Comedy','hell-rake','Dewey Nicks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2497,'Snow Dogs',26,'Adventure','triphylite','Brian Levant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2498,'Sorority Boys',12,'Comedy','distancy','Wallace Wolodarsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2499,'Spider',56,'Drama','spinnies','David Cronenberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2500,'Spider-Man',74,'Action','resmethrin','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2501,'Spirit: Stallion of the Cimarron',12,'Adventure','angledozer','Kelly Asbury');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2502,'Spun',62,'Comedy','ethoxylate','Jonas ��kerlund');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2503,'Spy Kids 2: Island of Lost Dreams',21,'Action','ursidae','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2504,'Star Trek: Nemesis',92,'Action','whippowill','Stuart Baird');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2505,'Star Wars: Episode II - Attack of the Clones',51,'Action','silurid','George Lucas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2506,'Stealing Harvard',11,'Comedy','bardiche','Bruce McCulloch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2507,'Stolen Summer',23,'Drama','logicists','Pete Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2508,'Stuart Little 2',61,'Adventure','parroter','Rob Minkoff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2509,'Sunshine State',12,'Drama','hell-rake','John Sayles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2510,'Sweet Home Alabama',69,'Comedy','triphylite','Andy Tennant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2511,'Swept Away',98,'Comedy','distancy','Guy Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2512,'Swimfan',18,'Drama','spinnies','John Polson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2513,'The Adventures of Pluto Nash',24,'Action','resmethrin','Ron Underwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2514,'The Banger Sisters',11,'Comedy','angledozer','Bob Dolman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2515,'The Bourne Identity',32,'Action','ethoxylate','Doug Liman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2516,'The Business of Fancydancing',88,'Drama','ursidae','Sherman Alexie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2517,'The Count of Monte Cristo',45,'Action','whippowill','Kevin Reynolds');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2518,'The Country Bears',30,'Comedy','silurid','Peter Hastings');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2519,'The Crocodile Hunter: Collision Course',3,'Action','bardiche','John Stainton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2520,'The Dangerous Lives of Altar Boys',2,'Comedy','logicists','Peter Care');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2521,'The Emperor''s Club',5,'Drama','parroter','Michael Hoffman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2522,'The Four Feathers',81,'Adventure','hell-rake','Shekhar Kapur');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2523,'The Good Girl',44,'Drama','triphylite','Miguel Arteta');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2524,'The Good Thief',14,'Action','distancy','Neil Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2525,'The Guru',81,'Comedy','spinnies','Daisy von Scherler Mayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2526,'The Heart of Me',37,'Drama','resmethrin','Thaddeus O''Sullivan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2527,'The Hours',77,'Drama','angledozer','Stephen Daldry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2528,'The Importance of Being Earnest',84,'Comedy','ethoxylate','Oliver Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2529,'The Lord of the Rings: The Two Towers',92,'Action','ursidae','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2530,'The Master of Disguise',85,'Comedy','whippowill','Perry Andelin Blake');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2531,'The Mothman Prophecies',11,'Drama','silurid','Mark Pellington');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2532,'The New Guy',88,'Comedy','bardiche','Ed Decter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2533,'The Pianist',89,'Biography','logicists','Roman Polanski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2534,'The Quiet American',56,'Drama','parroter','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2535,'The Rookie',78,'Drama','hell-rake','John Lee Hancock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2536,'The Rules of Attraction',56,'Comedy','triphylite','Roger Avary');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2537,'The Salton Sea',67,'Crime','distancy','D.J. Caruso');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2538,'The Santa Clause 2',95,'Comedy','spinnies','Michael Lembeck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2539,'The Scorpion King',47,'Action','resmethrin','Chuck Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2540,'The Singles Ward',4,'Comedy','angledozer','Kurt Hale');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2541,'The Slaughter Rule',81,'Drama','ethoxylate','Alex Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2542,'The Sum of All Fears',93,'Action','ursidae','Phil Alden Robinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2543,'The Sweetest Thing',81,'Comedy','whippowill','Roger Kumble');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2544,'The Time Machine',14,'Action','silurid','Simon Wells');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2545,'The Transporter',93,'Action','bardiche','Louis Leterrier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2546,'The Tuxedo',95,'Action','logicists','Kevin Donovan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2547,'The Wild Thornberrys Movie',43,'Adventure','parroter','Cathy Malkasian');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2548,'They',82,'Horror','hell-rake','Robert Harmon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2549,'Time Changer',1,'Drama','triphylite','Rich Christiano');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2550,'Treasure Planet',37,'Adventure','distancy','Ron Clements');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2551,'Tuck Everlasting',52,'Drama','spinnies','Jay Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2552,'Two Weeks Notice',92,'Comedy','resmethrin','Marc Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2553,'Undercover Brother',43,'Action','angledozer','Malcolm D. Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2554,'Undisputed',12,'Action','ethoxylate','Walter Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2555,'Unfaithful',14,'Drama','ursidae','Adrian Lyne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2556,'Van Wilder: Party Liaison',41,'Comedy','whippowill','Walt Becker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2557,'We Were Soldiers',90,'Action','silurid','Randall Wallace');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2558,'Welcome to Collinwood',56,'Comedy','bardiche','Anthony Russo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2559,'Whale Rider',37,'Drama','logicists','Niki Caro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2560,'White Oleander',41,'Drama','parroter','Peter Kosminsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2561,'Windtalkers',63,'Action','hell-rake','John Woo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2562,'xXx',32,'Action','triphylite','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2563,'2 Fast 2 Furious',7,'Action','distancy','John Singleton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2564,'21 Grams',46,'Drama','spinnies','Alejandro G. I̱��rritu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2565,'A Guy Thing',29,'Comedy','resmethrin','Chris Koch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2566,'A Man Apart',34,'Action','angledozer','F. Gary Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2567,'Agent Cody Banks',39,'Action','ethoxylate','Harald Zwart');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2568,'Alex & Emma',65,'Comedy','ursidae','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2569,'All the Real Girls',28,'Drama','whippowill','David Gordon Green');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2570,'American Wedding',82,'Comedy','silurid','Jesse Dylan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2571,'Anything Else',39,'Comedy','bardiche','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2572,'Bad Boys II',29,'Action','logicists','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2573,'Bad Santa',51,'Comedy','parroter','Terry Zwigoff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2574,'Basic',74,'Action','hell-rake','John McTiernan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2575,'Beyond Borders',32,'Adventure','triphylite','Martin Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2576,'Big Fish',23,'Adventure','distancy','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2577,'Bon voyage',97,'Comedy','spinnies','Jean-Paul Rappeneau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2578,'Bringing Down the House',6,'Comedy','resmethrin','Adam Shankman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2579,'Bruce Almighty',98,'Comedy','angledozer','Tom Shadyac');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2580,'Bulletproof Monk',64,'Action','ethoxylate','Paul Hunter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2581,'Charlie''s Angels: Full Throttle',43,'Action','ursidae','McG');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2582,'Cheaper by the Dozen',56,'Comedy','whippowill','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2583,'Code 46',37,'Drama','silurid','Michael Winterbottom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2584,'Cold Mountain',54,'Adventure','bardiche','Anthony Minghella');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2585,'Confidence',60,'Crime','logicists','James Foley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2586,'Cradle 2 the Grave',70,'Action','parroter','Andrzej Bartkowiak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2587,'Daddy Day Care',86,'Comedy','hell-rake','Steve Carr');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2588,'Darkness Falls',49,'Horror','triphylite','Jonathan Liebesman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2589,'Dickie Roberts: Former Child Star',74,'Comedy','distancy','Sam Weisman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2590,'Dreamcatcher',19,'Drama','spinnies','Lawrence Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2591,'Dumb and Dumberer: When Harry Met Lloyd',64,'Comedy','resmethrin','Troy Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2592,'Duplex',82,'Comedy','angledozer','Danny DeVito');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2593,'DysFunktional Family',4,'Comedy','ethoxylate','George Gallo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2594,'Elf',33,'Comedy','ursidae','Jon Favreau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2595,'Final Destination 2',12,'Horror','whippowill','David R. Ellis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2596,'Finding Nemo',77,'Adventure','silurid','Andrew Stanton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2597,'Freaky Friday',26,'Comedy','bardiche','Mark Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2598,'Freddy vs. Jason',12,'Action','logicists','Ronny Yu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2599,'From Justin to Kelly',56,'Comedy','parroter','Robert Iscove');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2600,'Gigli',74,'Comedy','hell-rake','Martin Brest');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2601,'Gods and Generals',12,'Drama','triphylite','Ron Maxwell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2602,'Good Boy!',62,'Comedy','distancy','John Hoffman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2603,'Good Bye Lenin!',21,'Drama','spinnies','Wolfgang Becker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2604,'Gory Gory Hallelujah',92,'Comedy','resmethrin','Sue Corcoran');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2605,'Gothika',51,'Horror','angledozer','Mathieu Kassovitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2606,'Head of State',11,'Comedy','ethoxylate','Chris Rock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2607,'High Tension',23,'Horror','ursidae','Alexandre Aja');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2608,'Holes',61,'Adventure','whippowill','Andrew Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2609,'Hollywood Homicide',12,'Action','silurid','Ron Shelton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2610,'Honey',69,'Drama','bardiche','Bille Woodruff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2611,'House of 1000 Corpses',98,'Horror','logicists','Rob Zombie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2612,'House of Sand and Fog',18,'Drama','parroter','Vadim Perelman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2613,'How to Deal',24,'Comedy','hell-rake','Clare Kilner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2614,'How to Lose a Guy in 10 Days',11,'Comedy','triphylite','Donald Petrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2615,'Hulk',32,'Action','distancy','Ang Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2616,'I Love Your Work',88,'Drama','spinnies','Adam Goldberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2617,'Identity',45,'Mystery','resmethrin','James Mangold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2618,'In the Cut',30,'Mystery','angledozer','Jane Campion');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2619,'Intolerable Cruelty',3,'Comedy','ethoxylate','Joel Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2620,'Jeepers Creepers II',2,'Horror','ursidae','Victor Salva');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2621,'Johnny English',5,'Action','whippowill','Peter Howitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2622,'Just Married',81,'Comedy','silurid','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2623,'Kangaroo Jack',44,'Action','bardiche','David McNally');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2624,'Kill Bill: Vol. 1',14,'Action','logicists','Quentin Tarantino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2625,'Lara Croft Tomb Raider: The Cradle of Life',81,'Action','parroter','Jan de Bont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2626,'Latter Days',37,'Comedy','hell-rake','C. Jay Cox');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2627,'Legally Blonde 2: Red, White & Blonde',77,'Comedy','triphylite','Charles Herman-Wurmfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2628,'Looney Tunes: Back in Action',84,'Adventure','distancy','Joe Dante');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2629,'Lost in Translation',92,'Drama','spinnies','Sofia Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2630,'Love Actually',85,'Comedy','resmethrin','Richard Curtis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2631,'Malibu''s Most Wanted',11,'Comedy','angledozer','John Whitesell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2632,'Mambo Italiano',88,'Comedy','ethoxylate','��mile Gaudreault');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2633,'Marci X',89,'Comedy','ursidae','Richard Benjamin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2634,'Master and Commander: The Far Side of the World',56,'Action','whippowill','Peter Weir');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2635,'Mona Lisa Smile',78,'Drama','silurid','Mike Newell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2636,'Monster',56,'Biography','bardiche','Patty Jenkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2637,'My Boss''s Daughter',67,'Comedy','logicists','David Zucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2638,'My Life Without Me',95,'Drama','parroter','Isabel Coixet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2639,'Mystic River',47,'Crime','hell-rake','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2640,'Northfork',4,'Drama','triphylite','Michael Polish');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2641,'Old School',81,'Comedy','distancy','Todd Phillips');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2642,'Oldboy',93,'Drama','spinnies','Chan-wook Park');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2643,'Once Upon a Time in Mexico',81,'Action','resmethrin','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2644,'Open Range',14,'Drama','angledozer','Kevin Costner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2645,'Open Water',93,'Adventure','ethoxylate','Chris Kentis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2646,'Osama',95,'Drama','ursidae','Siddiq Barmak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2647,'Out of Time',43,'Crime','whippowill','Carl Franklin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2648,'Owning Mahowny',82,'Crime','silurid','Richard Kwietniowski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2649,'Party Monster',1,'Biography','bardiche','Fenton Bailey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2650,'Paycheck',37,'Action','logicists','John Woo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2651,'Pieces of April',52,'Comedy','parroter','Peter Hedges');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2652,'Pirates of the Caribbean: The Curse of the Black Pearl',92,'Action','hell-rake','Gore Verbinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2653,'Radio',43,'Biography','triphylite','Michael Tollin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2654,'Remember Me, My Love',12,'Comedy','distancy','Gabriele Muccino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2655,'Rugrats Go Wild',14,'Adventure','spinnies','John Eng');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2656,'S.W.A.T.',41,'Action','resmethrin','Clark Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2657,'Saints and Soldiers',90,'Action','angledozer','Ryan Little');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2658,'Scary Movie 3',56,'Comedy','ethoxylate','David Zucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2659,'School of Rock',37,'Comedy','ursidae','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2660,'Seabiscuit',41,'Drama','whippowill','Gary Ross');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2661,'Secondhand Lions',63,'Comedy','silurid','Tim McCanlies');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2662,'Shade',32,'Crime','bardiche','Damian Nieman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2663,'Shanghai Knights',7,'Action','logicists','David Dobkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2664,'Shattered Glass',46,'Drama','parroter','Billy Ray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2665,'Sinbad: Legend of the Seven Seas',29,'Adventure','hell-rake','Patrick Gilmore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2666,'Something''s Gotta Give',34,'Comedy','triphylite','Nancy Meyers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2667,'Spy Kids 3-D: Game Over',39,'Action','distancy','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2668,'Stuck on You',65,'Comedy','spinnies','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2669,'Tarnation',28,'Biography','resmethrin','Jonathan Caouette');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2670,'Tears of the Sun',82,'Action','angledozer','Antoine Fuqua');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2671,'Terminator 3: Rise of the Machines',39,'Action','ethoxylate','Jonathan Mostow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2672,'The Barbarian Invasions',29,'Comedy','ursidae','Denys Arcand');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2673,'The Battle of Shaker Heights',51,'Comedy','whippowill','Efram Potelle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2674,'The Book of Mormon Movie, Volume 1: The Journey',74,'Adventure','silurid','Gary Rogers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2675,'The Brown Bunny',32,'Drama','bardiche','Vincent Gallo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2676,'The Cat in the Hat',23,'Adventure','logicists','Bo Welch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2677,'The Cooler',97,'Crime','parroter','Wayne Kramer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2678,'The Core',6,'Action','hell-rake','Jon Amiel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2679,'The Haunted Mansion',98,'Comedy','triphylite','Rob Minkoff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2680,'The Hebrew Hammer',64,'Comedy','distancy','Jonathan Kesselman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2681,'The Hunted',43,'Action','spinnies','William Friedkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2682,'The Italian Job',56,'Action','resmethrin','F. Gary Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2683,'The Jungle Book 2',37,'Adventure','angledozer','Steve Trenbirth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2684,'The Last Samurai',54,'Action','ethoxylate','Edward Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2685,'The League of Extraordinary Gentlemen',60,'Action','ursidae','Stephen Norrington');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2686,'The Life of David Gale',70,'Crime','whippowill','Alan Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2687,'The Lizzie McGuire Movie',86,'Adventure','silurid','Jim Fall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2688,'The Lord of the Rings: The Return of the King',49,'Action','bardiche','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2689,'The Matrix Reloaded',74,'Action','logicists','Lana Wachowski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2690,'The Matrix Revolutions',19,'Action','parroter','Lana Wachowski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2691,'The Medallion',64,'Action','hell-rake','Gordon Chan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2692,'The Order',82,'Action','triphylite','Brian Helgeland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2693,'The R.M.',4,'Comedy','distancy','Kurt Hale');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2694,'The Real Cancun',33,'Documentary','spinnies','Rick de Oliveira');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2695,'The Rundown',12,'Action','resmethrin','Peter Berg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2696,'The Singing Detective',77,'Comedy','angledozer','Keith Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2697,'The Statement',26,'Drama','ethoxylate','Norman Jewison');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2698,'The Station Agent',12,'Comedy','ursidae','Tom McCarthy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2699,'The Triplets of Belleville',56,'Animation','whippowill','Sylvain Chomet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2700,'The Visual Bible: The Gospel of John',74,'Biography','silurid','Philip Saville');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2701,'Thirteen',12,'Drama','bardiche','Catherine Hardwicke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2702,'Timeline',62,'Action','logicists','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2703,'Travelers and Magicians',21,'Adventure','parroter','Khyentse Norbu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2704,'Under the Tuscan Sun',92,'Comedy','hell-rake','Audrey Wells');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2705,'Underworld',51,'Action','triphylite','Len Wiseman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2706,'Veronica Guerin',11,'Biography','distancy','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2707,'What a Girl Wants',23,'Comedy','spinnies','Dennie Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2708,'Willard',61,'Drama','resmethrin','Glen Morgan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2709,'Wonderland',12,'Crime','angledozer','James Cox');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2710,'Wrong Turn',69,'Horror','ethoxylate','Rob Schmidt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2711,'X-Men 2',98,'Action','ursidae','Bryan Singer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2712,'13 Going on 30',18,'Comedy','whippowill','Gary Winick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2713,'2046',24,'Drama','silurid','Kar-Wai Wong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2714,'50 First Dates',11,'Comedy','bardiche','Peter Segal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2715,'A Cinderella Story',32,'Comedy','logicists','Mark Rosman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2716,'A Home at the End of the World',88,'Drama','parroter','Michael Mayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2717,'A Very Long Engagement',45,'Drama','hell-rake','Jean-Pierre Jeunet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2718,'After the Sunset',30,'Action','triphylite','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2719,'Against the Ropes',3,'Biography','distancy','Charles S. Dutton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2720,'Agent Cody Banks 2: Destination London',2,'Action','spinnies','Kevin Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2721,'Alexander',5,'Action','resmethrin','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2722,'Alfie',81,'Comedy','angledozer','Charles Shyer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2723,'Along Came Polly',44,'Comedy','ethoxylate','John Hamburg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2724,'Anacondas: The Hunt for the Blood Orchid',14,'Action','ursidae','Dwight H. Little');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2725,'Anchorman: The Legend of Ron Burgundy',81,'Comedy','whippowill','Adam McKay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2726,'Around the World in 80 Days',37,'Action','silurid','Frank Coraci');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2727,'As It Is in Heaven',77,'Comedy','bardiche','Kay Pollak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2728,'AVP: Alien vs. Predator',84,'Action','logicists','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2729,'Barbershop 2: Back in Business',92,'Comedy','parroter','Kevin Rodney Sullivan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2730,'Before Sunset',85,'Drama','hell-rake','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2731,'Being Julia',11,'Comedy','triphylite','Istv��n Szab�?');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2732,'Beyond the Sea',88,'Biography','distancy','Kevin Spacey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2733,'Birth',89,'Drama','spinnies','Jonathan Glazer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2734,'Blade: Trinity',56,'Action','resmethrin','David S. Goyer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2735,'Bride & Prejudice',78,'Comedy','angledozer','Gurinder Chadha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2736,'Bridget Jones: The Edge of Reason',56,'Comedy','ethoxylate','Beeban Kidron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2737,'Catch That Kid',67,'Comedy','ursidae','Bart Freundlich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2738,'Catwoman',95,'Action','whippowill','Pitof');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2739,'Cellular',47,'Action','silurid','David R. Ellis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2740,'Chasing Liberty',4,'Comedy','bardiche','Andy Cadiff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2741,'Christmas with the Kranks',81,'Comedy','logicists','Joe Roth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2742,'Clean',93,'Drama','parroter','Olivier Assayas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2743,'Closer',81,'Drama','hell-rake','Mike Nichols');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2744,'Club Dread',14,'Comedy','triphylite','Jay Chandrasekhar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2745,'Collateral',93,'Crime','distancy','Michael Mann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2746,'Confessions of a Teenage Drama Queen',95,'Comedy','spinnies','Sara Sugarman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2747,'Connie and Carla',43,'Comedy','resmethrin','Michael Lembeck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2748,'Crash',82,'Crime','angledozer','Paul Haggis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2749,'D.E.B.S.',1,'Action','ethoxylate','Angela Robinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2750,'Dawn of the Dead',37,'Action','ursidae','Zack Snyder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2751,'Dead Man''s Shoes',52,'Crime','whippowill','Shane Meadows');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2752,'Dear Wendy',92,'Comedy','silurid','Thomas Vinterberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2753,'De-Lovely',43,'Biography','bardiche','Irwin Winkler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2754,'District B13',12,'Action','logicists','Pierre Morel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2755,'Dodgeball: A True Underdog Story',14,'Comedy','parroter','Rawson Marshall Thurber');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2756,'Downfall',41,'Biography','hell-rake','Oliver Hirschbiegel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2757,'Ella Enchanted',90,'Comedy','triphylite','Tommy O''Haver');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2758,'Envy',56,'Comedy','distancy','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2759,'Eternal Sunshine of the Spotless Mind',37,'Drama','spinnies','Michel Gondry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2760,'Eulogy',41,'Comedy','resmethrin','Michael Clancy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2761,'EuroTrip',63,'Comedy','angledozer','Jeff Schaffer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2762,'Exorcist: The Beginning',32,'Horror','ethoxylate','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2763,'Fahrenheit 9/11',7,'Documentary','ursidae','Michael Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2764,'Fascination',46,'Mystery','whippowill','Klaus Menzel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2765,'Fat Albert',29,'Comedy','silurid','Joel Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2766,'Fighting Tommy Riley',34,'Drama','bardiche','Eddie O''Flaherty');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2767,'Finding Neverland',39,'Biography','logicists','Marc Forster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2768,'Flight of the Phoenix',65,'Action','parroter','John Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2769,'Garden State',28,'Comedy','hell-rake','Zach Braff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2770,'Garfield',82,'Animation','triphylite','Peter Hewitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2771,'Godsend',39,'Drama','distancy','Nick Hamm');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2772,'Harold & Kumar Go to White Castle',29,'Adventure','spinnies','Danny Leiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2773,'Harry Potter and the Prisoner of Azkaban',51,'Adventure','resmethrin','Alfonso Cuar�?n');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2774,'Hellboy',74,'Action','angledozer','Guillermo del Toro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2775,'Hidalgo',32,'Action','ethoxylate','Joe Johnston');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2776,'Home on the Range',23,'Animation','ursidae','Will Finn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2777,'Hotel Rwanda',97,'Drama','whippowill','Terry George');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2778,'House of D',6,'Comedy','silurid','David Duchovny');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2779,'House of Flying Daggers',98,'Action','bardiche','Yimou Zhang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2780,'Howl''s Moving Castle',64,'Adventure','logicists','Hayao Miyazaki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2781,'I Heart Huckabees',43,'Comedy','parroter','David O. Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2782,'I, Robot',56,'Action','hell-rake','Alex Proyas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2783,'Imaginary Heroes',37,'Comedy','triphylite','Dan Harris');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2784,'In Good Company',54,'Comedy','distancy','Paul Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2785,'Incident at Loch Ness',60,'Adventure','spinnies','Zak Penn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2786,'Jersey Girl',70,'Comedy','resmethrin','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2787,'Johnson Family Vacation',86,'Comedy','angledozer','Christopher Erskin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2788,'Kill Bill: Vol. 2',49,'Action','ethoxylate','Quentin Tarantino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2789,'Kinsey',74,'Biography','ursidae','Bill Condon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2790,'Kung Fu Hustle',19,'Action','whippowill','Stephen Chow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2791,'Ladder 49',64,'Action','silurid','Jay Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2792,'Laws of Attraction',82,'Comedy','bardiche','Peter Howitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2793,'Layer Cake',4,'Crime','logicists','Matthew Vaughn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2794,'Little Black Book',33,'Comedy','parroter','Nick Hurran');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2795,'Man on Fire',12,'Action','hell-rake','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2796,'Maria Full of Grace',77,'Crime','triphylite','Joshua Marston');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2797,'Mean Creek',26,'Crime','distancy','Jacob Aaron Estes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2798,'Mean Girls',12,'Comedy','spinnies','Mark Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2799,'Meet the Fockers',56,'Comedy','resmethrin','Jay Roach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2800,'Million Dollar Baby',74,'Drama','angledozer','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2801,'Mindhunters',12,'Crime','ethoxylate','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2802,'Miracle',62,'Biography','ursidae','Gavin O''Connor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2803,'Mr 3000',21,'Comedy','whippowill','Charles Stone III');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2804,'My Date with Drew',92,'Documentary','silurid','Jon Gunn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2805,'My Summer of Love',51,'Drama','bardiche','Pawel Pawlikowski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2806,'Napoleon Dynamite',11,'Comedy','logicists','Jared Hess');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2807,'National Treasure',23,'Action','parroter','Jon Turteltaub');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2808,'New York Minute',61,'Comedy','hell-rake','Dennie Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2809,'Night Watch',12,'Fantasy','triphylite','Timur Bekmambetov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2810,'November',69,'Drama','distancy','Greg Harrison');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2811,'Ocean''s Twelve',98,'Crime','spinnies','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2812,'Paparazzi',18,'Action','resmethrin','Paul Abascal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2813,'Primer',24,'Drama','angledozer','Shane Carruth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2814,'Raise Your Voice',11,'Family','ethoxylate','Sean McNamara');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2815,'Raising Helen',32,'Comedy','ursidae','Garry Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2816,'Ray',88,'Biography','whippowill','Taylor Hackford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2817,'Resident Evil: Apocalypse',45,'Action','silurid','Alexander Witt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2818,'Saint Ralph',30,'Comedy','bardiche','Michael McGowan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2819,'Saved!',3,'Comedy','logicists','Brian Dannelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2820,'Saw',2,'Horror','parroter','James Wan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2821,'Scooby-Doo 2: Monsters Unleashed',5,'Adventure','hell-rake','Raja Gosnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2822,'Secret Window',81,'Mystery','triphylite','David Koepp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2823,'Seed of Chucky',44,'Comedy','distancy','Don Mancini');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2824,'Shall We Dance',14,'Comedy','spinnies','Peter Chelsom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2825,'Shark Tale',81,'Adventure','resmethrin','Bibo Bergeron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2826,'Shaun of the Dead',37,'Comedy','angledozer','Edgar Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2827,'Short Cut to Nirvana: Kumbh Mela',77,'Documentary','ethoxylate','Maurizio Benazzo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2828,'Shrek 2',84,'Adventure','ursidae','Andrew Adamson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2829,'Sideways',92,'Adventure','whippowill','Alexander Payne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2830,'Sky Captain and the World of Tomorrow',85,'Action','silurid','Kerry Conran');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2831,'Sleepover',11,'Comedy','bardiche','Joe Nussbaum');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2832,'Soul Plane',88,'Comedy','logicists','Jessy Terrero');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2833,'Spanglish',89,'Comedy','parroter','James L. Brooks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2834,'Spider-Man 2',56,'Action','hell-rake','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2835,'Starsky & Hutch',78,'Comedy','triphylite','Todd Phillips');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2836,'Steamboy',56,'Action','distancy','Katsuhiro ��tomo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2837,'Summer Storm',67,'Comedy','spinnies','Marco Kreuzpaintner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2838,'Super Size Me',95,'Comedy','resmethrin','Morgan Spurlock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2839,'Superbabies: Baby Geniuses 2',47,'Comedy','angledozer','Bob Clark');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2840,'Suspect Zero',4,'Crime','ethoxylate','E. Elias Merhige');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2841,'Tae Guk Gi: The Brotherhood of War',81,'Action','ursidae','Je-kyu Kang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2842,'Teacher''s Pet',93,'Animation','whippowill','Timothy Bj̦rklund');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2843,'Team America: World Police',81,'Action','silurid','Trey Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2844,'The Alamo',14,'Drama','bardiche','John Lee Hancock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2845,'The Aviator',93,'Biography','logicists','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2846,'The Big Bounce',95,'Comedy','parroter','George Armitage');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2847,'The Bourne Supremacy',43,'Action','hell-rake','Paul Greengrass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2848,'The Bridge of San Luis Rey',82,'Drama','triphylite','Mary McGuckian');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2849,'The Butterfly Effect',1,'Sci-Fi','distancy','Eric Bress');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2850,'The Chorus',37,'Drama','spinnies','Christophe Barratier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2851,'The Chronicles of Riddick',52,'Action','resmethrin','David Twohy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2852,'The Day After Tomorrow',92,'Action','angledozer','Roland Emmerich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2853,'The Girl Next Door',43,'Comedy','ethoxylate','Luke Greenfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2854,'The Grudge',12,'Horror','ursidae','Takashi Shimizu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2855,'The Holy Girl',14,'Drama','whippowill','Lucrecia Martel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2856,'The Incredibles',41,'Action','silurid','Brad Bird');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2857,'The Ladykillers',90,'Comedy','bardiche','Ethan Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2858,'The Life Aquatic with Steve Zissou',56,'Adventure','logicists','Wes Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2859,'The Machinist',37,'Drama','parroter','Brad Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2860,'The Manchurian Candidate',41,'Drama','hell-rake','Jonathan Demme');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2861,'The Merchant of Venice',63,'Drama','triphylite','Michael Radford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2862,'The Notebook',32,'Drama','distancy','Nick Cassavetes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2863,'The Passion of the Christ',7,'Drama','spinnies','Mel Gibson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2864,'The Phantom of the Opera',46,'Drama','resmethrin','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2865,'The Polar Express',29,'Adventure','angledozer','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2866,'The Princess Diaries 2: Royal Engagement',34,'Comedy','ethoxylate','Garry Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2867,'The Punisher',39,'Action','ursidae','Jonathan Hensleigh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2868,'The Sea Inside',65,'Biography','whippowill','Alejandro Amen��bar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2869,'The SpongeBob SquarePants Movie',28,'Adventure','silurid','Stephen Hillenburg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2870,'The Stepford Wives',82,'Comedy','bardiche','Frank Oz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2871,'The Terminal',39,'Comedy','logicists','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2872,'The Village',29,'Drama','parroter','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2873,'The Whole Ten Yards',51,'Comedy','hell-rake','Howard Deutch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2874,'The Work and the Glory',74,'Drama','triphylite','Russell Holt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2875,'Thunderbirds',32,'Action','distancy','Jonathan Frakes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2876,'Torque',23,'Action','spinnies','Joseph Kahn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2877,'Troy',97,'Adventure','resmethrin','Wolfgang Petersen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2878,'Two Brothers',6,'Adventure','angledozer','Jean-Jacques Annaud');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2879,'Vanity Fair',98,'Drama','ethoxylate','Mira Nair');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2880,'Veer-Zaara',64,'Drama','ursidae','Yash Chopra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2881,'Vera Drake',43,'Crime','whippowill','Mike Leigh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2882,'Walking Tall',56,'Action','silurid','Kevin Bray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2883,'Welcome to Mooseport',37,'Comedy','bardiche','Donald Petrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2884,'White Chicks',54,'Comedy','logicists','Keenen Ivory Wayans');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2885,'Wicker Park',60,'Drama','parroter','Paul McGuigan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2886,'Wimbledon',70,'Comedy','hell-rake','Richard Loncraine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2887,'Win a Date with Tad Hamilton!',86,'Comedy','triphylite','Robert Luketic');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2888,'Without a Paddle',49,'Adventure','distancy','Steven Brill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2889,'Yes',74,'Drama','spinnies','Sally Potter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2890,'You Got Served',19,'Drama','resmethrin','Chris Stokes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2891,'A History of Violence',64,'Crime','angledozer','David Cronenberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2892,'A Lot Like Love',82,'Comedy','ethoxylate','Nigel Cole');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2893,'A Sound of Thunder',4,'Action','ursidae','Peter Hyams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2894,'̠on Flux',33,'Action','whippowill','Karyn Kusama');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2895,'Alone in the Dark',12,'Horror','silurid','Uwe Boll');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2896,'An American Haunting',77,'Horror','bardiche','Courtney Solomon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2897,'An Unfinished Life',26,'Drama','logicists','Lasse Hallstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2898,'Are We There Yet?',12,'Adventure','parroter','Brian Levant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2899,'Assault on Precinct 13',56,'Action','hell-rake','Jean-Fran̤ois Richet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2900,'Batman Begins',74,'Action','triphylite','Christopher Nolan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2901,'Be Cool',12,'Comedy','distancy','F. Gary Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2902,'Because of Winn-Dixie',62,'Comedy','spinnies','Wayne Wang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2903,'BloodRayne',21,'Action','resmethrin','Uwe Boll');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2904,'Boogeyman',92,'Drama','angledozer','Stephen Kay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2905,'Boynton Beach Club',51,'Comedy','ethoxylate','Susan Seidelman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2906,'Brokeback Mountain',11,'Drama','ursidae','Ang Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2907,'Capote',23,'Biography','whippowill','Bennett Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2908,'Cavite',61,'Thriller','silurid','Neill Dela Llana');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2909,'Charlie and the Chocolate Factory',12,'Adventure','bardiche','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2910,'Cheaper by the Dozen 2',69,'Adventure','logicists','Adam Shankman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2911,'Chicken Little',98,'Adventure','parroter','Mark Dindal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2912,'Chocolate: Deep Dark Secrets',18,'Thriller','hell-rake','Vivek Agnihotri');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2913,'Cinderella Man',24,'Biography','triphylite','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2914,'Coach Carter',11,'Drama','distancy','Thomas Carter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2915,'Conversations with Other Women',32,'Comedy','spinnies','Hans Canosa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2916,'Corpse Bride',88,'Animation','resmethrin','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2917,'Cry_Wolf',45,'Drama','angledozer','Jeff Wadlow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2918,'Cursed',30,'Comedy','ethoxylate','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2919,'Dark Water',3,'Drama','ursidae','Walter Salles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2920,'Dave Chappelle''s Block Party',2,'Comedy','whippowill','Michel Gondry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2921,'Derailed',5,'Drama','silurid','Mikael H̴fstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2922,'Deuce Bigalow: European Gigolo',81,'Comedy','bardiche','Mike Bigelow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2923,'Diary of a Mad Black Woman',44,'Comedy','logicists','Darren Grant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2924,'Dil Jo Bhi Kahey...',14,'Romance','parroter','Romesh Sharma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2925,'Domino',81,'Action','hell-rake','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2926,'Doom',37,'Action','triphylite','Andrzej Bartkowiak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2927,'Down in the Valley',77,'Drama','distancy','David Jacobson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2928,'Dreamer: Inspired by a True Story',84,'Drama','spinnies','John Gatins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2929,'Duma',92,'Adventure','resmethrin','Carroll Ballard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2930,'Edmond',85,'Drama','angledozer','Stuart Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2931,'Elektra',11,'Action','ethoxylate','Rob Bowman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2932,'Elizabethtown',88,'Comedy','ursidae','Cameron Crowe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2933,'End of the Spear',89,'Adventure','whippowill','Jim Hanon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2934,'Fateless',56,'Drama','silurid','Lajos Koltai');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2935,'Fever Pitch',78,'Comedy','bardiche','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2936,'Flightplan',56,'Drama','logicists','Robert Schwentke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2937,'Four Brothers',67,'Action','parroter','John Singleton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2938,'Fun with Dick and Jane',95,'Comedy','hell-rake','Dean Parisot');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2939,'Get Rich or Die Tryin''',47,'Biography','triphylite','Jim Sheridan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2940,'Goal! The Dream Begins',4,'Drama','distancy','Danny Cannon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2941,'Good Night, and Good Luck.',81,'Biography','spinnies','George Clooney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2942,'Guess Who',93,'Comedy','resmethrin','Kevin Rodney Sullivan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2943,'Hard Candy',81,'Crime','angledozer','David Slade');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2944,'Harry Potter and the Goblet of Fire',14,'Adventure','ethoxylate','Mike Newell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2945,'Harsh Times',93,'Action','ursidae','David Ayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2946,'Herbie Fully Loaded',95,'Adventure','whippowill','Angela Robinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2947,'Hide and Seek',43,'Drama','silurid','John Polson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2948,'Hitch',82,'Comedy','bardiche','Andy Tennant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2949,'Hoodwinked!',1,'Action','logicists','Cory Edwards');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2950,'Hostage',37,'Action','parroter','Florent-Emilio Siri');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2951,'Hostel',52,'Horror','hell-rake','Eli Roth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2952,'House of Wax',92,'Horror','triphylite','Jaume Collet-Serra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2953,'Hustle & Flow',43,'Crime','distancy','Craig Brewer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2954,'Imagine Me & You',12,'Comedy','spinnies','Ol Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2955,'Inside Deep Throat',14,'Biography','resmethrin','Fenton Bailey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2956,'Into the Blue',41,'Action','angledozer','John Stockwell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2957,'Jarhead',90,'Action','ethoxylate','Sam Mendes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2958,'Joyeux Noel',56,'Drama','ursidae','Christian Carion');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2959,'Just Like Heaven',37,'Comedy','whippowill','Mark Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2960,'Kicking & Screaming',41,'Comedy','silurid','Jesse Dylan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2961,'King Kong',63,'Action','bardiche','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2962,'Kingdom of Heaven',32,'Action','logicists','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2963,'King''s Ransom',7,'Comedy','parroter','Jeffrey W. Byrd');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2964,'Kiss Kiss Bang Bang',46,'Comedy','hell-rake','Shane Black');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2965,'Lady Vengeance',29,'Crime','triphylite','Chan-wook Park');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2966,'Land of the Dead',34,'Horror','distancy','George A. Romero');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2967,'London',39,'Drama','spinnies','Hunter Richards');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2968,'Lonesome Jim',65,'Comedy','resmethrin','Steve Buscemi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2969,'Lord of War',28,'Crime','angledozer','Andrew Niccol');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2970,'Lords of Dogtown',82,'Biography','ethoxylate','Catherine Hardwicke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2971,'Madagascar',39,'Adventure','ursidae','Eric Darnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2972,'Man of the House',29,'Action','whippowill','Stephen Herek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2973,'Manderlay',51,'Drama','silurid','Lars von Trier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2974,'March of the Penguins',74,'Documentary','bardiche','Luc Jacquet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2975,'Match Point',32,'Drama','logicists','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2976,'Me and You and Everyone We Know',23,'Comedy','parroter','Miranda July');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2977,'Memoirs of a Geisha',97,'Drama','hell-rake','Rob Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2978,'Mirrormask',6,'Adventure','triphylite','Dave McKean');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2979,'Miss Congeniality 2: Armed and Fabulous',98,'Action','distancy','John Pasquin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2980,'Monster-in-Law',64,'Comedy','spinnies','Robert Luketic');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2981,'Mr. & Mrs. Smith',43,'Action','resmethrin','Doug Liman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2982,'Mrs Henderson Presents',56,'Comedy','angledozer','Stephen Frears');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2983,'Munich',37,'Drama','ethoxylate','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2984,'Murderball',54,'Documentary','ursidae','Henry Alex Rubin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2985,'Must Love Dogs',60,'Comedy','whippowill','Gary David Goldberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2986,'Nanny McPhee',70,'Comedy','silurid','Kirk Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2987,'Neal ''N'' Nikki',86,'Comedy','bardiche','Arjun Sablok');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2988,'Nomad: The Warrior',49,'Drama','logicists','Sergey Bodrov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2989,'North Country',74,'Drama','parroter','Niki Caro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2990,'Oliver Twist',19,'Crime','hell-rake','Roman Polanski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2991,'Pooh''s Heffalump Movie',64,'Animation','triphylite','Frank Nissen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2992,'Pride & Prejudice',82,'Drama','distancy','Joe Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2993,'Red Eye',4,'Mystery','spinnies','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2994,'Rent',33,'Drama','resmethrin','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2995,'Robots',12,'Adventure','angledozer','Chris Wedge');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2996,'Sahara',77,'Action','ethoxylate','Breck Eisner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2997,'Saw II',26,'Horror','ursidae','Darren Lynn Bousman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2998,'Serenity',12,'Action','whippowill','Joss Whedon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (2999,'Sin City',56,'Crime','silurid','Frank Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3000,'Sky High',74,'Adventure','bardiche','Mike Mitchell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3001,'Slow Burn',12,'Drama','logicists','Wayne Beach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3002,'Son of the Mask',62,'Comedy','parroter','Lawrence Guterman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3003,'Star Wars: Episode III - Revenge of the Sith',21,'Action','hell-rake','George Lucas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3004,'Stealth',92,'Action','triphylite','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3005,'Syriana',51,'Drama','distancy','Stephen Gaghan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3006,'Thank You for Smoking',11,'Comedy','spinnies','Jason Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3007,'The 40-Year-Old Virgin',23,'Comedy','resmethrin','Judd Apatow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3008,'The Adventures of Sharkboy and Lavagirl 3-D',61,'Action','angledozer','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3009,'The Amityville Horror',12,'Drama','ethoxylate','Andrew Douglas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3010,'The Ballad of Jack and Rose',69,'Drama','ursidae','Rebecca Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3011,'The Brothers Grimm',98,'Action','whippowill','Terry Gilliam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3012,'The Cave',18,'Adventure','silurid','Bruce Hunt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3013,'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe',24,'Adventure','bardiche','Andrew Adamson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3014,'The Chumscrubber',11,'Comedy','logicists','Arie Posin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3015,'The Constant Gardener',32,'Drama','parroter','Fernando Meirelles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3016,'The Curse of the Were-Rabbit',88,'Animation','hell-rake','Steve Box');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3017,'The Descent',45,'Adventure','triphylite','Neil Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3018,'The Devil''s Rejects',30,'Crime','distancy','Rob Zombie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3019,'The Dukes of Hazzard',3,'Action','spinnies','Jay Chandrasekhar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3020,'The Exorcism of Emily Rose',2,'Drama','resmethrin','Scott Derrickson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3021,'The Family Stone',5,'Comedy','angledozer','Thomas Bezucha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3022,'The Game of Their Lives',81,'Drama','ethoxylate','David Anspaugh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3023,'The Great Raid',44,'Action','ursidae','John Dahl');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3024,'The Hitchhiker''s Guide to the Galaxy',14,'Adventure','whippowill','Garth Jennings');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3025,'The Interpreter',81,'Crime','silurid','Sydney Pollack');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3026,'The Island',37,'Action','bardiche','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3027,'The Jacket',77,'Drama','logicists','John Maybury');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3028,'The Legend of Zorro',84,'Action','parroter','Martin Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3029,'The Longest Yard',92,'Comedy','hell-rake','Peter Segal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3030,'The Lost City',85,'Drama','triphylite','Andy Garcia');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3031,'The Man',11,'Action','distancy','Les Mayfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3032,'The Matador',88,'Comedy','spinnies','Richard Shepard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3033,'The New World',89,'Biography','resmethrin','Terrence Malick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3034,'The Pacifier',56,'Action','angledozer','Adam Shankman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3035,'The Perfect Man',78,'Comedy','ethoxylate','Mark Rosman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3036,'The Producers',56,'Comedy','ursidae','Susan Stroman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3037,'The Promise',67,'Action','whippowill','Kaige Chen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3038,'The Proposition',95,'Crime','silurid','John Hillcoat');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3039,'The Protector',47,'Action','bardiche','Prachya Pinkaew');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3040,'The Puffy Chair',4,'Comedy','logicists','Jay Duplass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3041,'The Quiet',81,'Drama','parroter','Jamie Babbit');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3042,'The Salon',93,'Comedy','hell-rake','Mark Brown');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3043,'The Sisterhood of the Traveling Pants',81,'Comedy','triphylite','Ken Kwapis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3044,'The Skeleton Key',14,'Horror','distancy','Iain Softley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3045,'The Squid and the Whale',93,'Comedy','spinnies','Noah Baumbach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3046,'The Upside of Anger',95,'Comedy','resmethrin','Mike Binder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3047,'The Weather Man',43,'Comedy','angledozer','Gore Verbinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3048,'The Wedding Date',82,'Comedy','ethoxylate','Clare Kilner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3049,'The Wendell Baker Story',1,'Comedy','ursidae','Andrew Wilson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3050,'The White Countess',37,'Drama','whippowill','James Ivory');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3051,'The Work and the Glory II: American Zion',52,'Drama','silurid','Sterling Van Wagenen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3052,'The World''s Fastest Indian',92,'Biography','bardiche','Roger Donaldson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3053,'Three Burials',43,'Adventure','logicists','Tommy Lee Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3054,'Thumbsucker',12,'Comedy','parroter','Mike Mills');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3055,'Transamerica',14,'Adventure','hell-rake','Duncan Tucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3056,'Transporter 2',41,'Action','triphylite','Louis Leterrier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3057,'Tristram Shandy: A Cock and Bull Story',90,'Comedy','distancy','Michael Winterbottom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3058,'Trust the Man',56,'Comedy','spinnies','Bart Freundlich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3059,'Tsotsi',37,'Crime','resmethrin','Gavin Hood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3060,'Underclassman',41,'Action','angledozer','Marcos Siega');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3061,'Undiscovered',63,'Comedy','ethoxylate','Meiert Avis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3062,'Unleashed',32,'Action','ursidae','Louis Leterrier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3063,'V for Vendetta',7,'Action','whippowill','James McTeigue');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3064,'Valiant',46,'Adventure','silurid','Gary Chapman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3065,'Wah-Wah',29,'Drama','bardiche','Richard E. Grant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3066,'Waiting...',34,'Comedy','logicists','Rob McKittrick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3067,'Walk the Line',39,'Biography','parroter','James Mangold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3068,'War of the Worlds',65,'Adventure','hell-rake','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3069,'Where the Truth Lies',28,'Crime','triphylite','Atom Egoyan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3070,'White Noise',82,'Drama','distancy','Geoffrey Sax');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3071,'Winter Passing',39,'Comedy','spinnies','Adam Rapp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3072,'xXx: State of the Union',29,'Action','resmethrin','Lee Tamahori');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3073,'Zathura: A Space Adventure',51,'Action','angledozer','Jon Favreau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3074,'10th & Wolf',74,'Crime','ethoxylate','Robert Moresco');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3075,'16 Blocks',32,'Action','ursidae','Richard Donner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3076,'300',23,'Action','whippowill','Zack Snyder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3077,'A Good Year',97,'Comedy','silurid','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3078,'A Prairie Home Companion',6,'Comedy','bardiche','Robert Altman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3079,'A Scanner Darkly',98,'Animation','logicists','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3080,'Alex Rider: Operation Stormbreaker',64,'Action','parroter','Geoffrey Sax');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3081,'All the King''s Men',43,'Drama','hell-rake','Steven Zaillian');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3082,'Alone with Her',56,'Crime','triphylite','Eric Nicholas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3083,'American Dreamz',37,'Comedy','distancy','Paul Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3084,'Apocalypto',54,'Action','spinnies','Mel Gibson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3085,'Aquamarine',60,'Comedy','resmethrin','Elizabeth Allen Rosenbaum');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3086,'Arthur and the Invisibles',70,'Adventure','angledozer','Luc Besson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3087,'Babel',86,'Drama','ethoxylate','Alejandro G. I̱��rritu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3088,'Barnyard',49,'Animation','ursidae','Steve Oedekerk');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3089,'Basic Instinct 2',74,'Crime','whippowill','Michael Caton-Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3090,'Beer League',19,'Comedy','silurid','Frank Sebastiano');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3091,'Beerfest',64,'Comedy','bardiche','Jay Chandrasekhar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3092,'Bella',82,'Drama','logicists','Alejandro Monteverde');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3093,'Big Momma''s House 2',4,'Comedy','parroter','John Whitesell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3094,'Black Book',33,'Drama','hell-rake','Paul Verhoeven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3095,'Black Christmas',12,'Horror','triphylite','Glen Morgan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3096,'Black Snake Moan',77,'Drama','distancy','Craig Brewer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3097,'Blood Diamond',26,'Adventure','spinnies','Edward Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3098,'Bobby',12,'Drama','resmethrin','Emilio Estevez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3099,'Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan',56,'Comedy','angledozer','Larry Charles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3100,'Cars',74,'Adventure','ethoxylate','John Lasseter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3101,'Casino Royale',12,'Action','ursidae','Martin Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3102,'Catch a Fire',62,'Biography','whippowill','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3103,'Children of Men',21,'Drama','silurid','Alfonso Cuar�?n');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3104,'Clerks II',92,'Comedy','bardiche','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3105,'Click',51,'Comedy','logicists','Frank Coraci');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3106,'Come Early Morning',11,'Drama','parroter','Joey Lauren Adams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3107,'Copying Beethoven',23,'Biography','hell-rake','Agnieszka Holland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3108,'Crank',61,'Action','triphylite','Mark Neveldine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3109,'Crossover',12,'Action','distancy','Preston A. Whitmore II');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3110,'Curious George',69,'Adventure','spinnies','Matthew O''Callaghan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3111,'Curse of the Golden Flower',98,'Drama','resmethrin','Yimou Zhang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3112,'Date Movie',18,'Comedy','angledozer','Aaron Seltzer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3113,'DOA: Dead or Alive',24,'Action','ethoxylate','Corey Yuen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3114,'Doogal',11,'Adventure','ursidae','Dave Borthwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3115,'Dreamgirls',32,'Drama','whippowill','Bill Condon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3116,'Eight Below',88,'Adventure','silurid','Frank Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3117,'Employee of the Month',45,'Comedy','bardiche','Greg Coolidge');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3118,'Eragon',30,'Action','logicists','Stefen Fangmeier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3119,'Exiled',3,'Action','parroter','Johnnie To');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3120,'Eye of the Dolphin',2,'Comedy','hell-rake','Michael D. Sellers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3121,'Facing the Giants',5,'Drama','triphylite','Alex Kendrick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3122,'Factory Girl',81,'Biography','distancy','George Hickenlooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3123,'Failure to Launch',44,'Comedy','spinnies','Tom Dey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3124,'Fido',14,'Comedy','resmethrin','Andrew Currie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3125,'Final Destination 3',81,'Horror','angledozer','James Wong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3126,'Find Me Guilty',37,'Biography','ethoxylate','Sidney Lumet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3127,'Firewall',77,'Crime','ursidae','Richard Loncraine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3128,'Flags of Our Fathers',84,'Drama','whippowill','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3129,'Flicka',92,'Adventure','silurid','Michael Mayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3130,'Flushed Away',85,'Adventure','bardiche','David Bowers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3131,'Flyboys',11,'Action','logicists','Tony Bill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3132,'For Your Consideration',88,'Comedy','parroter','Christopher Guest');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3133,'Friends with Money',89,'Comedy','hell-rake','Nicole Holofcener');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3134,'Fur: An Imaginary Portrait of Diane Arbus',56,'Biography','triphylite','Steven Shainberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3135,'Gridiron Gang',78,'Crime','distancy','Phil Joanou');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3136,'Half Nelson',56,'Drama','spinnies','Ryan Fleck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3137,'Happily N''Ever After',67,'Adventure','resmethrin','Paul Bolger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3138,'Happy Feet',95,'Animation','angledozer','George Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3139,'Hoot',47,'Adventure','ethoxylate','Wil Shriner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3140,'I Served the King of England',4,'Comedy','ursidae','Jir�? Menzel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3141,'I Want Someone to Eat Cheese With',81,'Comedy','whippowill','Jeff Garlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3142,'Ice Age: The Meltdown',93,'Action','silurid','Carlos Saldanha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3143,'Idlewild',81,'Crime','bardiche','Bryan Barber');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3144,'In Her Line of Fire',14,'Action','logicists','Brian Trenchard-Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3145,'Infamous',93,'Biography','parroter','Douglas McGrath');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3146,'Inside Man',95,'Crime','hell-rake','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3147,'Ira & Abby',43,'Comedy','triphylite','Robert Cary');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3148,'Jindabyne',82,'Crime','distancy','Ray Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3149,'Journey from the Fall',1,'Drama','spinnies','Ham Tran');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3150,'Just My Luck',37,'Comedy','resmethrin','Donald Petrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3151,'Kabhi Alvida Naa Kehna',52,'Drama','angledozer','Karan Johar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3152,'Lady in the Water',92,'Drama','ethoxylate','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3153,'Larry the Cable Guy: Health Inspector',43,'Comedy','ursidae','Trent Cooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3154,'Last Holiday',12,'Adventure','whippowill','Wayne Wang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3155,'Letters from Iwo Jima',14,'Drama','silurid','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3156,'Little Children',41,'Drama','bardiche','Todd Field');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3157,'Little Miss Sunshine',90,'Comedy','logicists','Jonathan Dayton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3158,'Littleman',56,'Comedy','parroter','Keenen Ivory Wayans');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3159,'Love''s Abiding Joy',37,'Drama','hell-rake','Michael Landon Jr.');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3160,'Lucky Number Slevin',41,'Crime','triphylite','Paul McGuigan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3161,'Madea''s Family Reunion',63,'Comedy','distancy','Tyler Perry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3162,'Man of the Year',32,'Comedy','spinnies','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3163,'Marie Antoinette',7,'Biography','resmethrin','Sofia Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3164,'Miss Potter',46,'Biography','angledozer','Chris Noonan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3165,'Mission: Impossible III',29,'Action','ethoxylate','J.J. Abrams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3166,'Monster House',34,'Animation','ursidae','Gil Kenan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3167,'My Super Ex-Girlfriend',39,'Comedy','whippowill','Ivan Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3168,'Nacho Libre',65,'Comedy','silurid','Jared Hess');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3169,'Night at the Museum',28,'Action','bardiche','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3170,'Notes on a Scandal',82,'Crime','logicists','Richard Eyre');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3171,'Old Joy',39,'Drama','parroter','Kelly Reichardt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3172,'Once in a Lifetime: The Extraordinary Story of the New York Cosmos',29,'Documentary','hell-rake','Paul Crowder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3173,'One Night with the King',51,'Biography','triphylite','Michael O. Sajbel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3174,'One to Another',74,'Drama','distancy','Pascal Arnold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3175,'Opal Dream',32,'Drama','spinnies','Peter Cattaneo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3176,'Open Season',23,'Adventure','resmethrin','Roger Allers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3177,'Over the Hedge',97,'Adventure','angledozer','Tim Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3178,'Pan''s Labyrinth',6,'Drama','ethoxylate','Guillermo del Toro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3179,'Paris, je t''aime',98,'Comedy','ursidae','Olivier Assayas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3180,'Peaceful Warrior',64,'Drama','whippowill','Victor Salva');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3181,'Perfume: The Story of a Murderer',43,'Crime','silurid','Tom Tykwer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3182,'Phat Girlz',56,'Comedy','bardiche','Nnegest Likk̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3183,'Pirates of the Caribbean: Dead Man''s Chest',37,'Action','logicists','Gore Verbinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3184,'Poseidon',54,'Action','parroter','Wolfgang Petersen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3185,'Poultrygeist: Night of the Chicken Dead',60,'Comedy','hell-rake','Lloyd Kaufman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3186,'Pulse',70,'Drama','triphylite','Jim Sonzero');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3187,'Quincea̱era',86,'Drama','distancy','Richard Glatzer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3188,'Renaissance',49,'Action','spinnies','Christian Volckman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3189,'Rescue Dawn',74,'Adventure','resmethrin','Werner Herzog');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3190,'Rocky Balboa',19,'Drama','angledozer','Sylvester Stallone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3191,'Running Scared',64,'Action','ethoxylate','Wayne Kramer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3192,'Running with Scissors',82,'Comedy','ursidae','Ryan Murphy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3193,'Saw III',4,'Horror','whippowill','Darren Lynn Bousman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3194,'Scary Movie 4',33,'Comedy','silurid','David Zucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3195,'School for Scoundrels',12,'Comedy','bardiche','Todd Phillips');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3196,'Scoop',77,'Comedy','logicists','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3197,'Severance',26,'Comedy','parroter','Christopher Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3198,'Sherrybaby',12,'Drama','hell-rake','Laurie Collyer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3199,'She''s the Man',56,'Comedy','triphylite','Andy Fickman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3200,'Shortbus',74,'Comedy','distancy','John Cameron Mitchell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3201,'Silent Hill',12,'Adventure','spinnies','Christophe Gans');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3202,'Slither',62,'Comedy','resmethrin','James Gunn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3203,'Smokin'' Aces',21,'Action','angledozer','Joe Carnahan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3204,'Snakes on a Plane',92,'Action','ethoxylate','David R. Ellis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3205,'Southland Tales',51,'Comedy','ursidae','Richard Kelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3206,'Special',11,'Comedy','whippowill','Hal Haberman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3207,'Stay Alive',23,'Horror','silurid','William Brent Bell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3208,'Step Up',61,'Crime','bardiche','Anne Fletcher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3209,'Stranger Than Fiction',12,'Comedy','logicists','Marc Forster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3210,'Superman Returns',69,'Action','parroter','Bryan Singer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3211,'Take the Lead',98,'Drama','hell-rake','Liz Friedlander');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3212,'Talladega Nights: The Ballad of Ricky Bobby',18,'Action','triphylite','Adam McKay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3213,'The Ant Bully',24,'Adventure','distancy','John A. Davis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3214,'The Astronaut Farmer',11,'Adventure','spinnies','Michael Polish');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3215,'The Benchwarmers',32,'Comedy','resmethrin','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3216,'The Black Dahlia',88,'Crime','angledozer','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3217,'The Break-Up',45,'Comedy','ethoxylate','Peyton Reed');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3218,'The Bubble',30,'Comedy','ursidae','Eytan Fox');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3219,'The Covenant',3,'Action','whippowill','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3220,'The Da Vinci Code',2,'Mystery','silurid','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3221,'The Departed',5,'Crime','bardiche','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3222,'The Devil Wears Prada',81,'Comedy','logicists','David Frankel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3223,'The Fast and the Furious: Tokyo Drift',44,'Action','parroter','Justin Lin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3224,'The Fountain',14,'Drama','hell-rake','Darren Aronofsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3225,'The Good German',81,'Drama','triphylite','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3226,'The Grudge 2',37,'Horror','distancy','Takashi Shimizu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3227,'The Hills Have Eyes',77,'Horror','spinnies','Alexandre Aja');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3228,'The History Boys',84,'Comedy','resmethrin','Nicholas Hytner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3229,'The Hoax',92,'Comedy','angledozer','Lasse Hallstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3230,'The Holiday',85,'Comedy','ethoxylate','Nancy Meyers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3231,'The Host',11,'Comedy','ursidae','Joon-ho Bong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3232,'The Illusionist',88,'Drama','whippowill','Neil Burger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3233,'The Lake House',89,'Drama','silurid','Alejandro Agresti');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3234,'The Last King of Scotland',56,'Biography','bardiche','Kevin Macdonald');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3235,'The Lives of Others',78,'Drama','logicists','Florian Henckel von Donnersmarck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3236,'The Marine',56,'Action','parroter','John Bonito');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3237,'The Nativity Story',67,'Drama','hell-rake','Catherine Hardwicke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3238,'The Night Listener',95,'Crime','triphylite','Patrick Stettner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3239,'The Painted Veil',47,'Drama','distancy','John Curran');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3240,'The Pink Panther',4,'Adventure','spinnies','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3241,'The Prestige',81,'Drama','resmethrin','Christopher Nolan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3242,'The Pursuit of Happyness',93,'Biography','angledozer','Gabriele Muccino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3243,'The Queen',81,'Biography','ethoxylate','Stephen Frears');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3244,'The Sentinel',14,'Action','ursidae','Clark Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3245,'The Shaggy Dog',93,'Comedy','whippowill','Brian Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3246,'The Texas Chainsaw Massacre: The Beginning',95,'Horror','silurid','Jonathan Liebesman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3247,'The Trials of Darryl Hunt',43,'Crime','bardiche','Ricki Stern');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3248,'This Is England',82,'Crime','logicists','Shane Meadows');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3249,'Thr3e',1,'Drama','parroter','Robby Henson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3250,'Ultraviolet',37,'Action','hell-rake','Kurt Wimmer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3251,'Unaccompanied Minors',52,'Adventure','triphylite','Paul Feig');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3252,'Underworld: Evolution',92,'Action','distancy','Len Wiseman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3253,'United 93',43,'Drama','spinnies','Paul Greengrass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3254,'Valley of the Heart''s Delight',12,'Drama','resmethrin','Tim Boxell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3255,'We Are Marshall',14,'Drama','angledozer','McG');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3256,'When a Stranger Calls',41,'Horror','ethoxylate','Simon West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3257,'Who Killed the Electric Car?',90,'Documentary','ursidae','Chris Paine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3258,'World Trade Center',56,'Drama','whippowill','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3259,'Wristcutters: A Love Story',37,'Comedy','silurid','Goran Dukic');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3260,'X-Men: The Last Stand',41,'Action','bardiche','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3261,'You, Me and Dupree',63,'Comedy','logicists','Anthony Russo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3262,'Zoom',32,'Action','parroter','Peter Hewitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3263,'1408',7,'Fantasy','hell-rake','Mikael H̴fstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3264,'28 Weeks Later',46,'Drama','triphylite','Juan Carlos Fresnadillo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3265,'3:10 to Yuma',29,'Adventure','distancy','James Mangold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3266,'30 Days of Night',34,'Horror','spinnies','David Slade');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3267,'4 Months, 3 Weeks and 2 Days',39,'Drama','resmethrin','Cristian Mungiu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3268,'88 Minutes',65,'Crime','angledozer','Jon Avnet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3269,'A Mighty Heart',28,'Biography','ethoxylate','Michael Winterbottom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3270,'Across the Universe',82,'Drama','ursidae','Julie Taymor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3271,'Aliens vs. Predator: Requiem',39,'Action','whippowill','Colin Strause');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3272,'Alvin and the Chipmunks',29,'Animation','silurid','Tim Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3273,'American Gangster',51,'Biography','bardiche','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3274,'Aqua Teen Hunger Force Colon Movie Film for Theaters',74,'Action','logicists','Matt Maiellaro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3275,'Arnolds Park',32,'Mystery','parroter','Gene Teigland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3276,'Atonement',23,'Drama','hell-rake','Joe Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3277,'August Rush',97,'Drama','triphylite','Kirsten Sheridan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3278,'Awake',6,'Crime','distancy','Joby Harold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3279,'Becoming Jane',98,'Biography','spinnies','Julian Jarrold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3280,'Bee Movie',64,'Adventure','resmethrin','Steve Hickner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3281,'Beowulf',43,'Action','angledozer','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3282,'Blades of Glory',56,'Comedy','ethoxylate','Josh Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3283,'Blonde Ambition',37,'Comedy','ursidae','Scott Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3284,'Bridge to Terabithia',54,'Adventure','whippowill','Gabor Csupo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3285,'Brooklyn Rules',60,'Crime','silurid','Michael Corrente');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3286,'Caramel',70,'Comedy','bardiche','Nadine Labaki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3287,'Certifiably Jonathan',86,'Comedy','logicists','James David Pasternak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3288,'Charlie Bartlett',49,'Comedy','parroter','Jon Poll');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3289,'Charlie Wilson''s War',74,'Biography','hell-rake','Mike Nichols');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3290,'Code Name: The Cleaner',19,'Action','triphylite','Les Mayfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3291,'Control',64,'Biography','distancy','Anton Corbijn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3292,'Daddy Day Camp',82,'Comedy','spinnies','Fred Savage');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3293,'Death at a Funeral',4,'Comedy','resmethrin','Frank Oz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3294,'Death Sentence',33,'Action','angledozer','James Wan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3295,'Diary of the Dead',12,'Horror','ethoxylate','George A. Romero');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3296,'Disturbia',77,'Drama','ursidae','D.J. Caruso');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3297,'Dragon Wars: D-War',26,'Action','whippowill','Hyung-rae Shim');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3298,'Eastern Promises',12,'Crime','silurid','David Cronenberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3299,'Elite Squad',56,'Action','bardiche','Jos̩ Padilha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3300,'Elizabeth: The Golden Age',74,'Biography','logicists','Shekhar Kapur');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3301,'Enchanted',12,'Animation','parroter','Kevin Lima');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3302,'Epic Movie',62,'Adventure','hell-rake','Jason Friedberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3303,'Evan Almighty',21,'Comedy','triphylite','Tom Shadyac');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3304,'Fantastic 4: Rise of the Silver Surfer',92,'Action','distancy','Tim Story');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3305,'Finishing the Game: The Search for a New Bruce Lee',51,'Comedy','spinnies','Justin Lin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3306,'Freedom Writers',11,'Biography','resmethrin','Richard LaGravenese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3307,'Funny Games',23,'Crime','angledozer','Michael Haneke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3308,'Georgia Rule',61,'Comedy','ethoxylate','Garry Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3309,'Ghost Rider',12,'Action','ursidae','Mark Steven Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3310,'Good Luck Chuck',69,'Comedy','whippowill','Mark Helfrich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3311,'Gracie',98,'Biography','silurid','Davis Guggenheim');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3312,'Grindhouse',18,'Action','bardiche','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3313,'Hairspray',24,'Comedy','logicists','Adam Shankman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3314,'Hannibal Rising',11,'Crime','parroter','Peter Webber');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3315,'Harry Potter and the Order of the Phoenix',32,'Adventure','hell-rake','David Yates');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3316,'Hitman',88,'Action','triphylite','Xavier Gens');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3317,'Hostel: Part II',45,'Horror','distancy','Eli Roth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3318,'Hot Fuzz',30,'Action','spinnies','Edgar Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3319,'I Am Legend',3,'Drama','resmethrin','Francis Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3320,'I''m Not There.',2,'Biography','angledozer','Todd Haynes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3321,'In the Land of Women',5,'Comedy','ethoxylate','Jon Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3322,'In the Name of the King: A Dungeon Siege Tale',81,'Action','ursidae','Uwe Boll');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3323,'In the Shadow of the Moon',44,'Documentary','whippowill','David Sington');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3324,'Into the Wild',14,'Adventure','silurid','Sean Penn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3325,'Juno',81,'Comedy','bardiche','Jason Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3326,'Kiss the Bride',37,'Comedy','logicists','C. Jay Cox');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3327,'Knocked Up',77,'Comedy','parroter','Judd Apatow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3328,'Lars and the Real Girl',84,'Comedy','hell-rake','Craig Gillespie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3329,'License to Wed',92,'Comedy','triphylite','Ken Kwapis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3330,'Lions for Lambs',85,'Drama','distancy','Robert Redford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3331,'Live Free or Die Hard',11,'Action','spinnies','Len Wiseman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3332,'Love in the Time of Cholera',88,'Drama','resmethrin','Mike Newell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3333,'Lucky You',89,'Drama','angledozer','Curtis Hanson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3334,'Married Life',56,'Crime','ethoxylate','Ira Sachs');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3335,'Martian Child',78,'Comedy','ursidae','Menno Meyjes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3336,'Michael Clayton',56,'Crime','whippowill','Tony Gilroy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3337,'Moli̬re',67,'Comedy','silurid','Laurent Tirard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3338,'Mongol: The Rise of Genghis Khan',95,'Adventure','bardiche','Sergey Bodrov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3339,'Mr. Bean''s Holiday',47,'Comedy','logicists','Steve Bendelack');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3340,'My Blueberry Nights',4,'Drama','parroter','Kar-Wai Wong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3341,'My Name Is Bruce',81,'Comedy','hell-rake','Bruce Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3342,'Nancy Drew',93,'Comedy','triphylite','Andrew Fleming');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3343,'No Country for Old Men',81,'Crime','distancy','Ethan Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3344,'No End in Sight',14,'Documentary','spinnies','Charles Ferguson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3345,'No Reservations',93,'Comedy','resmethrin','Scott Hicks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3346,'Ocean''s Thirteen',95,'Crime','angledozer','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3347,'Once',43,'Drama','ethoxylate','John Carney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3348,'P.S. I Love You',82,'Drama','ursidae','Richard LaGravenese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3349,'Paranormal Activity',1,'Horror','whippowill','Oren Peli');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3350,'Persepolis',37,'Animation','silurid','Vincent Paronnaud');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3351,'Pirates of the Caribbean: At World''s End',52,'Action','bardiche','Gore Verbinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3352,'Premonition',92,'Drama','logicists','Mennan Yapo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3353,'Ratatouille',43,'Animation','parroter','Brad Bird');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3354,'Redacted',12,'Crime','hell-rake','Brian De Palma');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3355,'Reign Over Me',14,'Drama','triphylite','Mike Binder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3356,'Rendition',41,'Drama','distancy','Gavin Hood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3357,'Reno 911!: Miami',90,'Comedy','spinnies','Robert Ben Garant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3358,'Resident Evil: Extinction',56,'Action','resmethrin','Russell Mulcahy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3359,'Resurrecting the Champ',37,'Drama','angledozer','Rod Lurie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3360,'Rush Hour 3',41,'Action','ethoxylate','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3361,'Savage Grace',63,'Drama','ursidae','Tom Kalin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3362,'Saw IV',32,'Horror','whippowill','Darren Lynn Bousman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3363,'September Dawn',7,'Drama','silurid','Christopher Cain');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3364,'Shooter',46,'Action','bardiche','Antoine Fuqua');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3365,'Shrek the Third',29,'Adventure','logicists','Chris Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3366,'Sicko',34,'Documentary','parroter','Michael Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3367,'Spider-Man 3',39,'Action','hell-rake','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3368,'Stardust',65,'Adventure','triphylite','Matthew Vaughn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3369,'Stomp the Yard',28,'Drama','distancy','Sylvain White');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3370,'Sunshine',82,'Adventure','spinnies','Danny Boyle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3371,'Superbad',39,'Comedy','resmethrin','Greg Mottola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3372,'Surf''s Up',29,'Animation','angledozer','Ash Brannon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3373,'Sydney White',51,'Comedy','ethoxylate','Joe Nussbaum');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3374,'Ta Ra Rum Pum',74,'Comedy','ursidae','Siddharth Anand');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3375,'Taxi to the Dark Side',32,'Crime','whippowill','Alex Gibney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3376,'The Assassination of Jesse James by the Coward Robert Ford',23,'Biography','silurid','Andrew Dominik');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3377,'The Bourne Ultimatum',97,'Action','bardiche','Paul Greengrass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3378,'The Brothers Solomon',6,'Comedy','logicists','Bob Odenkirk');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3379,'The Bucket List',98,'Adventure','parroter','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3380,'The Game Plan',64,'Comedy','hell-rake','Andy Fickman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3381,'The Golden Compass',43,'Adventure','triphylite','Chris Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3382,'The Good Night',56,'Comedy','distancy','Jake Paltrow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3383,'The Great Debaters',37,'Biography','spinnies','Denzel Washington');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3384,'The Hammer',54,'Comedy','resmethrin','Charles Herman-Wurmfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3385,'The Hills Have Eyes II',60,'Horror','angledozer','Martin Weisz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3386,'The Hunting Party',70,'Adventure','ethoxylate','Richard Shepard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3387,'The Invasion',86,'Sci-Fi','ursidae','Oliver Hirschbiegel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3388,'The Kingdom',49,'Action','whippowill','Peter Berg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3389,'The Kite Runner',74,'Drama','silurid','Marc Forster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3390,'The Last Legion',19,'Action','bardiche','Doug Lefler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3391,'The Last Sin Eater',64,'Drama','logicists','Michael Landon Jr.');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3392,'The Legend of God''s Gun',82,'Western','parroter','Mike Bruce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3393,'The Life Before Her Eyes',4,'Drama','hell-rake','Vadim Perelman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3394,'The Living Wake',33,'Comedy','triphylite','Sol Tryon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3395,'The Mist',12,'Horror','distancy','Frank Darabont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3396,'The Number 23',77,'Mystery','spinnies','Joel Schumacher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3397,'The Orphanage',26,'Drama','resmethrin','J.A. Bayona');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3398,'The Reaping',12,'Horror','angledozer','Stephen Hopkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3399,'The Simpsons Movie',56,'Adventure','ethoxylate','David Silverman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3400,'The Ten',74,'Comedy','ursidae','David Wain');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3401,'The Warlords',12,'Action','whippowill','Peter Ho-Sun Chan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3402,'There Will Be Blood',62,'Drama','silurid','Paul Thomas Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3403,'Things We Lost in the Fire',21,'Drama','bardiche','Susanne Bier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3404,'This Christmas',92,'Comedy','logicists','Preston A. Whitmore II');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3405,'Timecrimes',51,'Horror','parroter','Nacho Vigalondo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3406,'TMNT',11,'Action','hell-rake','Kevin Munroe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3407,'Trade',23,'Crime','triphylite','Marco Kreuzpaintner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3408,'Transformers',61,'Action','distancy','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3409,'Waitress',12,'Comedy','spinnies','Adrienne Shelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3410,'Walk Hard: The Dewey Cox Story',69,'Comedy','resmethrin','Jake Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3411,'War',98,'Action','angledozer','Philip G. Atwell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3412,'We Own the Night',18,'Crime','ethoxylate','James Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3413,'When Did You Last See Your Father?',24,'Biography','ursidae','Anand Tucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3414,'Who''s Your Caddy?',11,'Comedy','whippowill','Don Michael Paul');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3415,'Why Did I Get Married?',32,'Comedy','silurid','Tyler Perry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3416,'You Kill Me',88,'Comedy','bardiche','John Dahl');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3417,'Zodiac',45,'Crime','logicists','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3418,'21',30,'Crime','parroter','Robert Luketic');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3419,'27 Dresses',3,'Comedy','hell-rake','Anne Fletcher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3420,'An American Carol',2,'Comedy','triphylite','David Zucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3421,'Australia',5,'Adventure','distancy','Baz Luhrmann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3422,'Baby Mama',81,'Comedy','spinnies','Michael McCullers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3423,'Babylon A.D.',44,'Action','resmethrin','Mathieu Kassovitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3424,'Bangkok Dangerous',14,'Action','angledozer','Danny Pang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3425,'Be Kind Rewind',81,'Comedy','ethoxylate','Michel Gondry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3426,'Bedtime Stories',37,'Comedy','ursidae','Adam Shankman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3427,'Beverly Hills Chihuahua',77,'Adventure','whippowill','Raja Gosnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3428,'Blindness',84,'Drama','silurid','Fernando Meirelles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3429,'Body of Lies',92,'Action','bardiche','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3430,'Bolt',85,'Adventure','logicists','Byron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3431,'Bottle Shock',11,'Comedy','parroter','Randall Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3432,'Burn After Reading',88,'Comedy','hell-rake','Ethan Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3433,'Cadillac Records',89,'Biography','triphylite','Darnell Martin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3434,'Call + Response',56,'Documentary','distancy','Justin Dillon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3435,'Changeling',78,'Crime','spinnies','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3436,'Choke',56,'Comedy','resmethrin','Clark Gregg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3437,'City of Ember',67,'Adventure','angledozer','Gil Kenan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3438,'Cloverfield',95,'Action','ethoxylate','Matt Reeves');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3439,'College',47,'Comedy','ursidae','Deb Hagan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3440,'Death Race',4,'Action','whippowill','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3441,'Delgo',81,'Adventure','silurid','Marc F. Adler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3442,'Disaster Movie',93,'Comedy','bardiche','Jason Friedberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3443,'Dolphins and Whales 3D: Tribes of the Ocean',81,'Adventure','logicists','Jean-Jacques Mantello');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3444,'Donkey Punch',14,'Crime','parroter','Oliver Blackburn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3445,'Doomsday',93,'Action','hell-rake','Neil Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3446,'Doubt',95,'Drama','triphylite','John Patrick Shanley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3447,'Drillbit Taylor',43,'Comedy','distancy','Steven Brill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3448,'Eagle Eye',82,'Action','spinnies','D.J. Caruso');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3449,'Fireproof',1,'Drama','resmethrin','Alex Kendrick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3450,'Flame and Citron',37,'Drama','angledozer','Ole Christian Madsen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3451,'Flash of Genius',52,'Biography','ethoxylate','Marc Abraham');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3452,'Fool''s Gold',92,'Action','ursidae','Andy Tennant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3453,'Forgetting Sarah Marshall',43,'Comedy','whippowill','Nicholas Stoller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3454,'Four Christmases',12,'Comedy','silurid','Seth Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3455,'Frost/Nixon',14,'Drama','bardiche','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3456,'Frozen River',41,'Crime','logicists','Courtney Hunt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3457,'Fuel',90,'Documentary','parroter','Joshua Tickell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3458,'Gangster''s Paradise: Jerusalema',56,'Action','hell-rake','Ralph Ziman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3459,'Get Smart',37,'Action','triphylite','Peter Segal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3460,'Ghost Town',41,'Comedy','distancy','David Koepp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3461,'Good',63,'Drama','spinnies','Vicente Amorim');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3462,'Gran Torino',32,'Drama','resmethrin','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3463,'Hamlet 2',7,'Comedy','angledozer','Andrew Fleming');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3464,'Hancock',46,'Action','ethoxylate','Peter Berg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3465,'Harold & Kumar Escape from Guantanamo Bay',29,'Adventure','ursidae','Jon Hurwitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3466,'Hellboy II: The Golden Army',34,'Action','whippowill','Guillermo del Toro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3467,'High School Musical 3: Senior Year',39,'Comedy','silurid','Kenny Ortega');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3468,'How to Lose Friends & Alienate People',65,'Comedy','bardiche','Robert B. Weide');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3469,'In Bruges',28,'Comedy','logicists','Martin McDonagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3470,'Indiana Jones and the Kingdom of the Crystal Skull',82,'Action','parroter','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3471,'Inkheart',39,'Adventure','hell-rake','Iain Softley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3472,'Iron Man',29,'Action','triphylite','Jon Favreau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3473,'Journey to the Center of the Earth',51,'Action','distancy','Eric Brevig');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3474,'Jumper',74,'Action','spinnies','Doug Liman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3475,'Kit Kittredge: An American Girl',32,'Drama','resmethrin','Patricia Rozema');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3476,'Kung Fu Panda',23,'Action','angledozer','Mark Osborne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3477,'Lakeview Terrace',97,'Crime','ethoxylate','Neil LaBute');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3478,'Leatherheads',6,'Comedy','ursidae','George Clooney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3479,'Lovely, Still',98,'Drama','whippowill','Nicholas Fackler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3480,'Mad Money',64,'Comedy','silurid','Callie Khouri');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3481,'Madagascar: Escape 2 Africa',43,'Action','bardiche','Eric Darnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3482,'Made of Honor',56,'Comedy','logicists','Paul Weiland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3483,'Mamma Mia!',37,'Comedy','parroter','Phyllida Lloyd');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3484,'Man on Wire',54,'Biography','hell-rake','James Marsh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3485,'Marley & Me',60,'Comedy','triphylite','David Frankel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3486,'Max Payne',70,'Action','distancy','John Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3487,'Me and Orson Welles',86,'Drama','spinnies','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3488,'Meet Dave',49,'Adventure','resmethrin','Brian Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3489,'Meet the Spartans',74,'Comedy','angledozer','Jason Friedberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3490,'Milk',19,'Biography','ethoxylate','Gus Van Sant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3491,'Miracle at St. Anna',64,'Action','ursidae','Spike Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3492,'Mirrors',82,'Horror','whippowill','Alexandre Aja');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3493,'My Best Friend''s Girl',4,'Comedy','silurid','Howard Deutch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3494,'Never Back Down',33,'Action','bardiche','Jeff Wadlow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3495,'Nick and Norah''s Infinite Playlist',12,'Comedy','logicists','Peter Sollett');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3496,'Nim''s Island',77,'Adventure','parroter','Jennifer Flackett');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3497,'One Missed Call',26,'Horror','hell-rake','Eric Valette');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3498,'Ong-bak 2',12,'Action','triphylite','Tony Jaa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3499,'Over Her Dead Body',56,'Comedy','distancy','Jeff Lowell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3500,'Pathology',74,'Crime','spinnies','Marc Sch̦lermann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3501,'Pineapple Express',12,'Action','resmethrin','David Gordon Green');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3502,'Pontypool',62,'Fantasy','angledozer','Bruce McDonald');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3503,'Ponyo',21,'Adventure','ethoxylate','Hayao Miyazaki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3504,'Pride and Glory',92,'Crime','ursidae','Gavin O''Connor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3505,'Prom Night',51,'Horror','whippowill','Nelson McCormick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3506,'Punisher: War Zone',11,'Action','silurid','Lexi Alexander');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3507,'Quantum of Solace',23,'Action','bardiche','Marc Forster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3508,'Quarantine',61,'Horror','logicists','John Erick Dowdle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3509,'Red Cliff',12,'Action','parroter','John Woo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3510,'Redbelt',69,'Drama','hell-rake','David Mamet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3511,'Religulous',98,'Comedy','triphylite','Larry Charles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3512,'Repo! The Genetic Opera',18,'Horror','distancy','Darren Lynn Bousman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3513,'Revolutionary Road',24,'Drama','spinnies','Sam Mendes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3514,'Righteous Kill',11,'Action','resmethrin','Jon Avnet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3515,'RocknRolla',32,'Action','angledozer','Guy Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3516,'Role Models',88,'Comedy','ethoxylate','David Wain');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3517,'Saw V',45,'Horror','ursidae','David Hackl');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3518,'Semi-Pro',30,'Comedy','whippowill','Kent Alterman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3519,'Seven Pounds',3,'Drama','silurid','Gabriele Muccino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3520,'Sex Drive',2,'Adventure','bardiche','Sean Anders');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3521,'Shutter',5,'Horror','logicists','Masayuki Ochiai');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3522,'Sleep Dealer',81,'Drama','parroter','Alex Rivera');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3523,'Slumdog Millionaire',44,'Drama','hell-rake','Danny Boyle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3524,'Space Chimps',14,'Adventure','triphylite','Kirk De Micco');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3525,'Speed Racer',81,'Action','distancy','Lana Wachowski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3526,'Step Brothers',37,'Comedy','spinnies','Adam McKay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3527,'Step Up 2: The Streets',77,'Drama','resmethrin','Jon M. Chu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3528,'Stop-Loss',84,'Drama','angledozer','Kimberly Peirce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3529,'Strange Wilderness',92,'Adventure','ethoxylate','Fred Wolf');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3530,'Street Kings',85,'Action','ursidae','David Ayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3531,'Sunshine Cleaning',11,'Comedy','whippowill','Christine Jeffs');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3532,'Superhero Movie',88,'Action','silurid','Craig Mazin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3533,'Surfer, Dude',89,'Comedy','bardiche','S.R. Bindler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3534,'Swing Vote',56,'Comedy','logicists','Joshua Michael Stern');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3535,'Synecdoche, New York',78,'Comedy','parroter','Charlie Kaufman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3536,'Taken',56,'Action','hell-rake','Pierre Morel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3537,'The Baader Meinhof Complex',67,'Action','triphylite','Uli Edel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3538,'The Bank Job',95,'Crime','distancy','Roger Donaldson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3539,'The Boy in the Striped Pajamas',47,'Drama','spinnies','Mark Herman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3540,'The Brothers Bloom',4,'Adventure','resmethrin','Rian Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3541,'The Children of Huang Shi',81,'Drama','angledozer','Roger Spottiswoode');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3542,'The Chronicles of Narnia: Prince Caspian',93,'Action','ethoxylate','Andrew Adamson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3543,'The Curious Case of Benjamin Button',81,'Drama','ursidae','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3544,'The Dark Knight',14,'Action','whippowill','Christopher Nolan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3545,'The Day the Earth Stood Still',93,'Drama','silurid','Scott Derrickson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3546,'The Duchess',95,'Biography','bardiche','Saul Dibb');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3547,'The Express',43,'Biography','logicists','Gary Fleder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3548,'The Eye',82,'Horror','parroter','David Moreau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3549,'The Forbidden Kingdom',1,'Action','hell-rake','Rob Minkoff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3550,'The Good, the Bad, the Weird',37,'Action','triphylite','Jee-woon Kim');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3551,'The Happening',52,'Sci-Fi','distancy','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3552,'The Haunting of Molly Hartley',92,'Drama','spinnies','Mickey Liddell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3553,'The House Bunny',43,'Comedy','resmethrin','Fred Wolf');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3554,'The Hurt Locker',12,'Drama','angledozer','Kathryn Bigelow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3555,'The Incredible Hulk',14,'Action','ethoxylate','Louis Leterrier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3556,'The Longshots',41,'Biography','ursidae','Fred Durst');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3557,'The Love Guru',90,'Comedy','whippowill','Marco Schnabel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3558,'The Lucky Ones',56,'Comedy','silurid','Neil Burger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3559,'The Midnight Meat Train',37,'Fantasy','bardiche','Ry��hei Kitamura');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3560,'The Mummy: Tomb of the Dragon Emperor',41,'Action','logicists','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3561,'The Other Boleyn Girl',63,'Biography','parroter','Justin Chadwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3562,'The Other End of the Line',32,'Comedy','hell-rake','James Dodson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3563,'The Oxford Murders',7,'Crime','triphylite','́lex de la Iglesia');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3564,'The Pirates Who Don''t Do Anything: A VeggieTales Movie',46,'Adventure','distancy','Mike Nawrocki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3565,'The Reader',29,'Drama','spinnies','Stephen Daldry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3566,'The Rocker',34,'Comedy','resmethrin','Peter Cattaneo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3567,'The Ruins',39,'Horror','angledozer','Carter Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3568,'The Secret Life of Bees',65,'Drama','ethoxylate','Gina Prince-Bythewood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3569,'The Spiderwick Chronicles',28,'Adventure','ursidae','Mark Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3570,'The Spirit',82,'Action','whippowill','Frank Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3571,'The Tale of Despereaux',39,'Adventure','silurid','Sam Fell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3572,'The Wackness',29,'Comedy','bardiche','Jonathan Levine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3573,'The Women',51,'Comedy','logicists','Diane English');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3574,'The Wrestler',74,'Drama','parroter','Darren Aronofsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3575,'The X Files: I Want to Believe',32,'Drama','hell-rake','Chris Carter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3576,'The Yellow Handkerchief',23,'Drama','triphylite','Udayan Prasad');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3577,'Transsiberian',97,'Crime','distancy','Brad Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3578,'Tropic Thunder',6,'Action','spinnies','Ben Stiller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3579,'Trucker',98,'Drama','resmethrin','James Mottern');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3580,'Twilight',64,'Drama','angledozer','Catherine Hardwicke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3581,'Two Lovers',43,'Drama','ethoxylate','James Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3582,'Untraceable',56,'Crime','ursidae','Gregory Hoblit');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3583,'Valkyrie',37,'Drama','whippowill','Bryan Singer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3584,'Vantage Point',54,'Crime','silurid','Pete Travis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3585,'Vicky Cristina Barcelona',60,'Drama','bardiche','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3586,'W.',70,'Biography','logicists','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3587,'WALL��E',86,'Adventure','parroter','Andrew Stanton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3588,'Waltz with Bashir',49,'Animation','hell-rake','Ari Folman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3589,'Wanted',74,'Action','triphylite','Timur Bekmambetov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3590,'War, Inc.',19,'Action','distancy','Joshua Seftel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3591,'Welcome Home, Roscoe Jenkins',64,'Comedy','spinnies','Malcolm D. Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3592,'Wendy and Lucy',82,'Drama','resmethrin','Kelly Reichardt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3593,'What Happens in Vegas',4,'Comedy','angledozer','Tom Vaughan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3594,'What Just Happened',33,'Comedy','ethoxylate','Barry Levinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3595,'Winter in Wartime',12,'Drama','ursidae','Martin Koolhoven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3596,'Witless Protection',77,'Comedy','whippowill','Charles Robert Carner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3597,'Yes Man',26,'Comedy','silurid','Peyton Reed');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3598,'You Don''t Mess with the Zohan',12,'Action','bardiche','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3599,'Zack and Miri Make a Porno',56,'Comedy','logicists','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3600,'[Rec] 2',74,'Horror','parroter','Jaume Balaguer�?');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3601,'12 Rounds',12,'Action','hell-rake','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3602,'17 Again',62,'Comedy','triphylite','Burr Steers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3603,'2012',21,'Action','distancy','Roland Emmerich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3604,'500 Days of Summer',92,'Comedy','spinnies','Marc Webb');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3605,'9',51,'Action','resmethrin','Shane Acker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3606,'A Christmas Carol',11,'Animation','angledozer','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3607,'A Perfect Getaway',23,'Adventure','ethoxylate','David Twohy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3608,'A Serious Man',61,'Comedy','ursidae','Ethan Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3609,'A Single Man',12,'Drama','whippowill','Tom Ford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3610,'After.Life',69,'Drama','silurid','Agnieszka Wojtowicz-Vosloo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3611,'Agora',98,'Adventure','bardiche','Alejandro Amen��bar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3612,'Aliens in the Attic',18,'Adventure','logicists','John Schultz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3613,'All About Steve',24,'Comedy','parroter','Phil Traill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3614,'Alvin and the Chipmunks: The Squeakquel',11,'Animation','hell-rake','Betty Thomas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3615,'An Education',32,'Drama','triphylite','Lone Scherfig');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3616,'Angels & Demons',88,'Mystery','distancy','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3617,'Armored',45,'Action','spinnies','Nimr�?d Antal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3618,'Astro Boy',30,'Action','resmethrin','David Bowers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3619,'Avatar',3,'Action','angledozer','James Cameron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3620,'Away We Go',2,'Comedy','ethoxylate','Sam Mendes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3621,'Bad Lieutenant: Port of Call New Orleans',5,'Crime','ursidae','Werner Herzog');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3622,'Bandslam',81,'Comedy','whippowill','Todd Graff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3623,'Br�?no',44,'Comedy','silurid','Larry Charles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3624,'Bran Nue Dae',14,'Comedy','bardiche','Rachel Perkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3625,'Breaking Upwards',81,'Romance','logicists','Daryl Wein');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3626,'Bride Wars',37,'Comedy','parroter','Gary Winick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3627,'Bright Star',77,'Biography','hell-rake','Jane Campion');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3628,'Brooklyn''s Finest',84,'Crime','triphylite','Antoine Fuqua');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3629,'Brothers',92,'Drama','distancy','Jim Sheridan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3630,'Case 39',85,'Horror','spinnies','Christian Alvart');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3631,'Ch̩ri',11,'Comedy','resmethrin','Stephen Frears');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3632,'Chain Letter',88,'Horror','angledozer','Deon Taylor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3633,'Chloe',89,'Drama','ethoxylate','Atom Egoyan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3634,'Cirque du Freak: The Vampire''s Assistant',56,'Action','ursidae','Paul Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3635,'City Island',78,'Comedy','whippowill','Raymond De Felitta');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3636,'City of Life and Death',56,'Drama','silurid','Chuan Lu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3637,'Cloudy with a Chance of Meatballs',67,'Animation','bardiche','Phil Lord');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3638,'Coco Before Chanel',95,'Biography','logicists','Anne Fontaine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3639,'Coraline',47,'Animation','parroter','Henry Selick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3640,'Couples Retreat',4,'Comedy','hell-rake','Peter Billingsley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3641,'Crank: High Voltage',81,'Action','triphylite','Mark Neveldine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3642,'Crazy Heart',93,'Drama','distancy','Scott Cooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3643,'Dance Flick',81,'Action','spinnies','Damien Dante Wayans');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3644,'Daybreakers',14,'Action','resmethrin','Michael Spierig');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3645,'Dead Snow',93,'Comedy','angledozer','Tommy Wirkola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3646,'Defendor',95,'Comedy','ethoxylate','Peter Stebbings');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3647,'Did You Hear About the Morgans?',43,'Comedy','ursidae','Marc Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3648,'District 9',82,'Action','whippowill','Neill Blomkamp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3649,'Drag Me to Hell',1,'Horror','silurid','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3650,'Dragonball: Evolution',37,'Action','bardiche','James Wong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3651,'Duplicity',52,'Comedy','logicists','Tony Gilroy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3652,'Enter the Void',92,'Drama','parroter','Gaspar No̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3653,'Everybody''s Fine',43,'Adventure','hell-rake','Kirk Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3654,'Extract',12,'Comedy','triphylite','Mike Judge');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3655,'Fame',14,'Comedy','distancy','Kevin Tancharoen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3656,'Fantastic Mr. Fox',41,'Adventure','spinnies','Wes Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3657,'Funny People',90,'Comedy','resmethrin','Judd Apatow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3658,'G.I. Joe: The Rise of Cobra',56,'Action','angledozer','Stephen Sommers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3659,'Gamer',37,'Action','ethoxylate','Mark Neveldine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3660,'Get Low',41,'Drama','ursidae','Aaron Schneider');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3661,'G-Force',63,'Action','whippowill','Hoyt Yeatman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3662,'Halloween II',32,'Horror','silurid','Rob Zombie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3663,'Hannah Montana: The Movie',7,'Comedy','bardiche','Peter Chelsom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3664,'Harry Brown',46,'Action','logicists','Daniel Barber');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3665,'Harry Potter and the Half-Blood Prince',29,'Adventure','parroter','David Yates');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3666,'He''s Just Not That Into You',34,'Comedy','hell-rake','Ken Kwapis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3667,'Hotel for Dogs',39,'Comedy','triphylite','Thor Freudenthal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3668,'I Am Love',65,'Drama','distancy','Luca Guadagnino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3669,'I Can Do Bad All by Myself',28,'Comedy','spinnies','Tyler Perry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3670,'I Love You Phillip Morris',82,'Biography','resmethrin','Glenn Ficarra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3671,'I Love You, Beth Cooper',39,'Comedy','angledozer','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3672,'I Love You, Man',29,'Comedy','ethoxylate','John Hamburg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3673,'Ice Age: Dawn of the Dinosaurs',51,'Action','ursidae','Carlos Saldanha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3674,'Imagine That',74,'Comedy','whippowill','Karey Kirkpatrick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3675,'Inglourious Basterds',32,'Adventure','silurid','Quentin Tarantino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3676,'Invictus',23,'Biography','bardiche','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3677,'It''s Complicated',97,'Comedy','logicists','Nancy Meyers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3678,'Jennifer''s Body',6,'Comedy','parroter','Karyn Kusama');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3679,'Julie & Julia',98,'Biography','hell-rake','Nora Ephron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3680,'Knowing',64,'Drama','triphylite','Alex Proyas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3681,'Land of the Lost',43,'Adventure','distancy','Brad Silberling');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3682,'Law Abiding Citizen',56,'Crime','spinnies','F. Gary Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3683,'Love Happens',37,'Drama','resmethrin','Brandon Camp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3684,'Micmacs',54,'Action','angledozer','Jean-Pierre Jeunet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3685,'Miss March',60,'Comedy','ethoxylate','Zach Cregger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3686,'Monsters vs. Aliens',70,'Action','ursidae','Rob Letterman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3687,'Moon',86,'Drama','whippowill','Duncan Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3688,'Mother and Child',49,'Drama','silurid','Rodrigo Garc�?a');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3689,'Motherhood',74,'Comedy','bardiche','Katherine Dieckmann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3690,'My Bloody Valentine',19,'Horror','logicists','Patrick Lussier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3691,'My Life in Ruins',64,'Comedy','parroter','Donald Petrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3692,'My Sister''s Keeper',82,'Drama','hell-rake','Nick Cassavetes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3693,'New in Town',4,'Comedy','triphylite','Jonas Elmer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3694,'Next Day Air',33,'Action','distancy','Benny Boom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3695,'Night at the Museum: Battle of the Smithsonian',12,'Adventure','spinnies','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3696,'Nine',77,'Drama','resmethrin','Rob Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3697,'Ninja Assassin',26,'Action','angledozer','James McTeigue');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3698,'Not Easily Broken',12,'Drama','ethoxylate','Bill Duke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3699,'Observe and Report',56,'Comedy','ursidae','Jody Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3700,'Oceans',74,'Documentary','whippowill','Jacques Perrin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3701,'Old Dogs',12,'Comedy','silurid','Walt Becker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3702,'Ondine',62,'Drama','bardiche','Neil Jordan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3703,'Paa',21,'Comedy','logicists','R. Balki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3704,'Pandorum',92,'Action','parroter','Christian Alvart');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3705,'Paul Blart: Mall Cop',51,'Action','hell-rake','Steve Carr');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3706,'Planet 51',11,'Adventure','triphylite','Jorge Blanco');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3707,'Post Grad',23,'Comedy','distancy','Vicky Jenson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3708,'Precious',61,'Drama','spinnies','Lee Daniels');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3709,'Princess Kaiulani',12,'Drama','resmethrin','Marc Forby');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3710,'Public Enemies',69,'Biography','angledozer','Michael Mann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3711,'Race to Witch Mountain',98,'Action','ethoxylate','Andy Fickman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3712,'Saint John of Las Vegas',18,'Comedy','ursidae','Hue Rhodes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3713,'Saw VI',24,'Horror','whippowill','Kevin Greutert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3714,'Sherlock Holmes',11,'Action','silurid','Guy Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3715,'Shorts',32,'Comedy','bardiche','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3716,'Solitary Man',88,'Comedy','logicists','Brian Koppelman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3717,'Sorority Row',45,'Horror','parroter','Stewart Hendler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3718,'Soul Kitchen',30,'Comedy','hell-rake','Fatih Akin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3719,'Splice',3,'Drama','triphylite','Vincenzo Natali');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3720,'Star Trek',2,'Action','distancy','J.J. Abrams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3721,'Street Fighter: The Legend of Chun-Li',5,'Action','spinnies','Andrzej Bartkowiak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3722,'Surrogates',81,'Action','resmethrin','Jonathan Mostow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3723,'Survival of the Dead',44,'Horror','angledozer','George A. Romero');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3724,'Taking Woodstock',14,'Comedy','ethoxylate','Ang Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3725,'Tanner Hall',81,'Drama','ursidae','Francesca Gregorini');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3726,'Terminator Salvation',37,'Action','whippowill','McG');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3727,'The Blind Side',77,'Biography','silurid','John Lee Hancock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3728,'The Boondock Saints II: All Saints Day',84,'Action','bardiche','Troy Duffy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3729,'The Box',92,'Drama','logicists','Richard Kelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3730,'The Damned United',85,'Biography','parroter','Tom Hooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3731,'The Final Destination',11,'Horror','hell-rake','David R. Ellis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3732,'The Fourth Kind',88,'Mystery','triphylite','Olatunde Osunsanmi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3733,'The Good Guy',89,'Comedy','distancy','Julio DePietro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3734,'The Good Heart',56,'Drama','spinnies','Dagur K��ri');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3735,'The Greatest',78,'Drama','resmethrin','Shana Feste');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3736,'The Hangover',56,'Comedy','angledozer','Todd Phillips');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3737,'The Horse Boy',67,'Documentary','ethoxylate','Michel Orion Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3738,'The House of the Devil',95,'Horror','ursidae','Ti West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3739,'The Imaginarium of Doctor Parnassus',47,'Adventure','whippowill','Terry Gilliam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3740,'The Informant!',4,'Comedy','silurid','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3741,'The International',81,'Action','bardiche','Tom Tykwer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3742,'The Invention of Lying',93,'Comedy','logicists','Ricky Gervais');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3743,'The Joneses',81,'Comedy','parroter','Derrick Borte');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3744,'The Last House on the Left',14,'Crime','hell-rake','Dennis Iliadis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3745,'The Last Station',93,'Biography','triphylite','Michael Hoffman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3746,'The Lovely Bones',95,'Drama','distancy','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3747,'The Men Who Stare at Goats',43,'Comedy','spinnies','Grant Heslov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3748,'The Messenger',82,'Drama','resmethrin','Oren Moverman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3749,'The Mighty Macs',1,'Drama','angledozer','Tim Chambers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3750,'The Missing Person',37,'Drama','ethoxylate','Noah Buschel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3751,'The Open Road',52,'Comedy','ursidae','Michael Meredith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3752,'The Perfect Game',92,'Comedy','whippowill','William Dear');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3753,'The Princess and the Frog',43,'Animation','silurid','Ron Clements');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3754,'The Proposal',12,'Comedy','bardiche','Anne Fletcher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3755,'The Road',14,'Adventure','logicists','John Hillcoat');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3756,'The Secret in Their Eyes',41,'Drama','parroter','Juan Jos̩ Campanella');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3757,'The Secret of Kells',90,'Adventure','hell-rake','Tomm Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3758,'The Soloist',56,'Biography','triphylite','Joe Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3759,'The Taking of Pelham 1 2 3',37,'Action','distancy','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3760,'The Time Traveler''s Wife',41,'Drama','spinnies','Robert Schwentke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3761,'The Twilight Saga: New Moon',63,'Adventure','resmethrin','Chris Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3762,'The Ugly Truth',32,'Comedy','angledozer','Robert Luketic');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3763,'The Unborn',7,'Drama','ethoxylate','David S. Goyer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3764,'The White Ribbon',46,'Drama','ursidae','Michael Haneke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3765,'The Young Victoria',29,'Biography','whippowill','Jean-Marc Vall̩e');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3766,'This Is It',34,'Documentary','silurid','Kenny Ortega');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3767,'To Save a Life',39,'Drama','bardiche','Brian Baugh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3768,'Transformers: Revenge of the Fallen',65,'Action','logicists','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3769,'Underworld: Rise of the Lycans',28,'Action','parroter','Patrick Tatopoulos');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3770,'Up',82,'Adventure','hell-rake','Pete Docter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3771,'Up in the Air',39,'Drama','triphylite','Jason Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3772,'Watchmen',29,'Action','distancy','Zack Snyder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3773,'Whatever Works',51,'Comedy','spinnies','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3774,'Where the Wild Things Are',74,'Adventure','resmethrin','Spike Jonze');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3775,'Whip It',32,'Drama','angledozer','Drew Barrymore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3776,'Whiteout',23,'Action','ethoxylate','Dominic Sena');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3777,'X-Men Origins: Wolverine',97,'Action','ursidae','Gavin Hood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3778,'Year One',6,'Adventure','whippowill','Harold Ramis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3779,'Youth in Revolt',98,'Comedy','silurid','Miguel Arteta');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3780,'Zombieland',64,'Adventure','bardiche','Ruben Fleischer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3781,'127 Hours',43,'Adventure','logicists','Danny Boyle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3782,'8: The Mormon Proposition',56,'Documentary','parroter','Reed Cowan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3783,'Alice in Wonderland',37,'Adventure','hell-rake','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3784,'Alpha and Omega',54,'Adventure','triphylite','Anthony Bell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3785,'Amigo',60,'Drama','distancy','John Sayles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3786,'Another Year',70,'Comedy','spinnies','Mike Leigh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3787,'Beginners',86,'Comedy','resmethrin','Mike Mills');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3788,'Beyond the Black Rainbow',49,'Sci-Fi','angledozer','Panos Cosmatos');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3789,'Black Swan',74,'Drama','ethoxylate','Darren Aronofsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3790,'Blue Valentine',19,'Drama','ursidae','Derek Cianfrance');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3791,'Buried',64,'Drama','whippowill','Rodrigo Cort̩s');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3792,'Burlesque',82,'Drama','silurid','Steve Antin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3793,'Ca$h',4,'Comedy','bardiche','Stephen Milburn Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3794,'Casino Jack',33,'Biography','logicists','George Hickenlooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3795,'Cats & Dogs: The Revenge of Kitty Galore',12,'Action','parroter','Brad Peyton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3796,'Charlie St. Cloud',77,'Drama','hell-rake','Burr Steers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3797,'Clash of the Titans',26,'Action','triphylite','Louis Leterrier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3798,'Cop Out',12,'Action','distancy','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3799,'Country Strong',56,'Drama','spinnies','Shana Feste');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3800,'Cyrus',74,'Comedy','resmethrin','Jay Duplass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3801,'Date Night',12,'Comedy','angledozer','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3802,'Dear John',62,'Drama','ethoxylate','Lasse Hallstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3803,'Despicable Me',21,'Animation','ursidae','Pierre Coffin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3804,'Devil',92,'Horror','whippowill','John Erick Dowdle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3805,'Diary of a Wimpy Kid',51,'Comedy','silurid','Thor Freudenthal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3806,'Don''t Be Afraid of the Dark',11,'Fantasy','bardiche','Troy Nixey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3807,'Due Date',23,'Comedy','logicists','Todd Phillips');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3808,'Dylan Dog: Dead of Night',61,'Action','parroter','Kevin Munroe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3809,'Easy A',12,'Comedy','hell-rake','Will Gluck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3810,'Eat Pray Love',69,'Drama','triphylite','Ryan Murphy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3811,'Edge of Darkness',98,'Crime','distancy','Martin Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3812,'Everything Must Go',18,'Comedy','spinnies','Dan Rush');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3813,'Extraordinary Measures',24,'Drama','resmethrin','Tom Vaughan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3814,'Fair Game',11,'Biography','angledozer','Doug Liman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3815,'Faster',32,'Action','ethoxylate','George Tillman Jr.');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3816,'Flipped',88,'Comedy','ursidae','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3817,'Freakonomics',45,'Documentary','whippowill','Heidi Ewing');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3818,'From Paris with Love',30,'Action','silurid','Pierre Morel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3819,'Furry Vengeance',3,'Comedy','bardiche','Roger Kumble');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3820,'Going the Distance',2,'Comedy','logicists','Nanette Burstein');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3821,'Green Zone',5,'Action','parroter','Paul Greengrass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3822,'Grown Ups',81,'Comedy','hell-rake','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3823,'Gulliver''s Travels',44,'Adventure','triphylite','Rob Letterman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3824,'Hereafter',14,'Drama','distancy','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3825,'Hesher',81,'Drama','spinnies','Spencer Susser');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3826,'Hot Tub Time Machine',37,'Comedy','resmethrin','Steve Pink');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3827,'How Do You Know',77,'Comedy','angledozer','James L. Brooks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3828,'How to Train Your Dragon',84,'Adventure','ethoxylate','Dean DeBlois');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3829,'I Spit on Your Grave',92,'Horror','ursidae','Steven R. Monroe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3830,'I Want Your Money',85,'Documentary','whippowill','Ray Griggs');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3831,'Incendies',11,'Drama','silurid','Denis Villeneuve');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3832,'Inception',88,'Action','bardiche','Christopher Nolan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3833,'Insidious',89,'Fantasy','logicists','James Wan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3834,'Iron Man 2',56,'Action','parroter','Jon Favreau');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3835,'It''s Kind of a Funny Story',78,'Comedy','hell-rake','Anna Boden');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3836,'Jackass 3D',56,'Action','triphylite','Jeff Tremaine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3837,'Jonah Hex',67,'Action','distancy','Jimmy Hayward');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3838,'Kick-Ass',95,'Action','spinnies','Matthew Vaughn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3839,'Killers',47,'Action','resmethrin','Robert Luketic');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3840,'Kites',4,'Action','angledozer','Anurag Basu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3841,'Knight and Day',81,'Action','ethoxylate','James Mangold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3842,'Leap Year',93,'Comedy','ursidae','Anand Tucker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3843,'Legend of the Guardians: The Owls of Ga''Hoole',81,'Action','whippowill','Zack Snyder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3844,'Legion',14,'Action','silurid','Scott Stewart');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3845,'Let Me In',93,'Drama','bardiche','Matt Reeves');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3846,'Letters to God',95,'Drama','logicists','David Nixon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3847,'Letters to Juliet',43,'Comedy','parroter','Gary Winick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3848,'Little Fockers',82,'Comedy','hell-rake','Paul Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3849,'Little White Lies',1,'Comedy','triphylite','Guillaume Canet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3850,'Love & Other Drugs',37,'Comedy','distancy','Edward Zwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3851,'Love Ranch',52,'Comedy','spinnies','Taylor Hackford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3852,'MacGruber',92,'Action','resmethrin','Jorma Taccone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3853,'Machete',43,'Action','angledozer','Ethan Maniquis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3854,'Made in Dagenham',12,'Biography','ethoxylate','Nigel Cole');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3855,'Marmaduke',14,'Comedy','ursidae','Tom Dey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3856,'Megamind',41,'Action','whippowill','Tom McGrath');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3857,'Monsters',90,'Drama','silurid','Gareth Edwards');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3858,'Morning Glory',56,'Comedy','bardiche','Roger Michell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3859,'My Name Is Khan',37,'Adventure','logicists','Karan Johar');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3860,'My Soul to Take',41,'Horror','parroter','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3861,'Nanny McPhee Returns',63,'Comedy','hell-rake','Susanna White');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3862,'Never Let Me Go',32,'Drama','triphylite','Mark Romanek');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3863,'Of Gods and Men',7,'Drama','distancy','Xavier Beauvois');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3864,'Our Family Wedding',46,'Comedy','spinnies','Rick Famuyiwa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3865,'Paranormal Activity 2',29,'Horror','resmethrin','Tod Williams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3866,'Percy Jackson & the Olympians: The Lightning Thief',34,'Adventure','angledozer','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3867,'Piranha 3D',39,'Comedy','ethoxylate','Alexandre Aja');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3868,'Predators',65,'Action','ursidae','Nimr�?d Antal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3869,'Prince of Persia: The Sands of Time',28,'Action','whippowill','Mike Newell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3870,'Rabbit Hole',82,'Drama','silurid','John Cameron Mitchell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3871,'Ramona and Beezus',39,'Adventure','bardiche','Elizabeth Allen Rosenbaum');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3872,'RED',29,'Action','logicists','Robert Schwentke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3873,'Remember Me',51,'Drama','parroter','Allen Coulter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3874,'Repo Men',74,'Action','hell-rake','Miguel Sapochnik');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3875,'Resident Evil: Afterlife',32,'Action','triphylite','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3876,'Robin Hood',23,'Action','distancy','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3877,'Rubber',97,'Comedy','spinnies','Quentin Dupieux');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3878,'Salt',6,'Action','resmethrin','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3879,'Sarah''s Key',98,'Drama','angledozer','Gilles Paquet-Brenner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3880,'Saw 3D: The Final Chapter',64,'Horror','ethoxylate','Kevin Greutert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3881,'Scott Pilgrim vs. the World',43,'Action','ursidae','Edgar Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3882,'Sea Rex 3D: Journey to a Prehistoric World',56,'Documentary','whippowill','Ronan Chapalain');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3883,'Secretariat',37,'Biography','silurid','Randall Wallace');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3884,'Sex and the City 2',54,'Comedy','bardiche','Michael Patrick King');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3885,'She''s Out of My League',60,'Comedy','logicists','Jim Field Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3886,'Shrek Forever After',70,'Adventure','parroter','Mike Mitchell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3887,'Shutter Island',86,'Mystery','hell-rake','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3888,'Skyline',49,'Action','triphylite','Colin Strause');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3889,'Somewhere',74,'Comedy','distancy','Sofia Coppola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3890,'Stake Land',19,'Drama','spinnies','Jim Mickle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3891,'Step Up 3D',64,'Drama','resmethrin','Jon M. Chu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3892,'Stone',82,'Drama','angledozer','John Curran');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3893,'Super',4,'Comedy','ethoxylate','James Gunn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3894,'Takers',33,'Action','ursidae','John Luessenhop');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3895,'Tangled',12,'Adventure','whippowill','Nathan Greno');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3896,'The 5th Quarter',77,'Biography','silurid','Rick Bieber');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3897,'The American',26,'Crime','bardiche','Anton Corbijn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3898,'The Back-up Plan',12,'Comedy','logicists','Alan Poul');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3899,'The Book of Eli',56,'Action','parroter','Albert Hughes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3900,'The Bounty Hunter',74,'Action','hell-rake','Andy Tennant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3901,'The Chronicles of Narnia: The Voyage of the Dawn Treader',12,'Adventure','triphylite','Michael Apted');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3902,'The Conspirator',62,'Crime','distancy','Robert Redford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3903,'The Crazies',21,'Horror','spinnies','Breck Eisner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3904,'The Debt',92,'Drama','resmethrin','John Madden');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3905,'The Expendables',51,'Action','angledozer','Sylvester Stallone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3906,'The Extra Man',11,'Comedy','ethoxylate','Shari Springer Berman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3907,'The Fighter',23,'Biography','ursidae','David O. Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3908,'The Ghost Writer',61,'Mystery','whippowill','Roman Polanski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3909,'The Grace Card',12,'Drama','silurid','David G. Evans');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3910,'The Kids Are All Right',69,'Comedy','bardiche','Lisa Cholodenko');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3911,'The Killer Inside Me',98,'Crime','logicists','Michael Winterbottom');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3912,'The King''s Speech',18,'Biography','parroter','Tom Hooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3913,'The Last Airbender',24,'Action','hell-rake','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3914,'The Last Exorcism',11,'Drama','triphylite','Daniel Stamm');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3915,'The Last Godfather',32,'Comedy','distancy','Hyung-rae Shim');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3916,'The Last Song',88,'Drama','spinnies','Julie Anne Robinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3917,'The Losers',45,'Action','resmethrin','Sylvain White');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3918,'The Names of Love',30,'Comedy','angledozer','Michel Leclerc');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3919,'The Next Three Days',3,'Crime','ethoxylate','Paul Haggis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3920,'The Nutcracker in 3D',2,'Action','ursidae','Andrey Konchalovskiy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3921,'The Other Guys',5,'Action','whippowill','Adam McKay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3922,'The Perfect Host',81,'Comedy','silurid','Nick Tomnay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3923,'The Runaways',44,'Biography','bardiche','Floria Sigismondi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3924,'The Social Network',14,'Biography','logicists','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3925,'The Sorcerer''s Apprentice',81,'Action','parroter','Jon Turteltaub');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3926,'The Spy Next Door',37,'Action','hell-rake','Brian Levant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3927,'The Switch',77,'Comedy','triphylite','Josh Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3928,'The Tempest',84,'Comedy','distancy','Julie Taymor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3929,'The Tourist',92,'Action','spinnies','Florian Henckel von Donnersmarck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3930,'The Town',85,'Crime','resmethrin','Ben Affleck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3931,'The Twilight Saga: Eclipse',11,'Adventure','angledozer','David Slade');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3932,'The Virginity Hit',88,'Comedy','ethoxylate','Huck Botko');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3933,'The Warrior''s Way',89,'Action','ursidae','Sngmoo Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3934,'The Wolfman',56,'Drama','whippowill','Joe Johnston');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3935,'Tiny Furniture',78,'Comedy','silurid','Lena Dunham');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3936,'Toy Story 3',56,'Adventure','bardiche','Lee Unkrich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3937,'Trollhunter',67,'Comedy','logicists','Andr̩ ��vredal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3938,'TRON: Legacy',95,'Action','parroter','Joseph Kosinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3939,'True Grit',47,'Adventure','hell-rake','Ethan Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3940,'Trust',4,'Crime','triphylite','David Schwimmer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3941,'Unstoppable',81,'Action','distancy','Tony Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3942,'Valentine''s Day',93,'Comedy','spinnies','Garry Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3943,'Vampires Suck',81,'Comedy','resmethrin','Jason Friedberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3944,'Wall Street: Money Never Sleeps',14,'Drama','angledozer','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3945,'Why Did I Get Married Too?',93,'Comedy','ethoxylate','Tyler Perry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3946,'Wild Target',95,'Action','ursidae','Jonathan Lynn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3947,'Winter''s Bone',43,'Drama','whippowill','Debra Granik');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3948,'Yogi Bear',82,'Adventure','silurid','Eric Brevig');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3949,'You Again',1,'Comedy','bardiche','Andy Fickman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3950,'You Will Meet a Tall Dark Stranger',37,'Comedy','logicists','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3951,'1911',52,'Action','parroter','Li Zhang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3952,'30 Minutes or Less',92,'Action','hell-rake','Ruben Fleischer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3953,'5 Days of War',43,'Action','triphylite','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3954,'50/50',12,'Comedy','distancy','Jonathan Levine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3955,'A Better Life',14,'Drama','spinnies','Chris Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3956,'A Dangerous Method',41,'Biography','resmethrin','David Cronenberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3957,'A Separation',90,'Drama','angledozer','Asghar Farhadi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3958,'A Very Harold & Kumar 3D Christmas',56,'Adventure','ethoxylate','Todd Strauss-Schulson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3959,'Abduction',37,'Action','ursidae','John Singleton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3960,'Albert Nobbs',41,'Drama','whippowill','Rodrigo Garc�?a');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3961,'Alvin and the Chipmunks: Chipwrecked',63,'Adventure','silurid','Mike Mitchell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3962,'Anonymous',32,'Drama','bardiche','Roland Emmerich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3963,'Another Earth',7,'Drama','logicists','Mike Cahill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3964,'Apollo 18',46,'Horror','parroter','Gonzalo L�?pez-Gallego');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3965,'Arthur Christmas',29,'Adventure','hell-rake','Sarah Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3966,'Attack the Block',34,'Action','triphylite','Joe Cornish');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3967,'Bad Teacher',39,'Comedy','distancy','Jake Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3968,'Battle Los Angeles',65,'Action','spinnies','Jonathan Liebesman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3969,'Beastly',28,'Drama','resmethrin','Daniel Barnz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3970,'Bernie',82,'Comedy','angledozer','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3971,'Big Mommas: Like Father, Like Son',39,'Action','ethoxylate','John Whitesell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3972,'Bridesmaids',29,'Comedy','ursidae','Paul Feig');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3973,'Bucky Larson: Born to Be a Star',51,'Comedy','whippowill','Tom Brady');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3974,'Captain America: The First Avenger',74,'Action','silurid','Joe Johnston');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3975,'Cars 2',32,'Adventure','bardiche','John Lasseter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3976,'Colombiana',23,'Action','logicists','Olivier Megaton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3977,'Contagion',97,'Drama','parroter','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3978,'Courageous',6,'Drama','hell-rake','Alex Kendrick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3979,'Crazy, Stupid, Love.',98,'Comedy','triphylite','Glenn Ficarra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3980,'Diary of a Wimpy Kid: Rodrick Rules',64,'Comedy','distancy','David Bowers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3981,'Dolphin Tale',43,'Drama','spinnies','Charles Martin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3982,'Dream House',56,'Drama','resmethrin','Jim Sheridan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3983,'Drive',37,'Crime','angledozer','Nicolas Winding Refn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3984,'Drive Angry',54,'Action','ethoxylate','Patrick Lussier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3985,'Extremely Loud & Incredibly Close',60,'Adventure','ursidae','Stephen Daldry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3986,'Fast Five',70,'Action','whippowill','Justin Lin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3987,'Final Destination 5',86,'Horror','silurid','Steven Quale');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3988,'Fort McCoy',49,'Drama','bardiche','Kate Connor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3989,'Friends with Benefits',74,'Comedy','logicists','Will Gluck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3990,'Fright Night',19,'Comedy','parroter','Craig Gillespie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3991,'Ghost Rider: Spirit of Vengeance',64,'Action','hell-rake','Mark Neveldine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3992,'Glee: The 3D Concert Movie',82,'Documentary','triphylite','Kevin Tancharoen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3993,'Go for It!',4,'Drama','distancy','Carmen Marron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3994,'Green Lantern',33,'Action','spinnies','Martin Campbell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3995,'Hall Pass',12,'Comedy','resmethrin','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3996,'Hanna',77,'Action','angledozer','Joe Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3997,'Happy Feet 2',26,'Animation','ethoxylate','George Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3998,'Haywire',12,'Action','ursidae','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (3999,'Headhunters',56,'Crime','whippowill','Morten Tyldum');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4000,'Hobo with a Shotgun',74,'Action','silurid','Jason Eisener');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4001,'Hoodwinked Too! Hood vs. Evil',12,'Animation','bardiche','Mike Disa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4002,'Hop',62,'Adventure','logicists','Tim Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4003,'Horrible Bosses',21,'Comedy','parroter','Seth Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4004,'Hugo',92,'Adventure','hell-rake','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4005,'I Am Number Four',51,'Action','triphylite','D.J. Caruso');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4006,'I Don''t Know How She Does It',11,'Comedy','distancy','Douglas McGrath');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4007,'Immortals',23,'Action','spinnies','Tarsem Singh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4008,'In the Land of Blood and Honey',61,'Drama','resmethrin','Angelina Jolie Pitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4009,'In Time',12,'Action','angledozer','Andrew Niccol');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4010,'J. Edgar',69,'Biography','ethoxylate','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4011,'Jack and Jill',98,'Comedy','ursidae','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4012,'Jeff, Who Lives at Home',18,'Comedy','whippowill','Jay Duplass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4013,'Johnny English Reborn',24,'Action','silurid','Oliver Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4014,'Jumping the Broom',11,'Comedy','bardiche','Salim Akil');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4015,'Just Go with It',32,'Comedy','logicists','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4016,'Justin Bieber: Never Say Never',88,'Documentary','parroter','Jon M. Chu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4017,'Kill List',45,'Crime','hell-rake','Ben Wheatley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4018,'Killer Elite',30,'Action','triphylite','Gary McKendry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4019,'Killer Joe',3,'Crime','distancy','William Friedkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4020,'Kung Fu Panda 2',2,'Action','spinnies','Jennifer Yuh Nelson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4021,'L!fe Happens',5,'Comedy','resmethrin','Kat Coiro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4022,'Larry Crowne',81,'Comedy','angledozer','Tom Hanks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4023,'Le Havre',44,'Comedy','ethoxylate','Aki Kaurism�?ki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4024,'Like Crazy',14,'Drama','ursidae','Drake Doremus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4025,'Machine Gun Preacher',81,'Action','whippowill','Marc Forster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4026,'Margaret',37,'Drama','silurid','Kenneth Lonergan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4027,'Margin Call',77,'Biography','bardiche','J.C. Chandor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4028,'Mars Needs Moms',84,'Action','logicists','Simon Wells');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4029,'Melancholia',92,'Drama','parroter','Lars von Trier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4030,'Midnight in Paris',85,'Comedy','hell-rake','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4031,'Mission: Impossible - Ghost Protocol',11,'Action','triphylite','Brad Bird');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4032,'Moneyball',88,'Biography','distancy','Bennett Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4033,'Monte Carlo',89,'Adventure','spinnies','Thomas Bezucha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4034,'Mr. Popper''s Penguins',56,'Comedy','resmethrin','Mark Waters');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4035,'My Week with Marilyn',78,'Biography','angledozer','Simon Curtis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4036,'New Year''s Eve',56,'Comedy','ethoxylate','Garry Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4037,'Newlyweds',67,'Comedy','ursidae','Edward Burns');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4038,'No Strings Attached',95,'Comedy','whippowill','Ivan Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4039,'One Day',47,'Drama','silurid','Lone Scherfig');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4040,'Our Idiot Brother',4,'Comedy','bardiche','Jesse Peretz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4041,'Paranormal Activity 3',81,'Horror','logicists','Henry Joost');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4042,'Paul',93,'Adventure','parroter','Greg Mottola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4043,'Pink Ribbons, Inc.',81,'Documentary','hell-rake','L̩a Pool');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4044,'Pirates of the Caribbean: On Stranger Tides',14,'Action','triphylite','Rob Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4045,'Priest',93,'Action','distancy','Scott Stewart');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4046,'Prom',95,'Comedy','spinnies','Joe Nussbaum');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4047,'Puss in Boots',43,'Action','resmethrin','Chris Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4048,'Rango',82,'Adventure','angledozer','Gore Verbinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4049,'Real Steel',1,'Action','ethoxylate','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4050,'Red Riding Hood',37,'Fantasy','ursidae','Catherine Hardwicke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4051,'Rio',52,'Adventure','whippowill','Carlos Saldanha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4052,'Rise of the Planet of the Apes',92,'Action','silurid','Rupert Wyatt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4053,'Salvation Boulevard',43,'Action','bardiche','George Ratliff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4054,'Samsara',12,'Documentary','logicists','Ron Fricke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4055,'Sanctum',14,'Adventure','parroter','Alister Grierson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4056,'Scream 4',41,'Horror','hell-rake','Wes Craven');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4057,'Shame',90,'Drama','triphylite','Steve McQueen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4058,'Shark Night 3D',56,'Horror','distancy','David R. Ellis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4059,'Sherlock Holmes: A Game of Shadows',37,'Action','spinnies','Guy Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4060,'Sholem Aleichem: Laughing in the Darkness',41,'Documentary','resmethrin','Joseph Dorman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4061,'Silent House',63,'Drama','angledozer','Chris Kentis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4062,'Snow Flower and the Secret Fan',32,'Drama','ethoxylate','Wayne Wang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4063,'Something Borrowed',7,'Comedy','ursidae','Luke Greenfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4064,'Soul Surfer',46,'Biography','whippowill','Sean McNamara');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4065,'Source Code',29,'Mystery','silurid','Duncan Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4066,'Spy Kids: All the Time in the World in 4D',34,'Action','bardiche','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4067,'Straw Dogs',39,'Action','logicists','Rod Lurie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4068,'Sucker Punch',65,'Action','parroter','Zack Snyder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4069,'Super 8',28,'Mystery','hell-rake','J.J. Abrams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4070,'Take Me Home Tonight',82,'Comedy','triphylite','Michael Dowse');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4071,'Take Shelter',39,'Drama','distancy','Jeff Nichols');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4072,'The Adjustment Bureau',29,'Romance','spinnies','George Nolfi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4073,'The Adventures of Tintin',51,'Action','resmethrin','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4074,'The Artist',74,'Comedy','angledozer','Michel Hazanavicius');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4075,'The Beaver',32,'Drama','ethoxylate','Jodie Foster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4076,'The Best Exotic Marigold Hotel',23,'Comedy','ursidae','John Madden');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4077,'The Big Year',97,'Comedy','whippowill','David Frankel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4078,'The Change-Up',6,'Comedy','silurid','David Dobkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4079,'The Darkest Hour',98,'Action','bardiche','Chris Gorak');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4080,'The Descendants',64,'Comedy','logicists','Alexander Payne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4081,'The Devil''s Double',43,'Biography','parroter','Lee Tamahori');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4082,'The Dilemma',56,'Comedy','hell-rake','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4083,'The Divide',37,'Drama','triphylite','Xavier Gens');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4084,'The Flowers of War',54,'Drama','distancy','Yimou Zhang');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4085,'The FP',60,'Comedy','spinnies','Brandon Trost');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4086,'The Girl with the Dragon Tattoo',70,'Crime','resmethrin','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4087,'The Greatest Movie Ever Sold',86,'Comedy','angledozer','Morgan Spurlock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4088,'The Green Hornet',49,'Action','ethoxylate','Michel Gondry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4089,'The Grey',74,'Action','ursidae','Joe Carnahan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4090,'The Guard',19,'Comedy','whippowill','John Michael McDonagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4091,'The Hangover Part II',64,'Comedy','silurid','Todd Phillips');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4092,'The Harvest/La Cosecha',82,'Documentary','bardiche','U. Roberto Romano');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4093,'The Help',4,'Drama','logicists','Tate Taylor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4094,'The Ides of March',33,'Drama','parroter','George Clooney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4095,'The Innkeepers',12,'Horror','hell-rake','Ti West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4096,'The Iron Lady',77,'Biography','triphylite','Phyllida Lloyd');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4097,'The Lincoln Lawyer',26,'Crime','distancy','Brad Furman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4098,'The Mechanic',12,'Action','spinnies','Simon West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4099,'The Muppets',56,'Adventure','resmethrin','James Bobin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4100,'The Raid: Redemption',74,'Action','angledozer','Gareth Evans');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4101,'The Rite',12,'Drama','ethoxylate','Mikael H̴fstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4102,'The Roommate',62,'Drama','ursidae','Christian E. Christiansen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4103,'The Smurfs',21,'Adventure','whippowill','Raja Gosnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4104,'The Son of No One',92,'Crime','silurid','Dito Montiel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4105,'The Three Musketeers',51,'Action','bardiche','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4106,'The Tree of Life',11,'Drama','logicists','Terrence Malick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4107,'There Be Dragons',23,'Biography','parroter','Roland Joff̩');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4108,'Thor',61,'Action','hell-rake','Kenneth Branagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4109,'Tinker Tailor Soldier Spy',12,'Drama','triphylite','Tomas Alfredson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4110,'Tower Heist',69,'Action','distancy','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4111,'Transformers: Dark of the Moon',98,'Action','spinnies','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4112,'Unknown',18,'Action','resmethrin','Jaume Collet-Serra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4113,'War Horse',24,'Drama','angledozer','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4114,'Warrior',11,'Drama','ethoxylate','Gavin O''Connor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4115,'Water for Elephants',32,'Drama','ursidae','Francis Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4116,'We Need to Talk About Kevin',88,'Drama','whippowill','Lynne Ramsay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4117,'Weekend',45,'Drama','silurid','Andrew Haigh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4118,'What''s Your Number?',30,'Comedy','bardiche','Mark Mylod');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4119,'Winnie the Pooh',3,'Adventure','logicists','Stephen J. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4120,'X-Men: First Class',2,'Action','parroter','Matthew Vaughn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4121,'Young Adult',5,'Comedy','hell-rake','Jason Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4122,'Your Highness',81,'Adventure','triphylite','David Gordon Green');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4123,'Your Sister''s Sister',44,'Comedy','distancy','Lynn Shelton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4124,'Zookeeper',14,'Comedy','spinnies','Frank Coraci');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4125,'2016: Obama''s America',81,'Documentary','resmethrin','Dinesh D''Souza');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4126,'21 Jump Street',37,'Action','angledozer','Phil Lord');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4127,'A Thousand Words',77,'Comedy','ethoxylate','Brian Robbins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4128,'Abraham Lincoln: Vampire Hunter',84,'Action','ursidae','Timur Bekmambetov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4129,'Act of Valor',92,'Action','whippowill','Mike McCoy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4130,'Alex Cross',85,'Action','silurid','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4131,'American Reunion',11,'Comedy','bardiche','Jon Hurwitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4132,'Amour',88,'Drama','logicists','Michael Haneke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4133,'Arbitrage',89,'Drama','parroter','Nicholas Jarecki');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4134,'Argo',56,'Biography','hell-rake','Ben Affleck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4135,'Atlas Shrugged II: The Strike',78,'Drama','triphylite','John Putch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4136,'Bachelorette',56,'Comedy','distancy','Leslye Headland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4137,'Battleship',67,'Action','spinnies','Peter Berg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4138,'Beasts of the Southern Wild',95,'Drama','resmethrin','Benh Zeitlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4139,'Big Miracle',47,'Biography','angledozer','Ken Kwapis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4140,'Blue Like Jazz',4,'Comedy','ethoxylate','Steve Taylor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4141,'Brave',81,'Adventure','ursidae','Mark Andrews');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4142,'Bullet to the Head',93,'Action','whippowill','Walter Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4143,'Burn',81,'Documentary','silurid','Tom Putnam');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4144,'Casa de mi Padre',14,'Comedy','bardiche','Matt Piedmont');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4145,'Chasing Mavericks',93,'Biography','logicists','Michael Apted');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4146,'Chernobyl Diaries',95,'Horror','parroter','Bradley Parker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4147,'Chronicle',43,'Drama','hell-rake','Josh Trank');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4148,'Cloud Atlas',82,'Drama','triphylite','Tom Tykwer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4149,'Compliance',1,'Biography','distancy','Craig Zobel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4150,'Contraband',37,'Action','spinnies','Baltasar Korm��kur');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4151,'Dark Shadows',52,'Comedy','resmethrin','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4152,'Deadfall',92,'Crime','angledozer','Stefan Ruzowitzky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4153,'Deceptive Practice: The Mysteries and Mentors of Ricky Jay',43,'Documentary','ethoxylate','Molly Bernstein');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4154,'Detention of the Dead',12,'Comedy','ursidae','Alex Craig Mann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4155,'Diary of a Wimpy Kid: Dog Days',14,'Comedy','whippowill','David Bowers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4156,'Django Unchained',41,'Drama','silurid','Quentin Tarantino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4157,'Dredd',90,'Action','bardiche','Pete Travis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4158,'Eddie: The Sleepwalking Cannibal',56,'Comedy','logicists','Boris Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4159,'End of Watch',37,'Crime','parroter','David Ayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4160,'Ernest & Celestine',41,'Animation','hell-rake','St̩phane Aubier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4161,'Filly Brown',63,'Drama','triphylite','Youssef Delara');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4162,'Flight',32,'Drama','distancy','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4163,'For a Good Time, Call...',7,'Comedy','spinnies','Jamie Travis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4164,'For Greater Glory: The True Story of Cristiada',46,'Drama','resmethrin','Dean Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4165,'Frankenweenie',29,'Animation','angledozer','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4166,'Fun Size',34,'Adventure','ethoxylate','Josh Schwartz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4167,'Hardflip',39,'Action','ursidae','Johnny Remo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4168,'Here Comes the Boom',65,'Action','whippowill','Frank Coraci');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4169,'Hit and Run',28,'Action','silurid','David Palmer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4170,'Hope Springs',82,'Comedy','bardiche','David Frankel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4171,'Hotel Transylvania',39,'Animation','logicists','Genndy Tartakovsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4172,'House at the End of the Street',29,'Drama','parroter','Mark Tonderai');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4173,'Ice Age: Continental Drift',51,'Adventure','hell-rake','Steve Martino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4174,'Inescapable',74,'Drama','triphylite','Ruba Nadda');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4175,'Jab Tak Hai Jaan',32,'Drama','distancy','Yash Chopra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4176,'Jack Reacher',23,'Action','spinnies','Christopher McQuarrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4177,'John Carter',97,'Action','resmethrin','Andrew Stanton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4178,'Journey 2: The Mysterious Island',6,'Action','angledozer','Brad Peyton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4179,'Joyful Noise',98,'Comedy','ethoxylate','Todd Graff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4180,'Katy Perry: Part of Me',64,'Documentary','ursidae','Dan Cutforth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4181,'Killing Them Softly',43,'Crime','whippowill','Andrew Dominik');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4182,'Les Mis̩rables',56,'Drama','silurid','Tom Hooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4183,'Life of Pi',37,'Adventure','bardiche','Ang Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4184,'Lincoln',54,'Biography','logicists','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4185,'Lockout',60,'Action','parroter','James Mather');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4186,'Looper',70,'Action','hell-rake','Rian Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4187,'Madagascar 3: Europe''s Most Wanted',86,'Adventure','triphylite','Eric Darnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4188,'Madea''s Witness Protection',49,'Comedy','distancy','Tyler Perry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4189,'Magic Mike',74,'Comedy','spinnies','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4190,'Man on a Ledge',19,'Action','resmethrin','Asger Leth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4191,'Maniac',64,'Horror','angledozer','Franck Khalfoun');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4192,'Men in Black 3',82,'Action','ethoxylate','Barry Sonnenfeld');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4193,'Middle of Nowhere',4,'Drama','ursidae','Ava DuVernay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4194,'Mirror Mirror',33,'Adventure','whippowill','Tarsem Singh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4195,'Moonrise Kingdom',12,'Adventure','silurid','Wes Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4196,'Mud',77,'Drama','bardiche','Jeff Nichols');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4197,'On the Road',26,'Adventure','logicists','Walter Salles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4198,'One for the Money',12,'Action','parroter','Julie Anne Robinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4199,'Paranormal Activity 4',56,'Horror','hell-rake','Henry Joost');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4200,'ParaNorman',74,'Adventure','triphylite','Chris Butler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4201,'Parental Guidance',12,'Comedy','distancy','Andy Fickman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4202,'Pitch Perfect',62,'Comedy','spinnies','Jason Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4203,'Playing for Keeps',21,'Comedy','resmethrin','Gabriele Muccino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4204,'Premium Rush',92,'Action','angledozer','David Koepp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4205,'Project X',51,'Comedy','ethoxylate','Nima Nourizadeh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4206,'Prometheus',11,'Adventure','ursidae','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4207,'Promised Land',23,'Drama','whippowill','Gus Van Sant');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4208,'Quartet',61,'Comedy','silurid','Dustin Hoffman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4209,'Red Tails',12,'Action','bardiche','Anthony Hemingway');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4210,'Resident Evil: Retribution',69,'Action','logicists','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4211,'Rise of the Guardians',98,'Adventure','parroter','Peter Ramsey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4212,'Robot & Frank',18,'Comedy','hell-rake','Jake Schreier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4213,'Rock of Ages',24,'Comedy','triphylite','Adam Shankman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4214,'Safe',11,'Action','distancy','Boaz Yakin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4215,'Safe House',32,'Action','spinnies','Daniel Espinosa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4216,'Safety Not Guaranteed',88,'Comedy','resmethrin','Colin Trevorrow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4217,'Savages',45,'Crime','angledozer','Oliver Stone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4218,'Seeking a Friend for the End of the World',30,'Adventure','ethoxylate','Lorene Scafaria');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4219,'Seven Psychopaths',3,'Comedy','ursidae','Martin McDonagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4220,'Silent Hill: Revelation 3D',2,'Adventure','whippowill','Michael J. Bassett');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4221,'Silver Linings Playbook',5,'Comedy','silurid','David O. Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4222,'Sinister',81,'Horror','bardiche','Scott Derrickson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4223,'Skyfall',44,'Action','logicists','Sam Mendes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4224,'Snow White and the Huntsman',14,'Action','parroter','Rupert Sanders');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4225,'Sparkle',81,'Drama','hell-rake','Salim Akil');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4226,'Spring Breakers',37,'Crime','triphylite','Harmony Korine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4227,'Step Up Revolution',77,'Drama','distancy','Scott Speer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4228,'Stolen',84,'Action','spinnies','Simon West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4229,'Taken 2',92,'Action','resmethrin','Olivier Megaton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4230,'Ted',85,'Comedy','angledozer','Seth MacFarlane');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4231,'That''s My Boy',11,'Comedy','ethoxylate','Sean Anders');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4232,'The Act of Killing',88,'Biography','ursidae','Joshua Oppenheimer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4233,'The Amazing Spider-Man',89,'Action','whippowill','Marc Webb');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4234,'The Apparition',56,'Horror','silurid','Todd Lincoln');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4235,'The Avengers',78,'Action','bardiche','Joss Whedon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4236,'The Bourne Legacy',56,'Action','logicists','Tony Gilroy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4237,'The Brass Teapot',67,'Comedy','parroter','Ramaa Mosley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4238,'The Cabin in the Woods',95,'Fantasy','hell-rake','Drew Goddard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4239,'The Campaign',47,'Comedy','triphylite','Jay Roach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4240,'The Cold Light of Day',4,'Action','distancy','Mabrouk El Mechri');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4241,'The Collection',81,'Action','spinnies','Marcus Dunstan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4242,'The Dark Knight Rises',93,'Action','resmethrin','Christopher Nolan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4243,'The Devil Inside',81,'Horror','angledozer','William Brent Bell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4244,'The Dictator',14,'Comedy','ethoxylate','Larry Charles');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4245,'The Expendables 2',93,'Action','ursidae','Simon West');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4246,'The Five-Year Engagement',95,'Comedy','whippowill','Nicholas Stoller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4247,'The Ghastly Love of Johnny X',43,'Comedy','silurid','Paul Bunnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4248,'The Guilt Trip',82,'Comedy','bardiche','Anne Fletcher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4249,'The Hobbit: An Unexpected Journey',1,'Adventure','logicists','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4250,'The Hunger Games',37,'Adventure','parroter','Gary Ross');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4251,'The Hunt',52,'Drama','hell-rake','Thomas Vinterberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4252,'The Iceman',92,'Biography','triphylite','Ariel Vromen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4253,'The Impossible',43,'Drama','distancy','J.A. Bayona');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4254,'The Lords of Salem',12,'Drama','spinnies','Rob Zombie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4255,'The Lucky One',14,'Drama','resmethrin','Scott Hicks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4256,'The Man with the Iron Fists',41,'Action','angledozer','RZA');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4257,'The Master',90,'Drama','ethoxylate','Paul Thomas Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4258,'The Odd Life of Timothy Green',56,'Comedy','ursidae','Peter Hedges');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4259,'The Oogieloves in the Big Balloon Adventure',37,'Adventure','whippowill','Matthew Diamond');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4260,'The Other Dream Team',41,'Documentary','silurid','Marius A. Markevicius');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4261,'The Perks of Being a Wallflower',63,'Drama','bardiche','Stephen Chbosky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4262,'The Pirates! Band of Misfits',32,'Adventure','logicists','Peter Lord');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4263,'The Place Beyond the Pines',7,'Crime','parroter','Derek Cianfrance');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4264,'The Possession',46,'Horror','hell-rake','Ole Bornedal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4265,'The Raven',29,'Crime','triphylite','James McTeigue');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4266,'The Sessions',34,'Biography','distancy','Ben Lewin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4267,'The Sweeney',39,'Action','spinnies','Nick Love');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4268,'The Twilight Saga: Breaking Dawn - Part 2',65,'Adventure','resmethrin','Bill Condon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4269,'The Vow',28,'Drama','angledozer','Michael Sucsy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4270,'The Watch',82,'Action','ethoxylate','Akiva Schaffer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4271,'The Woman in Black',39,'Drama','ursidae','James Watkins');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4272,'The Words',29,'Drama','whippowill','Brian Klugman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4273,'Think Like a Man',51,'Comedy','silurid','Tim Story');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4274,'This Is 40',74,'Comedy','bardiche','Judd Apatow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4275,'This Means War',32,'Action','logicists','McG');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4276,'Tim and Eric''s Billion Dollar Movie',23,'Comedy','parroter','Tim Heidecker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4277,'To Rome with Love',97,'Comedy','hell-rake','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4278,'Underworld: Awakening',6,'Action','triphylite','M̴ns M̴rlind');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4279,'Vamps',98,'Comedy','distancy','Amy Heckerling');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4280,'What to Expect When You''re Expecting',64,'Comedy','spinnies','Kirk Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4281,'Wrath of the Titans',43,'Action','resmethrin','Jonathan Liebesman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4282,'Wreck-It Ralph',56,'Adventure','angledozer','Rich Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4283,'Zero Dark Thirty',37,'Drama','ethoxylate','Kathryn Bigelow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4284,'12 Years a Slave',54,'Biography','ursidae','Steve McQueen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4285,'2 Guns',60,'Action','whippowill','Baltasar Korm��kur');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4286,'20 Feet from Stardom',70,'Documentary','silurid','Morgan Neville');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4287,'21 & Over',86,'Comedy','bardiche','Jon Lucas');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4288,'42',49,'Biography','logicists','Brian Helgeland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4289,'47 Ronin',74,'Action','parroter','Carl Rinsch');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4290,'A Good Day to Die Hard',19,'Action','hell-rake','John Moore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4291,'A Haunted House',64,'Comedy','triphylite','Michael Tiddes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4292,'A Madea Christmas',82,'Comedy','distancy','Tyler Perry');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4293,'About Time',4,'Drama','spinnies','Richard Curtis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4294,'Admission',33,'Comedy','resmethrin','Paul Weitz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4295,'Adore',12,'Drama','angledozer','Anne Fontaine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4296,'After Earth',77,'Action','ethoxylate','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4297,'All Is Lost',26,'Action','ursidae','J.C. Chandor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4298,'American Hustle',12,'Crime','whippowill','David O. Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4299,'Anchorman 2: The Legend Continues',56,'Comedy','silurid','Adam McKay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4300,'Antarctica: A Year on Ice',74,'Adventure','bardiche','Anthony Powell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4301,'August: Osage County',12,'Drama','logicists','John Wells');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4302,'Bad Grandpa',62,'Comedy','parroter','Jeff Tremaine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4303,'Bad Words',21,'Comedy','hell-rake','Jason Bateman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4304,'Baggage Claim',92,'Comedy','triphylite','David E. Talbert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4305,'Battle of the Year',51,'Drama','distancy','Benson Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4306,'Beautiful Creatures',11,'Drama','spinnies','Richard LaGravenese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4307,'Before Midnight',23,'Drama','resmethrin','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4308,'Begin Again',61,'Drama','angledozer','John Carney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4309,'Black Nativity',12,'Drama','ethoxylate','Kasi Lemmons');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4310,'Blood Ties',69,'Crime','ursidae','Guillaume Canet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4311,'Blue Jasmine',98,'Drama','whippowill','Woody Allen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4312,'Blue Ruin',18,'Crime','silurid','Jeremy Saulnier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4313,'Broken City',24,'Crime','bardiche','Allen Hughes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4314,'Buen D�?a, Ram�?n',11,'Drama','logicists','Jorge Ram�?rez Su��rez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4315,'Captain Phillips',32,'Biography','parroter','Paul Greengrass');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4316,'Carrie',88,'Drama','hell-rake','Kimberly Peirce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4317,'Cheap Thrills',45,'Comedy','triphylite','E.L. Katz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4318,'Cinco de Mayo, La Batalla',30,'Drama','distancy','Rafa Lara');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4319,'Cloudy with a Chance of Meatballs 2',3,'Animation','spinnies','Cody Cameron');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4320,'Dallas Buyers Club',2,'Biography','resmethrin','Jean-Marc Vall̩e');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4321,'Dead Man Down',5,'Action','angledozer','Niels Arden Oplev');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4322,'Delivery Man',81,'Comedy','ethoxylate','Ken Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4323,'Despicable Me 2',44,'Animation','ursidae','Pierre Coffin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4324,'Don Jon',14,'Comedy','whippowill','Joseph Gordon-Levitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4325,'Elysium',81,'Action','silurid','Neill Blomkamp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4326,'Ender''s Game',37,'Action','bardiche','Gavin Hood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4327,'Enough Said',77,'Comedy','logicists','Nicole Holofcener');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4328,'Epic',84,'Adventure','parroter','Chris Wedge');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4329,'Escape from Planet Earth',92,'Adventure','hell-rake','Cal Brunker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4330,'Escape Plan',85,'Action','triphylite','Mikael H̴fstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4331,'Evil Dead',11,'Horror','distancy','Fede Alvarez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4332,'Free Birds',88,'Adventure','spinnies','Jimmy Hayward');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4333,'Frozen',89,'Adventure','resmethrin','Chris Buck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4334,'Fruitvale Station',56,'Biography','angledozer','Ryan Coogler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4335,'G.I. Joe: Retaliation',78,'Action','ethoxylate','Jon M. Chu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4336,'Gangster Squad',56,'Action','ursidae','Ruben Fleischer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4337,'Getaway',67,'Action','whippowill','Courtney Solomon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4338,'Gravity',95,'Adventure','silurid','Alfonso Cuar�?n');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4339,'Grown Ups 2',47,'Comedy','bardiche','Dennis Dugan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4340,'Grudge Match',4,'Comedy','logicists','Peter Segal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4341,'Hansel & Gretel: Witch Hunters',81,'Action','parroter','Tommy Wirkola');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4342,'Her',93,'Drama','hell-rake','Spike Jonze');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4343,'Home Run',81,'Drama','triphylite','David Boyd');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4344,'Homefront',14,'Action','distancy','Gary Fleder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4345,'Identity Thief',93,'Comedy','spinnies','Seth Gordon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4346,'Inside Llewyn Davis',95,'Drama','resmethrin','Ethan Coen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4347,'Insidious: Chapter 2',43,'Fantasy','angledozer','James Wan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4348,'Instructions Not Included',82,'Comedy','ethoxylate','Eugenio Derbez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4349,'Iron Man 3',1,'Action','ursidae','Shane Black');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4350,'Jack the Giant Slayer',37,'Adventure','whippowill','Bryan Singer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4351,'Joe',52,'Drama','silurid','David Gordon Green');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4352,'Kevin Hart: Let Me Explain',92,'Comedy','bardiche','Leslie Small');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4353,'Kick-Ass 2',43,'Action','logicists','Jeff Wadlow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4354,'Labor Day',12,'Drama','parroter','Jason Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4355,'Last Vegas',14,'Comedy','hell-rake','Jon Turteltaub');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4356,'Lee Daniels'' The Butler',41,'Biography','triphylite','Lee Daniels');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4357,'Legends of Oz: Dorothy''s Return',90,'Adventure','distancy','Will Finn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4358,'Lone Survivor',56,'Action','spinnies','Peter Berg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4359,'Machete Kills',37,'Action','resmethrin','Robert Rodriguez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4360,'Mama',41,'Fantasy','angledozer','Andr̩s Muschietti');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4361,'Man of Steel',63,'Action','ethoxylate','Zack Snyder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4362,'Mandela: Long Walk to Freedom',32,'Biography','ursidae','Justin Chadwick');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4363,'Monsters University',7,'Adventure','whippowill','Dan Scanlon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4364,'Movie 43',46,'Comedy','silurid','Elizabeth Banks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4365,'Nebraska',29,'Adventure','bardiche','Alexander Payne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4366,'Now You See Me',34,'Crime','logicists','Louis Leterrier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4367,'Oblivion',39,'Action','parroter','Joseph Kosinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4368,'Oculus',65,'Horror','hell-rake','Mike Flanagan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4369,'Of Horses and Men',28,'Comedy','triphylite','Benedikt Erlingsson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4370,'Olympus Has Fallen',82,'Action','distancy','Antoine Fuqua');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4371,'One Direction: This Is Us',39,'Documentary','spinnies','Morgan Spurlock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4372,'Only God Forgives',29,'Crime','resmethrin','Nicolas Winding Refn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4373,'Out of the Furnace',51,'Crime','angledozer','Scott Cooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4374,'Oz the Great and Powerful',74,'Adventure','ethoxylate','Sam Raimi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4375,'Pacific Rim',32,'Action','ursidae','Guillermo del Toro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4376,'Pain & Gain',23,'Comedy','whippowill','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4377,'Parker',97,'Action','silurid','Taylor Hackford');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4378,'Peeples',6,'Comedy','bardiche','Tina Gordon Chism');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4379,'Percy Jackson: Sea of Monsters',98,'Adventure','logicists','Thor Freudenthal');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4380,'Philomena',64,'Biography','parroter','Stephen Frears');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4381,'Prisoners',43,'Crime','hell-rake','Denis Villeneuve');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4382,'R.I.P.D.',56,'Action','triphylite','Robert Schwentke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4383,'R100',37,'Comedy','distancy','Hitoshi Matsumoto');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4384,'RED 2',54,'Action','spinnies','Dean Parisot');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4385,'Riddick',60,'Action','resmethrin','David Twohy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4386,'Runner Runner',70,'Crime','angledozer','Brad Furman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4387,'Rush',86,'Action','ethoxylate','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4388,'Safe Haven',49,'Drama','ursidae','Lasse Hallstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4389,'Saving Mr. Banks',74,'Biography','whippowill','John Lee Hancock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4390,'Scary Movie 5',19,'Comedy','silurid','Malcolm D. Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4391,'Side Effects',64,'Crime','bardiche','Steven Soderbergh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4392,'Snitch',82,'Action','logicists','Ric Roman Waugh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4393,'Snowpiercer',4,'Action','parroter','Joon-ho Bong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4394,'Star Trek Into Darkness',33,'Action','hell-rake','J.J. Abrams');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4395,'Stoker',12,'Drama','triphylite','Chan-wook Park');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4396,'Texas Chainsaw 3D',77,'Horror','distancy','John Luessenhop');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4397,'The Adventurer: The Curse of the Midas Box',26,'Adventure','spinnies','Jonathan Newman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4398,'The Amazing Catfish',12,'Comedy','resmethrin','Claudia Sainte-Luce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4399,'The Best Man Holiday',56,'Comedy','angledozer','Malcolm D. Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4400,'The Best Offer',74,'Crime','ethoxylate','Giuseppe Tornatore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4401,'The Big Wedding',12,'Comedy','ursidae','Justin Zackham');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4402,'The Book Thief',62,'Drama','whippowill','Brian Percival');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4403,'The Call',21,'Crime','silurid','Brad Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4404,'The Canyons',92,'Drama','bardiche','Paul Schrader');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4405,'The Conjuring',51,'Horror','logicists','James Wan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4406,'The Counselor',11,'Crime','parroter','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4407,'The Croods',23,'Adventure','hell-rake','Kirk De Micco');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4408,'The East',61,'Drama','triphylite','Zal Batmanglij');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4409,'The Fifth Estate',12,'Biography','distancy','Bill Condon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4410,'The Grandmaster',69,'Action','spinnies','Kar-Wai Wong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4411,'The Great Beauty',98,'Drama','resmethrin','Paolo Sorrentino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4412,'The Great Gatsby',18,'Drama','angledozer','Baz Luhrmann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4413,'The Green Inferno',24,'Adventure','ethoxylate','Eli Roth');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4414,'The Heat',11,'Action','ursidae','Paul Feig');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4415,'The Hobbit: The Desolation of Smaug',32,'Adventure','whippowill','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4416,'The Hunger Games: Catching Fire',88,'Adventure','silurid','Francis Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4417,'The Immigrant',45,'Drama','bardiche','James Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4418,'The Incredible Burt Wonderstone',30,'Comedy','logicists','Don Scardino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4419,'The Internship',3,'Comedy','parroter','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4420,'The Knife of Don Juan',2,'Comedy','hell-rake','Tom Sanchez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4421,'The Last Days on Mars',5,'Horror','triphylite','Ruairi Robinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4422,'The Last Exorcism Part II',81,'Drama','distancy','Ed Gass-Donnelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4423,'The Last Stand',44,'Action','spinnies','Jee-woon Kim');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4424,'The Lone Ranger',14,'Action','resmethrin','Gore Verbinski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4425,'The Lunchbox',81,'Drama','angledozer','Ritesh Batra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4426,'The Mortal Instruments: City of Bones',37,'Fantasy','ethoxylate','Harald Zwart');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4427,'The Purge',77,'Horror','ursidae','James DeMonaco');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4428,'The Railway Man',84,'Biography','whippowill','Jonathan Teplitzky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4429,'The Secret Life of Walter Mitty',92,'Adventure','silurid','Ben Stiller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4430,'The Smurfs 2',85,'Adventure','bardiche','Raja Gosnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4431,'The Spectacular Now',11,'Comedy','logicists','James Ponsoldt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4432,'The To Do List',88,'Comedy','parroter','Maggie Carey');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4433,'The Way Way Back',89,'Comedy','hell-rake','Nat Faxon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4434,'The Wolf of Wall Street',56,'Biography','triphylite','Martin Scorsese');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4435,'The Wolverine',78,'Action','distancy','James Mangold');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4436,'The World''s End',56,'Action','spinnies','Edgar Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4437,'The Young and Prodigious T.S. Spivet',67,'Action','resmethrin','Jean-Pierre Jeunet');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4438,'This Is the End',95,'Comedy','angledozer','Evan Goldberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4439,'Thor: The Dark World',47,'Action','ethoxylate','Alan Taylor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4440,'Thunder and the House of Magic',4,'Adventure','ursidae','Jeremy Degruson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4441,'Trance',81,'Crime','whippowill','Danny Boyle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4442,'Turbo',93,'Adventure','silurid','David Soren');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4443,'Walking with Dinosaurs 3D',81,'Adventure','bardiche','Barry Cook');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4444,'Warm Bodies',14,'Comedy','logicists','Jonathan Levine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4445,'We''re the Millers',93,'Comedy','parroter','Rawson Marshall Thurber');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4446,'White House Down',95,'Action','hell-rake','Roland Emmerich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4447,'World War Z',43,'Action','triphylite','Marc Forster');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4448,'22 Jump Street',82,'Action','distancy','Phil Lord');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4449,'3 Days to Kill',1,'Action','spinnies','McG');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4450,'300: Rise of an Empire',37,'Action','resmethrin','Noam Murro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4451,'A Haunted House 2',52,'Comedy','angledozer','Michael Tiddes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4452,'A Lego Brickumentary',92,'Documentary','ethoxylate','Kief Davidson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4453,'A Million Ways to Die in the West',43,'Comedy','ursidae','Seth MacFarlane');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4454,'A Most Violent Year',12,'Action','whippowill','J.C. Chandor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4455,'A Most Wanted Man',14,'Crime','silurid','Anton Corbijn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4456,'A Walk Among the Tombstones',41,'Crime','bardiche','Scott Frank');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4457,'About Last Night',90,'Comedy','logicists','Steve Pink');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4458,'Addicted',56,'Drama','parroter','Bille Woodruff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4459,'Alexander and the Terrible, Horrible, No Good, Very Bad Day',37,'Comedy','hell-rake','Miguel Arteta');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4460,'Aloft',41,'Drama','triphylite','Claudia Llosa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4461,'American Sniper',63,'Action','distancy','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4462,'And So It Goes',32,'Comedy','spinnies','Rob Reiner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4463,'Annabelle',7,'Horror','resmethrin','John R. Leonetti');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4464,'Annie',46,'Comedy','angledozer','Will Gluck');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4465,'As Above, So Below',29,'Horror','ethoxylate','John Erick Dowdle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4466,'Atlas Shrugged: Who Is John Galt?',34,'Drama','ursidae','James Manera');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4467,'Before I Go to Sleep',39,'Drama','whippowill','Rowan Joffe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4468,'Beyond the Lights',65,'Drama','silurid','Gina Prince-Bythewood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4469,'Big Eyes',28,'Biography','bardiche','Tim Burton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4470,'Big Hero 6',82,'Action','logicists','Don Hall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4471,'Birdman or (The Unexpected Virtue of Ignorance)',39,'Comedy','parroter','Alejandro G. I̱��rritu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4472,'Black or White',29,'Drama','hell-rake','Mike Binder');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4473,'Blended',51,'Comedy','triphylite','Frank Coraci');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4474,'Born to Fly: Elizabeth Streb vs. Gravity',74,'Action','distancy','Catherine Gund');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4475,'Boyhood',32,'Drama','spinnies','Richard Linklater');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4476,'Brick Mansions',23,'Action','resmethrin','Camille Delamarre');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4477,'Captain America: The Winter Soldier',97,'Action','angledozer','Anthony Russo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4478,'Dawn of the Planet of the Apes',6,'Action','ethoxylate','Matt Reeves');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4479,'Deliver Us from Evil',98,'Horror','ursidae','Scott Derrickson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4480,'Desert Dancer',64,'Biography','whippowill','Richard Raymond');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4481,'Devil''s Due',43,'Horror','silurid','Matt Bettinelli-Olpin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4482,'Divergent',56,'Adventure','bardiche','Neil Burger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4483,'Dolphin Tale 2',37,'Drama','logicists','Charles Martin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4484,'Dracula Untold',54,'Action','parroter','Gary Shore');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4485,'Draft Day',60,'Drama','hell-rake','Ivan Reitman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4486,'Dumb and Dumber To',70,'Comedy','triphylite','Bobby Farrelly');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4487,'Earth to Echo',86,'Adventure','distancy','Dave Green');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4488,'Edge of Tomorrow',49,'Action','spinnies','Doug Liman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4489,'Endless Love',74,'Drama','resmethrin','Shana Feste');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4490,'Escobar: Paradise Lost',19,'Crime','angledozer','Andrea Di Stefano');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4491,'Exodus: Gods and Kings',64,'Action','ethoxylate','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4492,'Falcon Rising',82,'Action','ursidae','Ernie Barbarash');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4493,'Fury',4,'Action','whippowill','David Ayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4494,'Futuro Beach',33,'Drama','silurid','Karim A��nouz');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4495,'Get on Up',12,'Biography','bardiche','Tate Taylor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4496,'Gone Girl',77,'Crime','logicists','David Fincher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4497,'Guardians of the Galaxy',26,'Action','parroter','James Gunn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4498,'Happy Christmas',12,'Comedy','hell-rake','Joe Swanberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4499,'Heaven Is for Real',56,'Biography','triphylite','Randall Wallace');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4500,'Hercules',74,'Action','distancy','Brett Ratner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4501,'Horrible Bosses 2',12,'Comedy','spinnies','Sean Anders');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4502,'How to Train Your Dragon 2',62,'Action','resmethrin','Dean DeBlois');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4503,'I, Frankenstein',21,'Action','angledozer','Stuart Beattie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4504,'If I Stay',92,'Drama','ethoxylate','R.J. Cutler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4505,'Inherent Vice',51,'Comedy','ursidae','Paul Thomas Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4506,'Interstellar',11,'Adventure','whippowill','Christopher Nolan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4507,'Into the Storm',23,'Action','silurid','Steven Quale');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4508,'Into the Woods',61,'Adventure','bardiche','Rob Marshall');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4509,'It Follows',12,'Horror','logicists','David Robert Mitchell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4510,'Jack Ryan: Shadow Recruit',69,'Action','parroter','Kenneth Branagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4511,'Jersey Boys',98,'Biography','hell-rake','Clint Eastwood');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4512,'Kill the Messenger',18,'Biography','triphylite','Michael Cuesta');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4513,'Kung Fu Killer',24,'Action','distancy','Teddy Chan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4514,'Left Behind',11,'Action','spinnies','Vic Armstrong');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4515,'Let''s Be Cops',32,'Comedy','resmethrin','Luke Greenfield');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4516,'Locker 13',88,'Thriller','angledozer','Bruce Dellis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4517,'Lucy',45,'Action','ethoxylate','Luc Besson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4518,'Maleficent',30,'Action','ursidae','Robert Stromberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4519,'Million Dollar Arm',3,'Biography','whippowill','Craig Gillespie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4520,'Moms'' Night Out',2,'Comedy','silurid','Andrew Erwin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4521,'Mr. Peabody & Sherman',5,'Adventure','bardiche','Rob Minkoff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4522,'Mr. Turner',81,'Biography','logicists','Mike Leigh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4523,'Muppets Most Wanted',44,'Adventure','parroter','James Bobin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4524,'Need for Speed',14,'Action','hell-rake','Scott Waugh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4525,'Neighbors',81,'Comedy','triphylite','Nicholas Stoller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4526,'Night at the Museum: Secret of the Tomb',37,'Adventure','distancy','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4527,'Nightcrawler',77,'Crime','spinnies','Dan Gilroy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4528,'No Good Deed',84,'Crime','resmethrin','Sam Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4529,'Noah',92,'Action','angledozer','Darren Aronofsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4530,'Non-Stop',85,'Action','ethoxylate','Jaume Collet-Serra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4531,'Not Cool',11,'Comedy','ursidae','Shane Dawson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4532,'Ouija',88,'Fantasy','whippowill','Stiles White');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4533,'Paddington',89,'Animation','silurid','Paul King');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4534,'Paranormal Activity: The Marked Ones',56,'Fantasy','bardiche','Christopher Landon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4535,'Penguins of Madagascar',78,'Adventure','logicists','Eric Darnell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4536,'Pompeii',56,'Action','parroter','Paul W.S. Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4537,'Ride Along',67,'Action','hell-rake','Tim Story');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4538,'Rio 2',95,'Adventure','triphylite','Carlos Saldanha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4539,'RoboCop',47,'Action','distancy','Jos̩ Padilha');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4540,'Rosewater',4,'Biography','spinnies','Jon Stewart');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4541,'Rudderless',81,'Comedy','resmethrin','William H. Macy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4542,'Sabotage',93,'Action','angledozer','David Ayer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4543,'Selma',81,'Biography','ethoxylate','Ava DuVernay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4544,'Seventh Son',14,'Action','ursidae','Sergey Bodrov');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4545,'Sex Tape',93,'Comedy','whippowill','Jake Kasdan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4546,'Sin City: A Dame to Kill For',95,'Action','silurid','Frank Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4547,'Skin Trade',43,'Action','bardiche','Ekachai Uekrongtham');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4548,'Son of God',82,'Biography','logicists','Christopher Spencer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4549,'Song One',1,'Drama','parroter','Kate Barker-Froyland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4550,'St. Vincent',37,'Comedy','hell-rake','Theodore Melfi');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4551,'Still Alice',52,'Drama','triphylite','Richard Glatzer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4552,'Taken 3',92,'Action','distancy','Olivier Megaton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4553,'Tammy',43,'Comedy','spinnies','Ben Falcone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4554,'Teenage Mutant Ninja Turtles',12,'Action','resmethrin','Jonathan Liebesman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4555,'That Awkward Moment',14,'Comedy','angledozer','Tom Gormican');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4556,'The Amazing Spider-Man 2',41,'Action','ethoxylate','Marc Webb');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4557,'The Best of Me',90,'Drama','ursidae','Michael Hoffman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4558,'The Book of Life',56,'Adventure','whippowill','Jorge R. Guti̩rrez');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4559,'The Boxtrolls',37,'Adventure','silurid','Graham Annable');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4560,'The Equalizer',41,'Action','bardiche','Antoine Fuqua');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4561,'The Expendables 3',63,'Action','logicists','Patrick Hughes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4562,'The Fault in Our Stars',32,'Drama','parroter','Josh Boone');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4563,'The Gambler',7,'Crime','hell-rake','Rupert Wyatt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4564,'The Giver',46,'Drama','triphylite','Phillip Noyce');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4565,'The Grand Budapest Hotel',29,'Adventure','distancy','Wes Anderson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4566,'The Hobbit: The Battle of the Five Armies',34,'Adventure','spinnies','Peter Jackson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4567,'The Homesman',39,'Drama','resmethrin','Tommy Lee Jones');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4568,'The Hundred-Foot Journey',65,'Comedy','angledozer','Lasse Hallstr̦m');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4569,'The Hunger Games: Mockingjay - Part 1',28,'Adventure','ethoxylate','Francis Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4570,'The Imitation Game',82,'Biography','ursidae','Morten Tyldum');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4571,'The Interview',39,'Comedy','whippowill','Evan Goldberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4572,'The Judge',29,'Crime','silurid','David Dobkin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4573,'The Legend of Hercules',51,'Action','bardiche','Renny Harlin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4574,'The Lego Movie',74,'Action','logicists','Phil Lord');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4575,'The Maze Runner',32,'Action','parroter','Wes Ball');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4576,'The Monuments Men',23,'Drama','hell-rake','George Clooney');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4577,'The November Man',97,'Action','triphylite','Roger Donaldson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4578,'The Nut Job',6,'Adventure','distancy','Peter Lepeniotis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4579,'The Other Woman',98,'Comedy','spinnies','Nick Cassavetes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4580,'The Purge: Anarchy',64,'Action','resmethrin','James DeMonaco');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4581,'The Theory of Everything',43,'Biography','angledozer','James Marsh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4582,'The Water Diviner',56,'Drama','ethoxylate','Russell Crowe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4583,'Think Like a Man Too',37,'Comedy','ursidae','Tim Story');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4584,'This Is Where I Leave You',54,'Comedy','whippowill','Shawn Levy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4585,'Top Five',60,'Comedy','silurid','Chris Rock');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4586,'Top Spin',70,'Documentary','bardiche','Sara Newens');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4587,'Transcendence',86,'Drama','logicists','Wally Pfister');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4588,'Transformers: Age of Extinction',49,'Action','parroter','Michael Bay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4589,'Tusk',74,'Comedy','hell-rake','Kevin Smith');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4590,'Unbroken',19,'Biography','triphylite','Angelina Jolie Pitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4591,'Unfriended',64,'Horror','distancy','Levan Gabriadze');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4592,'When the Game Stands Tall',82,'Drama','spinnies','Thomas Carter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4593,'While We''re Young',4,'Comedy','resmethrin','Noah Baumbach');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4594,'Whiplash',33,'Drama','angledozer','Damien Chazelle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4595,'Wild',12,'Adventure','ethoxylate','Jean-Marc Vall̩e');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4596,'Winter''s Tale',77,'Drama','ursidae','Akiva Goldsman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4597,'Wish I Was Here',26,'Comedy','whippowill','Zach Braff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4598,'X-Men: Days of Future Past',12,'Action','silurid','Bryan Singer');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4599,'10 Days in a Madhouse',56,'Drama','bardiche','Timothy Hines');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4600,'90 Minutes in Heaven',74,'Drama','logicists','Michael Polish');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4601,'Aloha',12,'Comedy','parroter','Cameron Crowe');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4602,'Alvin and the Chipmunks: The Road Chip',62,'Adventure','hell-rake','Walt Becker');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4603,'Anomalisa',21,'Animation','triphylite','Duke Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4604,'Antarctic Edge: 70� South',92,'Adventure','distancy','Dena Seidel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4605,'Ant-Man',51,'Action','spinnies','Peyton Reed');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4606,'Avengers: Age of Ultron',11,'Action','resmethrin','Joss Whedon');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4607,'Baahubali: The Beginning',23,'Action','angledozer','S.S. Rajamouli');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4608,'Black Mass',61,'Biography','ethoxylate','Scott Cooper');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4609,'Blackhat',12,'Action','ursidae','Michael Mann');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4610,'Bridge of Spies',69,'Drama','whippowill','Steven Spielberg');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4611,'Brooklyn',98,'Drama','silurid','John Crowley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4612,'Brotherly Love',18,'Drama','bardiche','Jamal Hill');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4613,'Burnt',24,'Comedy','logicists','John Wells');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4614,'By the Sea',11,'Drama','parroter','Angelina Jolie Pitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4615,'Captive',32,'Crime','hell-rake','Jerry Jameson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4616,'Censored Voices',88,'Documentary','triphylite','Mor Loushy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4617,'Chappie',45,'Action','distancy','Neill Blomkamp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4618,'Child 44',30,'Crime','spinnies','Daniel Espinosa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4619,'Cinderella',3,'Drama','resmethrin','Kenneth Branagh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4620,'Concussion',2,'Biography','angledozer','Peter Landesman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4621,'Courage',5,'Biography','ethoxylate','Angelo Pizzo');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4622,'Creative Control',81,'Drama','ursidae','Benjamin Dickinson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4623,'Creed',44,'Drama','whippowill','Ryan Coogler');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4624,'Daddy''s Home',14,'Comedy','silurid','Sean Anders');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4625,'Danny Collins',81,'Comedy','bardiche','Dan Fogelman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4626,'Do You Believe?',37,'Drama','logicists','Jon Gunn');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4627,'Dope',77,'Comedy','parroter','Rick Famuyiwa');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4628,'Dragon Blade',84,'Action','hell-rake','Daniel Lee');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4629,'Everest',92,'Adventure','triphylite','Baltasar Korm��kur');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4630,'Ex Machina',85,'Drama','distancy','Alex Garland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4631,'Fantastic Four',11,'Action','spinnies','Josh Trank');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4632,'Fifty Shades of Grey',88,'Drama','resmethrin','Sam Taylor-Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4633,'Focus',89,'Comedy','angledozer','Glenn Ficarra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4634,'Freeheld',56,'Biography','ethoxylate','Peter Sollett');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4635,'Furious 7',78,'Action','ursidae','James Wan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4636,'Get Hard',56,'Comedy','whippowill','Etan Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4637,'Goosebumps',67,'Adventure','silurid','Rob Letterman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4638,'Green Room',95,'Crime','bardiche','Jeremy Saulnier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4639,'Home',47,'Adventure','logicists','Tim Johnson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4640,'Hot Pursuit',4,'Action','parroter','Anne Fletcher');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4641,'Hot Tub Time Machine 2',81,'Comedy','hell-rake','Steve Pink');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4642,'Hotel Transylvania 2',93,'Animation','triphylite','Genndy Tartakovsky');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4643,'In the Heart of the Sea',81,'Action','distancy','Ron Howard');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4644,'Inside Out',14,'Adventure','spinnies','Pete Docter');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4645,'Insidious: Chapter 3',93,'Fantasy','resmethrin','Leigh Whannell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4646,'Insurgent',95,'Adventure','angledozer','Robert Schwentke');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4647,'Ip Man 3',43,'Action','ethoxylate','Wilson Yip');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4648,'Joy',82,'Biography','ursidae','David O. Russell');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4649,'Jupiter Ascending',1,'Action','whippowill','Lana Wachowski');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4650,'Jurassic World',37,'Action','silurid','Colin Trevorrow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4651,'Krampus',52,'Comedy','bardiche','Michael Dougherty');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4652,'Legend',92,'Biography','logicists','Brian Helgeland');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4653,'Little Boy',43,'Drama','parroter','Alejandro Monteverde');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4654,'Love the Coopers',12,'Comedy','hell-rake','Jessie Nelson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4655,'Mad Max: Fury Road',14,'Action','triphylite','George Miller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4656,'Maggie',41,'Drama','distancy','Henry Hobson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4657,'Magic Mike XXL',90,'Comedy','spinnies','Gregory Jacobs');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4658,'Max',56,'Adventure','resmethrin','Boaz Yakin');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4659,'McFarland, USA',37,'Biography','angledozer','Niki Caro');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4660,'Mi America',41,'Crime','ethoxylate','Robert Fontaine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4661,'Minions',63,'Action','ursidae','Kyle Balda');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4662,'Mission: Impossible - Rogue Nation',32,'Action','whippowill','Christopher McQuarrie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4663,'Mortdecai',7,'Action','silurid','David Koepp');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4664,'No Escape',46,'Action','bardiche','John Erick Dowdle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4665,'Our Brand Is Crisis',29,'Comedy','logicists','David Gordon Green');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4666,'Pan',34,'Adventure','parroter','Joe Wright');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4667,'Paper Towns',39,'Drama','hell-rake','Jake Schreier');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4668,'Paul Blart: Mall Cop 2',65,'Action','triphylite','Andy Fickman');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4669,'Pitch Perfect 2',28,'Comedy','distancy','Elizabeth Banks');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4670,'Pixels',82,'Action','spinnies','Chris Columbus');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4671,'Point Break',39,'Action','resmethrin','Ericson Core');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4672,'Project Almanac',29,'Sci-Fi','angledozer','Dean Israelite');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4673,'Road Hard',51,'Comedy','ethoxylate','Adam Carolla');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4674,'Room',74,'Drama','ursidae','Lenny Abrahamson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4675,'Run All Night',32,'Action','whippowill','Jaume Collet-Serra');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4676,'San Andreas',23,'Action','silurid','Brad Peyton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4677,'Self/less',97,'Action','bardiche','Tarsem Singh');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4678,'Sicario',6,'Action','logicists','Denis Villeneuve');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4679,'Sinister 2',98,'Horror','parroter','Ciar��n Foy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4680,'Southpaw',64,'Drama','hell-rake','Antoine Fuqua');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4681,'Spectre',43,'Action','triphylite','Sam Mendes');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4682,'Spotlight',56,'Biography','distancy','Tom McCarthy');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4683,'Steve Jobs',37,'Biography','spinnies','Danny Boyle');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4684,'Stonewall',54,'Drama','resmethrin','Roland Emmerich');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4685,'Straight Outta Compton',60,'Biography','angledozer','F. Gary Gray');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4686,'Ted 2',70,'Comedy','ethoxylate','Seth MacFarlane');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4687,'Terminator Genisys',86,'Action','ursidae','Alan Taylor');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4688,'The 33',49,'Biography','whippowill','Patricia Riggen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4689,'The Age of Adaline',74,'Drama','silurid','Lee Toland Krieger');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4690,'The Assassin',19,'Action','bardiche','Hsiao-Hsien Hou');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4691,'The Big Short',64,'Biography','logicists','Adam McKay');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4692,'The Boy Next Door',82,'Mystery','parroter','Rob Cohen');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4693,'The Diary of a Teenage Girl',4,'Drama','hell-rake','Marielle Heller');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4694,'The DUFF',33,'Comedy','triphylite','Ari Sandel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4695,'The Gallows',12,'Horror','distancy','Travis Cluff');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4696,'The Gift',77,'Mystery','spinnies','Joel Edgerton');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4697,'The Gunman',26,'Action','resmethrin','Pierre Morel');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4698,'The Hateful Eight',12,'Crime','angledozer','Quentin Tarantino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4699,'The Hunger Games: Mockingjay - Part 2',56,'Adventure','ethoxylate','Francis Lawrence');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4700,'The Intern',74,'Comedy','ursidae','Nancy Meyers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4701,'The Last Witch Hunter',12,'Action','whippowill','Breck Eisner');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4702,'The Lazarus Effect',62,'Horror','silurid','David Gelb');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4703,'The Little Prince',21,'Adventure','bardiche','Mark Osborne');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4704,'The Longest Ride',92,'Drama','logicists','George Tillman Jr.');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4705,'The Man from U.N.C.L.E.',51,'Action','parroter','Guy Ritchie');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4706,'The Martian',11,'Adventure','hell-rake','Ridley Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4707,'The Peanuts Movie',23,'Adventure','triphylite','Steve Martino');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4708,'The Revenant',61,'Adventure','distancy','Alejandro G. I̱��rritu');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4709,'The Scorch Trials',12,'Action','spinnies','Wes Ball');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4710,'The Second Best Exotic Marigold Hotel',69,'Comedy','resmethrin','John Madden');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4711,'The Second Mother',98,'Comedy','angledozer','Anna Muylaert');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4712,'The SpongeBob Movie: Sponge Out of Water',18,'Adventure','ethoxylate','Paul Tibbitt');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4713,'The Transporter Refueled',24,'Action','ursidae','Camille Delamarre');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4714,'The Vatican Tapes',11,'Horror','whippowill','Mark Neveldine');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4715,'The Visit',32,'Horror','silurid','M. Night Shyamalan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4716,'The Walk',88,'Adventure','bardiche','Robert Zemeckis');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4717,'The Witch',45,'Horror','logicists','Robert Eggers');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4718,'Time to Choose',30,'Documentary','parroter','Charles Ferguson');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4719,'Tomorrowland',3,'Action','hell-rake','Brad Bird');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4720,'Trainwreck',2,'Comedy','triphylite','Judd Apatow');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4721,'Unfinished Business',5,'Comedy','distancy','Ken Scott');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4722,'Vacation',81,'Adventure','spinnies','John Francis Daley');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4723,'Victor Frankenstein',44,'Drama','resmethrin','Paul McGuigan');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4724,'We Are Your Friends',14,'Drama','angledozer','Max Joseph');
+INSERT INTO mytable(MovieNumber,Title,Myrating,Genre,MyGenre,Director_Name) VALUES (4725,'Woman in Gold',81,'Biography','ethoxylate','Simon Curtis');
