@@ -278,6 +278,11 @@ DROP COLUMN Lead_Actor_FB_Likes
 -- SQL Primary Key: https://www.w3schools.com/sql/sql_primarykey.asp
 -- SQL Foreign Key: https://www.w3schools.com/sql/sql_foreignkey.asp
 
+SELECT Genre, COUNT(MyGenre)
+FROM GenreTable
+GROUP BY Genre;
+
+
 
 
 
