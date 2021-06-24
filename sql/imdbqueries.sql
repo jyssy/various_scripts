@@ -288,6 +288,60 @@ GROUP BY Genre;
 SELECT *
 FROM imdbtable i, genretable g -- NOT useful
 
+-- INNER JOINS
+
+SELECT MyGenre, RandomWord
+FROM imdbtable i, genretable g
+WHERE i.MovieNumber=g.MoNu
+AND Cast_FB_Likes > 5500
+ORDER BY MyGenre ASC;
+
+
+SELECT RandomWord, Director_Name, MyGenre
+FROM imdbtable i, genretable g
+WHERE i.MovieNumber=g.MoNu
+AND (i.Cast_FB_Likes > 2021
+AND i.Director_Name LIKE "_e%")
+ORDER BY g.RandomWord;
+
+
+-- FUNNY
+SELECT g.Title, g.MyGenre, g.GenreF
+from genretable g
+LEFT JOIN genretable e
+ON g.MoNu=e.MoNu
+ORDER BY e.Title;
+
+-- Is the same as...
+
+SELECT g.Title, g.MyGenre, g.GenreF
+from genretable g
+ORDER BY g.Title;
+
+-- This is because the natire of the tables is not complex enough to have these variations. Plus, there is no NULL data
+
+SELECT Title 
+FROM imdbtable t
+WHERE t.Release_Date LIKE "19%";
+
+
+SELECT Title 
+FROM imdbtable t
+WHERE t.Release_Date LIKE "201%";
+
+
+-- FUNNY AVERAGE RESULTS FROM AVG 2002.78604026846 (haha)
+SELECT AVG(Release_Date)
+FROM imdbtable;
+
+
+
+
+
+
+
+
+
 
 
 

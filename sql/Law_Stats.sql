@@ -1,4 +1,5 @@
 -- Law report for Jesse -- item notes // 
+
 select
     b.bib_id as 'Bib ID',
     b.status as 'Bib Status',
@@ -25,6 +26,7 @@ where
     i.date_created between '2021-03-01' and '2021-04-01';
     
 -- Law report for Jesse - Bib 969 notes
+
 select
     b.bib_id as 'Bib ID',
     (select group_concat(m1.content) from cat.marc m1 where m.bib_id = m1.bib_id and m1.tag = 969) as '969',
