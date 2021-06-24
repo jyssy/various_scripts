@@ -282,6 +282,13 @@ SELECT Genre, COUNT(MyGenre)
 FROM GenreTable
 GROUP BY Genre;
 
+"I have been using SQLite browser for these queries, have tried to use MySQL Workbench, but ran into some bug that involved the import of CSV data into tables, which means that it is basically useless to me. So, I am using SQLite for he time being on the windows machine"
+
+-- HUGE CROSS-JOIN
+SELECT *
+FROM imdbtable i, genretable g -- NOT useful
+
+
 
 
 
