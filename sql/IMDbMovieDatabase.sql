@@ -1,23 +1,23 @@
-CREATE TABLE mytable(
-   MovieNumber         INTEGER  NOT NULL PRIMARY KEY 
-  ,Title               VARCHAR(83) NOT NULL
-  ,Release_Date        DATE  NOT NULL
-  ,ColorBW             VARCHAR(15) NOT NULL
-  ,Genre               VARCHAR(11) NOT NULL
-  ,Language            VARCHAR(10)
-  ,Country             VARCHAR(14) NOT NULL
-  ,Rating              VARCHAR(9)
-  ,Lead_Actor          VARCHAR(27)
-  ,Director_Name       VARCHAR(32) NOT NULL
-  ,Lead_Actor_FB_Likes INTEGER 
-  ,Cast_FB_Likes       INTEGER  NOT NULL
-  ,Director_FB_Likes   INTEGER  NOT NULL
-  ,Movie_FB_Likes      INTEGER  NOT NULL
-  ,IMDb_Score_110      NUMERIC(3,1) NOT NULL
-  ,Total_Reviews       INTEGER 
-  ,DurationMins        INTEGER 
-  ,Gross_Revenue       INTEGER  NOT NULL
-  ,Budget              INTEGER  NOT NULL
+CREATE TABLE mytable (
+    MovieNumber INTEGER NOT NULL PRIMARY KEY,
+    Title VARCHAR(83) NOT NULL,
+    Release_Date DATE NOT NULL,
+    ColorBW VARCHAR(15) NOT NULL,
+    Genre VARCHAR(11) NOT NULL,
+    Language VARCHAR(10),
+    Country VARCHAR(14) NOT NULL,
+    Rating VARCHAR(9),
+    Lead_Actor VARCHAR(27),
+    Director_Name VARCHAR(32) NOT NULL,
+    Lead_Actor_FB_Likes INTEGER,
+    Cast_FB_Likes INTEGER NOT NULL,
+    Director_FB_Likes INTEGER NOT NULL,
+    Movie_FB_Likes INTEGER NOT NULL,
+    IMDb_Score_110 NUMERIC(3 , 1 ) NOT NULL,
+    Total_Reviews INTEGER,
+    DurationMins INTEGER,
+    Gross_Revenue INTEGER NOT NULL,
+    Budget INTEGER NOT NULL
 );
 INSERT INTO mytable(MovieNumber,Title,Release_Date,ColorBW,Genre,Language,Country,Rating,Lead_Actor,Director_Name,Lead_Actor_FB_Likes,Cast_FB_Likes,Director_FB_Likes,Movie_FB_Likes,IMDb_Score_110,Total_Reviews,DurationMins,Gross_Revenue,Budget) VALUES (1001,'Over the Hill to the Poorhouse','1920-09-15','Black and White','Crime','English','USA','Not Rated','Stephen Carr','Harry F. Millarde',2,4,0,0,4.8,1,110,3000000,100000);
 INSERT INTO mytable(MovieNumber,Title,Release_Date,ColorBW,Genre,Language,Country,Rating,Lead_Actor,Director_Name,Lead_Actor_FB_Likes,Cast_FB_Likes,Director_FB_Likes,Movie_FB_Likes,IMDb_Score_110,Total_Reviews,DurationMins,Gross_Revenue,Budget) VALUES (1002,'Metropolis','1927-01-26','Black and White','Drama','German','Germany','Not Rated','Brigitte Helm','Fritz Lang',136,203,756,12000,8.3,260,145,26435,6000000);
