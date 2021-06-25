@@ -1,4 +1,4 @@
--- Law report for Jesse -- item notes // 
+-- Law report for J -- item notes // 
 
 select
     b.bib_id as 'Bib ID',
@@ -25,7 +25,7 @@ where
 --    i.date_updated between '2021-02-01' and '2021-03-01' and
     i.date_created between '2021-03-01' and '2021-04-01';
     
--- Law report for Jesse - Bib 969 notes
+-- Law report for J - Bib 969 notes
 
 select
     b.bib_id as 'Bib ID',

@@ -335,6 +335,20 @@ SELECT AVG(Release_Date)
 FROM imdbtable;
 
 
+UPDATE genretable
+SET RandomWord = "randohaha"
+WHERE GenreNumber = 2030;
+
+
+-- INSERTING TEST DATA: 
+INSERT INTO genretable (GenreNumber, Title, MoNu, Myrating, GenreF, MyGenre, Dname, RandomWord)
+VALUES (7332, "Zylophone Title", 6332, 64, "Horrorf", "whippowill", "Weedy Wallen", "zerf");
+
+
+DELETE from genretable
+WHERE GenreNumber=7332;
+
+
 
 
 
