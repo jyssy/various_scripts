@@ -26,3 +26,5 @@ I like using the SQLite tool because I can import csvs to it to create new table
 Useful csv to sql converter: https://www.convertcsv.com/csv-to-sql.htm (there are a bunch of them on the web)
 
 
+
+
