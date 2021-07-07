@@ -25,6 +25,15 @@ https://www.phpmyadmin.net/
 I like using the SQLite tool because I can import csvs to it to create new tables, or can create a new table from a sql file (which is what I have been doing since I found a cool csv to SQL converter)
 Useful csv to sql converter: https://www.convertcsv.com/csv-to-sql.htm (there are a bunch of them on the web)
 
+https://stackskills.com/courses/34254/lectures/485237
+
+ACID
+Atomoicity (all or nothing)
+Constistency
+Isolation of database
+Durability of data
+
+
 
 
 
