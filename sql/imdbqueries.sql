@@ -366,6 +366,9 @@ CHECK TABLE imdb.imdbtable;
 ANALYZE TABLE imdb.imdbtable;
 OPTIMIZE TABLE imdb.imdbtable;
 
+-- SHOW ENGINE for MySQL
+SHOW ENGINE innodb STATUS;
+
 
 
 

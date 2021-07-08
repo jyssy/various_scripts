@@ -34,7 +34,7 @@ Isolation of database
 Durability of data
 
 # I am finding that MySQL Workbench has some elements that seem harder than they should be to connect and use - but more experimentation with this tool will be forthcoming
-# 
+# to get all users in a mysql instance
 SELECT * 
 FROM mysql.user;
 
