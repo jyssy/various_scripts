@@ -33,6 +33,11 @@ Constistency
 Isolation of database
 Durability of data
 
+# I am finding that MySQL Workbench has some elements that seem harder than they should be to connect and use - but more experimentation with this tool will be forthcoming
+# 
+SELECT * 
+FROM mysql.user;
+
 
 
 

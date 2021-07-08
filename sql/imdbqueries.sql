@@ -340,13 +340,39 @@ SET RandomWord = "randohaha"
 WHERE GenreNumber = 2030;
 
 
--- INSERTING TEST DATA: 
+-- INSERTING / DELETING TEST DATA: 
 INSERT INTO genretable (GenreNumber, Title, MoNu, Myrating, GenreF, MyGenre, Dname, RandomWord)
 VALUES (7332, "Zylophone Title", 6332, 64, "Horrorf", "whippowill", "Weedy Wallen", "zerf");
 
 
 DELETE from genretable
 WHERE GenreNumber=7332;
+
+
+-- FROM MySQL WorkBench below unless noted (I want to get to know this tool better):
+SELECT * FROM imdb.imdbtable
+WHERE `Cast FB Likes` >= 34
+AND (
+`Director Name` = "Woody Allen" 
+OR `Director Name` = "Frank Capra"
+);
+
+-- Gets all the users associated with the MySQL db
+SELECT * 
+FROM mysql.user;
+
+-- various checks on tables
+CHECK TABLE imdb.imdbtable;
+ANALYZE TABLE imdb.imdbtable;
+OPTIMIZE TABLE imdb.imdbtable;
+
+
+
+
+
+
+
+
 
 
 
