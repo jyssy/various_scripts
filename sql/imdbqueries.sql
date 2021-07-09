@@ -369,6 +369,30 @@ OPTIMIZE TABLE imdb.imdbtable;
 -- SHOW ENGINE for MySQL
 SHOW ENGINE innodb STATUS;
 
+-- BACK TO SQLLite for the time being (more on MySQL Workbench at a later time)
+
+-- Experimenting with EXPLAIN
+EXPLAIN SELECT MTitle, MGenre
+FROM musicgenre
+where MoN = 1013;
+
+
+EXPLAIN SELECT MTitle, Director_Name, GenreF , MGenre
+FROM musicgenre
+INNER JOIN genretable ON musicgenre.MoN=genretable.MoNu
+LEFT JOIN imdbtable ON musicgenre.MoN=imdbtable.MovieNumber
+WHERE Cast_FB_Likes >= 200;
+
+
+
+EXPLAIN SELECT MTitle, Director_Name, GenreF , MGenre, MGenreFBLikes
+FROM musicgenre
+JOIN genretable ON musicgenre.MoN=genretable.MoNu
+LEFT JOIN imdbtable ON musicgenre.MoN=imdbtable.MovieNumber
+WHERE (Cast_FB_Likes >= 478
+AND Release_Date LIKE "1989%");
+
+
 
 
 

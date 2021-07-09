@@ -38,7 +38,7 @@ Durability of data
 SELECT * 
 FROM mysql.user;
 
-
+# Basically, what I have done here is create three tables in a dB built around movies, an original 'real' csv file, and two fake derived 
 
 
 
