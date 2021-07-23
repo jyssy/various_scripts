@@ -40,5 +40,9 @@ FROM mysql.user;
 
 # Basically, what I have done here is create three tables in a dB built around movies, an original 'real' csv file, and two fake derived 
 
+I am currently breaking into MS SQL Server 2019 (management studio)
+
+-- I am seeing something strange in MS SQL Server 2019 that is...weird. Where I normally would use a 'where' condition to filter a search of a table, that table data what i am using as my filter is being labeled as a table name. 
+-- Why would that be the case?
 
 
