@@ -19,4 +19,4 @@ WHERE
  n.note REGEXP '^[[:alpha:]]{6}$' AND
  n.note NOT IN ('folder', 'binder', 'SLAVEX', 'NISORI') AND
  i.date_created between '2021-07-01' AND '2021-08-01'
-order BY h.call_number ASC;
+ORDER BY h.call_number ASC;
