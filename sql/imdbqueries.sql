@@ -405,6 +405,20 @@ SELECT name,
  END AS 'Mood'
 FROM movies;
 
+SELECT COUNT(*) 
+FROM fake_apps
+WHERE price = 0;
+
+SELECT MAX(price)
+FROM fake_apps
+LIMIT 1;
+
+SELECT AVG(price)
+FROM fake_apps;
+
+SELECT ROUND(AVG(price), 2)
+FROM fake_apps;
+
 
 
 
