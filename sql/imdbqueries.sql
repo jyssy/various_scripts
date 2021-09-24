@@ -392,6 +392,22 @@ LEFT JOIN imdbtable ON musicgenre.MoN=imdbtable.MovieNumber
 WHERE (Cast_FB_Likes >= 478
 AND Release_Date LIKE "1989%");
 
+-- from Code Academy lesson
+SELECT name, year, imdb_rating
+FROM movies
+ORDER BY imdb_rating DESC;
+
+SELECT name,
+ CASE
+  WHEN genre = 'romance' THEN 'Chill'
+  WHEN genre = 'comedy'  THEN 'Chill'
+  ELSE 'Intense'
+ END AS 'Mood'
+FROM movies;
+
+
+
+
 
 
 
