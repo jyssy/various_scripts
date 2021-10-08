@@ -397,6 +397,7 @@ SELECT name, year, imdb_rating
 FROM movies
 ORDER BY imdb_rating DESC;
 
+
 SELECT name,
  CASE
   WHEN genre = 'romance' THEN 'Chill'
@@ -405,23 +406,49 @@ SELECT name,
  END AS 'Mood'
 FROM movies;
 
+
 SELECT COUNT(*) 
 FROM fake_apps
 WHERE price = 0;
+
 
 SELECT MAX(price)
 FROM fake_apps
 LIMIT 1;
 
+
 SELECT AVG(price)
 FROM fake_apps;
+
 
 SELECT ROUND(AVG(price), 2)
 FROM fake_apps;
 
 
+SELECT price, 
+   ROUND(AVG(downloads)),
+   COUNT(*)
+FROM fake_apps
+GROUP BY price;
 
 
+SELECT *
+FROM orders
+JOIN subscriptions
+  ON orders.subscription_id = subscriptions.subscription_id;
+
+
+SELECT *
+FROM orders
+JOIN subscriptions
+  ON orders.subscription_id = subscriptions.subscription_id
+  WHERE description = "Fashion Magazine";
+
+
+SELECT COUNT(*)
+FROM newspaper
+JOIN online
+  ON newspaper.id = online.id 
 
 
 
