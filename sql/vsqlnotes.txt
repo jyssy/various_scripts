@@ -1,5 +1,5 @@
-# HEREIN I Take extensive notes on SQL, SQLite, etc
-# Considered best practice to use ALL CAPS for the commands below 
+# HEREIN I Take extensive notes on SQL, SQLite, etc, making use of various tools over time as well as different test databases
+# Considered best practice to use ALL CAPS for the commands below
 DML:
 
 select
@@ -35,14 +35,15 @@ Durability of data
 
 # I am finding that MySQL Workbench has some elements that seem harder than they should be to connect and use - but more experimentation with this tool will be forthcoming
 # to get all users in a mysql instance
-SELECT * 
+SELECT *
 FROM mysql.user;
 
-# Basically, what I have done here is create three tables in a dB built around movies, an original 'real' csv file, and two fake derived 
+# Basically, what I have done here is create three tables in a dB built around movies, an original 'real' csv file, and two fake derived
 
 I am currently breaking into MS SQL Server 2019 (management studio)
 
--- I am seeing something strange in MS SQL Server 2019 that is...weird. Where I normally would use a 'where' condition to filter a search of a table, that table data what i am using as my filter is being labeled as a table name. 
+-- I am seeing something strange in MS SQL Server 2019 that is...weird. Where I normally would use a 'where' condition to filter a search of a table, that table data what i am using as my filter is being labeled as a table name.
 -- Why would that be the case?
 
-
+-- getting to know mySQL as used in sequelace
+-- https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
