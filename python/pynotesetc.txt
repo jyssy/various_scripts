@@ -1,0 +1,10 @@
+# These are various notes I am collecting to work on this document rearrange project: newroster.py
+
+# converting xls to xlsx (from stackoverflow)
+https://stackoverflow.com/questions/9918646/how-to-convert-xls-to-xlsx
+
+# the lines below are not working because the script can not determine what file format the xls document is in. 
+# I think this is because the document is in tab delimited format masquerading as a python document
+read_file = pd.read_excel (r'extracttest.xls')
+read_file.to_csv (r'extracttest.csv', index = None, header=True)
+
