@@ -3,3 +3,6 @@
 
 cp newroster.py ~/Docu*/Git*/stsextract
 cp pynotesetc.txt ~/Docu*/Git*/stsextract
+cp xslcsvtst.py ~/Docu*/Git*/stsextract
+cp csvexc.py ~/Docu*/Git*/stsextract
+
