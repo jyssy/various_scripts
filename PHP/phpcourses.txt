@@ -1,6 +1,7 @@
 -- PHP courses notes and code snippets
 -- starting with PHP course from stackskills: https://stackskills.com/courses/613943/lectures/10990861
 :::::::
+so far, using math operators, concatenation operators, and now using comarison operators
 
 
 
