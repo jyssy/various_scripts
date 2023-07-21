@@ -1,7 +1,5 @@
 import glob
 
-# concatenation of a bunch of html files into one big one
-
 # Globbing the file extension 
 file_type = ".html"
 htmlfiles = glob.glob("*" + file_type)
