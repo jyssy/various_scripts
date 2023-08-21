@@ -2,8 +2,8 @@
 
 import os
 
-directory_path = "/pdfs"
-# directory_path = "/docx"
+# directory_path = "pdfs"
+directory_path = "docx"
 
 if os.path.exists(directory_path) and os.path.isdir(directory_path):
     file_count = len(os.listdir(directory_path))
