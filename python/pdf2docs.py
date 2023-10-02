@@ -15,6 +15,9 @@ import os
 from glob import glob
 from pdf2docx import Converter
 
+# pdf_source_dir = 'pdfsco/'
+# docx_output_dir = 'docxco/'
+
 pdf_source_dir = 'pdfs/'
 docx_output_dir = 'docx/'
 
