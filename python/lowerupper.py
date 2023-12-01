@@ -8,12 +8,14 @@ if loworup == 'lower':
     # conditional for making upper case
     words = words.lower()
     with open('lower.txt', 'w'):
+        words.write(str(words))
         print(words)
 
 elif loworup == 'upper':
     # conditional for making upper case
     words = words.upper()
     with open('lower.txt', 'w'):
+        words.write(str(words))
         print(words)
 
 else:
