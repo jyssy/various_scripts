@@ -1,7 +1,7 @@
 
 # the input of what I want to change
 
-loworup = input("Do you want to make upper or lower case? Please enter only either 'low' or 'upp' or 'cap'. ")
+loworup = input("Do you want to make upper, lower, or capitalized case? Please enter only either 'low' or 'upp' or 'cap'. ")
 file_path = 'TextToChange.txt'
 
 with open(file_path, 'r') as file:
