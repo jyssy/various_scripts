@@ -8,9 +8,12 @@ def find_files_by_string(search_string, search_dir):
     for root, dirs, files in os.walk(search_dir):
         for file in files:
             file_path = os.path.join(root, file)
-            with open(file_path, 'r') as f:
-                if search_string in f.read():
-                    found_files.append(file_path)
+            try:
+                with open(file_path, 'r', errors='ignore') as f:
+                    if search_string in f.read():
+                        found_files.append(file_path)
+            except Exception as e:
+                print(f"Error reading file {file_path}: {str(e)}")
     return found_files
 
 # Directory to start search in
