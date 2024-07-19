@@ -27,6 +27,5 @@ rows_containing_entries.columns = [field_name, 'Row Count']
 output_path = 'ticket_counts01.xlsx'
 with pd.ExcelWriter(output_path) as writer:
     distinct_entries.to_excel(writer, sheet_name='Distinct Entries', index=False)
-    rows_containing_entries.to_excel(writer, sheet_name='Rows Containing Entries', index=False)
 
 print(f"Results have been exported to {output_path}")
