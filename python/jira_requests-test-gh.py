@@ -4,7 +4,7 @@
 
 # # Jira credentials and endpoint
 # jira_api_endpoint = 'https://access-ci.atlassian.net/rest/api/3/field'
-# jira_auth = ('jelambe@iu.edu', 'ATATT3xFfGF0b28UlBsCtRDjx4ecxlNzVM-M7nsTQ7cH1_5V5CpCb-A0gLAEk7ch6GNzy8p0dPZ6bEUkLs3Au-yKJge-3vtH7yn9aT3xtYlOzLfgq7LyerVbluEIgPGJZa01HHHNip8btX13_ViPPOo7o5ll8V8lKWw1Adwe0gRLMnLuR8KT7ZA=3051ECD2')
+# jira_auth = ('jelambe@iu.edu', ' [ token here ] ')
 
 # response = requests.get(jira_api_endpoint, auth=jira_auth)
 # fields = response.json()
