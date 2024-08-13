@@ -1,0 +1,18 @@
+{
+    "DEBUG": true,
+    "ALLOWED_HOSTS": ["*"],
+    "DB_DATABASE": "serviceindex1",
+    "DB_PORT": "5432",
+    "DB_HOSTNAME_READ": "db",
+    "DB_HOSTNAME_WRITE": "db",
+    "DJANGO_USER": "serviceindex_django",
+    "DJANGO_PASS": "Bbfsjrvneru&fg",
+    "DJANGO_SECRET_KEY": "{{ DJANGO_SECRET_KEY }}",
+    "STATIC_ROOT": "{{ app_home }}/www/staticgg",
+    "SOCIAL_CLIENT_ID" : "cilogon:/client_id/139ae65ae7fde2e747ef02ddd1d235a",
+    "SOCIAL_SECRET" : "Zrohx3pr9Id8Rq0ozqC-2y1zhM4H3E9DtqdNPH2UI8eOceXh0Jvw1508VQ6IgFqD-0HuW9eJDp7Ipiza-uVEsw",
+    "APP_LOG": "/conf/serviceindex.log",
+    "APP_VERSION": "{{ app_tag }}",
+    "SYSLOG_SOCK": "/var/run/syslog",
+    "API_BASE": ""
+}

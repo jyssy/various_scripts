@@ -1,0 +1,4 @@
+opensearch:
+  hosts:
+    149.165.156.129:
+      ansible_user: ubuntu

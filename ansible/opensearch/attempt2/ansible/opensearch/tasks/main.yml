@@ -1,0 +1,219 @@
+---
+# tasks file for opensearch
+
+- name: Setting max map count to 262144
+  ansible.posix.sysctl:
+    name: vm.max_map_count
+    value: "262144"
+    reload: true
+
+- name: Turning off swap.
+  ansible.builtin.command: swapoff -a
+  become: true
+
+- name: Creating /docker
+  ansible.builtin.file:
+    path: /docker
+    owner: root
+    group: root
+    mode: '0755'
+    state: 'directory'
+  notify: "Sync docker"
+
+- name: Parting /dev/sdb when /dev/sdb1 doesn't exist
+  ansible.builtin.parted:
+    device: /dev/sdb
+    number: 1
+    label: gpt
+    name: opensearch_disk
+    state: present
+  when: ansible_devices.sdb.partitions.sdb1 is not defined
+
+- name: Create an xfs filesystem on /dev/sdb1
+  community.general.filesystem:
+    dev: /dev/sdb1
+    fstype: xfs
+    state: present
+
+- name: Adding new filesystem to fstab and mounting
+  ansible.posix.mount:
+    path: /docker
+    src: /dev/sdb1
+    backup: true
+    state: mounted
+    fstype: xfs
+
+- name: Copying over docker daemon template
+  ansible.builtin.template:
+    src: docker-daemon.json.j2
+    dest: /etc/docker/daemon.json
+  notify: "Restart Docker"
+
+- name: Flushing Handlers if needed before docker compose
+  ansible.builtin.meta: flush_handlers
+
+- name: Creating /etc/traefik
+  ansible.builtin.file:
+    path: /etc/traefik
+    owner: root
+    group: root
+    mode: '0755'
+    state: 'directory'
+
+- name: Copying over traefik config
+  ansible.builtin.copy:
+    src: traefik.yml
+    dest: /etc/traefik/traefik.yml
+    backup: true
+
+
+# Compose file taken from opensearch docs.
+# https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker/#sample-docker-composeyml
+- name: Running docker-compose
+  community.docker.docker_compose_v2:
+    remove_orphans: true
+    project_name: "opensearch"
+    definition:
+      version: '3'
+      services:
+        reverse-proxy: # trying out the traefik reverse proxy
+          image: traefik:v3.1
+          ports:
+            - 80:80
+            - 443:443
+            - 8080:8080
+            - 9200:9200
+          volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:ro
+            - ./acme.json:/acme.json
+            - /etc/traefik/:/etc/traefik/
+          networks:
+            - traefik
+
+        opensearch-dashboards:
+          image: opensearchproject/opensearch-dashboards:latest # Make sure the version of opensearch-dashboards matches the version of opensearch installed on other nodes
+          container_name: opensearch-dashboards
+          expose:
+            - "5601" # Expose port 5601 for web access to OpenSearch Dashboards
+          environment:
+            OPENSEARCH_HOSTS: '["https://opensearch-node1:9200","https://opensearch-node2:9200","https://opensearch-node3:9200"]' # Define the OpenSearch nodes that OpenSearch Dashboards will query
+            SERVER_BASEPATH: /dashboard
+            SERVER_REWRITEBASEPATH: true
+
+          networks:
+            - traefik
+          labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.dashboard.rule=Host(`opensearch.rci.uits.iu.edu`) && PathPrefix(`/dashboard`)"
+            - "traefik.http.routers.dashboard.tls=true"
+            - "traefik.http.routers.dashboard.tls.certresolver=tlsStaging"
+
+        opensearch-node1: # This is also the hostname of the container within the Docker network (i.e. https://opensearch-node1/)
+          image: opensearchproject/opensearch:latest # Specifying the latest available image - modify if you want a specific version
+          container_name: opensearch-node1
+          environment:
+            - cluster.name=opensearch-cluster # Name the cluster
+            - node.name=opensearch-node1 # Name the node that will run in this container
+            - discovery.seed_hosts=opensearch-node1,opensearch-node2,opensearch-node3 # Nodes to look for when discovering the cluster
+            - cluster.initial_cluster_manager_nodes=opensearch-node1,opensearch-node2,opensearch-node3 # Nodes eligible to serve as cluster manager
+            - bootstrap.memory_lock=true # Disable JVM heap memory swapping
+            - "OPENSEARCH_JAVA_OPTS=-Xms20g -Xmx20g" # Set min and max JVM heap sizes to at least 50% of system RAM
+            - OPENSEARCH_INITIAL_ADMIN_PASSWORD={{vault_opensearch_initial_admin_password}}    # Sets the demo admin user password when using demo configuration, required for OpenSearch 2.12 and later
+
+          ulimits:
+            memlock:
+              soft: -1 # Set memlock to unlimited (no soft or hard limit)
+              hard: -1
+            nofile:
+              soft: 65536 # Maximum number of open files for the opensearch user - set to at least 65536
+              hard: 65536
+          labels:
+            - "traefik.enable=true"
+            - "traefik.tcp.routers.opensearch.entrypoints=OpensearchRestApi"
+            - "traefik.tcp.routers.opensearch.rule=HostSNI(`opensearch.rci.uits.iu.edu`)"
+            - "traefik.tcp.services.opensearch.loadbalancer.server.port=9200"
+            - "traefik.tcp.routers.opensearch.tls=true"
+            - "traefik.tcp.routers.opensearch.tls.certresolver=tlsStaging"
+
+          volumes:
+            - opensearch-data1:/usr/share/opensearch/data # Creates volume called opensearch-data1 and mounts it to the container
+          # not binding ports since all traffic will go through traefik
+          expose:
+            - 9200 # REST API
+            - 9600 # Performance Analyzer
+          networks:
+            - traefik
+
+        opensearch-node2:
+          image: opensearchproject/opensearch:latest # This should be the same image used for opensearch-node1 to avoid issues
+          container_name: opensearch-node2
+          environment:
+            - cluster.name=opensearch-cluster
+            - node.name=opensearch-node2
+            - discovery.seed_hosts=opensearch-node1,opensearch-node2,opensearch-node3 # Nodes to look for when discovering the cluster
+            - cluster.initial_cluster_manager_nodes=opensearch-node1,opensearch-node2,opensearch-node3 # Nodes eligible to serve as cluster manager
+            - bootstrap.memory_lock=true
+            - "OPENSEARCH_JAVA_OPTS=-Xms20g -Xmx20g" # Set min and max JVM heap sizes to at least 50% of system RAM
+            - OPENSEARCH_INITIAL_ADMIN_PASSWORD={{vault_opensearch_initial_admin_password}}
+          ulimits:
+            memlock:
+              soft: -1
+              hard: -1
+            nofile:
+              soft: 65536
+              hard: 65536
+          volumes:
+            - opensearch-data2:/usr/share/opensearch/data
+          networks:
+            - traefik
+          expose:
+            - 9200 # REST API
+            - 9600 # Performance Analyzer
+          labels:
+            - "traefik.enable=true"
+            - "traefik.tcp.routers.opensearch.entrypoints=OpensearchRestApi"
+            - "traefik.tcp.routers.opensearch.rule=HostSNI(`opensearch.rci.uits.iu.edu`)"
+            - "traefik.tcp.services.opensearch.loadbalancer.server.port=9200"
+            - "traefik.tcp.routers.opensearch.tls=true"
+            - "traefik.tcp.routers.opensearch.tls.certresolver=tlsStaging"
+
+        opensearch-node3: # This is also the hostname of the container within the Docker network (i.e. https://opensearch-node3/)
+          image: opensearchproject/opensearch:latest # Specifying the latest available image - modify if you want a specific version
+          container_name: opensearch-node3
+          environment:
+            - cluster.name=opensearch-cluster # Name the cluster
+            - node.name=opensearch-node3 # Name the node that will run in this container
+            - discovery.seed_hosts=opensearch-node1,opensearch-node2,opensearch-node3 # Nodes to look for when discovering the cluster
+            - cluster.initial_cluster_manager_nodes=opensearch-node1,opensearch-node2,opensearch-node3 # Nodes eligible to serve as cluster manager
+            - bootstrap.memory_lock=true # Disable JVM heap memory swapping
+            - "OPENSEARCH_JAVA_OPTS=-Xms20g -Xmx20g" # Set min and max JVM heap sizes to at least 50% of system RAM
+            - OPENSEARCH_INITIAL_ADMIN_PASSWORD={{vault_opensearch_initial_admin_password}}    # Sets the demo admin user password when using demo configuration, required for OpenSearch 2.12 and later
+          ulimits:
+            memlock:
+              soft: -1 # Set memlock to unlimited (no soft or hard limit)
+              hard: -1
+            nofile:
+              soft: 65536 # Maximum number of open files for the opensearch user - set to at least 65536
+              hard: 65536
+          volumes:
+            - opensearch-data3:/usr/share/opensearch/data # Creates volume called opensearch-data3 and mounts it to the container
+          networks:
+            - traefik
+          expose:
+            - 9200 # REST API
+            - 9600 # Performance Analyzer
+          labels:
+            - "traefik.enable=true"
+            - "traefik.tcp.routers.opensearch.entrypoints=OpensearchRestApi"
+            - "traefik.tcp.routers.opensearch.rule=HostSNI(`opensearch.rci.uits.iu.edu`)"
+            - "traefik.tcp.services.opensearch.loadbalancer.server.port=9200"
+            - "traefik.tcp.routers.opensearch.tls=true"
+            - "traefik.tcp.routers.opensearch.tls.certresolver=tlsStaging"
+
+      volumes:
+        opensearch-data1:
+        opensearch-data2:
+        opensearch-data3:
+
+      networks:
+        traefik:

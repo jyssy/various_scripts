@@ -1,0 +1,41 @@
+providers:
+  docker:
+    exposedByDefault: false
+
+entryPoints:
+  http:
+    address: ':80'
+    http:
+      redirections:
+        entryPoint:
+          to: https
+          scheme: https
+  https:
+    address: ':443'
+    http:
+      tls:
+        tlsStaging:
+
+  OpensearchRestApi:
+    address: ':9200/tcp'
+
+certificatesResolvers:
+  tlsStaging:
+    acme:
+      email: rci@iu.edu
+      storage: /etc/traefik/acme.json
+      caServer: https://acme-staging-v02.api.letsencrypt.org/directory
+      httpChallenge:
+        entryPoint: http
+
+  tlsProduction:
+    acme:
+      email: rci@iu.edu
+      storage: /etc/traefik/acme.json
+      caServer: https://acme-v02.api.letsencrypt.org/directory
+      httpChallenge:
+        entryPoint: http
+
+api:
+  insecure: true
+  dashboard: true
